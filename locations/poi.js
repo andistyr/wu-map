@@ -206,7 +206,7 @@ poi = [
     name: 'Colossus of Fo',
     x: 1177,
     y: 853,
-    type: 'statue'
+    type: 'statue',
     description: 'Constructed by Indalo'
   }
 ];
