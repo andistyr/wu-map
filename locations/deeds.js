@@ -130,7 +130,7 @@ deeds = [
     name: 'Dunkelwald',
     tag: 'dunkelwald',
     type: 'small',
-    mayor: 'Biervampyr',
+    mayor: 'Ennofiliusdiaboli',
     x: 2976,
     y: 480,
     features: ['recruiting']
@@ -854,14 +854,6 @@ deeds = [
     y: 3852,
     mayor: 'Link',
     type: 'small'
-  }, {
-    name: 'Amdarilla',
-    tag: 'amdarilla',
-    x: 1586,
-    y: 2740,
-    mayor: 'Stormhander',
-    features: ['recruiting'],
-    type: 'solo'
   }, {
     name: 'Aquashire',
     tag: 'aquashire',
