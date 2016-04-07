@@ -83,14 +83,6 @@ deeds = [
     x: 730,
     y: 2348
   }, {
-    name: 'Goatsmugglers Place',
-    tag: 'goatsmugglers-place',
-    type: 'solo',
-    mayor: 'Goatsmuggler',
-    x: 822,
-    y: 1226,
-    features: ['harbour']
-  }, {
     name: 'Highwater',
     tag: 'highwater',
     type: 'large',
