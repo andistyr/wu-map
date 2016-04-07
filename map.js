@@ -863,7 +863,7 @@ show_add_form = function(which) {
       case 'trees':
         return 'https://docs.google.com/forms/d/1J8xMFQQZEGQ_5b1bsCX1wltGLz5SoV-MQQKE0ui4DrQ/viewform?embedded=true&hl=en';
       case 'report':
-        return 'https://docs.google.com/forms/d/1R3gbLKem9Hw4cM73pxdqT-LJRtZBxJr_TXTjNGYLcNE/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1inREOQl7FjcfrFpoHnqheJxTEzXSFid6PTUTeIiuwOM/viewform?embedded=true&hl=en';
     }
   })();
   document.getElementById('addform').style.display = 'block';
