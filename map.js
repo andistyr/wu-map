@@ -861,7 +861,7 @@ show_add_form = function(which) {
       case 'poi':
         return 'https://docs.google.com/forms/d/1vUyH4gGvPyy1GfMRcPZ3ynX7IRh083sIoLyHo8eaeyA/viewform?embedded=true&hl=en';
       case 'trees':
-        return 'https://docs.google.com/forms/d/1J8xMFQQZEGQ_5b1bsCX1wltGLz5SoV-MQQKE0ui4DrQ/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1eJyjCkoFGl_CMB1rJ2zGxp--k8LQ6sUXfeKfIlIF0-U/viewform?embedded=true&hl=en';
       case 'report':
         return 'https://docs.google.com/forms/d/12AbUjczyae0GvhUUpnjQ0ZXPza8Qrvh_P45sOofX61I/viewform?embedded=true&hl=en';
     }
