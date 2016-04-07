@@ -859,7 +859,7 @@ show_add_form = function(which) {
       case 'resource':
         return 'https://docs.google.com/forms/d/1YF4TUGBZh13_2EKtf84odvCW9NJVZbxEnfyJXkks5H0/viewform?embedded=true&hl=en';
       case 'poi':
-        return 'https://docs.google.com/forms/d/1vUyH4gGvPyy1GfMRcPZ3ynX7IRh083sIoLyHo8eaeyA/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1NW-QMvLqAI7vJIIl1m_6rp7Qj9vw5wR8OA2uxOD6C2U/viewform?embedded=true&hl=en';
       case 'trees':
         return 'https://docs.google.com/forms/d/1eJyjCkoFGl_CMB1rJ2zGxp--k8LQ6sUXfeKfIlIF0-U/viewform?embedded=true&hl=en';
       case 'report':
