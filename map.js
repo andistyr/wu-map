@@ -855,7 +855,7 @@ show_add_form = function(which) {
       case 'tower':
         return 'https://docs.google.com/forms/d/19Aa-F-2PwTmMEYZTKfbpnjDRvKvBw5ZVwhQSIDPDlQQ/viewform?embedded=true&hl=en';
       case 'mine':
-        return 'https://docs.google.com/forms/d/10tIQppH5tsWCvMBqsg22dGVS1ids36vcr3BlhnX6aI8/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1d8uhV-dBJLVlo1P8c2iHWIDdh4V9f8ZPvJ_ATzRMhO8/viewform?embedded=true&hl=en';
       case 'resource':
         return 'https://docs.google.com/forms/d/1NVS_LMy0aTv8OCRnEbhnrS06QRzd40ShioUGi7jo6DU/viewform?embedded=true&hl=en';
       case 'poi':
