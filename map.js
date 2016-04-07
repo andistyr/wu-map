@@ -857,7 +857,7 @@ show_add_form = function(which) {
       case 'mine':
         return 'https://docs.google.com/forms/d/1d8uhV-dBJLVlo1P8c2iHWIDdh4V9f8ZPvJ_ATzRMhO8/viewform?embedded=true&hl=en';
       case 'resource':
-        return 'https://docs.google.com/forms/d/1NVS_LMy0aTv8OCRnEbhnrS06QRzd40ShioUGi7jo6DU/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1YF4TUGBZh13_2EKtf84odvCW9NJVZbxEnfyJXkks5H0/viewform?embedded=true&hl=en';
       case 'poi':
         return 'https://docs.google.com/forms/d/1vUyH4gGvPyy1GfMRcPZ3ynX7IRh083sIoLyHo8eaeyA/viewform?embedded=true&hl=en';
       case 'trees':
