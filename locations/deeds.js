@@ -17,20 +17,13 @@ deeds = [
     x: 1115,
     y: 770
   }, {
-    name: 'Port Hope',
-    tag: 'port-hope',
-    type: 'solo',
-    mayor: 'Squint',
-    x: 807,
-    y: 706
-  }, {
     name: 'Alexondrea',
     tag: 'alexondrea',
     type: 'large',
     mayor: 'Traveler',
     x: 1076,
     y: 786,
-    features: ['resources', 'recruiting']
+    features: ['resources']
   }, {
     name: 'Longview',
     tag: 'longview',
@@ -39,27 +32,11 @@ deeds = [
     mayor: 'Borgal',
     type: 'solo'
   }, {
-    name: 'Zigsburg',
-    tag: 'zigsburg',
-    mayor: 'Zigackly',
-    x: 1550,
-    y: 336,
-    mayor: 'Zigackly',
-    type: 'solo'
-  }, {
     name: 'Cedar Grove',
     tag: 'cedar-grove',
     mayor: 'Dallanar',
     x: 1586,
     y: 1027
-  }, {
-    name: 'Castrum Felis',
-    tag: 'castrum-felis',
-    type: 'solo',
-    mayor: 'Meow',
-    x: 738,
-    y: 1200,
-    features: ['recruiting']
   }, {
     name: 'Awarthriel\'s Grove',
     tag: 'awarthriels-grove',
@@ -179,14 +156,6 @@ deeds = [
     mayor: 'Macros',
     x: 1070,
     y: 1164
-  }, {
-    name: 'ZxSuperGeniusxZ\'s Deed',
-    tag: 'zxsupergeniusxzs-deed',
-    type: 'solo',
-    mayor: 'ZxSuperGeniusxZ',
-    x: 1060,
-    y: 892,
-    features: ['market', 'harbour', 'merchant']
   }, {
     name: 'Maniac Mansion',
     tag: 'maniac-mansion',
@@ -326,14 +295,6 @@ deeds = [
     type: 'solo',
     x: 1398,
     y: 885
-  }, {
-    name: 'Cedarview',
-    tag: 'cedarview',
-    mayor: 'Squint',
-    type: 'solo',
-    x: 2077,
-    y: 1063,
-    features: ['recruiting']
   }, {
     name: 'Bg Town',
     tag: 'bg-town',
@@ -479,7 +440,7 @@ deeds = [
     y: 2522,
     mayor: 'DwemerManiac',
     type: 'small',
-    features: ['harbour', 'recruiting']
+    features: ['harbour']
   }, {
     name: 'Zephyr',
     tag: 'zephyr',
@@ -742,7 +703,7 @@ deeds = [
     tag: 'anvil-of-ice',
     x: 1472,
     y: 2293,
-    mayor: 'ElofValantor',
+    mayor: 'Melketh',
     type: 'solo'
   }, {
     name: 'Well of Souls',
@@ -758,7 +719,7 @@ deeds = [
     x: 2548,
     y: 778,
     mayor: 'CookieMuncher & Cryke',
-    features: ['trader', 'market', 'harbour', 'inn', 'recruiting'],
+    features: ['trader', 'market', 'harbour', 'inn'],
     type: 'large'
   }, {
     name: 'Celosia',
@@ -954,13 +915,6 @@ deeds = [
     features: ['harbour', 'recruiting'],
     type: 'small'
   }, {
-    name: 'Nameless',
-    tag: 'nameless',
-    x: 1009,
-    y: 2260,
-    mayor: 'Digradi',
-    type: 'solo'
-  }, {
     name: 'Toxtopia',
     tag: 'toxtopia',
     x: 2169,
@@ -1055,7 +1009,7 @@ deeds = [
     x: 2061,
     y: 1361,
     mayor: 'Xloey',
-    features: [''],
+    features: ['mailbox', 'trader', 'recruiting'],
     type: 'small'
   }, {
     name: 'Goiania',
@@ -1198,14 +1152,6 @@ deeds = [
     mayor: 'Farmer',
     type: 'solo'
   }, {
-    name: 'Tribbleation (wrong data, please resubmit)',
-    tag: 'tribbleation',
-    x: 232,
-    y: 1260,
-    mayor: 'Tribblemaker',
-    features: ['mailbox'],
-    type: 'small'
-  }, {
     name: 'Paradise',
     tag: 'paradise',
     x: 1052,
@@ -1219,14 +1165,6 @@ deeds = [
     y: 2068,
     mayor: 'Easy',
     type: 'solo'
-  }, {
-    name: 'Williams Mountainside Retreat',
-    tag: 'williams-mountainside-retreat',
-    x: 2152,
-    y: 1091,
-    mayor: 'Williamsmith',
-    features: ['recruiting', 'mailbox'],
-    type: 'small'
   }, {
     name: 'Tevinter',
     tag: 'tevinter',
@@ -1344,14 +1282,6 @@ deeds = [
     y: 1746,
     mayor: 'Feii',
     type: 'small'
-  }, {
-    name: 'Port Williams',
-    tag: 'port-williams',
-    x: 1388,
-    y: 399,
-    mayor: 'Williamsmithsh',
-    features: ['harbour', 'inn', 'mailbox'],
-    type: 'solo'
   }, {
     name: 'Providence',
     tag: 'providence',
@@ -1672,5 +1602,13 @@ deeds = [
     mayor: 'Giggity',
     features: [''],
     type: 'solo'
+  }, {
+    name: 'Blacksheep Island',
+    tag: 'blacksheep-island',
+    x: 888,
+    y: 942,
+    mayor: 'Mizova & Krazow',
+    features: ['harbour', 'mailbox', 'trader', 'market', 'recruiting'],
+    type: 'small'
   }
 ];
