@@ -851,7 +851,7 @@ show_add_form = function(which) {
   url = (function() {
     switch (which) {
       case 'deed':
-        return 'https://docs.google.com/forms/d/1-GW1P_ImiqjYxCFSQGw_kFRbmDRbbpkCFpRbO82jb8Q/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1ofnmIyeSMJdhWhZj3mm7wkJHLpYzNJf8lIB8CVOnl7s/viewform?embedded=true&hl=en';
       case 'tower':
         return 'https://docs.google.com/forms/d/19Aa-F-2PwTmMEYZTKfbpnjDRvKvBw5ZVwhQSIDPDlQQ/viewform?embedded=true&hl=en';
       case 'mine':
