@@ -853,7 +853,7 @@ show_add_form = function(which) {
       case 'deed':
         return 'https://docs.google.com/forms/d/1ofnmIyeSMJdhWhZj3mm7wkJHLpYzNJf8lIB8CVOnl7s/viewform?embedded=true&hl=en';
       case 'tower':
-        return 'https://docs.google.com/forms/d/19Aa-F-2PwTmMEYZTKfbpnjDRvKvBw5ZVwhQSIDPDlQQ/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1dEau_6qvoW0zodbhXVMsh95VahQ41tB-usbUSLVmHKs/viewform?embedded=true&hl=en';
       case 'mine':
         return 'https://docs.google.com/forms/d/1d8uhV-dBJLVlo1P8c2iHWIDdh4V9f8ZPvJ_ATzRMhO8/viewform?embedded=true&hl=en';
       case 'resource':
