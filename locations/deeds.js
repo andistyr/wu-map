@@ -1592,8 +1592,8 @@ deeds = [
     x: 381,
     y: 1902,
     mayor: 'Ravenloft',
-    features: [''],
-    type: 'solo'
+    features: ['harbour'],
+    type: 'small'
   }, {
     name: 'The Quagmire',
     tag: 'the-quagmire',
@@ -1603,6 +1603,14 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
+    name: 'Avallone',
+    tag: 'Avallone',
+    x: 1390,
+    y: 1750,
+    mayor: 'Lumi',
+    features: [''],
+    type: 'large'
+  }, {
     name: 'Blacksheep Island',
     tag: 'blacksheep-island',
     x: 888,
@@ -1610,5 +1618,501 @@ deeds = [
     mayor: 'Mizova & Krazow',
     features: ['harbour', 'mailbox', 'trader', 'market', 'recruiting'],
     type: 'small'
+  }, {
+    name: 'Windermere',
+    tag: 'Windermere',
+    x: 711,
+    y: 2786,
+    mayor: 'xxTemporexx',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Drandor',
+    tag: 'Drandor',
+    x: 1737,
+    y: 805,
+    mayor: 'DieDae',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Bay of Blades',
+    tag: 'bay-of-blades',
+    x: 2908,
+    y: 347,
+    mayor: 'Backsnap',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Helheim',
+    tag: 'Helheim',
+    x: 2025,
+    y: 1039,
+    mayor: 'Maxium',
+    features: ['inn', 'mailbox', 'recruiting',],
+    type: 'large'
+  }, {
+    name: 'Hunters Rest',
+    tag: 'hunters-rest',
+    x: 3515,
+    y: 1699,
+    mayor: 'Mallam',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Morrowind',
+    tag: 'Morrowind',
+    x: 1196,
+    y: 403,
+    mayor: 'BabbaGanush',
+    features: ['harbour', 'mailbox', 'recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Goldstrike Outpost',
+    tag: 'goldstrike-outpost',
+    x: 1487,
+    y: 1055,
+    mayor: 'Minxes',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Gallup',
+    tag: 'Gallup',
+    x: 797,
+    y: 546,
+    mayor: 'Skyropio',
+    features: ['mailbox'],
+    type: 'small'
+  }, {
+    name: 'Mordownia',
+    tag: 'Mordownia',
+    x: 3240,
+    y: 1819,
+    mayor: 'MrChris',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Waitsburg',
+    tag: 'Waitsburg',
+    x: 1209,
+    y: 803,
+    mayor: 'Cennydd',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Carpeshire',
+    tag: 'Carpeshire',
+    x: 990,
+    y: 1647,
+    mayor: 'Alex',
+    features: ['trader', 'mailbox', 'harbour', 'inn', 'market', 'recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Quail Ridge',
+    tag: 'quail-ridge',
+    x: 1681,
+    y: 1053,
+    mayor: 'Stargrace',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Pickering Lodge',
+    tag: 'pickering-lodge',
+    x: 2695,
+    y: 943,
+    mayor: 'Pickering',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Pirkadat',
+    tag: 'Pirkadat',
+    x: 2610,
+    y: 907,
+    mayor: 'Hajnal',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Black Tower',
+    tag: 'the-black-tower',
+    x: 3742,
+    y: 2763,
+    mayor: 'TomServo',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Hopes corner',
+    tag: 'hopes-corner',
+    x: 2100,
+    y: 3343,
+    mayor: 'Malic',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Smallville',
+    tag: 'Smallville',
+    x: 1328,
+    y: 567,
+    mayor: 'Bija',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Blue Ribbon',
+    tag: 'blue-ribbon',
+    x: 1631,
+    y: 760,
+    mayor: 'Etna',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Mountainhome Conglomerate',
+    tag: 'mountainhome-conglomerate',
+    x: 2280,
+    y: 1493,
+    mayor: 'Reptile',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Nouvelle France',
+    tag: 'nouvelle-france',
+    x: 1915,
+    y: 3434,
+    mayor: 'Xloff',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'West Point Manor',
+    tag: 'west-point-manor',
+    x: 3611,
+    y: 2996,
+    mayor: 'Bennetto',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Ceonia',
+    tag: 'Ceonia',
+    x: 850,
+    y: 2441,
+    mayor: 'Synga',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Lakeview',
+    tag: 'Lakeview',
+    x: 1590,
+    y: 3190,
+    mayor: 'Bravyn',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'On Golden Pond',
+    tag: 'on-golden-pond',
+    x: 1624,
+    y: 800,
+    mayor: 'Fumble',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Viking Ridge',
+    tag: 'viking-ridge',
+    x: 1467,
+    y: 1266,
+    mayor: 'Anders',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Baldurs Gate',
+    tag: 'baldurs-gate',
+    x: 874,
+    y: 1774,
+    mayor: 'Ragnor',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Sankt Egidien Harbor',
+    tag: 'sankt-egidien-harbor',
+    x: 3277,
+    y: 2980,
+    mayor: 'iScraM',
+    features: ['harbour'],
+    type: 'small'
+  }, {
+    name: 'Shortys Retreat',
+    tag: 'shortys-retreat',
+    x: 1303,
+    y: 684,
+    mayor: 'Shorty',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Szegvar',
+    tag: 'Szegvar',
+    x: 1126,
+    y: 481,
+    mayor: 'Venatus',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'New Amsterdam',
+    tag: 'new-amsterdam',
+    x: 1603,
+    y: 1548,
+    mayor: 'Utopolis',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'White Deer Inn',
+    tag: 'white-deer-inn',
+    x: 2573,
+    y: 1356,
+    mayor: 'Sethus',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Grove',
+    tag: 'the-grove',
+    x: 1390,
+    y: 752,
+    mayor: 'Parsnips',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Ranch',
+    tag: 'Ranch',
+    x: 1688,
+    y: 1915,
+    mayor: 'Mariosso',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Antalya',
+    tag: 'Antalya',
+    x: 419,
+    y: 2013,
+    mayor: 'Huseyin',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Chestnut Lake',
+    tag: 'chestnut-lake',
+    x: 1504,
+    y: 1818,
+    mayor: 'Murph',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Friedheim',
+    tag: 'Friedheim',
+    x: 1868,
+    y: 3239,
+    mayor: 'Friedbert',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Gachitopia',
+    tag: 'Gachitopia',
+    x: 2750,
+    y: 840,
+    mayor: 'Diztro',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Tinkerbells resort',
+    tag: 'tinkerbells-resort',
+    x: 1770,
+    y: 949,
+    mayor: 'Tinkerbell',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Crimson Corporations',
+    tag: 'crimson-corporations',
+    x: 456,
+    y: 1940,
+    mayor: 'Sarkubocael',
+    features: ['trader', 'harbour', 'inn'],
+    type: 'solo'
+  }, {
+    name: 'Barna',
+    tag: 'Barna',
+    x: 742,
+    y: 276,
+    mayor: 'Gollun',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Bay of Sweds',
+    tag: 'bay-of-sweds',
+    x: 1825,
+    y: 421,
+    mayor: 'Juniormad',
+    features: ['harbour', 'recruiting'],
+    type: 'small'
+  }, {
+    name: 'Spuzzum',
+    tag: 'Spuzzum',
+    x: 1447,
+    y: 574,
+    mayor: 'Bravyn',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Aurora Village',
+    tag: 'aurora-village',
+    x: 564,
+    y: 1805,
+    mayor: 'Kilian',
+    features: ['harbour'],
+    type: 'solo'
+  }, {
+    name: 'Everton',
+    tag: 'Everton',
+    x: 3624,
+    y: 2948,
+    mayor: 'Sinmage',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Kangaroo isle',
+    tag: 'Kangaroo-isle',
+    x: 1432,
+    y: 3823,
+    mayor: 'Risko',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Wesmere',
+    tag: 'Wesmere',
+    x: 550,
+    y: 248,
+    mayor: 'Kalenz',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Shadowyn',
+    tag: 'Shadowyn',
+    x: 1352,
+    y: 930,
+    mayor: 'Frisk',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Pendragon Wallow',
+    tag: 'pendragon-wallow',
+    x: 3705,
+    y: 870,
+    mayor: 'Badpapasmurf',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'New Fulwic',
+    tag: 'new-fulwic',
+    x: 424,
+    y: 2011,
+    mayor: 'Hoxard',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Corvid Isle',
+    tag: 'corvid-isle',
+    x: 3259,
+    y: 1716,
+    mayor: 'Komodo',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Gilead',
+    tag: 'Gilead',
+    x: 3042,
+    y: 301,
+    mayor: 'Will Thalagat',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Maritimus',
+    tag: 'Maritimus',
+    x: 492,
+    y: 293,
+    mayor: 'Hotte',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Flintwood',
+    tag: 'Flintwood',
+    x: 348,
+    y: 1512,
+    mayor: 'Flint',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Port Luna',
+    tag: 'port-luna',
+    x: 780,
+    y: 1118,
+    mayor: 'Seelery',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Chestnut Grove',
+    tag: 'chestnut-grove',
+    x: 1538,
+    y: 3786,
+    mayor: 'Clare',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Waterdeep',
+    tag: 'Waterdeep',
+    x: 582,
+    y: 514,
+    mayor: 'Hammie',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Mor Dragen',
+    tag: 'Mor Dragen',
+    x: 1803,
+    y: 2744,
+    mayor: 'Stormhander',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Hope',
+    tag: 'Hope',
+    x: 689,
+    y: 643,
+    mayor: 'Sabastion',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Citadel dOraguille',
+    tag: 'citadel-doraguille',
+    x: 1246,
+    y: 1844,
+    mayor: 'Kain',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Eletha',
+    tag: 'Eletha',
+    x: 812,
+    y: 1471,
+    mayor: 'Wolfey',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Summertyne Park',
+    tag: 'summertyne-park',
+    x: 2670,
+    y: 941,
+    mayor: 'Summertyne',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Fairbanks',
+    tag: 'Fairbanks',
+    x: 668,
+    y: 257,
+    mayor: 'Wadena',
+    features: [''],
+    type: 'solo'
   }
 ];
