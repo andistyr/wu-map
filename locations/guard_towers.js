@@ -835,7 +835,7 @@ guard_towers = [
     creator: 'Heroic'
   }, {
     x: 904,
-    y: 1288,
+    y: 1228,
     creator: 'Thalos'
   }, {
     x: 951,
