@@ -197,7 +197,7 @@ poi = [
     y: 2741,
     description: 'Constructed by BG Town residents & Yela'
   }, {
-    name: 'Littlehub to Claypit Bridge',
+    name: 'Littlehub to Claypit Bridge #1',
     x: 862, 
     y: 1234,
     type: 'bridge',
@@ -209,5 +209,11 @@ poi = [
     unique: false,
     type: 'statue',
     description: 'Constructed by Indalo'
+  }, {
+    name: 'Littlehub to Claypit Bridge #2',
+    x: 927, 
+    y: 1234,
+    type: 'bridge',
+    description: 'Constructed by Thalos'
   }
 ];
