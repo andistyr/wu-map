@@ -1628,14 +1628,6 @@ deeds = [
     features: ['harbour', 'mailbox', 'recruiting'],
     type: 'solo'
   }, {
-    name: 'Goldstrike Outpost',
-    tag: 'goldstrike-outpost',
-    x: 1487,
-    y: 1055,
-    mayor: 'Minxes',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Gallup',
     tag: 'Gallup',
     x: 797,
@@ -2082,6 +2074,70 @@ deeds = [
     y: 720,
     mayor: 'Devily',
     features: ['trader', 'mailbox'],
+    type: 'large'
+  }, {
+    name: 'Cedar Point',
+    tag: 'cedar_point',
+    x: 3715,
+    y: 1729,
+    mayor: 'Esroh',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Zheddmar',
+    tag: 'Zheddmar',
+    x: 1260,
+    y: 1902,
+    mayor: 'Wreck',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Strangeland',
+    tag: 'Strangeland',
+    x: 1245,
+    y: 1929,
+    mayor: 'Ivanthestrange',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Oink Oink',
+    tag: 'oink_oink',
+    x: 2181,
+    y: 995,
+    mayor: 'Ginger',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Skara Brae',
+    tag: 'skara_brae',
+    x: 830,
+    y: 1604,
+    mayor: 'Valdora',
+    features: ['inn', 'mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Miner\'s Respite',
+    tag: 'miners_respite',
+    x: 3254,
+    y: 2270,
+    mayor: 'Kyllian',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Fishing post',
+    tag: 'fishing_post',
+    x: 386,
+    y: 369,
+    mayor: 'Gladiatora',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Gravelton',
+    tag: 'Gravelton',
+    x: 504,
+    y: 442,
+    mayor: 'Splarmus',
+    features: [''],
     type: 'solo'
   }
 ];
