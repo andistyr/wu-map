@@ -448,13 +448,6 @@ deeds = [
     mayor: 'Akali',
     type: 'small'
   }, {
-    name: 'Essential Bay',
-    tag: 'essential-bay',
-    x: 607,
-    y: 2001,
-    mayor: 'Essense',
-    type: 'small'
-  }, {
     name: 'Safe Haven',
     tag: 'safe-haven',
     x: 1104,
@@ -1413,14 +1406,6 @@ deeds = [
     features: ['harbour', 'mailbox'],
     type: 'solo'
   }, {
-    name: 'The Mist',
-    tag: 'the-mist',
-    x: 440,
-    y: 483,
-    mayor: 'Rydia',
-    features: ['mailbox'],
-    type: 'solo'
-  }, {
     name: 'Vale of the Silent',
     tag: 'vale-of-the-silent',
     x: 2795,
@@ -1785,7 +1770,7 @@ deeds = [
     tag: 'new-amsterdam',
     x: 1603,
     y: 1548,
-    mayor: 'Utopolis',
+    mayor: 'Utopolis & Aringil',
     features: [''],
     type: 'small'
   }, {
