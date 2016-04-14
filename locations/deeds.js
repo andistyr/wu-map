@@ -362,14 +362,6 @@ deeds = [
     type: 'small',
     features: ['recruiting']
   }, {
-    name: 'The Water Tribe',
-    tag: 'water-tribe',
-    x: 662,
-    y: 774,
-    mayor: 'Apex',
-    type: 'solo',
-    features: ['recruiting']
-  }, {
     name: 'Unknown Xenon Sector',
     tag: 'unknown-xenon-sector',
     x: 3061,
@@ -906,13 +898,6 @@ deeds = [
     mayor: 'Capi',
     features: ['harbour', 'recruiting'],
     type: 'small'
-  }, {
-    name: 'Toxtopia',
-    tag: 'toxtopia',
-    x: 2169,
-    y: 995,
-    mayor: 'ToXiCTBaG',
-    type: 'solo'
   }, {
     name: 'Tulum',
     tag: 'tulum',
