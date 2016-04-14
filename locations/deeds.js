@@ -369,21 +369,6 @@ deeds = [
     mayor: 'Xenon',
     type: 'solo'
   }, {
-    name: 'Seaview Manor',
-    tag: 'seaview-manor',
-    x: 829,
-    y: 1671,
-    mayor: 'Bennetto',
-    type: 'solo'
-  }, {
-    name: 'Grand Lake',
-    tag: 'grand-lake',
-    x: 770,
-    y: 730,
-    mayor: 'Tipsy',
-    type: 'solo',
-    features: ['harbour']
-  }, {
     name: 'Birchton',
     tag: 'birchton',
     mayor: 'Plasson',
@@ -683,14 +668,6 @@ deeds = [
     features: ['harbour', 'inn'],
     type: 'solo'
   }, {
-    name: 'Novus Castellum',
-    tag: 'novus-castellum',
-    x: 578,
-    y: 1990,
-    mayor: 'Kassanrda',
-    features: ['harbour', 'recruiting'],
-    type: 'solo'
-  }, {
     name: 'The Anvil of Ice',
     tag: 'anvil-of-ice',
     x: 1472,
@@ -981,8 +958,8 @@ deeds = [
     features: ['recruiting'],
     type: 'solo'
   }, {
-    name: 'Cameltoe',
-    tag: 'cameltoe',
+    name: 'Camletoe',
+    tag: 'camletoe',
     x: 2061,
     y: 1361,
     mayor: 'Xloey',
