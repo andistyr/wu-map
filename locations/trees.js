@@ -293,5 +293,21 @@ trees = [
     type: 'cedar',
     x: 2346,
     y: 1740
+  }, {
+    type: 'maple',
+    x: 1378,
+    y: 1834
+  }, {
+    type: 'fir',
+    x: 1270,
+    y: 1886
+  }, {
+    type: 'lemon',
+    x: 1306,
+    y: 2150
+  }, {
+    type: 'linden',
+    x: 1164,
+    y: 1723
   }
 ];
