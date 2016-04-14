@@ -551,8 +551,8 @@ guard_towers = [
     y: 3846,
     creator: 'Yela'
   }, {
-    x: 501,
-    y: 438,
+    x: 491,
+    y: 439,
     creator: 'Exor'
   }, {
     x: 429,
