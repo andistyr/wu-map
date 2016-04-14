@@ -1596,22 +1596,6 @@ deeds = [
     features: ['harbour', 'mailbox', 'trader', 'market', 'recruiting'],
     type: 'small'
   }, {
-    name: 'Windermere',
-    tag: 'Windermere',
-    x: 711,
-    y: 2786,
-    mayor: 'xxTemporexx',
-    features: [''],
-    type: 'solo'
-  }, {
-    name: 'Drandor',
-    tag: 'Drandor',
-    x: 1737,
-    y: 805,
-    mayor: 'DieDae',
-    features: [''],
-    type: 'small'
-  }, {
     name: 'Bay of Blades',
     tag: 'bay-of-blades',
     x: 2908,
@@ -2092,11 +2076,11 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Shit Hill Gardens',
+    name: 'Green Hill Gardens',
     tag: 'green_hill_gardens',
     x: 1209,
     y: 720,
-    mayor: 'Catman',
+    mayor: 'Devily',
     features: ['trader', 'mailbox'],
     type: 'solo'
   }
