@@ -2106,5 +2106,13 @@ deeds = [
     mayor: 'Wadena',
     features: [''],
     type: 'solo'
+  }, {
+    name: 'Shit Hill Gardens',
+    tag: 'green_hill_gardens',
+    x: 1209,
+    y: 720,
+    mayor: 'Catman',
+    features: ['trader', 'mailbox'],
+    type: 'solo'
   }
 ];
