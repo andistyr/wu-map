@@ -194,5 +194,20 @@ resources = [
     y: 1316,
     ores: ['iron'],
     features: ['forge', 'large anvil']
+  }, {
+    type: 'tar',
+    x: 2806,
+    y: 902,
+    size: 'small'
+  }, {
+    type: 'tar',
+    x: 3108,
+    y: 1095,
+    size: 'small'
+  }, {
+    type: 'tar',
+    x: 3267,
+    y: 3665,
+    size: 'medium'
   }
 ];
