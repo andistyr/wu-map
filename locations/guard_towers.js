@@ -845,5 +845,29 @@ guard_towers = [
     x: 1013,
     y: 1278,
     creator: 'Thalos'
+  }, {
+    x: 480,
+    y: 298,
+    creator: 'Hotte'
+  }, {
+    x: 2680,
+    y: 957,
+    creator: 'Summertyne'
+  }, {
+    x: 422,
+    y: 335,
+    creator: 'Splarmus'
+  }, {
+    x: 1732,
+    y: 775,
+    creator: 'DieDae'
+  }, {
+    x: 3213,
+    y: 3634,
+    creator: 'Broksonic'
+  }, {
+    x: 3091,
+    y: 3652,
+    creator: 'Broksonic'
   }
 ];
