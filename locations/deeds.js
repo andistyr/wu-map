@@ -1350,14 +1350,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Hillside Hideout',
-    tag: 'hillside-hideout',
-    x: 3100,
-    y: 3031,
-    mayor: 'Nightcore',
-    features: ['recruiting'],
-    type: 'solo'
-  }, {
     name: 'Severo Vostochnaya Metalworks',
     tag: 'severo-vostochnaya-metalworks',
     x: 3252,
@@ -1850,7 +1842,7 @@ deeds = [
     tag: 'Barna',
     x: 742,
     y: 276,
-    mayor: 'Gollun',
+    mayor: 'Golluns',
     features: [''],
     type: 'solo'
   }, {
@@ -2040,8 +2032,8 @@ deeds = [
   }, {
     name: 'Cedar Point',
     tag: 'cedar_point',
-    x: 3715,
-    y: 1729,
+    x: 3722,
+    y: 1723,
     mayor: 'Esroh',
     features: [''],
     type: 'solo'
@@ -2100,6 +2092,102 @@ deeds = [
     y: 442,
     mayor: 'Splarmus',
     features: [''],
+    type: 'solo'
+  }, {
+    name: 'Honor Hold',
+    tag: 'honor_hold',
+    x: 2489,
+    y: 1133,
+    mayor: 'Tekada',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'The Dark Ones',
+    tag: 'the_dark_ones',
+    x: 3422,
+    y: 304,
+    mayor: 'Hordefanatic',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Port Well',
+    tag: 'port_well',
+    x: 810,
+    y: 698,
+    mayor: 'Gollun',
+    features: ['harbour'],
+    type: 'small'
+  }, {
+    name: 'Syballis',
+    tag: 'Syballis',
+    x: 2884,
+    y: 3130,
+    mayor: 'Moumix',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Andyland',
+    tag: 'Andyland',
+    x: 1244,
+    y: 1958,
+    mayor: 'Bluebunny',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Grizzled Gardens',
+    tag: 'Grizzled Gardens',
+    x: 3271,
+    y: 2101,
+    mayor: 'Rodric',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Claustrophobia Wisakurum',
+    tag: 'claustrophobia_wisakurum',
+    x: 1247,
+    y: 957,
+    mayor: 'Wisaku',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Drandor',
+    tag: 'Drandor',
+    x: 2398,
+    y: 3661,
+    mayor: 'Drackoroth',
+    features: ['harbour', 'mailbox', 'recruiting'],
+    type: 'small'
+  }, {
+    name: 'Laeglond',
+    tag: 'Laeglond',
+    x: 3230,
+    y: 1426,
+    mayor: 'Alageth',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Safeholm',
+    tag: 'Safeholm',
+    x: 3788,
+    y: 1806,
+    mayor: 'McWidowmaker',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Minas Auratious',
+    tag: 'minas_auratious',
+    x: 377,
+    y: 1404,
+    mayor: 'Aratone',
+    features: ['harbour', 'recruiting'],
+    type: 'small'
+  }, {
+    name: 'Finger Island',
+    tag: 'Finger Island',
+    x: 3026,
+    y: 3594,
+    mayor: 'Bonze',
+    features: ['harbour', 'market', 'mailbox', 'recruiting'],
     type: 'solo'
   }
 ];
