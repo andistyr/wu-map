@@ -583,9 +583,9 @@ deeds = [
     tag: 'fos-forest-trade-post',
     x: 1118,
     y: 808,
-    mayor: 'StarCrocTheGreat',
+    mayor: 'Manton',
     features: ['trader', 'market', 'mailbox', 'recruiting'],
-    type: 'solo'
+    type: 'small'
   }, {
     name: 'Poseidons Anchorage',
     tag: 'poseidons-anchorage',
@@ -1039,14 +1039,6 @@ deeds = [
     x: 1071,
     y: 677,
     mayor: 'ShangXIq',
-    type: 'solo'
-  }, {
-    name: 'Temmie Village',
-    tag: 'temmie-village',
-    x: 1222,
-    y: 606,
-    mayor: 'Temmie',
-    features: ['recruiting'],
     type: 'solo'
   }, {
     name: 'New Moon Harbour',
@@ -1854,14 +1846,6 @@ deeds = [
     features: ['harbour', 'recruiting'],
     type: 'small'
   }, {
-    name: 'Spuzzum',
-    tag: 'Spuzzum',
-    x: 1447,
-    y: 574,
-    mayor: 'Bravyn',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Aurora Village',
     tag: 'aurora-village',
     x: 564,
@@ -1939,7 +1923,7 @@ deeds = [
     x: 492,
     y: 293,
     mayor: 'Hotte',
-    features: ['recruiting'],
+    features: ['recruiting', 'harbour', 'merchant'],
     type: 'solo'
   }, {
     name: 'Flintwood',
