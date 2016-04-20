@@ -215,5 +215,15 @@ poi = [
     y: 1234,
     type: 'bridge',
     description: 'Constructed by Thalos'
+  }, {
+    name: 'Path of Knowledge Tile',
+    x: 1144,
+    y: 913,
+    unique: false
+  }, {
+    name: 'Path of Love Tile',
+    x: 2982,
+    y: 3565,
+    unique: false
   }
 ];
