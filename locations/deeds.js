@@ -1544,8 +1544,8 @@ deeds = [
   }, {
     name: 'Bay of Blades',
     tag: 'bay-of-blades',
-    x: 2908,
-    y: 347,
+    x: 2911,
+    y: 353,
     mayor: 'Backsnap',
     features: [''],
     type: 'solo'
@@ -2181,5 +2181,30 @@ deeds = [
     mayor: 'Dariusstrongarm',
     features: [''],
     type: 'small'
+  }, {
+    name: 'Sin City',
+    tag: 'Sin City',
+    x: 1752,
+    y: 733,
+    mayor: 'Marcallus',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Serendipity',
+    tag: 'Serendipity',
+    x: 2758,
+    y: 3393,
+    mayor: 'Neofit',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Helheim',
+    tag: 'Helheim',
+    x: 2027,
+    y: 1375,
+    mayor: 'Maxella',
+    features: [''],
+    type: 'small'
   }
+  
 ];
