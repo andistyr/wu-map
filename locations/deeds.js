@@ -1550,14 +1550,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Helheim',
-    tag: 'Helheim',
-    x: 2025,
-    y: 1039,
-    mayor: 'Maxium',
-    features: ['inn', 'mailbox', 'recruiting',],
-    type: 'large'
-  }, {
     name: 'Hunters Rest',
     tag: 'hunters-rest',
     x: 3515,
@@ -2201,10 +2193,41 @@ deeds = [
     name: 'Helheim',
     tag: 'Helheim',
     x: 2027,
-    y: 1375,
+    y: 1039,
     mayor: 'Maxella',
     features: [''],
     type: 'small'
+  }, {
+    name: 'Jellystone Park',
+    tag: 'Jellystone Park',
+    x: 1729,
+    y: 1000,
+    mayor: 'Grapape',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Asgard',
+    tag: 'Asgard',
+    x: 586,
+    y: 638,
+    mayor: 'Jucken',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Shadowkeep',
+    tag: 'Shadowkeep',
+    x: 641,
+    y: 771,
+    mayor: 'Noskull',
+    features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'inn'],
+    type: 'small'
+  }, {
+    name: 'Grand Lakes',
+    tag: 'Grand Lakes',
+    x: 383,
+    y: 565,
+    mayor: 'Tipsy',
+    features: ['trader', 'market'],
+    type: 'small'
   }
-  
 ];
