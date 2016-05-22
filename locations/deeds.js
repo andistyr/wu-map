@@ -2174,4 +2174,13 @@ deeds = [
     features: ['harbour', 'market', 'mailbox', 'recruiting'],
     type: 'solo'
   }
+  , {
+    name: 'Nexus Pirates',
+    tag: 'Nexus Pirates',
+    x: 3596,
+    y: 3537,
+    mayor: 'Dariusstrongarm',
+    features: [''],
+    type: 'small'
+  }
 ];
