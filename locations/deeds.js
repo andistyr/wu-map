@@ -2173,8 +2173,7 @@ deeds = [
     mayor: 'Bonze',
     features: ['harbour', 'market', 'mailbox', 'recruiting'],
     type: 'solo'
-  }
-  , {
+  }, {
     name: 'Nexus Pirates',
     tag: 'Nexus Pirates',
     x: 3596,
