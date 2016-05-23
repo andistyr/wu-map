@@ -2161,8 +2161,8 @@ deeds = [
   }, {
     name: 'Sin City',
     tag: 'Sin City',
-    x: 1752,
-    y: 733,
+    x: 1751,
+    y: 735,
     mayor: 'Marcallus',
     features: [''],
     type: 'solo'
@@ -2225,10 +2225,66 @@ deeds = [
   }, {
     name: 'Direthorn',
     tag: 'Direthorn',
-    x: 1829,
-    y: 975,
+    x: 1826,
+    y: 973,
     mayor: 'Lyden',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Darkenstone',
+    tag: 'Darkenstone',
+    x: 2678,
+    y: 1433,
+    mayor: 'Maxx',
     features: [''],
+    type: 'small'
+  }, {
+    name: 'Darkenstone',
+    tag: 'Darkenstone',
+    x: 2678,
+    y: 1433,
+    mayor: 'Maxx',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Birchvale',
+    tag: 'Birchvale',
+    x: 2131,
+    y: 739,
+    mayor: 'Kinslock',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Danelaw',
+    tag: 'Danelaw',
+    x: 806,
+    y: 270,
+    mayor: 'Halfdan',
+    features: ['harbour', 'viking land'],
+    type: 'solo'
+  }, {
+    name: 'Tumunzahar',
+    tag: 'Tumunzahar',
+    x: 1265,
+    y: 1125,
+    mayor: 'Liability',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Crystal Noctis',
+    tag: 'Crystal Noctis',
+    x: 3399,
+    y: 1390,
+    mayor: 'Nightcross',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Malcolm's Durge',
+    tag: 'Malcolm's Durge',
+    x: 3082,
+    y: 1357,
+    mayor: 'Malcolm',
+    features: ['harbour'],
     type: 'solo'
   }
 ];
