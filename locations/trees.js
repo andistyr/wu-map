@@ -305,5 +305,13 @@ trees = [
     type: 'linden',
     x: 1164,
     y: 1723
+  }, {
+    type: 'olive',
+    x: 2108,
+    y: 1153
+  }, {
+    type: 'cedar',
+    x: 1946,
+    y: 855
   }
 ];
