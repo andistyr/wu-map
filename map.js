@@ -572,7 +572,7 @@ show_deed_info = function(tag) {
 share_deed = function(tag, el) {
   el.style.backgroundColor = 'white';
   el.style.padding = 0;
-  el.innerHTML = '<input type="text" value="http://mizova.github.io/wu-map/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
+  el.innerHTML = '<input type="text" value="http://andistyr.github.io/wu-map/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
   el.childNodes[0].select();
   return false;
 };
