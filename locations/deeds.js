@@ -32,12 +32,6 @@ deeds = [
     mayor: 'Borgal',
     type: 'solo'
   }, {
-    name: 'Cedar Grove',
-    tag: 'cedar-grove',
-    mayor: 'Dallanar',
-    x: 1586,
-    y: 1027
-  }, {
     name: 'Awarthriel\'s Grove',
     tag: 'awarthriels-grove',
     type: 'solo',
@@ -1583,14 +1577,6 @@ deeds = [
     features: ['trader', 'mailbox', 'harbour', 'inn', 'market', 'recruiting'],
     type: 'solo'
   }, {
-    name: 'Quail Ridge',
-    tag: 'quail-ridge',
-    x: 1681,
-    y: 1053,
-    mayor: 'Stargrace',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Pickering Lodge',
     tag: 'pickering-lodge',
     x: 2695,
@@ -2079,14 +2065,30 @@ deeds = [
     features: ['harbour'],
     type: 'small'
   }, {
-    name: 'Syballis',
-    tag: 'Syballis',
+    name: 'Sybaris',
+    tag: 'Sybaris',
     x: 2884,
     y: 3130,
     mayor: 'Moumix',
     features: [''],
     type: 'small'
   }, {
+    name: 'Sybaris Stables',
+    tag: 'Sybaris Stables',
+    x: 2813,
+    y: 3102,
+    mayor: 'Stargrace',
+    features: [''],
+    type: 'small'
+  },{
+    name: 'Andyland',
+    tag: 'Andyland',
+    x: 1244,
+    y: 1958,
+    mayor: 'Bluebunny',
+    features: [''],
+    type: 'solo'
+  },{
     name: 'Andyland',
     tag: 'Andyland',
     x: 1244,
@@ -2308,6 +2310,30 @@ deeds = [
     x: 387,
     y: 1559,
     mayor: 'Tsustyle',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Halderat',
+    tag: 'Halderat',
+    x: 1571,
+    y: 1788,
+    mayor: 'Coady',
+    features: ['harbour'],
+    type: 'solo'
+  }, {
+    name: 'Placid Copse',
+    tag: 'Placid Copse',
+    x: 3304,
+    y: 445,
+    mayor: 'Ataraxia',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Darujhistan',
+    tag: 'Darujhistan',
+    x: 1151,
+    y: 3830,
+    mayor: 'Whiskyjack',
     features: [''],
     type: 'solo'
   }
