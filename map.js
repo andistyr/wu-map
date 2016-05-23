@@ -742,7 +742,7 @@ show_coords_info = function(coords) {
 share_coords = function(x, y, el) {
   el.style.backgroundColor = 'white';
   el.style.padding = 0;
-  el.innerHTML = '<input type="text" value="http://mizova.github.io/wu-map/#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
+  el.innerHTML = '<input type="text" value="http://andistyr.github.io/wu-map/#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
   el.childNodes[0].select();
   return false;
 };
@@ -851,19 +851,19 @@ show_add_form = function(which) {
   url = (function() {
     switch (which) {
       case 'deed':
-        return 'https://docs.google.com/forms/d/1ofnmIyeSMJdhWhZj3mm7wkJHLpYzNJf8lIB8CVOnl7s/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1-GW1P_ImiqjYxCFSQGw_kFRbmDRbbpkCFpRbO82jb8Q/viewform?embedded=true&hl=en';
       case 'tower':
-        return 'https://docs.google.com/forms/d/1dEau_6qvoW0zodbhXVMsh95VahQ41tB-usbUSLVmHKs/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/19Aa-F-2PwTmMEYZTKfbpnjDRvKvBw5ZVwhQSIDPDlQQ/viewform?embedded=true&hl=en';
       case 'mine':
-        return 'https://docs.google.com/forms/d/1d8uhV-dBJLVlo1P8c2iHWIDdh4V9f8ZPvJ_ATzRMhO8/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/10tIQppH5tsWCvMBqsg22dGVS1ids36vcr3BlhnX6aI8/viewform?embedded=true&hl=en';
       case 'resource':
-        return 'https://docs.google.com/forms/d/1YF4TUGBZh13_2EKtf84odvCW9NJVZbxEnfyJXkks5H0/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1NVS_LMy0aTv8OCRnEbhnrS06QRzd40ShioUGi7jo6DU/viewform?embedded=true&hl=en';
       case 'poi':
-        return 'https://docs.google.com/forms/d/1NW-QMvLqAI7vJIIl1m_6rp7Qj9vw5wR8OA2uxOD6C2U/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1vUyH4gGvPyy1GfMRcPZ3ynX7IRh083sIoLyHo8eaeyA/viewform?embedded=true&hl=en';
       case 'trees':
-        return 'https://docs.google.com/forms/d/1eJyjCkoFGl_CMB1rJ2zGxp--k8LQ6sUXfeKfIlIF0-U/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1J8xMFQQZEGQ_5b1bsCX1wltGLz5SoV-MQQKE0ui4DrQ/viewform?embedded=true&hl=en';
       case 'report':
-        return 'https://docs.google.com/forms/d/12AbUjczyae0GvhUUpnjQ0ZXPza8Qrvh_P45sOofX61I/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1R3gbLKem9Hw4cM73pxdqT-LJRtZBxJr_TXTjNGYLcNE/viewform?embedded=true&hl=en';
     }
   })();
   document.getElementById('addform').style.display = 'block';
