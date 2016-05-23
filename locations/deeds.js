@@ -2228,7 +2228,7 @@ deeds = [
     x: 1826,
     y: 973,
     mayor: 'Lyden',
-    features: ['recruiting'],
+    features: ['trader', 'market', 'recruiting', 'mailbox'],
     type: 'small'
   }, {
     name: 'Darkenstone',
@@ -2285,6 +2285,30 @@ deeds = [
     y: 1357,
     mayor: 'Malcolm',
     features: ['harbour'],
+    type: 'solo'
+  }, {
+    name: 'Haerlem Woods',
+    tag: 'Haerlem Woods',
+    x: 914,
+    y: 522,
+    mayor: 'Yoyo',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Lake Market',
+    tag: 'Lake Market',
+    x: 1410,
+    y: 1760,
+    mayor: 'Lady Lake',
+    features: ['trader', 'market', 'inn', 'mailbox'],
+    type: 'small'
+  }, {
+    name: 'Algade',
+    tag: 'Algade',
+    x: 387,
+    y: 1559,
+    mayor: 'Tsustyle',
+    features: [''],
     type: 'solo'
   }
 ];
