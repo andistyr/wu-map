@@ -244,14 +244,6 @@ deeds = [
     y: 3303,
     features: ['harbour']
   }, {
-    name: 'Noskull\'s Harbour Grounds',
-    tag: 'noskulls-harbour-grounds',
-    mayor: 'Noskull',
-    type: 'solo',
-    x: 622,
-    y: 792,
-    features: ['harbour']
-  }, {
     name: 'Griffin\'s Nest Harbour',
     tag: 'griffins-nest-harbour',
     mayor: 'Phoenix',
@@ -712,13 +704,6 @@ deeds = [
     x: 1948,
     y: 730,
     mayor: 'Ravenquoth',
-    type: 'solo'
-  }, {
-    name: 'Rice Paddy',
-    tag: 'rice-paddy',
-    x: 979,
-    y: 712,
-    mayor: 'ChinTuFat',
     type: 'solo'
   }, {
     name: 'Inextremx',
@@ -2216,8 +2201,8 @@ deeds = [
   }, {
     name: 'Shadowkeep',
     tag: 'Shadowkeep',
-    x: 641,
-    y: 771,
+    x: 646,
+    y: 760,
     mayor: 'Noskull',
     features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'inn'],
     type: 'small'
@@ -2229,5 +2214,21 @@ deeds = [
     mayor: 'Tipsy',
     features: ['trader', 'market'],
     type: 'small'
+  }, {
+    name: 'Halls of Magranon',
+    tag: 'Halls of Magranon',
+    x: 2381,
+    y: 2355,
+    mayor: 'Samsonn',
+    features: ['trader', 'merchant', 'inn'],
+    type: 'large'
+  }, {
+    name: 'Direthorn',
+    tag: 'Direthorn',
+    x: 1829,
+    y: 975,
+    mayor: 'Lyden',
+    features: [''],
+    type: 'solo'
   }
 ];
