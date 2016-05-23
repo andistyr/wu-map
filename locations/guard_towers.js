@@ -869,5 +869,17 @@ guard_towers = [
     x: 3091,
     y: 3652,
     creator: 'Broksonic'
+  }, {
+    x: 869,
+    y: 2281,
+    creator: 'Opene, Snidor'
+  }, {
+    x: 825,
+    y: 1179,
+    creator: 'Tranderas'
+  }, {
+    x: 1659,
+    y: 1067,
+    creator: 'Durtak'
   }
 ];
