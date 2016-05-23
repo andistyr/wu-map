@@ -2279,8 +2279,8 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Malcolm's Durge',
-    tag: 'Malcolm's Durge',
+    name: 'Malcolm\'s Durge',
+    tag: 'Malcolm\'s Durge',
     x: 3082,
     y: 1357,
     mayor: 'Malcolm',
