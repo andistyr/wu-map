@@ -99,14 +99,6 @@ deeds = [
     y: 3533,
     features: ['harbour', 'resources']
   }, {
-    name: 'Lake View',
-    tag: 'lake-view',
-    type: 'solo',
-    mayor: 'Lisa',
-    x: 3177,
-    y: 1872,
-    features: ['harbour', 'resources']
-  }, {
     name: 'Lake Side',
     tag: 'lake-side',
     type: 'solo',
@@ -2074,14 +2066,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Grizzled Gardens',
-    tag: 'Grizzled Gardens',
-    x: 3271,
-    y: 2101,
-    mayor: 'Rodric',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Claustrophobia Wisakurum',
     tag: 'claustrophobia_wisakurum',
     x: 1247,
@@ -2359,6 +2343,62 @@ deeds = [
     x: 1246,
     y: 425,
     mayor: 'Burnet',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Havoccity',
+    tag: 'Havoccity',
+    x: 1490,
+    y: 1843,
+    mayor: 'Havoc',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Dragonville',
+    tag: 'Dragonville',
+    x: 1543,
+    y: 1868,
+    mayor: 'dragonx',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Sehrimnir',
+    tag: 'Sehrimnir',
+    x: 586,
+    y: 665,
+    mayor: 'Fenrisulven',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Waters Edge',
+    tag: 'Waters Edge',
+    x: 1459,
+    y: 3783,
+    mayor: 'Paraclete',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Crimson Point',
+    tag: 'Crimson Point',
+    x: 2024,
+    y: 1236,
+    mayor: 'JacobCrimson',
+    features: ['harbour', 'inn', 'recruiting'],
+    type: 'small'
+  }, {
+    name: 'Public docks north',
+    tag: 'Public docks north',
+    x: 1164,
+    y: 385,
+    mayor: 'mjmalt',
+    features: ['harbour', 'mailbox'],
+    type: 'small'
+  }, {
+    name: 'Lokin',
+    tag: 'Lokin',
+    x: 2095,
+    y: 1540,
+    mayor: 'Keran',
     features: [''],
     type: 'solo'
   }

@@ -885,5 +885,41 @@ guard_towers = [
     x: 1451,
     y: 755,
     creator: 'Emass'
+  }, {
+    x: 3565,
+    y: 1830,
+    creator: 'Esroh'
+  }, {
+    x: 3515,
+    y: 1830,
+    creator: 'Esroh'
+  }, {
+    x: 3465,
+    y: 1830,
+    creator: 'Esroh'
+  }, {
+    x: 3415,
+    y: 1830,
+    creator: 'Esroh'
+  }, {
+    x: 3365,
+    y: 1830,
+    creator: 'Esroh'
+  }, {
+    x: 3315,
+    y: 1830,
+    creator: 'Esroh'
+  }, {
+    x: 1338,
+    y: 1702,
+    creator: 'Elfin'
+  }, {
+    x: 1435,
+    y: 1826,
+    creator: 'Elfin'
+  }, {
+    x: 1506,
+    y: 11791,
+    creator: 'Havoc'
   }
 ];
