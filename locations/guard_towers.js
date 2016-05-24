@@ -907,7 +907,7 @@ guard_towers = [
     creator: 'Esroh'
   }, {
     x: 3315,
-    y: 1830,
+    y: 1834,
     creator: 'Esroh'
   }, {
     x: 1338,
