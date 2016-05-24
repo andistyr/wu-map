@@ -1194,13 +1194,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'The Clay Port',
-    tag: 'the-clay-port',
-    x: 3476,
-    y: 1746,
-    mayor: 'Feii',
-    type: 'small'
-  }, {
     name: 'Providence',
     tag: 'providence',
     x: 2744,
@@ -1215,7 +1208,7 @@ deeds = [
     y: 2469,
     mayor: 'Opene',
     features: ['recruiting'],
-    type: 'solo'
+    type: 'small'
   }, {
     name: 'Wolfmere',
     tag: 'wolfmere',
@@ -1303,14 +1296,6 @@ deeds = [
     y: 1400,
     mayor: 'Falco',
     features: ['harbour'],
-    type: 'solo'
-  }, {
-    name: 'Port Azeur',
-    tag: 'port-azeur',
-    x: 3424,
-    y: 1814,
-    mayor: 'Azeuras',
-    features: ['recruiting'],
     type: 'solo'
   }, {
     name: 'Wolfmere',
@@ -1553,14 +1538,6 @@ deeds = [
     features: ['mailbox'],
     type: 'small'
   }, {
-    name: 'Mordownia',
-    tag: 'Mordownia',
-    x: 3240,
-    y: 1819,
-    mayor: 'MrChris',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Waitsburg',
     tag: 'Waitsburg',
     x: 1209,
@@ -1598,8 +1575,8 @@ deeds = [
     x: 3742,
     y: 2763,
     mayor: 'TomServo',
-    features: [''],
-    type: 'solo'
+    features: ['harbour', 'mailbox'],
+    type: 'small'
   }, {
     name: 'Hopes corner',
     tag: 'hopes-corner',
@@ -1978,11 +1955,11 @@ deeds = [
     type: 'large'
   }, {
     name: 'Cedar Point',
-    tag: 'cedar_point',
-    x: 3722,
+    tag: 'Cedar_point',
+    x: 3517,
     y: 1723,
-    mayor: 'Esroh',
-    features: [''],
+    mayor: 'Collada',
+    features: ['mailbox'],
     type: 'solo'
   }, {
     name: 'Zheddmar',
@@ -2235,15 +2212,7 @@ deeds = [
   }, {
     name: 'Darkenstone',
     tag: 'Darkenstone',
-    x: 2678,
-    y: 1433,
-    mayor: 'Maxx',
-    features: [''],
-    type: 'small'
-  }, {
-    name: 'Darkenstone',
-    tag: 'Darkenstone',
-    x: 2678,
+    x: 2783,
     y: 1433,
     mayor: 'Maxx',
     features: [''],
@@ -2334,6 +2303,62 @@ deeds = [
     x: 1151,
     y: 3830,
     mayor: 'Whiskyjack',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Hedon',
+    tag: 'Hedon',
+    x: 713,
+    y: 2782,
+    mayor: 'OLloyd',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Antalya Beach',
+    tag: 'Antalya Beach',
+    x: 944,
+    y: 338,
+    mayor: 'mehmet',
+    features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'recruiting'],
+    type: 'large'
+  }, {
+    name: 'Puerto Abeto',
+    tag: 'Puerto Abeto',
+    x: 3241,
+    y: 1837,
+    mayor: 'Esroh',
+    features: ['mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Sanctum',
+    tag: 'Sanctum',
+    x: 1457,
+    y: 729,
+    mayor: 'Cilerium',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Black Templars',
+    tag: 'Black Templars',
+    x: 1524,
+    y: 444,
+    mayor: 'Zeafaw',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Home',
+    tag: 'Home',
+    x: 1496,
+    y: 1792,
+    mayor: 'Svartaifal',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Marish',
+    tag: 'The Marish',
+    x: 1246,
+    y: 425,
+    mayor: 'Burnet',
     features: [''],
     type: 'solo'
   }

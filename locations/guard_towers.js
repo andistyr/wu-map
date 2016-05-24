@@ -881,5 +881,9 @@ guard_towers = [
     x: 1659,
     y: 1067,
     creator: 'Durtak'
+  }, {
+    x: 1451,
+    y: 755,
+    creator: 'Emass'
   }
 ];

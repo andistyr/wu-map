@@ -225,5 +225,15 @@ poi = [
     x: 2982,
     y: 3565,
     unique: false
+  }, {
+    name: 'Path of Love Tile',
+    x: 1491,
+    y: 1817,
+    unique: false
+  }, {
+    name: 'Path of Knowledge Tile',
+    x: 1437,
+    y: 1817,
+    unique: false
   }
 ];
