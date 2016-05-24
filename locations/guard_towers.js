@@ -919,7 +919,7 @@ guard_towers = [
     creator: 'Elfin'
   }, {
     x: 1506,
-    y: 11791,
+    y: 1791,
     creator: 'Havoc'
   }
 ];
