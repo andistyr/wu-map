@@ -1932,7 +1932,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Green Hill Gardens',
-    tag: 'green_hill_gardens',
+    tag: 'green-hill-gardens',
     x: 1209,
     y: 720,
     mayor: 'Devily',
@@ -1940,7 +1940,7 @@ deeds = [
     type: 'large'
   }, {
     name: 'Cedar Point',
-    tag: 'Cedar_point',
+    tag: 'Cedar-point',
     x: 3517,
     y: 1723,
     mayor: 'Collada',
@@ -1964,7 +1964,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Oink Oink',
-    tag: 'oink_oink',
+    tag: 'oink-oink',
     x: 2181,
     y: 995,
     mayor: 'Ginger',
@@ -1972,7 +1972,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'Skara Brae',
-    tag: 'skara_brae',
+    tag: 'skara-brae',
     x: 830,
     y: 1604,
     mayor: 'Valdora',
@@ -1980,7 +1980,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Miner\'s Respite',
-    tag: 'miners_respite',
+    tag: 'miners-respite',
     x: 3254,
     y: 2270,
     mayor: 'Kyllian',
@@ -1988,7 +1988,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Fishing post',
-    tag: 'fishing_post',
+    tag: 'fishing-post',
     x: 386,
     y: 369,
     mayor: 'Gladiatora',
@@ -2004,7 +2004,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Honor Hold',
-    tag: 'honor_hold',
+    tag: 'honor-hold',
     x: 2489,
     y: 1133,
     mayor: 'Tekada',
@@ -2012,7 +2012,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'The Dark Ones',
-    tag: 'the_dark_ones',
+    tag: 'the-dark-ones',
     x: 3422,
     y: 304,
     mayor: 'Hordefanatic',
@@ -2020,7 +2020,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'Port Well',
-    tag: 'port_well',
+    tag: 'port-well',
     x: 810,
     y: 698,
     mayor: 'Gollun',
@@ -2036,7 +2036,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'Sybaris Stables',
-    tag: 'Sybaris Stables',
+    tag: 'Sybaris-Stables',
     x: 2813,
     y: 3102,
     mayor: 'Stargrace',
@@ -2060,7 +2060,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Claustrophobia Wisakurum',
-    tag: 'claustrophobia_wisakurum',
+    tag: 'claustrophobia-wisakurum',
     x: 1247,
     y: 957,
     mayor: 'Wisaku',
@@ -2092,7 +2092,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'Minas Auratious',
-    tag: 'minas_auratious',
+    tag: 'minas-auratious',
     x: 377,
     y: 1404,
     mayor: 'Aratone',
@@ -2108,7 +2108,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Nexus Pirates',
-    tag: 'Nexus Pirates',
+    tag: 'nexus-pirates',
     x: 3596,
     y: 3537,
     mayor: 'Dariusstrongarm',
@@ -2140,7 +2140,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'Jellystone Park',
-    tag: 'Jellystone Park',
+    tag: 'jellystone-park',
     x: 1729,
     y: 1000,
     mayor: 'Grapape',
@@ -2164,7 +2164,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'Grand Lakes',
-    tag: 'Grand Lakes',
+    tag: 'grand-lakes',
     x: 383,
     y: 565,
     mayor: 'Tipsy',
@@ -2172,7 +2172,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'Halls of Magranon',
-    tag: 'Halls of Magranon',
+    tag: 'halls-of-magranon',
     x: 2381,
     y: 2355,
     mayor: 'Samsonn',
@@ -2220,7 +2220,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'Crystal Noctis',
-    tag: 'crystal_noctis',
+    tag: 'crystal-noctis',
     x: 3399,
     y: 1390,
     mayor: 'Nightcross',
@@ -2228,7 +2228,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Malcolm\'s Durge',
-    tag: 'malcolm\'s_durge',
+    tag: 'malcolm\'s-durge',
     x: 3082,
     y: 1357,
     mayor: 'Malcolm',
@@ -2236,7 +2236,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Haerlem Woods',
-    tag: 'haerlem_woods',
+    tag: 'haerlem-woods',
     x: 914,
     y: 522,
     mayor: 'Yoyo',
@@ -2244,7 +2244,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Lake Market',
-    tag: 'lake_market',
+    tag: 'lake-market',
     x: 1410,
     y: 1760,
     mayor: 'Lady Lake',
@@ -2284,7 +2284,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Antalya Beach',
-    tag: 'antalya_beach',
+    tag: 'antalya-beach',
     x: 944,
     y: 338,
     mayor: 'mehmet',
@@ -2292,7 +2292,7 @@ deeds = [
     type: 'large'
   }, {
     name: 'Puerto Abeto',
-    tag: 'puerto_abeto',
+    tag: 'puerto-abeto',
     x: 3241,
     y: 1837,
     mayor: 'Esroh',
@@ -2308,7 +2308,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Black Templars',
-    tag: 'black_templars',
+    tag: 'black-templars',
     x: 1524,
     y: 444,
     mayor: 'Zeafaw',
@@ -2324,7 +2324,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'The Marish',
-    tag: 'the_marish',
+    tag: 'the-marish',
     x: 1246,
     y: 425,
     mayor: 'Burnet',
@@ -2356,7 +2356,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Waters Edge',
-    tag: 'waters_edge',
+    tag: 'waters-edge',
     x: 1459,
     y: 3783,
     mayor: 'Paraclete',
@@ -2364,7 +2364,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Crimson Point',
-    tag: 'crimson_point',
+    tag: 'crimson-point',
     x: 2024,
     y: 1236,
     mayor: 'JacobCrimson',
@@ -2372,7 +2372,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'Public docks north',
-    tag: 'public_docks_north',
+    tag: 'public-docks-north',
     x: 1164,
     y: 385,
     mayor: 'mjmalt',
@@ -2388,7 +2388,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Coyote Bluff',
-    tag: 'coyote_bluff',
+    tag: 'coyote-bluff',
     x: 1008,
     y: 1886,
     mayor: 'Herawyn',
@@ -2396,7 +2396,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Effulgent Grove',
-    tag: 'effulgent_grove',
+    tag: 'effulgent-grove',
     x: 3227,
     y: 448,
     mayor: 'Halcyon',
