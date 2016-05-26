@@ -2220,7 +2220,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'Crystal Noctis',
-    tag: 'Crystal Noctis',
+    tag: 'crystal_noctis',
     x: 3399,
     y: 1390,
     mayor: 'Nightcross',
@@ -2228,7 +2228,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Malcolm\'s Durge',
-    tag: 'Malcolm\'s Durge',
+    tag: 'malcolm\'s_durge',
     x: 3082,
     y: 1357,
     mayor: 'Malcolm',
@@ -2236,7 +2236,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Haerlem Woods',
-    tag: 'Haerlem Woods',
+    tag: 'haerlem_woods',
     x: 914,
     y: 522,
     mayor: 'Yoyo',
@@ -2244,7 +2244,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Lake Market',
-    tag: 'Lake Market',
+    tag: 'lake_market',
     x: 1410,
     y: 1760,
     mayor: 'Lady Lake',
@@ -2284,7 +2284,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Antalya Beach',
-    tag: 'Antalya Beach',
+    tag: 'antalya_beach',
     x: 944,
     y: 338,
     mayor: 'mehmet',
@@ -2292,7 +2292,7 @@ deeds = [
     type: 'large'
   }, {
     name: 'Puerto Abeto',
-    tag: 'Puerto Abeto',
+    tag: 'puerto_abeto',
     x: 3241,
     y: 1837,
     mayor: 'Esroh',
@@ -2308,7 +2308,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Black Templars',
-    tag: 'Black Templars',
+    tag: 'black_templars',
     x: 1524,
     y: 444,
     mayor: 'Zeafaw',
@@ -2324,7 +2324,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'The Marish',
-    tag: 'The Marish',
+    tag: 'the_marish',
     x: 1246,
     y: 425,
     mayor: 'Burnet',
@@ -2356,7 +2356,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Waters Edge',
-    tag: 'Waters Edge',
+    tag: 'waters_edge',
     x: 1459,
     y: 3783,
     mayor: 'Paraclete',
@@ -2364,7 +2364,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Crimson Point',
-    tag: 'Crimson Point',
+    tag: 'crimson_point',
     x: 2024,
     y: 1236,
     mayor: 'JacobCrimson',
@@ -2372,7 +2372,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'Public docks north',
-    tag: 'Public docks north',
+    tag: 'public_docks_north',
     x: 1164,
     y: 385,
     mayor: 'mjmalt',
@@ -2388,7 +2388,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Coyote Bluff',
-    tag: 'Coyote Bluff',
+    tag: 'coyote_bluff',
     x: 1008,
     y: 1886,
     mayor: 'Herawyn',
@@ -2396,7 +2396,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Effulgent Grove',
-    tag: 'Effulgent Grove',
+    tag: 'effulgent_grove',
     x: 3227,
     y: 448,
     mayor: 'Halcyon',
