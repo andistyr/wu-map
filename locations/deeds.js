@@ -550,13 +550,6 @@ deeds = [
     mayor: 'Deltagirl',
     type: 'solo'
   }, {
-    name: 'A Small Settlement',
-    tag: 'small-settlement',
-    x: 478,
-    y: 2450,
-    mayor: 'Thorgar',
-    type: 'small'
-  }, {
     name: 'Hell\'s Pass',
     tag: 'fos-forest-trade-post',
     x: 1118,
@@ -2274,14 +2267,6 @@ deeds = [
     features: ['harbour'],
     type: 'solo'
   }, {
-    name: 'Placid Copse',
-    tag: 'Placid Copse',
-    x: 3304,
-    y: 445,
-    mayor: 'Ataraxia',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Darujhistan',
     tag: 'Darujhistan',
     x: 1151,
@@ -2399,6 +2384,22 @@ deeds = [
     x: 2095,
     y: 1540,
     mayor: 'Keran',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Coyote Bluff',
+    tag: 'Coyote Bluff',
+    x: 1008,
+    y: 1886,
+    mayor: 'Herawyn',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Effulgent Grove',
+    tag: 'Effulgent Grove',
+    x: 3227,
+    y: 448,
+    mayor: 'Halcyon',
     features: [''],
     type: 'solo'
   }
