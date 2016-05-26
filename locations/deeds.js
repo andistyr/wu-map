@@ -2402,5 +2402,13 @@ deeds = [
     mayor: 'Halcyon',
     features: [''],
     type: 'solo'
+  }, {
+    name: 'ShadowTown',
+    tag: 'ShadowTown',
+    x: 1281,
+    y: 3782,
+    mayor: 'ShadowRanger',
+    features: [''],
+    type: 'solo'
   }
 ];
