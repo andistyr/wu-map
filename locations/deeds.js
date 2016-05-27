@@ -670,11 +670,11 @@ deeds = [
     mayor: 'Ptahil',
     type: 'solo'
   }, {
-    name: 'Northshore Docks',
-    tag: 'northshore-docks',
-    x: 1410,
-    y: 355,
-    mayor: 'Borieck',
+    name: 'Northside Docks',
+    tag: 'northside-docks',
+    x: 1419,
+    y: 367,
+    mayor: 'Jaldeer',
     features: ['harbour'],
     type: 'solo'
   }, {
@@ -2410,5 +2410,21 @@ deeds = [
     mayor: 'ShadowRanger',
     features: [''],
     type: 'solo'
+  }, {
+    name: 'Andistyr\'s Stables',
+    tag: 'Andistyr\'s-Stables',
+    x: 1017,
+    y: 712,
+    mayor: 'Borieck',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Jotunnheim',
+    tag: 'Jotunnheim',
+    x: 1728,
+    y: 899,
+    mayor: 'Maxium',
+    features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'recruiting', 'inn'],
+    type: 'large'
   }
 ];
