@@ -2412,7 +2412,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Andistyr\'s Stables',
-    tag: 'Andistyr\'s-Stables',
+    tag: 'Andistyrs-Stables',
     x: 1017,
     y: 712,
     mayor: 'Borieck',
