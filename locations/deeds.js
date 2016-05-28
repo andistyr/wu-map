@@ -2443,3 +2443,5 @@ deeds = [
     features: ['inn', 'mailbox'],
     type: 'large'
   }
+  
+ ]; 
