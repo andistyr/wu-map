@@ -2426,5 +2426,20 @@ deeds = [
     mayor: 'Maxium',
     features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'recruiting', 'inn'],
     type: 'large'
+  }, {
+    name: 'Ubik\'s Keep',
+    tag: 'Ubiks-Keep',
+    x: 2642,
+    y: 1473,
+    mayor: 'Saturnal',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Lasthope',
+    tag: 'Lasthope',
+    x: 2983,
+    y: 843,
+    mayor: 'UpToDate',
+    features: ['inn', 'mailbox'],
+    type: 'large'
   }
-];

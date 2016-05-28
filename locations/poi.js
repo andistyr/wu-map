@@ -235,5 +235,16 @@ poi = [
     x: 1437,
     y: 1817,
     unique: false
+  }, {
+    name: 'Colossus of Maxium',
+    x: 1726,
+    y: 885,
+    type: 'statue',
+    description: 'Maxium'
+  }, {
+    name: 'Path of Knowledge Tile',
+    x: 3265,
+    y: 1422,
+    unique: false
   }
 ];
