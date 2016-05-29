@@ -925,5 +925,29 @@ guard_towers = [
     x: 950,
     y: 414,
     creator: 'Dominikk'
+  }, {
+    x: 3439,
+    y: 450,
+    creator: 'Hordefanatic'
+  }, {
+    x: 3439,
+    y: 400,
+    creator: 'Hordefanatic'
+  }, {
+    x: 3439,
+    y: 350,
+    creator: 'Hordefanatic'
+  }, {
+    x: 3439,
+    y: 299,
+    creator: 'Creeper'
+  }, {
+    x: 2983,
+    y: 843,
+    creator: 'Muggelmama, UpToDate'
+  }, {
+    x: 3230,
+    y: 450,
+    creator: 'Ataraxias'
   }
 ];

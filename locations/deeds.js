@@ -2442,6 +2442,22 @@ deeds = [
     mayor: 'UpToDate',
     features: ['inn', 'mailbox'],
     type: 'large'
+  }, {
+    name: 'Skooterville',
+    tag: 'Skooterville',
+    x: 3288,
+    y: 2508,
+    mayor: 'SkooterWicky',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Amaranthine',
+    tag: 'Amaranthine',
+    x: 3387,
+    y: 1439,
+    mayor: 'Caelin',
+    features: [''],
+    type: 'solo'
   }
   
  ]; 
