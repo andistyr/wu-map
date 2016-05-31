@@ -2458,6 +2458,22 @@ deeds = [
     mayor: 'Caelin',
     features: [''],
     type: 'solo'
+  }, {
+    name: 'Citta Foresta',
+    tag: 'Citta Foresta',
+    x: 1294,
+    y: 900,
+    mayor: 'SkoonahyVampire',
+    features: ['merchant'],
+    type: 'small'
+  }, {
+    name: 'Flynn\'s Retreat',
+    tag: 'Flynns-Retreat',
+    x: 962,
+    y: 845,
+    mayor: 'Flynn',
+    features: [''],
+    type: 'solo'
   }
   
  ]; 
