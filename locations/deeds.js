@@ -334,8 +334,8 @@ deeds = [
   }, {
     name: 'Liberty',
     tag: 'liberty',
-    x: 540,
-    y: 767,
+    x: 556,
+    y: 731,
     mayor: 'Metrix',
     type: 'small',
     features: ['recruiting']
@@ -2472,6 +2472,30 @@ deeds = [
     x: 962,
     y: 845,
     mayor: 'Flynn',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Halderat',
+    tag: 'Halderat',
+    x: 1571,
+    y: 1788,
+    mayor: 'Coady',
+    features: ['harbour', 'recruiting'],
+    type: 'small'
+  }, {
+    name: 'The Iron Hills',
+    tag: 'The Iron Hills',
+    x: 1103,
+    y: 1733,
+    mayor: 'GZgaming',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Tryhardiarion',
+    tag: 'Tryhardiarion',
+    x: 423,
+    y: 351,
+    mayor: 'Grukhan',
     features: [''],
     type: 'solo'
   }

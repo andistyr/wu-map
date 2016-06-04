@@ -949,5 +949,13 @@ guard_towers = [
     x: 3230,
     y: 450,
     creator: 'Ataraxias'
+  }, {
+    x: 1613,
+    y: 1499,
+    creator: 'Aringil'
+  }, {
+    x: 1438,
+    y: 729,
+    creator: 'Cilerium'
   }
 ];
