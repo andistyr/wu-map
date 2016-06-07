@@ -957,5 +957,13 @@ guard_towers = [
     x: 1438,
     y: 729,
     creator: 'Cilerium'
+  }, {
+    x: 1967,
+    y: 2327,
+    creator: 'Cilerium'
+  }, {
+    x: 2056,
+    y: 2325,
+    creator: 'Cilerium'
   }
 ];

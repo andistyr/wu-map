@@ -2498,6 +2498,14 @@ deeds = [
     mayor: 'Grukhan',
     features: [''],
     type: 'solo'
+  }, {
+    name: 'Valhalla Port',
+    tag: 'Valhalla Port',
+    x: 1687,
+    y: 1055,
+    mayor: 'Brandenbburg',
+    features: ['harbour', 'recruiting'],
+    type: 'solo'
   }
   
  ]; 
