@@ -1125,9 +1125,9 @@ deeds = [
   }, {
     name: 'Karthwasten',
     tag: 'karthwasten',
-    x: 787,
-    y: 517,
-    mayor: 'Karthannar',
+    x: 1256,
+    y: 755,
+    mayor: 'Golbez',
     features: ['mailbox'],
     type: 'solo'
   }, {
@@ -1903,7 +1903,7 @@ deeds = [
     tag: 'citadel-doraguille',
     x: 1246,
     y: 1844,
-    mayor: 'Kain',
+    mayor: 'Karthannar',
     features: [''],
     type: 'solo'
   }, {
@@ -2460,7 +2460,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Citta Foresta',
-    tag: 'Citta Foresta',
+    tag: 'Citta-Foresta',
     x: 1294,
     y: 900,
     mayor: 'SkoonahyVampire',
@@ -2484,7 +2484,7 @@ deeds = [
     type: 'small'
   }, {
     name: 'The Iron Hills',
-    tag: 'The Iron Hills',
+    tag: 'The-Iron-Hills',
     x: 1103,
     y: 1733,
     mayor: 'GZgaming',
@@ -2500,11 +2500,35 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Valhalla Port',
-    tag: 'Valhalla Port',
+    tag: 'Valhalla-Port',
     x: 1687,
     y: 1055,
     mayor: 'Brandenbburg',
     features: ['harbour', 'recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Paddle Pond Ranch',
+    tag: 'Paddle-Pond-Ranch',
+    x: 1782,
+    y: 1065,
+    mayor: 'Niinjaturtle',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Bakti',
+    tag: 'Bakti',
+    x: 918,
+    y: 1806,
+    mayor: 'Rennuir',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Mist',
+    tag: 'The-Mist',
+    x: 807,
+    y: 1818,
+    mayor: 'Rydia',
+    features: ['mailbox'],
     type: 'solo'
   }
   
