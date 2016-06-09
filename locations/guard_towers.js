@@ -977,5 +977,9 @@ guard_towers = [
     x: 2143,
     y: 2268,
     creator: 'Cilerium'
+  }, {
+    x: 1732,
+    y: 1275,
+    creator: 'Moumix'
   }
 ];

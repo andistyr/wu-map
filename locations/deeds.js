@@ -128,14 +128,6 @@ deeds = [
     x: 414,
     y: 430
   }, {
-    name: 'Dragon\'s Breath Castle',
-    tag: 'dragons-breath-castle',
-    type: 'solo',
-    mayor: 'Devily',
-    x: 3226,
-    y: 3260,
-    features: ['harbour']
-  }, {
     name: 'Oak Shores',
     tag: 'oak-shores',
     type: 'small',
@@ -535,14 +527,6 @@ deeds = [
     features: ['harbour', 'mailbox', 'market', 'inn'],
     type: 'large'
   }, {
-    name: 'Easthaven Trade Harbour',
-    tag: 'easthaven-trade-harbour',
-    x: 3540,
-    y: 3362,
-    mayor: 'Noskull',
-    features: ['market', 'harbour', 'inn'],
-    type: 'solo'
-  }, {
     name: 'Magnolia Mines',
     tag: 'magnolia-mines',
     x: 808,
@@ -766,13 +750,6 @@ deeds = [
     mayor: 'Zeafaw',
     features: ['recruiting'],
     type: 'small'
-  }, {
-    name: 'Moon Tree',
-    tag: 'moon-tree',
-    x: 3665,
-    y: 2393,
-    mayor: 'Sazaraki',
-    type: 'solo'
   }, {
     name: 'Link\'s Spot',
     tag: 'links-spot',
@@ -1762,15 +1739,7 @@ deeds = [
     mayor: 'Golluns',
     features: [''],
     type: 'solo'
-  }, {
-    name: 'Bay of Sweds',
-    tag: 'bay-of-sweds',
-    x: 1825,
-    y: 421,
-    mayor: 'Juniormad',
-    features: ['harbour', 'recruiting'],
-    type: 'small'
-  }, {
+  } {
     name: 'Aurora Village',
     tag: 'aurora-village',
     x: 564,
