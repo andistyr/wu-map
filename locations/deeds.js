@@ -1739,7 +1739,7 @@ deeds = [
     mayor: 'Golluns',
     features: [''],
     type: 'solo'
-  } {
+  }, {
     name: 'Aurora Village',
     tag: 'aurora-village',
     x: 564,
@@ -2011,15 +2011,7 @@ deeds = [
     mayor: 'Stargrace',
     features: [''],
     type: 'small'
-  },{
-    name: 'Andyland',
-    tag: 'Andyland',
-    x: 1244,
-    y: 1958,
-    mayor: 'Bluebunny',
-    features: [''],
-    type: 'solo'
-  },{
+  }, {
     name: 'Andyland',
     tag: 'Andyland',
     x: 1244,
