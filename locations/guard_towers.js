@@ -981,5 +981,14 @@ guard_towers = [
     x: 1732,
     y: 1275,
     creator: 'Moumix'
+  }, {
+    x: 554,
+    y: 2410,
+    creator: 'Snidor-Opene'
+  }, {
+    x: 457,
+    y: 2466,
+    creator: 'Engineer'
   }
-];
+  
+  ];

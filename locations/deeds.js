@@ -2491,6 +2491,22 @@ deeds = [
     mayor: 'Rydia',
     features: ['mailbox'],
     type: 'solo'
+  }, {
+    name: 'Vivec',
+    tag: 'Vivec',
+    x: 3604,
+    y: 2740,
+    mayor: 'Chachka',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Nettlesnook',
+    tag: 'Nettlesnook',
+    x: 3546,
+    y: 3357,
+    mayor: 'Nettles',
+    features: [''],
+    type: 'solo'
   }
   
  ]; 
