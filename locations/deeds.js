@@ -2507,6 +2507,14 @@ deeds = [
     mayor: 'Nettles',
     features: [''],
     type: 'solo'
+  }, {
+    name: 'Trinity',
+    tag: 'Trinity',
+    x: 2350,
+    y: 630,
+    mayor: 'Trin',
+    features: [''],
+    type: 'solo'
   }
   
  ]; 
