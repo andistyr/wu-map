@@ -2462,9 +2462,9 @@ deeds = [
   }, {
     name: 'Valhalla Port',
     tag: 'Valhalla-Port',
-    x: 1687,
-    y: 1055,
-    mayor: 'Brandenbburg',
+    x: 1661,
+    y: 1051,
+    mayor: 'Brandenburg',
     features: ['harbour', 'recruiting'],
     type: 'solo'
   }, {
@@ -2513,6 +2513,38 @@ deeds = [
     x: 2350,
     y: 630,
     mayor: 'Trin',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Cedar Livings',
+    tag: 'Cedar-Livings',
+    x: 3355,
+    y: 1991,
+    mayor: 'Wmdx',
+    features: ['harbour', 'recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Sweetwater',
+    tag: 'Sweetwater',
+    x: 3600,
+    y: 3382,
+    mayor: 'Czara',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Raven/'s Retreat',
+    tag: 'Ravens-Retreat',
+    x: 1789,
+    y: 2571,
+    mayor: 'Darkraven',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Tisaldor',
+    tag: 'Tisaldor',
+    x: 2347,
+    y: 650,
+    mayor: 'Insomnia',
     features: [''],
     type: 'solo'
   }

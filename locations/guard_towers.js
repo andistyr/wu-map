@@ -989,6 +989,30 @@ guard_towers = [
     x: 457,
     y: 2466,
     creator: 'Engineer'
+  }, {
+    x: 3265,
+    y: 1834,
+    creator: 'Esroh'
+  }, {
+    x: 3129,
+    y: 1850,
+    creator: 'Esroh'
+  }, {
+    x: 3079,
+    y: 1850,
+    creator: 'Esroh'
+  }, {
+    x: 3615,
+    y: 1880,
+    creator: 'Esroh'
+  }, {
+    x: 3615,
+    y: 1930,
+    creator: 'Esroh'
+  }, {
+    x: 3635,
+    y: 1980,
+    creator: 'Esroh'
   }
   
   ];
