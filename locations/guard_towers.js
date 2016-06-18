@@ -1010,9 +1010,17 @@ guard_towers = [
     y: 1930,
     creator: 'Esroh'
   }, {
-    x: 3635,
+    x: 3615,
     y: 1980,
     creator: 'Esroh'
+  }, {
+    x: 1608,
+    y: 1649,
+    creator: 'Aringil'
+  }, {
+    x: 1606,
+    y: 1599,
+    creator: 'Utopolis'
   }
   
   ];

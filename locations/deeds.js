@@ -751,13 +751,6 @@ deeds = [
     features: ['recruiting'],
     type: 'small'
   }, {
-    name: 'Link\'s Spot',
-    tag: 'links-spot',
-    x: 1865,
-    y: 3852,
-    mayor: 'Link',
-    type: 'small'
-  }, {
     name: 'Aquashire',
     tag: 'aquashire',
     x: 376,
@@ -2249,7 +2242,7 @@ deeds = [
     x: 944,
     y: 338,
     mayor: 'mehmet',
-    features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'recruiting'],
+    features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'recruiting', 'inn'],
     type: 'large'
   }, {
     name: 'Puerto Abeto',
