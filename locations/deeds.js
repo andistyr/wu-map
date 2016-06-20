@@ -2540,6 +2540,70 @@ deeds = [
     mayor: 'Insomnia',
     features: [''],
     type: 'solo'
+  }, {
+    name: 'Meadowview',
+    tag: 'Meadowview',
+    x: 709,
+    y: 1148,
+    mayor: 'Viktor',
+    features: ['mailbox'],
+    type: 'small'
+  }, {
+    name: 'Cedar Livings',
+    tag: 'Cedar-Livings',
+    x: 3327,
+    y: 1949,
+    mayor: 'Wmdx',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Cerys Corner',
+    tag: 'Cerys-Corner',
+    x: 523,
+    y: 1209,
+    mayor: '',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Aeswythe',
+    tag: 'Aeswythe',
+    x: 1940,
+    y: 575,
+    mayor: 'JackBinimbul',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Proscris',
+    tag: 'Proscris',
+    x: 1249,
+    y: 632,
+    mayor: 'Jennie',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Cedarwood',
+    tag: 'Cedarwood',
+    x: 3780,
+    y: 2333,
+    mayor: 'Tebari',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Green Plains Farms',
+    tag: 'Green-Plains-Farms',
+    x: 2229,
+    y: 700,
+    mayor: 'Kasildun',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Pipka By The Sea',
+    tag: 'Pipka-By-The-Sea',
+    x: 3227,
+    y: 3265,
+    mayor: 'Pipka',
+    features: [''],
+    type: 'solo'
   }
   
  ]; 
