@@ -1893,14 +1893,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Green Hill Gardens',
-    tag: 'green-hill-gardens',
-    x: 1209,
-    y: 720,
-    mayor: 'Devily',
-    features: ['trader', 'mailbox'],
-    type: 'large'
-  }, {
     name: 'Cedar Point',
     tag: 'Cedar-point',
     x: 3517,
@@ -2573,14 +2565,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Proscris',
-    tag: 'Proscris',
-    x: 1249,
-    y: 632,
-    mayor: 'Jennie',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Cedarwood',
     tag: 'Cedarwood',
     x: 3780,
@@ -2604,6 +2588,46 @@ deeds = [
     mayor: 'Pipka',
     features: [''],
     type: 'solo'
+  }, {
+    name: 'Powerstone Keep',
+    tag: 'Powerstone-Keep',
+    x: 2425,
+    y: 2391,
+    mayor: 'Powerslave',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Nightwatch',
+    tag: 'Nightwatch',
+    x: 2399,
+    y: 1175,
+    mayor: 'Prophet',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Shadowfen',
+    tag: 'Shadowfen',
+    x: 737,
+    y: 1197,
+    mayor: 'Jennie',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Settlement Of The Jaded Wanderer',
+    tag: 'The-Settlement-Of-The-Jaded-Wanderer',
+    x: 2912,
+    y: 543,
+    mayor: 'Wanderer',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Jaded Land Of Dinor',
+    tag: 'Jaded-Land-Of-Dinor',
+    x: 2951,
+    y: 546,
+    mayor: 'Dinor',
+    features: [''],
+    type: 'small'
   }
   
  ]; 
