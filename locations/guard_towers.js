@@ -1014,13 +1014,29 @@ guard_towers = [
     y: 1980,
     creator: 'Esroh'
   }, {
-    x: 1608,
+    x: 1617,
     y: 1649,
     creator: 'Aringil'
   }, {
     x: 1606,
     y: 1599,
     creator: 'Utopolis'
+  }, {
+    x: 2403,
+    y: 2349,
+    creator: 'Arduwin'
+  }, {
+    x: 2467,
+    y: 2386,
+    creator: 'Arduwin'
+  }, {
+    x: 2530,
+    y: 2376,
+    creator: 'Arduwin'
+  }, {
+    x: 2379,
+    y: 2261,
+    creator: 'Arduwin'
   }
   
   ];
