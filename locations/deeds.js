@@ -2628,6 +2628,38 @@ deeds = [
     mayor: 'Dinor',
     features: [''],
     type: 'small'
+  }, {
+    name: 'Yoda\'s Jaded Settlement',
+    tag: 'Yodas-Jaded-Settlement',
+    x: 2872,
+    y: 555,
+    mayor: 'Yoda',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Northlet Camp',
+    tag: 'Northlet-Camp',
+    x: 1294,
+    y: 442,
+    mayor: 'Villiame',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Meadowview Stables',
+    tag: 'Meadowview-Stables',
+    x: 751,
+    y: 1126,
+    mayor: 'Neville',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Jaded Docks',
+    tag: 'The-Jaded-Docks',
+    x: 2717,
+    y: 607,
+    mayor: 'Senitor',
+    features: ['Harbour'],
+    type: 'solo'
   }
   
  ]; 
