@@ -2660,6 +2660,22 @@ deeds = [
     mayor: 'Senitor',
     features: ['Harbour'],
     type: 'solo'
+  }, {
+    name: 'Eastwood Ranch',
+    tag: 'Eastwood-Ranch',
+    x: 3854,
+    y: 2453,
+    mayor: 'Amberly',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Waterside Village',
+    tag: 'Waterside-Village',
+    x: 571,
+    y: 1209,
+    mayor: 'Natt',
+    features: [''],
+    type: 'small'
   }
   
  ]; 
