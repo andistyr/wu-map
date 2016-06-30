@@ -2242,7 +2242,7 @@ deeds = [
     x: 3241,
     y: 1837,
     mayor: 'Esroh',
-    features: ['mailbox'],
+    features: ['mailbox', 'harbour'],
     type: 'solo'
   }, {
     name: 'Sanctum',
@@ -2674,6 +2674,30 @@ deeds = [
     x: 571,
     y: 1209,
     mayor: 'Natt',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Pikov',
+    tag: 'Pikov',
+    x: 1048,
+    y: 1360,
+    mayor: 'Dezrodino',
+    features: ['inn'],
+    type: 'small'
+  }, {
+    name: 'Blackbeak Consortium',
+    tag: 'Blackbeak-Consortium',
+    x: 2906,
+    y: 718,
+    mayor: 'Dreadnought',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Enlightenend',
+    tag: 'Enlightenend',
+    x: 1337,
+    y: 1675,
+    mayor: 'Shalwind',
     features: [''],
     type: 'small'
   }
