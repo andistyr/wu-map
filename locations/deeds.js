@@ -10,6 +10,14 @@ deeds = [
     y: 760,
     features: ['trader', 'merchant', 'market', 'harbour', 'resources', 'recruiting']
   }, {
+    name: 'Haven',
+    tag: 'Haven',
+    mayor: 'Dominikk',
+    type: 'large',
+    x: 3796,
+    y: 766,
+    features: ['trader', 'merchant', 'market', 'harbour', 'resources', 'recruiting']
+  }, {
     name: 'Little Patch of Heaven',
     tag: 'little-patch-of-heaven',
     mayor: 'Jaede',
