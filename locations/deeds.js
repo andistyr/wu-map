@@ -2708,6 +2708,22 @@ deeds = [
     mayor: 'Shalwind',
     features: [''],
     type: 'small'
+  }, {
+    name: 'The Roost',
+    tag: 'The-Roost',
+    x: 704,
+    y: 506,
+    mayor: 'Dragonskin',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'GreenSide',
+    tag: 'GreenSide',
+    x: 3428,
+    y: 364,
+    mayor: 'SparkyRich',
+    features: [''],
+    type: 'small'
   }
   
  ]; 
