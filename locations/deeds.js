@@ -2724,6 +2724,22 @@ deeds = [
     mayor: 'SparkyRich',
     features: [''],
     type: 'small'
+  }, {
+    name: 'Nikki',
+    tag: 'Nikki',
+    x: 1618,
+    y: 1629,
+    mayor: 'Nikki',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Erehwon',
+    tag: 'Erehwon',
+    x: 524,
+    y: 1156,
+    mayor: '',
+    features: [''],
+    type: 'small'
   }
   
  ]; 

@@ -246,5 +246,21 @@ poi = [
     x: 3265,
     y: 1422,
     unique: false
+  }, {
+    name: 'Colossus of Fo',
+    x: 958,
+    y: 279,
+    type: 'statue',
+    description: 'Constructed by'
+  }, {
+    name: 'BG Cave Canal Exit',
+    x: 1210,
+    y: 1021,
+    description: 'Constructed by Dominikk'
+  }, {
+    name: 'BG Cave Canal Exit',
+    x: 1579,
+    y: 1025,
+    description: 'Constructed by Dominikk'
   }
 ];
