@@ -2740,6 +2740,22 @@ deeds = [
     mayor: '',
     features: [''],
     type: 'small'
+  }, {
+    name: 'Midian',
+    tag: 'Midian',
+    x: 1058,
+    y: 1739,
+    mayor: 'Hylsy',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Redemption',
+    tag: 'Redemption',
+    x: 1154,
+    y: 3024,
+    mayor: 'Revvenant',
+    features: [''],
+    type: 'small'
   }
   
  ]; 
