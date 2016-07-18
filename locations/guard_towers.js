@@ -1037,6 +1037,14 @@ guard_towers = [
     x: 2379,
     y: 2261,
     creator: 'Arduwin'
+  }, {
+    x: 751,
+    y: 1144,
+    creator: 'Sconig'
+  }, {
+    x: 2732,
+    y: 603,
+    creator: 'Wanderer'
   }
   
   ];

@@ -2756,6 +2756,22 @@ deeds = [
     mayor: 'Revvenant',
     features: [''],
     type: 'small'
+  }, {
+    name: 'Tombstone',
+    tag: 'Tombstone',
+    x: 3162,
+    y: 940,
+    mayor: 'Django',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Villa Orchidea',
+    tag: 'Villa-Orchidea',
+    x: 1465,
+    y: 3231,
+    mayor: 'Ixolan',
+    features: ['recruiting'],
+    type: 'small'
   }
   
  ]; 
