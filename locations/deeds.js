@@ -2772,6 +2772,22 @@ deeds = [
     mayor: 'Ixolan',
     features: ['recruiting'],
     type: 'small'
+  }, {
+    name: 'Sinthoras',
+    tag: 'Sinthoras',
+    x: 1863,
+    y: 1119,
+    mayor: 'Vraccas',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Grand Lakes',
+    tag: 'Grand-Lakes',
+    x: 852,
+    y: 549,
+    mayor: 'Tipsy',
+    features: [''],
+    type: 'small'
   }
   
  ]; 

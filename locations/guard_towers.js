@@ -1045,6 +1045,22 @@ guard_towers = [
     x: 2732,
     y: 603,
     creator: 'Wanderer'
+  }, {
+    x: 3814,
+    y: 1831,
+    creator: 'Mcwidowmaker'
+  }, {
+    x: 3761,
+    y: 1831,
+    creator: 'Mcwidowmaker'
+  }, {
+    x: 3666,
+    y: 1831,
+    creator: 'Mcwidowmaker'
+  }, {
+    x: 3615,
+    y: 1831,
+    creator: 'Mcwidowmaker'
   }
   
   ];
