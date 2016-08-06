@@ -2788,6 +2788,62 @@ deeds = [
     mayor: 'Tipsy',
     features: [''],
     type: 'small'
+  }, {
+    name: 'LWW Harbour',
+    tag: 'LWW-Harbour',
+    x: 3314,
+    y: 2064,
+    mayor: 'Talaku',
+    features: ['harbour', 'inn'],
+    type: 'small'
+  }, {
+    name: 'Vale of the Fallen',
+    tag: 'Vale-of-the-Fallen',
+    x: 3664,
+    y: 2391,
+    mayor: 'Axinex',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Vale of the Silent',
+    tag: 'Vale-of-the-Silent',
+    x: 2795,
+    y: 553,
+    mayor: 'Proteus',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'BlackCrest',
+    tag: 'BlackCrest',
+    x: 3170,
+    y: 1445,
+    mayor: 'QUEENIEMAZ',
+    features: ['harbour'],
+    type: 'solo'
+  }, {
+    name: 'Keepers Peak',
+    tag: 'Keepers-Peak',
+    x: 3010,
+    y: 2820,
+    mayor: 'Lemarkhan',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Grangus\'s Keep',
+    tag: 'Granguss-Keep',
+    x: 1298,
+    y: 1739,
+    mayor: 'Grangus',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Enlightenend\'s Mountain Dwelling',
+    tag: 'Enlightenends-Mountain-Dwelling',
+    x: 1278,
+    y: 1598,
+    mayor: 'Privet',
+    features: [''],
+    type: 'solo'
   }
   
  ]; 

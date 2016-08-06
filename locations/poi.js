@@ -262,5 +262,25 @@ poi = [
     x: 1579,
     y: 1025,
     description: 'Constructed by Dominikk'
-  }
+  }, {
+    name: 'Path of Power Tile',
+    x: 3005,
+    y: 2819,
+    unique: false
+  }, {
+    name: 'Path of Love Tile',
+    x: 955,
+    y: 792,
+    unique: false
+  }, {
+    name: 'Lady of the Lake Boattunnel - South entrance',
+    x: 1546,
+    y: 1552,
+    description: ''
+  }, {
+    name: 'Lady of the Lake Boattunnel - North entrance',
+    x: 1546,
+    y: 1025,
+    description: ''
+  },
 ];
