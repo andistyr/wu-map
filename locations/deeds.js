@@ -4,7 +4,7 @@ deeds = [
    {
     name: 'Haven',
     tag: 'Haven',
-    mayor: 'Dominikk',
+    mayor: 'Engineer',
     type: 'large',
     x: 3796,
     y: 766,
