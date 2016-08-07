@@ -327,7 +327,7 @@ init = function() {
     if (typeof console !== "undefined" && console !== null) {
       console.log('Updating stats.json');
     }
-    return pegasus('http://188.226.191.32:8000/stats.json').then(update_stats, function(err, xhr) {
+    return pegasus('http://5.45.109.131/unlimited/tiler01/stats.json').then(update_stats, function(err, xhr) {
       if (typeof console !== "undefined" && console !== null) {
         return console.log(err);
       }
