@@ -8,7 +8,7 @@ deeds = [
     type: 'large',
     x: 3796,
     y: 766,
-    features: ['trader', 'merchant', 'market', 'harbour', 'resources', 'recruiting']
+    features: ['trader', 'merchant', 'market', 'harbour', 'resources']
   }, {
     name: 'New Town',
     tag: 'new-town',
@@ -16,7 +16,7 @@ deeds = [
     type: 'large',
     x: 906,
     y: 760,
-    features: ['trader', 'merchant', 'market', 'harbour', 'resources', 'recruiting']
+    features: ['trader', 'merchant', 'market', 'harbour', 'resources']
   }, {
     name: 'Little Patch of Heaven',
     tag: 'little-patch-of-heaven',
