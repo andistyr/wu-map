@@ -232,7 +232,7 @@ init = ->
 	# Update info every minute
 	setInterval ->
 		console.log 'Updating stats.json' if console?
-		pegasus('http://188.226.191.32:8000/stats.json').then update_stats, (err, xhr) ->
+		pegasus('http://5.45.109.131/unlimited/tiler01/stats.json').then update_stats, (err, xhr) ->
 			console.log err if console?
 	, 61000
 
