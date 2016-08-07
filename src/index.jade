@@ -5,7 +5,7 @@ html
 		meta(name='viewport' content='width=device-width, initial-scale=1')
 
 		script function pegasus(a,b){return b=new XMLHttpRequest,b.open("GET",a),a=[],b.onreadystatechange=b.then=function(c,d,e,f){if(c&&c.call&&(a=[,c,d]),4==b.readyState&&(e=a[0|b.status/200])){try{f=JSON.parse(b.responseText)}catch(g){f=null}e(f,b)}},b.send(),b}
-		script var statsRequest = pegasus('http://188.226.191.32:8000/stats.json');
+		script var statsRequest = pegasus('http://5.45.109.131/unlimited/tiler01/stats.json');
 
 		link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
 		link(rel='stylesheet' href='style.css')
