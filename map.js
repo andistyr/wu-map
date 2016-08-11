@@ -142,7 +142,7 @@ init = function() {
             return 16384;
         }
       })();
-      return 'http://188.226.191.32:8000/tile_' + zoom + '_' + coord.x + '_' + coord.y + '.png';
+      return 'http://5.45.109.131/unlimited/tiler01/maps/tile_' + zoom + '_' + coord.x + '_' + coord.y + '.png';
     },
     tileSize: new google.maps.Size(256, 256),
     maxZoom: 3,
