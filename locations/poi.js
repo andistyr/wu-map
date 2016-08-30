@@ -48,7 +48,6 @@ poi = [
     name: 'Observatory Tower',
     x: 989,
     y: 773,
-    type: 'tower',
     description: 'Climb this tower to the vista on the top floor. You can see New Town, North Lake and a rich collection of deeds along the eastern bound highway.'
   }, {
     name: 'Path of Love Tile',
