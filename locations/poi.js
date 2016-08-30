@@ -191,5 +191,96 @@ poi = [
     y: 1305,
     type: 'bridge',
     description: 'Constructed by Xloey'
+  }, {
+    name: 'BG Tunnel - South Entrance',
+    x: 1170,
+    y: 2741,
+    description: 'Constructed by BG Town residents & Yela'
+  }, {
+    name: 'Littlehub to Claypit Bridge #1',
+    x: 862,
+    y: 1234,
+    type: 'bridge',
+    description: 'Constructed by Thalos'
+  }, {
+    name: 'Colossus of Fo',
+    x: 1177,
+    y: 853,
+    unique: false,
+    type: 'statue',
+    description: 'Constructed by Indalo'
+  }, {
+    name: 'Littlehub to Claypit Bridge #2',
+    x: 927,
+    y: 1234,
+    type: 'bridge',
+    description: 'Constructed by Thalos'
+  }, {
+    name: 'Path of Knowledge Tile',
+    x: 1144,
+    y: 913,
+    unique: false
+  }, {
+    name: 'Path of Love Tile',
+    x: 2982,
+    y: 3565,
+    unique: false
+  }, {
+    name: 'Path of Love Tile',
+    x: 1491,
+    y: 1817,
+    unique: false
+  }, {
+    name: 'Path of Knowledge Tile',
+    x: 1437,
+    y: 1817,
+    unique: false
+  }, {
+    name: 'Colossus of Maxium',
+    x: 1726,
+    y: 885,
+    type: 'statue',
+    description: 'Maxium'
+  }, {
+    name: 'Path of Knowledge Tile',
+    x: 3265,
+    y: 1422,
+    unique: false
+  }, {
+    name: 'Colossus of Fo',
+    x: 958,
+    y: 279,
+    type: 'statue',
+    description: 'Constructed by'
+  }, {
+    name: 'BG Cave Canal Exit',
+    x: 1210,
+    y: 1021,
+    description: 'Constructed by Dominikk'
+  }, {
+    name: 'BG Cave Canal Exit',
+    x: 1579,
+    y: 1025,
+    description: 'Constructed by Dominikk'
+  }, {
+    name: 'Path of Power Tile',
+    x: 3005,
+    y: 2819,
+    unique: false
+  }, {
+    name: 'Path of Love Tile',
+    x: 955,
+    y: 792,
+    unique: false
+  }, {
+    name: 'Lady of the Lake Boattunnel - South entrance',
+    x: 1546,
+    y: 1552,
+    description: ''
+  }, {
+    name: 'Lady of the Lake Boattunnel - North entrance',
+    x: 1546,
+    y: 1025,
+    description: ''
   }
 ];
