@@ -1423,14 +1423,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Lakeview',
-    tag: 'Lakeview',
-    x: 1590,
-    y: 3190,
-    mayor: 'Bravyn',
-    features: ['recruiting'],
-    type: 'small'
-  }, {
     name: 'On Golden Pond',
     tag: 'on-golden-pond',
     x: 1624,
@@ -1604,14 +1596,6 @@ deeds = [
     x: 1352,
     y: 930,
     mayor: 'Frisk',
-    features: [''],
-    type: 'solo'
-  }, {
-    name: 'Pendragon Wallow',
-    tag: 'pendragon-wallow',
-    x: 3705,
-    y: 870,
-    mayor: 'Badpapasmurf',
     features: [''],
     type: 'solo'
   }, {
@@ -2631,11 +2615,11 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'BlackCrest',
-    tag: 'BlackCrest',
+    name: 'Blackcrest',
+    tag: 'Blackcrest',
     x: 3170,
     y: 1445,
-    mayor: 'QUEENIEMAZ',
+    mayor: 'Queeniemaz',
     features: ['harbour'],
     type: 'solo'
   }, {
@@ -2660,6 +2644,158 @@ deeds = [
     x: 1278,
     y: 1598,
     mayor: 'Privet',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Booty Bay',
+    tag: 'Booty-Bay',
+    x: 690,
+    y: 1010,
+    mayor: 'Grimm',
+    features: ['harbour', 'mailbox'],
+    type: 'small'
+  }, {
+    name: 'Farm Forty Two',
+    tag: 'farm-forty-two',
+    x: 2296,
+    y: 677,
+    mayor: 'Armadillo',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Cottage Evergreen',
+    tag: 'cottage-evergreen',
+    x: 434,
+    y: 3317,
+    mayor: 'Michielbos',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Ravens Bluff',
+    tag: 'ravens-bluff',
+    x: 3705,
+    y: 1321,
+    mayor: 'Xaviiska',
+    features: ['mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Barbarians Retreat',
+    tag: 'barbarians-retreat',
+    x: 1293,
+    y: 1828,
+    mayor: 'Arbanka',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Barbarians',
+    tag: 'barbarians',
+    x: 1338,
+    y: 1831,
+    mayor: 'Xavisha',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Fort Grante',
+    tag: 'fort-grante',
+    x: 2396,
+    y: 972,
+    mayor: 'Grante',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Jaded Docks',
+    tag: 'the-jaded-docks',
+    x: 2717,
+    y: 607,
+    mayor: 'Senitor',
+    features: ['mailbox', 'harbour', 'recruiting'],
+    type: 'small'
+  }, {
+    name: 'Gypsies Retreat',
+    tag: 'gypsies-retreat',
+    x: 3843,
+    y: 1035,
+    mayor: 'Zoro',
+    features: ['merchant', 'mailbox', 'harbour'],
+    type: 'solo'
+  }, {
+    name: 'Water Seven',
+    tag: 'water-seven',
+    x: 3501,
+    y: 393,
+    mayor: 'Bratokar',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'World Inferno Friendship Society',
+    tag: 'world-inferno-friendship-society',
+    x: 3690,
+    y: 1218,
+    mayor: 'Tatris',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Love Patch',
+    tag: 'love-patch',
+    x: 3723,
+    y: 704,
+    mayor: 'Mariposa',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Dragons Rest',
+    tag: 'dragons-rest',
+    x: 1805,
+    y: 3814,
+    mayor: 'Lizardtamer',
+    features: ['harbour', 'mailbox', 'recruiting'],
+    type: 'small'
+  }, {
+    name: 'Edema Ruh',
+    tag: 'edema-ruh',
+    x: 3637,
+    y: 744,
+    mayor: 'Jerospa',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Rizla',
+    tag: 'rizla',
+    x: 3741,
+    y: 718,
+    mayor: 'Devildognl',
+    features: ['harbour'],
+    type: 'small'
+  }, {
+    name: 'Rizlanl',
+    tag: 'rizlanl',
+    x: 3743,
+    y: 743,
+    mayor: 'Hansnl',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Maplewood Village',
+    tag: 'maplewood-village',
+    x: 3775,
+    y: 825,
+    mayor: 'Notmichiel',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Lakeview',
+    tag: 'lakeview',
+    x: 3272,
+    y: 3145,
+    mayor: 'Mysterie',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Concrete Jungle',
+    tag: 'concrete-jungle',
+    x: 3705,
+    y: 870,
+    mayor: 'Rambo',
     features: [''],
     type: 'solo'
   }
