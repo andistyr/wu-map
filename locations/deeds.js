@@ -32,13 +32,6 @@ deeds = [
     mayor: 'Borgal',
     type: 'solo'
   }, {
-    name: 'Awarthriel\'s Grove',
-    tag: 'awarthriels-grove',
-    type: 'solo',
-    mayor: 'DruidNature',
-    x: 2458,
-    y: 3322
-  }, {
     name: 'Symphonies End',
     tag: 'symphonies-end',
     type: 'small',
@@ -331,13 +324,6 @@ deeds = [
     mayor: 'Xenon',
     type: 'solo'
   }, {
-    name: 'Birchton',
-    tag: 'birchton',
-    mayor: 'Plasson',
-    type: 'solo',
-    x: 3754,
-    y: 2612
-  }, {
     name: 'Alexondrea Port',
     tag: 'alexondrea-port',
     x: 1105,
@@ -358,13 +344,6 @@ deeds = [
     y: 3080,
     mayor: 'Liam',
     type: 'solo'
-  }, {
-    name: 'Blackmere Basin',
-    tag: 'blackmere-basin',
-    x: 796,
-    y: 1581,
-    owner: 'Ratzo & Yelruh',
-    type: 'small'
   }, {
     name: 'Homewood',
     tag: 'homewood',
@@ -439,13 +418,6 @@ deeds = [
     mayor: 'Dragoniq',
     type: 'small'
   }, {
-    name: 'Sylvan',
-    tag: 'sylvan',
-    x: 988,
-    y: 825,
-    mayor: 'Ziemo',
-    type: 'solo'
-  }, {
     name: 'Bloodbath and Beyond',
     tag: 'bloodbath-and-beyond',
     x: 1934,
@@ -472,13 +444,6 @@ deeds = [
     x: 3095,
     y: 2737,
     mayor: 'Guffil',
-    type: 'solo'
-  }, {
-    name: 'Dlowville',
-    tag: 'dlowville',
-    x: 1023,
-    y: 1223,
-    mayor: 'Dlow',
     type: 'solo'
   }, {
     name: 'Indalo Farm',
@@ -541,13 +506,6 @@ deeds = [
     mayor: 'Weatherwax',
     features: ['harbour'],
     type: 'solo'
-  }, {
-    name: 'Serpent Bay Port',
-    tag: 'serpent-bay-port',
-    x: 816,
-    y: 2684,
-    mayor: 'Freelance',
-    type: 'small'
   }, {
     name: 'Seal Cove',
     tag: 'seal-cove',
@@ -614,14 +572,6 @@ deeds = [
     y: 2293,
     mayor: 'ElofValantor',
     type: 'solo'
-  }, {
-    name: 'Well of Souls',
-    tag: 'well-of-souls',
-    x: 2715,
-    y: 682,
-    mayor: 'Zealord',
-    features: ['harbour', 'recruiting'],
-    type: 'small'
   }, {
     name: 'Pirate Bay',
     tag: 'pirate-bay',
@@ -736,14 +686,6 @@ deeds = [
     features: ['recruiting'],
     type: 'small'
   }, {
-    name: 'Aquashire',
-    tag: 'aquashire',
-    x: 376,
-    y: 2454,
-    mayor: 'LordOfRus',
-    features: ['harbour', 'recruiting'],
-    type: 'solo'
-  }, {
     name: 'Point of No Return',
     tag: 'point-of-no-return',
     x: 540,
@@ -763,21 +705,6 @@ deeds = [
     x: 818,
     y: 1188,
     mayor: 'Tranderas',
-    type: 'solo'
-  }, {
-    name: 'Blaine',
-    tag: 'blaine',
-    x: 529,
-    y: 647,
-    mayor: 'ChrisDolmeth',
-    features: ['recruiting'],
-    type: 'small'
-  }, {
-    name: 'Firefly',
-    tag: 'firefly',
-    x: 1094,
-    y: 616,
-    mayor: 'Tiega',
     type: 'solo'
   }, {
     name: 'Castle Glittercrown',
@@ -892,14 +819,6 @@ deeds = [
     mayor: 'Nana',
     type: 'solo'
   }, {
-    name: 'Moonwood',
-    tag: 'moonwood',
-    x: 1590,
-    y: 3708,
-    mayor: 'Draedo',
-    features: ['recruiting'],
-    type: 'solo'
-  }, {
     name: 'Raven Watch',
     tag: 'raven-watch',
     x: 3152,
@@ -937,21 +856,6 @@ deeds = [
     mayor: 'Artenn',
     features: [''],
     type: 'solo'
-  }, {
-    name: 'Lakeridge',
-    tag: 'lakeridge',
-    x: 630,
-    y: 1680,
-    mayor: 'Kamaka',
-    type: 'solo'
-  }, {
-    name: 'To Mato Plant',
-    tag: 'to-mato-plant',
-    x: 901,
-    y: 584,
-    mayor: 'Mato',
-    features: ['recruiting'],
-    type: 'small'
   }, {
     name: 'Spring\'s Reserve',
     tag: 'springs-reserve',
@@ -1024,13 +928,6 @@ deeds = [
     mayor: 'Easy',
     type: 'solo'
   }, {
-    name: 'Tevinter',
-    tag: 'tevinter',
-    x: 2841,
-    y: 1754,
-    mayor: 'Lokce',
-    type: 'solo'
-  }, {
     name: 'Shadows Rest',
     tag: 'shadows-rest',
     x: 866,
@@ -1045,14 +942,6 @@ deeds = [
     mayor: 'Lyandar',
     features: [''],
     type: 'solo'
-  }, {
-    name: 'Citadel of the Order of Khaos',
-    tag: 'citadel-of-the-order-of-khaos',
-    x: 2242,
-    y: 1311,
-    mayor: 'Korvalia',
-    features: [''],
-    type: 'small'
   }, {
     name: 'Port Phobic',
     tag: 'port-phobic',
@@ -1093,14 +982,6 @@ deeds = [
     mayor: 'Czemiel',
     features: [''],
     type: 'solo'
-  }, {
-    name: 'Valaria',
-    tag: 'valaria',
-    x: 1655,
-    y: 856,
-    mayor: 'Edson',
-    features: ['recruiting'],
-    type: 'small'
   }, {
     name: 'Little Norway',
     tag: 'little-norway',
@@ -1182,14 +1063,6 @@ deeds = [
     features: [''],
     type: 'small'
   }, {
-    name: 'Raven Rock',
-    tag: 'raven-rock',
-    x: 3347,
-    y: 3825,
-    mayor: 'ShadowWarrior',
-    features: [''],
-    type: 'small'
-  }, {
     name: 'Bilgemoor',
     tag: 'bilgemoor',
     x: 1638,
@@ -1254,14 +1127,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Severo Vostochnaya Metalworks',
-    tag: 'severo-vostochnaya-metalworks',
-    x: 3252,
-    y: 824,
-    mayor: 'Dzhra',
-    features: [''],
-    type: 'small'
-  }, {
     name: 'Ravenedge',
     tag: 'Ravenedge',
     x: 1751,
@@ -1300,14 +1165,6 @@ deeds = [
     y: 553,
     mayor: 'Axinex',
     features: [''],
-    type: 'solo'
-  }, {
-    name: 'Mount Everlong',
-    tag: 'mount-everlong',
-    x: 2908,
-    y: 1914,
-    mayor: 'Azeuras',
-    features: ['recruiting'],
     type: 'solo'
   }, {
     name: 'Springton',
