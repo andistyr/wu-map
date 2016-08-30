@@ -89,7 +89,7 @@ init = ->
 				when 2 then 4096
 				when 3 then 8192
 				when 4 then 16384
-			return 'http://188.226.191.32:8000/tile_' + zoom + '_' + coord.x + '_' + coord.y + '.png'
+			return 'http://5.45.109.131/unlimited/tiler01/maps/tile_' + zoom + '_' + coord.x + '_' + coord.y + '.png'
 		tileSize: new google.maps.Size(256, 256)
 		maxZoom: 3
 		minZoom: 0
@@ -456,7 +456,7 @@ show_deed_info = (tag) ->
 share_deed = (tag, el) ->
 	el.style.backgroundColor = 'white'
 	el.style.padding = 0
-	el.innerHTML = '<input type="text" value="http://woubuc.github.io/wu-map/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />'
+	el.innerHTML = '<input type="text" value="http://esroh4759.github.io/wu-map/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />'
 	el.childNodes[0].select()
 	return false
 
@@ -589,7 +589,7 @@ show_coords_info = (coords) ->
 share_coords = (x, y, el) ->
 	el.style.backgroundColor = 'white'
 	el.style.padding = 0
-	el.innerHTML = '<input type="text" value="http://woubuc.github.io/wu-map/#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />'
+	el.innerHTML = '<input type="text" value="http://esroh4759.github.io/wu-map/#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />'
 	el.childNodes[0].select()
 	return false
 
