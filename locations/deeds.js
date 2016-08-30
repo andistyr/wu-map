@@ -2,27 +2,20 @@ var deeds;
 
 deeds = [
   {
+    name: 'Haven',
+    tag: 'haven',
+    mayor: 'Engineer',
+    x: 3796,
+    y: 766,
+    features: ['trader', 'merchant', 'market', 'harbour', 'resources']
+  }, {
     name: 'New Town',
     tag: 'new-town',
     mayor: 'Dominikk',
     type: 'large',
     x: 906,
     y: 760,
-    features: ['trader', 'merchant', 'market', 'harbour', 'resources', 'recruiting']
-  }, {
-    name: 'Little Patch of Heaven',
-    tag: 'little-patch-of-heaven',
-    mayor: 'Jaede',
-    type: 'solo',
-    x: 1115,
-    y: 770
-  }, {
-    name: 'Port Hope',
-    tag: 'port-hope',
-    type: 'solo',
-    mayor: 'Squint',
-    x: 807,
-    y: 706
+    features: ['trader', 'merchant', 'market', 'harbour', 'resources']
   }, {
     name: 'Alexondrea',
     tag: 'alexondrea',
@@ -30,7 +23,7 @@ deeds = [
     mayor: 'Traveler',
     x: 1076,
     y: 786,
-    features: ['resources', 'recruiting']
+    features: ['resources']
   }, {
     name: 'Longview',
     tag: 'longview',
@@ -38,28 +31,6 @@ deeds = [
     y: 1318,
     mayor: 'Borgal',
     type: 'solo'
-  }, {
-    name: 'Zigsburg',
-    tag: 'zigsburg',
-    mayor: 'Zigackly',
-    x: 1550,
-    y: 336,
-    mayor: 'Zigackly',
-    type: 'solo'
-  }, {
-    name: 'Cedar Grove',
-    tag: 'cedar-grove',
-    mayor: 'Dallanar',
-    x: 1586,
-    y: 1027
-  }, {
-    name: 'Castrum Felis',
-    tag: 'castrum-felis',
-    type: 'solo',
-    mayor: 'Meow',
-    x: 738,
-    y: 1200,
-    features: ['recruiting']
   }, {
     name: 'Awarthriel\'s Grove',
     tag: 'awarthriels-grove',
@@ -82,14 +53,6 @@ deeds = [
     mayor: 'Chris',
     x: 730,
     y: 2348
-  }, {
-    name: 'Goatsmugglers Place',
-    tag: 'goatsmugglers-place',
-    type: 'solo',
-    mayor: 'Goatsmuggler',
-    x: 822,
-    y: 1226,
-    features: ['harbour']
   }, {
     name: 'Highwater',
     tag: 'highwater',
@@ -128,22 +91,6 @@ deeds = [
     features: ['inn', 'mailbox'],
     type: 'small'
   }, {
-    name: 'Hokrasut',
-    tag: 'hokrasut',
-    type: 'small',
-    mayor: 'Zardoka',
-    x: 3155,
-    y: 3533,
-    features: ['harbour', 'resources']
-  }, {
-    name: 'Lake View',
-    tag: 'lake-view',
-    type: 'solo',
-    mayor: 'Lisa',
-    x: 3177,
-    y: 1872,
-    features: ['harbour', 'resources']
-  }, {
     name: 'Lake Side',
     tag: 'lake-side',
     type: 'solo',
@@ -161,7 +108,7 @@ deeds = [
     name: 'Dunkelwald',
     tag: 'dunkelwald',
     type: 'small',
-    mayor: 'Biervampyr',
+    mayor: 'Ennofiliusdiaboli',
     x: 2976,
     y: 480,
     features: ['recruiting']
@@ -173,28 +120,12 @@ deeds = [
     x: 414,
     y: 430
   }, {
-    name: 'Dragon\'s Breath Castle',
-    tag: 'dragons-breath-castle',
-    type: 'solo',
-    mayor: 'Devily',
-    x: 3226,
-    y: 3260,
-    features: ['harbour']
-  }, {
     name: 'Oak Shores',
     tag: 'oak-shores',
     type: 'small',
     mayor: 'Macros',
     x: 1070,
     y: 1164
-  }, {
-    name: 'ZxSuperGeniusxZ\'s Deed',
-    tag: 'zxsupergeniusxzs-deed',
-    type: 'solo',
-    mayor: 'ZxSuperGeniusxZ',
-    x: 1060,
-    y: 892,
-    features: ['market', 'harbour', 'merchant']
   }, {
     name: 'Maniac Mansion',
     tag: 'maniac-mansion',
@@ -283,14 +214,6 @@ deeds = [
     y: 3303,
     features: ['harbour']
   }, {
-    name: 'Noskull\'s Harbour Grounds',
-    tag: 'noskulls-harbour-grounds',
-    mayor: 'Noskull',
-    type: 'solo',
-    x: 622,
-    y: 792,
-    features: ['harbour']
-  }, {
     name: 'Griffin\'s Nest Harbour',
     tag: 'griffins-nest-harbour',
     mayor: 'Phoenix',
@@ -334,14 +257,6 @@ deeds = [
     type: 'solo',
     x: 1398,
     y: 885
-  }, {
-    name: 'Cedarview',
-    tag: 'cedarview',
-    mayor: 'Squint',
-    type: 'solo',
-    x: 2077,
-    y: 1063,
-    features: ['recruiting']
   }, {
     name: 'Bg Town',
     tag: 'bg-town',
@@ -403,18 +318,10 @@ deeds = [
   }, {
     name: 'Liberty',
     tag: 'liberty',
-    x: 540,
-    y: 767,
+    x: 551,
+    y: 731,
     mayor: 'Metrix',
     type: 'small',
-    features: ['recruiting']
-  }, {
-    name: 'The Water Tribe',
-    tag: 'water-tribe',
-    x: 662,
-    y: 774,
-    mayor: 'Apex',
-    type: 'solo',
     features: ['recruiting']
   }, {
     name: 'Unknown Xenon Sector',
@@ -423,21 +330,6 @@ deeds = [
     y: 1447,
     mayor: 'Xenon',
     type: 'solo'
-  }, {
-    name: 'Seaview Manor',
-    tag: 'seaview-manor',
-    x: 829,
-    y: 1671,
-    mayor: 'Bennetto',
-    type: 'solo'
-  }, {
-    name: 'Grand Lake',
-    tag: 'grand-lake',
-    x: 770,
-    y: 730,
-    mayor: 'Tipsy',
-    type: 'solo',
-    features: ['harbour']
   }, {
     name: 'Birchton',
     tag: 'birchton',
@@ -487,7 +379,7 @@ deeds = [
     y: 2522,
     mayor: 'DwemerManiac',
     type: 'small',
-    features: ['harbour', 'recruiting']
+    features: ['harbour']
   }, {
     name: 'Zephyr',
     tag: 'zephyr',
@@ -516,13 +408,6 @@ deeds = [
     x: 1061,
     y: 348,
     mayor: 'Akali',
-    type: 'small'
-  }, {
-    name: 'Essential Bay',
-    tag: 'essential-bay',
-    x: 607,
-    y: 2001,
-    mayor: 'Essense',
     type: 'small'
   }, {
     name: 'Safe Haven',
@@ -634,14 +519,6 @@ deeds = [
     features: ['harbour', 'mailbox', 'market', 'inn'],
     type: 'large'
   }, {
-    name: 'Easthaven Trade Harbour',
-    tag: 'easthaven-trade-harbour',
-    x: 3540,
-    y: 3362,
-    mayor: 'Noskull',
-    features: ['market', 'harbour', 'inn'],
-    type: 'solo'
-  }, {
     name: 'Magnolia Mines',
     tag: 'magnolia-mines',
     x: 808,
@@ -649,20 +526,13 @@ deeds = [
     mayor: 'Deltagirl',
     type: 'solo'
   }, {
-    name: 'A Small Settlement',
-    tag: 'small-settlement',
-    x: 478,
-    y: 2450,
-    mayor: 'Thorgar',
-    type: 'small'
-  }, {
     name: 'Hell\'s Pass',
     tag: 'fos-forest-trade-post',
     x: 1118,
     y: 808,
-    mayor: 'StarCrocTheGreat',
+    mayor: 'Manton',
     features: ['trader', 'market', 'mailbox', 'recruiting'],
-    type: 'solo'
+    type: 'small'
   }, {
     name: 'Poseidons Anchorage',
     tag: 'poseidons-anchorage',
@@ -738,14 +608,6 @@ deeds = [
     features: ['harbour', 'inn'],
     type: 'solo'
   }, {
-    name: 'Novus Castellum',
-    tag: 'novus-castellum',
-    x: 578,
-    y: 1990,
-    mayor: 'Kassanrda',
-    features: ['harbour', 'recruiting'],
-    type: 'solo'
-  }, {
     name: 'The Anvil of Ice',
     tag: 'anvil-of-ice',
     x: 1472,
@@ -766,7 +628,7 @@ deeds = [
     x: 2548,
     y: 778,
     mayor: 'CookieMuncher & Cryke',
-    features: ['trader', 'market', 'harbour', 'inn', 'recruiting'],
+    features: ['trader', 'market', 'harbour', 'inn'],
     type: 'large'
   }, {
     name: 'Celosia',
@@ -784,11 +646,11 @@ deeds = [
     mayor: 'Ptahil',
     type: 'solo'
   }, {
-    name: 'Northshore Docks',
-    tag: 'northshore-docks',
-    x: 1410,
-    y: 355,
-    mayor: 'Borieck',
+    name: 'Northside Docks',
+    tag: 'northside-docks',
+    x: 1419,
+    y: 367,
+    mayor: 'Jaldeer',
     features: ['harbour'],
     type: 'solo'
   }, {
@@ -797,13 +659,6 @@ deeds = [
     x: 1948,
     y: 730,
     mayor: 'Ravenquoth',
-    type: 'solo'
-  }, {
-    name: 'Rice Paddy',
-    tag: 'rice-paddy',
-    x: 979,
-    y: 712,
-    mayor: 'ChinTuFat',
     type: 'solo'
   }, {
     name: 'Inextremx',
@@ -834,13 +689,6 @@ deeds = [
     mayor: 'Tyrannus',
     features: ['harbour', 'recruiting'],
     type: 'solo'
-  }, {
-    name: 'Highgarden',
-    tag: 'highgarden',
-    x: 1075,
-    y: 1658,
-    mayor: 'Moxie',
-    type: 'small'
   }, {
     name: 'Wardruna Cove',
     tag: 'wardruna-cove',
@@ -887,28 +735,6 @@ deeds = [
     mayor: 'Zeafaw',
     features: ['recruiting'],
     type: 'small'
-  }, {
-    name: 'Moon Tree',
-    tag: 'moon-tree',
-    x: 3665,
-    y: 2393,
-    mayor: 'Sazaraki',
-    type: 'solo'
-  }, {
-    name: 'Link\'s Spot',
-    tag: 'links-spot',
-    x: 1865,
-    y: 3852,
-    mayor: 'Link',
-    type: 'small'
-  }, {
-    name: 'Amdarilla',
-    tag: 'amdarilla',
-    x: 1586,
-    y: 2740,
-    mayor: 'Stormhander',
-    features: ['recruiting'],
-    type: 'solo'
   }, {
     name: 'Aquashire',
     tag: 'aquashire',
@@ -961,20 +787,6 @@ deeds = [
     mayor: 'Capi',
     features: ['harbour', 'recruiting'],
     type: 'small'
-  }, {
-    name: 'Nameless',
-    tag: 'nameless',
-    x: 1009,
-    y: 2260,
-    mayor: 'Digradi',
-    type: 'solo'
-  }, {
-    name: 'Toxtopia',
-    tag: 'toxtopia',
-    x: 2169,
-    y: 995,
-    mayor: 'ToXiCTBaG',
-    type: 'solo'
   }, {
     name: 'Tulum',
     tag: 'tulum',
@@ -1058,12 +870,12 @@ deeds = [
     features: ['recruiting'],
     type: 'solo'
   }, {
-    name: 'Cameltoe',
-    tag: 'cameltoe',
+    name: 'Camletoe',
+    tag: 'camletoe',
     x: 2061,
     y: 1361,
     mayor: 'Xloey',
-    features: [''],
+    features: ['mailbox', 'trader'],
     type: 'small'
   }, {
     name: 'Goiania',
@@ -1148,14 +960,6 @@ deeds = [
     mayor: 'ShangXIq',
     type: 'solo'
   }, {
-    name: 'Temmie Village',
-    tag: 'temmie-village',
-    x: 1222,
-    y: 606,
-    mayor: 'Temmie',
-    features: ['recruiting'],
-    type: 'solo'
-  }, {
     name: 'New Moon Harbour',
     tag: 'new-moon-harbour',
     x: 1010,
@@ -1206,14 +1010,6 @@ deeds = [
     mayor: 'Farmer',
     type: 'solo'
   }, {
-    name: 'Tribbleation (wrong data, please resubmit)',
-    tag: 'tribbleation',
-    x: 232,
-    y: 1260,
-    mayor: 'Tribblemaker',
-    features: ['mailbox'],
-    type: 'small'
-  }, {
     name: 'Paradise',
     tag: 'paradise',
     x: 1052,
@@ -1227,14 +1023,6 @@ deeds = [
     y: 2068,
     mayor: 'Easy',
     type: 'solo'
-  }, {
-    name: 'Williams Mountainside Retreat',
-    tag: 'williams-mountainside-retreat',
-    x: 2152,
-    y: 1091,
-    mayor: 'Williamsmith',
-    features: ['recruiting', 'mailbox'],
-    type: 'small'
   }, {
     name: 'Tevinter',
     tag: 'tevinter',
@@ -1292,9 +1080,9 @@ deeds = [
   }, {
     name: 'Karthwasten',
     tag: 'karthwasten',
-    x: 787,
-    y: 517,
-    mayor: 'Karthannar',
+    x: 1256,
+    y: 755,
+    mayor: 'Golbez',
     features: ['mailbox'],
     type: 'solo'
   }, {
@@ -1346,13 +1134,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'The Clay Port',
-    tag: 'the-clay-port',
-    x: 3476,
-    y: 1746,
-    mayor: 'Feii',
-    type: 'small'
-  }, {
     name: 'Port Williams',
     tag: 'port-williams',
     x: 1388,
@@ -1375,7 +1156,7 @@ deeds = [
     y: 2469,
     mayor: 'Opene',
     features: ['recruiting'],
-    type: 'solo'
+    type: 'small'
   }, {
     name: 'Wolfmere',
     tag: 'wolfmere',
@@ -1465,28 +1246,12 @@ deeds = [
     features: ['harbour'],
     type: 'solo'
   }, {
-    name: 'Port Azeur',
-    tag: 'port-azeur',
-    x: 3424,
-    y: 1814,
-    mayor: 'Azeuras',
-    features: ['recruiting'],
-    type: 'solo'
-  }, {
     name: 'Wolfmere',
     tag: 'wolfmere',
     x: 2555,
     y: 859,
     mayor: 'Nxtreme',
     features: [''],
-    type: 'solo'
-  }, {
-    name: 'Hillside Hideout',
-    tag: 'hillside-hideout',
-    x: 3100,
-    y: 3031,
-    mayor: 'Nightcore',
-    features: ['recruiting'],
     type: 'solo'
   }, {
     name: 'Severo Vostochnaya Metalworks',
@@ -1496,14 +1261,6 @@ deeds = [
     mayor: 'Dzhra',
     features: [''],
     type: 'small'
-  }, {
-    name: 'Severo Vostochnaya',
-    tag: 'severo-vostochnaya',
-    x: 3587,
-    y: 354,
-    mayor: 'Hannibal',
-    features: [''],
-    type: 'solo'
   }, {
     name: 'Ravenedge',
     tag: 'Ravenedge',
@@ -1537,14 +1294,6 @@ deeds = [
     features: ['harbour', 'mailbox'],
     type: 'solo'
   }, {
-    name: 'The Mist',
-    tag: 'the-mist',
-    x: 440,
-    y: 483,
-    mayor: 'Rydia',
-    features: ['mailbox'],
-    type: 'solo'
-  }, {
     name: 'Vale of the Silent',
     tag: 'vale-of-the-silent',
     x: 2795,
@@ -1575,14 +1324,6 @@ deeds = [
     y: 2018,
     mayor: 'Petronus',
     features: ['recruiting'],
-    type: 'solo'
-  }, {
-    name: 'Pomorze',
-    tag: 'pomorze',
-    x: 3679,
-    y: 1681,
-    mayor: 'Czemiel',
-    features: [''],
     type: 'solo'
   }, {
     name: 'Fort Tiffany',
@@ -1670,14 +1411,1398 @@ deeds = [
     x: 381,
     y: 1902,
     mayor: 'Ravenloft',
-    features: [''],
-    type: 'solo'
+    features: ['harbour'],
+    type: 'small'
   }, {
     name: 'The Quagmire',
     tag: 'the-quagmire',
     x: 507,
     y: 674,
     mayor: 'Giggity',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Avallone',
+    tag: 'Avallone',
+    x: 1390,
+    y: 1750,
+    mayor: 'Lumi',
+    features: [''],
+    type: 'large'
+  }, {
+    name: 'Blacksheep Island',
+    tag: 'blacksheep-island',
+    x: 888,
+    y: 942,
+    mayor: 'Mizova & Krazow',
+    features: ['harbour', 'mailbox', 'trader', 'market', 'recruiting'],
+    type: 'small'
+  }, {
+    name: 'Bay of Blades',
+    tag: 'bay-of-blades',
+    x: 2911,
+    y: 353,
+    mayor: 'Backsnap',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Hunters Rest',
+    tag: 'hunters-rest',
+    x: 3515,
+    y: 1699,
+    mayor: 'Mallam',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Morrowind',
+    tag: 'Morrowind',
+    x: 1196,
+    y: 403,
+    mayor: 'BabbaGanush',
+    features: ['harbour', 'mailbox', 'recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Gallup',
+    tag: 'Gallup',
+    x: 797,
+    y: 546,
+    mayor: 'Skyropio',
+    features: ['mailbox'],
+    type: 'small'
+  }, {
+    name: 'Waitsburg',
+    tag: 'Waitsburg',
+    x: 1209,
+    y: 803,
+    mayor: 'Cennydd',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Carpeshire',
+    tag: 'Carpeshire',
+    x: 990,
+    y: 1647,
+    mayor: 'Alex',
+    features: ['trader', 'mailbox', 'harbour', 'inn', 'market', 'recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Pickering Lodge',
+    tag: 'pickering-lodge',
+    x: 2695,
+    y: 943,
+    mayor: 'Pickering',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Pirkadat',
+    tag: 'Pirkadat',
+    x: 2610,
+    y: 907,
+    mayor: 'Hajnal',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Black Tower',
+    tag: 'the-black-tower',
+    x: 3742,
+    y: 2763,
+    mayor: 'TomServo',
+    features: ['harbour', 'mailbox'],
+    type: 'small'
+  }, {
+    name: 'Hopes corner',
+    tag: 'hopes-corner',
+    x: 2100,
+    y: 3343,
+    mayor: 'Malic',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Smallville',
+    tag: 'Smallville',
+    x: 1328,
+    y: 567,
+    mayor: 'Bija',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Blue Ribbon',
+    tag: 'blue-ribbon',
+    x: 1631,
+    y: 760,
+    mayor: 'Etna',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Mountainhome Conglomerate',
+    tag: 'mountainhome-conglomerate',
+    x: 2280,
+    y: 1493,
+    mayor: 'Reptile',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Nouvelle France',
+    tag: 'nouvelle-france',
+    x: 1915,
+    y: 3434,
+    mayor: 'Xloff',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'West Point Manor',
+    tag: 'west-point-manor',
+    x: 3611,
+    y: 2996,
+    mayor: 'Bennetto',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Ceonia',
+    tag: 'Ceonia',
+    x: 850,
+    y: 2441,
+    mayor: 'Synga',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Lakeview',
+    tag: 'Lakeview',
+    x: 1590,
+    y: 3190,
+    mayor: 'Bravyn',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'On Golden Pond',
+    tag: 'on-golden-pond',
+    x: 1624,
+    y: 800,
+    mayor: 'Fumble',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Viking Ridge',
+    tag: 'viking-ridge',
+    x: 1467,
+    y: 1266,
+    mayor: 'Anders',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Baldurs Gate',
+    tag: 'baldurs-gate',
+    x: 874,
+    y: 1774,
+    mayor: 'Ragnor',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Sankt Egidien Harbor',
+    tag: 'sankt-egidien-harbor',
+    x: 3277,
+    y: 2980,
+    mayor: 'iScraM',
+    features: ['harbour'],
+    type: 'small'
+  }, {
+    name: 'Shortys Retreat',
+    tag: 'shortys-retreat',
+    x: 1303,
+    y: 684,
+    mayor: 'Shorty',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Szegvar',
+    tag: 'Szegvar',
+    x: 1126,
+    y: 481,
+    mayor: 'Venatus',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'New Amsterdam',
+    tag: 'new-amsterdam',
+    x: 1603,
+    y: 1548,
+    mayor: 'Utopolis & Aringil',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'White Deer Inn',
+    tag: 'white-deer-inn',
+    x: 2573,
+    y: 1356,
+    mayor: 'Sethus',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Grove',
+    tag: 'the-grove',
+    x: 1390,
+    y: 752,
+    mayor: 'Parsnips',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Ranch',
+    tag: 'Ranch',
+    x: 1688,
+    y: 1915,
+    mayor: 'Mariosso',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Antalya',
+    tag: 'Antalya',
+    x: 419,
+    y: 2013,
+    mayor: 'Huseyin',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Chestnut Lake',
+    tag: 'chestnut-lake',
+    x: 1504,
+    y: 1818,
+    mayor: 'Murph',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Friedheim',
+    tag: 'Friedheim',
+    x: 1868,
+    y: 3239,
+    mayor: 'Friedbert',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Gachitopia',
+    tag: 'Gachitopia',
+    x: 2750,
+    y: 840,
+    mayor: 'Diztro',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Tinkerbells resort',
+    tag: 'tinkerbells-resort',
+    x: 1770,
+    y: 949,
+    mayor: 'Tinkerbell',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Crimson Corporations',
+    tag: 'crimson-corporations',
+    x: 456,
+    y: 1940,
+    mayor: 'Sarkubocael',
+    features: ['trader', 'harbour', 'inn'],
+    type: 'solo'
+  }, {
+    name: 'Barna',
+    tag: 'Barna',
+    x: 742,
+    y: 276,
+    mayor: 'Golluns',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Aurora Village',
+    tag: 'aurora-village',
+    x: 564,
+    y: 1805,
+    mayor: 'Kilian',
+    features: ['harbour'],
+    type: 'solo'
+  }, {
+    name: 'Everton',
+    tag: 'Everton',
+    x: 3624,
+    y: 2948,
+    mayor: 'Sinmage',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Kangaroo isle',
+    tag: 'Kangaroo-isle',
+    x: 1432,
+    y: 3823,
+    mayor: 'Risko',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Wesmere',
+    tag: 'Wesmere',
+    x: 550,
+    y: 248,
+    mayor: 'Kalenz',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Shadowyn',
+    tag: 'Shadowyn',
+    x: 1352,
+    y: 930,
+    mayor: 'Frisk',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Pendragon Wallow',
+    tag: 'pendragon-wallow',
+    x: 3705,
+    y: 870,
+    mayor: 'Badpapasmurf',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'New Fulwic',
+    tag: 'new-fulwic',
+    x: 424,
+    y: 2011,
+    mayor: 'Hoxard',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Corvid Isle',
+    tag: 'corvid-isle',
+    x: 3259,
+    y: 1716,
+    mayor: 'Komodo',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Gilead',
+    tag: 'Gilead',
+    x: 3042,
+    y: 301,
+    mayor: 'Will Thalagat',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Maritimus',
+    tag: 'Maritimus',
+    x: 492,
+    y: 293,
+    mayor: 'Hotte',
+    features: ['recruiting', 'harbour', 'merchant'],
+    type: 'solo'
+  }, {
+    name: 'Flintwood',
+    tag: 'Flintwood',
+    x: 348,
+    y: 1512,
+    mayor: 'Flint',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Port Luna',
+    tag: 'port-luna',
+    x: 780,
+    y: 1118,
+    mayor: 'Seelery',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Chestnut Grove',
+    tag: 'chestnut-grove',
+    x: 1538,
+    y: 3786,
+    mayor: 'Clare',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Waterdeep',
+    tag: 'Waterdeep',
+    x: 582,
+    y: 514,
+    mayor: 'Hammie',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Mor Dragen',
+    tag: 'Mor Dragen',
+    x: 1803,
+    y: 2744,
+    mayor: 'Stormhander',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Hope',
+    tag: 'Hope',
+    x: 689,
+    y: 643,
+    mayor: 'Sabastion',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Citadel dOraguille',
+    tag: 'citadel-doraguille',
+    x: 1246,
+    y: 1844,
+    mayor: 'Karthannar',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Eletha',
+    tag: 'Eletha',
+    x: 812,
+    y: 1471,
+    mayor: 'Wolfey',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Summertyne Park',
+    tag: 'summertyne-park',
+    x: 2670,
+    y: 941,
+    mayor: 'Summertyne',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Fairbanks',
+    tag: 'Fairbanks',
+    x: 668,
+    y: 257,
+    mayor: 'Wadena',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Cedar Point',
+    tag: 'Cedar-point',
+    x: 3517,
+    y: 1723,
+    mayor: 'Collada',
+    features: ['mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Zheddmar',
+    tag: 'Zheddmar',
+    x: 1260,
+    y: 1902,
+    mayor: 'Wreck',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Strangeland',
+    tag: 'Strangeland',
+    x: 1245,
+    y: 1929,
+    mayor: 'Ivanthestrange',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Oink Oink',
+    tag: 'oink-oink',
+    x: 2181,
+    y: 995,
+    mayor: 'Ginger',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Skara Brae',
+    tag: 'skara-brae',
+    x: 830,
+    y: 1604,
+    mayor: 'Valdora',
+    features: ['inn', 'mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Miner\'s Respite',
+    tag: 'miners-respite',
+    x: 3254,
+    y: 2270,
+    mayor: 'Kyllian',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Fishing post',
+    tag: 'fishing-post',
+    x: 386,
+    y: 369,
+    mayor: 'Gladiatora',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Gravelton',
+    tag: 'Gravelton',
+    x: 504,
+    y: 442,
+    mayor: 'Splarmus',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Honor Hold',
+    tag: 'honor-hold',
+    x: 2489,
+    y: 1133,
+    mayor: 'Tekada',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'The Dark Ones',
+    tag: 'the-dark-ones',
+    x: 3422,
+    y: 304,
+    mayor: 'Hordefanatic',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Port Well',
+    tag: 'port-well',
+    x: 810,
+    y: 698,
+    mayor: 'Gollun',
+    features: ['harbour'],
+    type: 'small'
+  }, {
+    name: 'Sybaris',
+    tag: 'Sybaris',
+    x: 2884,
+    y: 3130,
+    mayor: 'Moumix',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Sybaris Stables',
+    tag: 'Sybaris-Stables',
+    x: 2813,
+    y: 3102,
+    mayor: 'Stargrace',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Andyland',
+    tag: 'Andyland',
+    x: 1244,
+    y: 1958,
+    mayor: 'Bluebunny',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Claustrophobia Wisakurum',
+    tag: 'claustrophobia-wisakurum',
+    x: 1247,
+    y: 957,
+    mayor: 'Wisaku',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Drandor',
+    tag: 'Drandor',
+    x: 2398,
+    y: 3661,
+    mayor: 'Drackoroth',
+    features: ['harbour', 'mailbox', 'recruiting'],
+    type: 'small'
+  }, {
+    name: 'Laeglond',
+    tag: 'Laeglond',
+    x: 3230,
+    y: 1426,
+    mayor: 'Alageth',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Safeholm',
+    tag: 'Safeholm',
+    x: 3788,
+    y: 1806,
+    mayor: 'McWidowmaker',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Minas Auratious',
+    tag: 'minas-auratious',
+    x: 377,
+    y: 1404,
+    mayor: 'Aratone',
+    features: ['harbour', 'recruiting'],
+    type: 'small'
+  }, {
+    name: 'Finger Island',
+    tag: 'Finger Island',
+    x: 3026,
+    y: 3594,
+    mayor: 'Bonze',
+    features: ['harbour', 'market', 'mailbox', 'recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Nexus Pirates',
+    tag: 'nexus-pirates',
+    x: 3596,
+    y: 3537,
+    mayor: 'Dariusstrongarm',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Sin City',
+    tag: 'Sin City',
+    x: 1751,
+    y: 735,
+    mayor: 'Marcallus',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Serendipity',
+    tag: 'Serendipity',
+    x: 2758,
+    y: 3393,
+    mayor: 'Neofit',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Helheim',
+    tag: 'Helheim',
+    x: 2027,
+    y: 1039,
+    mayor: 'Maxella',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Jellystone Park',
+    tag: 'jellystone-park',
+    x: 1729,
+    y: 1000,
+    mayor: 'Grapape',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Asgard',
+    tag: 'Asgard',
+    x: 586,
+    y: 638,
+    mayor: 'Jucken',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Shadowkeep',
+    tag: 'Shadowkeep',
+    x: 646,
+    y: 760,
+    mayor: 'Noskull',
+    features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'inn'],
+    type: 'small'
+  }, {
+    name: 'Grand Lakes',
+    tag: 'grand-lakes',
+    x: 383,
+    y: 565,
+    mayor: 'Tipsy',
+    features: ['trader', 'market'],
+    type: 'small'
+  }, {
+    name: 'Halls of Magranon',
+    tag: 'halls-of-magranon',
+    x: 2381,
+    y: 2355,
+    mayor: 'Samsonn',
+    features: ['trader', 'merchant', 'inn'],
+    type: 'large'
+  }, {
+    name: 'Direthorn',
+    tag: 'Direthorn',
+    x: 1826,
+    y: 973,
+    mayor: 'Lyden',
+    features: ['trader', 'market', 'recruiting', 'mailbox'],
+    type: 'small'
+  }, {
+    name: 'Darkenstone',
+    tag: 'Darkenstone',
+    x: 2783,
+    y: 1433,
+    mayor: 'Maxx',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Birchvale',
+    tag: 'Birchvale',
+    x: 2131,
+    y: 739,
+    mayor: 'Kinslock',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Danelaw',
+    tag: 'Danelaw',
+    x: 806,
+    y: 270,
+    mayor: 'Halfdan',
+    features: ['harbour', 'viking land'],
+    type: 'solo'
+  }, {
+    name: 'Tumunzahar',
+    tag: 'Tumunzahar',
+    x: 1265,
+    y: 1125,
+    mayor: 'Liability',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Crystal Noctis',
+    tag: 'crystal-noctis',
+    x: 3399,
+    y: 1390,
+    mayor: 'Nightcross',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Malcolm\'s Durge',
+    tag: 'malcolm\'s-durge',
+    x: 3082,
+    y: 1357,
+    mayor: 'Malcolm',
+    features: ['harbour'],
+    type: 'solo'
+  }, {
+    name: 'Haerlem Woods',
+    tag: 'haerlem-woods',
+    x: 914,
+    y: 522,
+    mayor: 'Yoyo',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Lake Market',
+    tag: 'lake-market',
+    x: 1410,
+    y: 1760,
+    mayor: 'Lady Lake',
+    features: ['trader', 'market', 'inn', 'mailbox'],
+    type: 'small'
+  }, {
+    name: 'Algade',
+    tag: 'Algade',
+    x: 387,
+    y: 1559,
+    mayor: 'Tsustyle',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Halderat',
+    tag: 'Halderat',
+    x: 1571,
+    y: 1788,
+    mayor: 'Coady',
+    features: ['harbour'],
+    type: 'solo'
+  }, {
+    name: 'Darujhistan',
+    tag: 'Darujhistan',
+    x: 1151,
+    y: 3830,
+    mayor: 'Whiskyjack',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Hedon',
+    tag: 'Hedon',
+    x: 713,
+    y: 2782,
+    mayor: 'OLloyd',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Antalya Beach',
+    tag: 'antalya-beach',
+    x: 944,
+    y: 338,
+    mayor: 'mehmet',
+    features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'recruiting', 'inn'],
+    type: 'large'
+  }, {
+    name: 'Puerto Abeto',
+    tag: 'puerto-abeto',
+    x: 3241,
+    y: 1837,
+    mayor: 'Esroh',
+    features: ['mailbox', 'harbour'],
+    type: 'solo'
+  }, {
+    name: 'Sanctum',
+    tag: 'Sanctum',
+    x: 1457,
+    y: 729,
+    mayor: 'Cilerium',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Black Templars',
+    tag: 'black-templars',
+    x: 1524,
+    y: 444,
+    mayor: 'Zeafaw',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Home',
+    tag: 'Home',
+    x: 1496,
+    y: 1792,
+    mayor: 'Svartaifal',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Marish',
+    tag: 'the-marish',
+    x: 1246,
+    y: 425,
+    mayor: 'Burnet',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Havoccity',
+    tag: 'Havoccity',
+    x: 1490,
+    y: 1843,
+    mayor: 'Havoc',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Dragonville',
+    tag: 'Dragonville',
+    x: 1543,
+    y: 1868,
+    mayor: 'dragonx',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Sehrimnir',
+    tag: 'Sehrimnir',
+    x: 586,
+    y: 665,
+    mayor: 'Fenrisulven',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Waters Edge',
+    tag: 'waters-edge',
+    x: 1459,
+    y: 3783,
+    mayor: 'Paraclete',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Crimson Point',
+    tag: 'crimson-point',
+    x: 2024,
+    y: 1236,
+    mayor: 'JacobCrimson',
+    features: ['harbour', 'inn', 'recruiting'],
+    type: 'small'
+  }, {
+    name: 'Public docks north',
+    tag: 'public-docks-north',
+    x: 1164,
+    y: 385,
+    mayor: 'mjmalt',
+    features: ['harbour', 'mailbox'],
+    type: 'small'
+  }, {
+    name: 'Lokin',
+    tag: 'Lokin',
+    x: 2095,
+    y: 1540,
+    mayor: 'Keran',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Coyote Bluff',
+    tag: 'coyote-bluff',
+    x: 1008,
+    y: 1886,
+    mayor: 'Herawyn',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Effulgent Grove',
+    tag: 'effulgent-grove',
+    x: 3227,
+    y: 448,
+    mayor: 'Halcyon',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'ShadowTown',
+    tag: 'ShadowTown',
+    x: 1281,
+    y: 3782,
+    mayor: 'ShadowRanger',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Andistyr\'s Stables',
+    tag: 'Andistyrs-Stables',
+    x: 1017,
+    y: 712,
+    mayor: 'Borieck',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Jotunnheim',
+    tag: 'Jotunnheim',
+    x: 1728,
+    y: 899,
+    mayor: 'Maxium',
+    features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'recruiting', 'inn'],
+    type: 'large'
+  }, {
+    name: 'Ubik\'s Keep',
+    tag: 'Ubiks-Keep',
+    x: 2642,
+    y: 1473,
+    mayor: 'Saturnal',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Lasthope',
+    tag: 'Lasthope',
+    x: 2983,
+    y: 843,
+    mayor: 'UpToDate',
+    features: ['inn', 'mailbox'],
+    type: 'large'
+  }, {
+    name: 'Skooterville',
+    tag: 'Skooterville',
+    x: 3288,
+    y: 2508,
+    mayor: 'SkooterWicky',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Amaranthine',
+    tag: 'Amaranthine',
+    x: 3387,
+    y: 1439,
+    mayor: 'Caelin',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Citta Foresta',
+    tag: 'Citta-Foresta',
+    x: 1294,
+    y: 900,
+    mayor: 'SkoonahyVampire',
+    features: ['merchant'],
+    type: 'small'
+  }, {
+    name: 'Flynn\'s Retreat',
+    tag: 'Flynns-Retreat',
+    x: 962,
+    y: 845,
+    mayor: 'Flynn',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Halderat',
+    tag: 'Halderat',
+    x: 1571,
+    y: 1788,
+    mayor: 'Coady',
+    features: ['harbour', 'recruiting'],
+    type: 'small'
+  }, {
+    name: 'The Iron Hills',
+    tag: 'The-Iron-Hills',
+    x: 1103,
+    y: 1733,
+    mayor: 'GZgaming',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Tryhardiarion',
+    tag: 'Tryhardiarion',
+    x: 423,
+    y: 351,
+    mayor: 'Grukhan',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Valhalla Port',
+    tag: 'Valhalla-Port',
+    x: 1661,
+    y: 1051,
+    mayor: 'Brandenburg',
+    features: ['harbour', 'recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Paddle Pond Ranch',
+    tag: 'Paddle-Pond-Ranch',
+    x: 1782,
+    y: 1065,
+    mayor: 'Niinjaturtle',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Bakti',
+    tag: 'Bakti',
+    x: 918,
+    y: 1806,
+    mayor: 'Rennuir',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Mist',
+    tag: 'The-Mist',
+    x: 807,
+    y: 1818,
+    mayor: 'Rydia',
+    features: ['mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Vivec',
+    tag: 'Vivec',
+    x: 3604,
+    y: 2740,
+    mayor: 'Chachka',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Nettlesnook',
+    tag: 'Nettlesnook',
+    x: 3546,
+    y: 3357,
+    mayor: 'Nettles',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Trinity',
+    tag: 'Trinity',
+    x: 2350,
+    y: 630,
+    mayor: 'Trin',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Sweetwater',
+    tag: 'Sweetwater',
+    x: 3600,
+    y: 3382,
+    mayor: 'Czara',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Raven\'s Retreat',
+    tag: 'Ravens-Retreat',
+    x: 1789,
+    y: 2571,
+    mayor: 'Darkraven',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Tisaldor',
+    tag: 'Tisaldor',
+    x: 2347,
+    y: 650,
+    mayor: 'Insomnia',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Meadowview',
+    tag: 'Meadowview',
+    x: 709,
+    y: 1148,
+    mayor: 'Viktor',
+    features: ['mailbox'],
+    type: 'small'
+  }, {
+    name: 'Cedar Livings',
+    tag: 'Cedar-Livings',
+    x: 3327,
+    y: 1949,
+    mayor: 'Wmdx',
+    features: ['harbour', 'recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Cerys Corner',
+    tag: 'Cerys-Corner',
+    x: 523,
+    y: 1209,
+    mayor: '',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Aeswythe',
+    tag: 'Aeswythe',
+    x: 1940,
+    y: 575,
+    mayor: 'JackBinimbul',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Cedarwood',
+    tag: 'Cedarwood',
+    x: 3780,
+    y: 2333,
+    mayor: 'Tebari',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Green Plains Farms',
+    tag: 'Green-Plains-Farms',
+    x: 2229,
+    y: 700,
+    mayor: 'Kasildun',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Pipka By The Sea',
+    tag: 'Pipka-By-The-Sea',
+    x: 3227,
+    y: 3265,
+    mayor: 'Pipka',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Powerstone Keep',
+    tag: 'Powerstone-Keep',
+    x: 2425,
+    y: 2391,
+    mayor: 'Powerslave',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Nightwatch',
+    tag: 'Nightwatch',
+    x: 2399,
+    y: 1175,
+    mayor: 'Prophet',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Shadowfen',
+    tag: 'Shadowfen',
+    x: 737,
+    y: 1197,
+    mayor: 'Jennie',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Settlement Of The Jaded Wanderer',
+    tag: 'The-Settlement-Of-The-Jaded-Wanderer',
+    x: 2912,
+    y: 543,
+    mayor: 'Wanderer',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Jaded Land Of Dinor',
+    tag: 'Jaded-Land-Of-Dinor',
+    x: 2951,
+    y: 546,
+    mayor: 'Dinor',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Yoda\'s Jaded Settlement',
+    tag: 'Yodas-Jaded-Settlement',
+    x: 2872,
+    y: 555,
+    mayor: 'Yoda',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Northlet Camp',
+    tag: 'Northlet-Camp',
+    x: 1294,
+    y: 442,
+    mayor: 'Villiame',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Meadowview Stables',
+    tag: 'Meadowview-Stables',
+    x: 751,
+    y: 1126,
+    mayor: 'Neville',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'The Jaded Docks',
+    tag: 'The-Jaded-Docks',
+    x: 2717,
+    y: 607,
+    mayor: 'Senitor',
+    features: ['Harbour'],
+    type: 'solo'
+  }, {
+    name: 'Eastwood Ranch',
+    tag: 'Eastwood-Ranch',
+    x: 3854,
+    y: 2453,
+    mayor: 'Amberly',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Waterside Village',
+    tag: 'Waterside-Village',
+    x: 571,
+    y: 1209,
+    mayor: 'Natt',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Pikov',
+    tag: 'Pikov',
+    x: 1048,
+    y: 1360,
+    mayor: 'Dezrodino',
+    features: ['inn'],
+    type: 'small'
+  }, {
+    name: 'Blackbeak Consortium',
+    tag: 'Blackbeak-Consortium',
+    x: 2906,
+    y: 718,
+    mayor: 'Dreadnought',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Enlightenend',
+    tag: 'Enlightenend',
+    x: 1337,
+    y: 1675,
+    mayor: 'Shalwind',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'The Roost',
+    tag: 'The-Roost',
+    x: 704,
+    y: 506,
+    mayor: 'Dragonskin',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'GreenSide',
+    tag: 'GreenSide',
+    x: 3428,
+    y: 364,
+    mayor: 'SparkyRich',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Nikki',
+    tag: 'Nikki',
+    x: 1618,
+    y: 1629,
+    mayor: 'Nikki',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Erehwon',
+    tag: 'Erehwon',
+    x: 524,
+    y: 1156,
+    mayor: '',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Midian',
+    tag: 'Midian',
+    x: 1058,
+    y: 1739,
+    mayor: 'Hylsy',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Redemption',
+    tag: 'Redemption',
+    x: 1154,
+    y: 3024,
+    mayor: 'Revvenant',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Tombstone',
+    tag: 'Tombstone',
+    x: 3162,
+    y: 940,
+    mayor: 'Django',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Villa Orchidea',
+    tag: 'Villa-Orchidea',
+    x: 1465,
+    y: 3231,
+    mayor: 'Ixolan',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Sinthoras',
+    tag: 'Sinthoras',
+    x: 1863,
+    y: 1119,
+    mayor: 'Vraccas',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Grand Lakes',
+    tag: 'Grand-Lakes',
+    x: 852,
+    y: 549,
+    mayor: 'Tipsy',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'LWW Harbour',
+    tag: 'LWW-Harbour',
+    x: 3314,
+    y: 2064,
+    mayor: 'Talaku',
+    features: ['harbour', 'inn'],
+    type: 'small'
+  }, {
+    name: 'Vale of the Fallen',
+    tag: 'Vale-of-the-Fallen',
+    x: 3664,
+    y: 2391,
+    mayor: 'Axinex',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Vale of the Silent',
+    tag: 'Vale-of-the-Silent',
+    x: 2795,
+    y: 553,
+    mayor: 'Proteus',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'BlackCrest',
+    tag: 'BlackCrest',
+    x: 3170,
+    y: 1445,
+    mayor: 'QUEENIEMAZ',
+    features: ['harbour'],
+    type: 'solo'
+  }, {
+    name: 'Keepers Peak',
+    tag: 'Keepers-Peak',
+    x: 3010,
+    y: 2820,
+    mayor: 'Lemarkhan',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Grangus\'s Keep',
+    tag: 'Granguss-Keep',
+    x: 1298,
+    y: 1739,
+    mayor: 'Grangus',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Enlightenend\'s Mountain Dwelling',
+    tag: 'Enlightenends-Mountain-Dwelling',
+    x: 1278,
+    y: 1598,
+    mayor: 'Privet',
     features: [''],
     type: 'solo'
   }
