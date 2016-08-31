@@ -282,5 +282,16 @@ poi = [
     x: 1546,
     y: 1025,
     description: ''
-  },
+  }, {
+    name: 'Canal Abeto',
+    x: 3263,
+    y: 1900,
+    description: 'Constructed by Esroh'
+  }, {
+    name: 'Colossus of Esroh',
+    x: 3211,
+    y: 1792,
+    type: 'statue',
+    description: ''
+  }
 ];
