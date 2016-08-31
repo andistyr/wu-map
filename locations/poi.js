@@ -290,6 +290,7 @@ poi = [
     name: 'Colossus of Esroh',
     x: 3211,
     y: 1792,
+    type: 'statue',
     description: ''
   }
 ];
