@@ -68,14 +68,6 @@ deeds = [
     x: 1220,
     y: 1006
   }, {
-    name: 'Izmir',
-    tag: 'izmir',
-    type: 'small',
-    mayor: 'jackoritos',
-    x: 526,
-    y: 1378,
-    features: ['harbour', 'recruiting']
-  }, {
     name: 'Phules Paradise',
     tag: 'phules-paradise',
     mayor: 'Andistyr',
@@ -300,14 +292,6 @@ deeds = [
     type: 'solo',
     x: 790,
     y: 1365
-  }, {
-    name: 'Seaside Settlement',
-    tag: 'seaside-settlement',
-    mayor: 'Atrias',
-    x: 617,
-    y: 944,
-    features: ['recruiting'],
-    type: 'solo'
   }, {
     name: 'Liberty',
     tag: 'liberty',
@@ -581,14 +565,6 @@ deeds = [
     features: ['trader', 'market', 'harbour', 'inn'],
     type: 'large'
   }, {
-    name: 'Celosia',
-    tag: 'celosia',
-    x: 1991,
-    y: 639,
-    mayor: 'Nuinethir',
-    features: ['mailbox'],
-    type: 'small'
-  }, {
     name: 'SkyRift',
     tag: 'skyrift',
     x: 3620,
@@ -819,14 +795,6 @@ deeds = [
     mayor: 'Nana',
     type: 'solo'
   }, {
-    name: 'Raven Watch',
-    tag: 'raven-watch',
-    x: 3152,
-    y: 1546,
-    mayor: 'Velan',
-    features: ['mailbox'],
-    type: 'solo'
-  }, {
     name: 'Belgica',
     tag: 'belgica',
     x: 1164,
@@ -884,14 +852,6 @@ deeds = [
     y: 2279,
     mayor: 'Noll',
     type: 'solo'
-  }, {
-    name: 'Fyresong Rest',
-    tag: 'fyresong-rest',
-    x: 1984,
-    y: 474,
-    mayor: 'Airica (aka Nuinethir)',
-    features: ['harbour', 'inn', 'mailbox'],
-    type: 'small'
   }, {
     name: 'Shadow Den',
     tag: 'shadow-den',
@@ -1055,36 +1015,12 @@ deeds = [
     features: ['recruiting'],
     type: 'solo'
   }, {
-    name: 'Valhalla Station',
-    tag: 'valhalla-station',
-    x: 995,
-    y: 2509,
-    mayor: 'Darbie',
-    features: [''],
-    type: 'small'
-  }, {
-    name: 'Bilgemoor',
-    tag: 'bilgemoor',
-    x: 1638,
-    y: 912,
-    mayor: 'Fumbleduck',
-    features: ['harbour', 'inn', 'mailbox'],
-    type: 'small'
-  }, {
     name: 'Mencheres',
     tag: 'mencheres',
     x: 1312,
     y: 963,
     mayor: 'Stygianfury',
     features: [''],
-    type: 'solo'
-  }, {
-    name: 'Pirate Bay\'s Faubourg',
-    tag: 'pirate-bays-faubourg',
-    x: 2535,
-    y: 751,
-    mayor: 'Myot',
-    features: ['harbour'],
     type: 'solo'
   }, {
     name: 'Blackwatch Lake',
@@ -1636,14 +1572,6 @@ deeds = [
     x: 348,
     y: 1512,
     mayor: 'Flint',
-    features: [''],
-    type: 'solo'
-  }, {
-    name: 'Port Luna',
-    tag: 'port-luna',
-    x: 780,
-    y: 1118,
-    mayor: 'Seelery',
     features: [''],
     type: 'solo'
   }, {
@@ -2223,14 +2151,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Citta Foresta',
-    tag: 'Citta-Foresta',
-    x: 1294,
-    y: 900,
-    mayor: 'SkoonahyVampire',
-    features: ['merchant'],
-    type: 'small'
-  }, {
     name: 'Flynn\'s Retreat',
     tag: 'Flynns-Retreat',
     x: 962,
@@ -2254,14 +2174,6 @@ deeds = [
     mayor: 'GZgaming',
     features: ['recruiting'],
     type: 'small'
-  }, {
-    name: 'Tryhardiarion',
-    tag: 'Tryhardiarion',
-    x: 423,
-    y: 351,
-    mayor: 'Grukhan',
-    features: [''],
-    type: 'solo'
   }, {
     name: 'Valhalla Port',
     tag: 'Valhalla-Port',
@@ -2797,6 +2709,13 @@ deeds = [
     y: 870,
     mayor: 'Rambo',
     features: [''],
+    type: 'solo'
+  }, {
+    name: 'Justice',
+    tag: 'justice',
+    x: 3673,
+    y: 810,
+    mayor: 'Justice',
     type: 'solo'
   }
 ];
