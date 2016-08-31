@@ -1073,6 +1073,30 @@ guard_towers = [
     x: 1250,
     y: 2039,
     creator: 'Bluebunny'
+  }, {
+    x: 1421,
+    y: 1954,
+    creator: 'Wreck'
+  }, {
+    x: 2427,
+    y: 351,
+    creator: 'Shangxiq'
+  }, {
+    x: 3540,
+    y: 827,
+    creator: 'Mike'
+  }, {
+    x: 3702,
+    y: 1324,
+    creator: 'Arbanka'
+  }, {
+    x: 1324,
+    y: 1572,
+    creator: 'Arabella'
+  }, {
+    x: 3742,
+    y: 719,
+    creator: 'Devildognl'
   }
   
   ];
