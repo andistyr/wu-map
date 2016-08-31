@@ -3,8 +3,8 @@ var poi;
 poi = [
   {
     name: 'Spawn',
-    x: 912,
-    y: 755,
+    x: 2557,
+    y: 775,
     description: 'This is where new players start their journey into the magical world of Sklotopolis'
   }, {
     name: 'Altar of Three',
@@ -48,7 +48,6 @@ poi = [
     name: 'Observatory Tower',
     x: 989,
     y: 773,
-    type: 'tower',
     description: 'Climb this tower to the vista on the top floor. You can see New Town, North Lake and a rich collection of deeds along the eastern bound highway.'
   }, {
     name: 'Path of Love Tile',
@@ -198,7 +197,7 @@ poi = [
     description: 'Constructed by BG Town residents & Yela'
   }, {
     name: 'Littlehub to Claypit Bridge #1',
-    x: 862, 
+    x: 862,
     y: 1234,
     type: 'bridge',
     description: 'Constructed by Thalos'
@@ -211,7 +210,7 @@ poi = [
     description: 'Constructed by Indalo'
   }, {
     name: 'Littlehub to Claypit Bridge #2',
-    x: 927, 
+    x: 927,
     y: 1234,
     type: 'bridge',
     description: 'Constructed by Thalos'

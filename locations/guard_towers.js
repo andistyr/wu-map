@@ -1098,5 +1098,4 @@ guard_towers = [
     y: 719,
     creator: 'Devildognl'
   }
-  
-  ];
+];

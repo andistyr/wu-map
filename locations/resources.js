@@ -210,6 +210,11 @@ resources = [
     y: 3665,
     size: 'medium'
   }, {
+    type: 'tar',
+    x: 1749,
+    y: 1488,
+    size: 'medium'
+  }, {
     type: 'clay',
     x: 408,
     y: 477,
