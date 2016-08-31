@@ -864,14 +864,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Port Williams',
-    tag: 'port-williams',
-    x: 1388,
-    y: 399,
-    mayor: 'Williamsmithsh',
-    features: ['harbour', 'inn', 'mailbox'],
-    type: 'solo'
-  }, {
     name: 'Providence',
     tag: 'providence',
     x: 2744,
