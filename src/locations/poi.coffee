@@ -1,7 +1,7 @@
 poi = [
     name: 'Spawn'
-    x: 912
-    y: 755
+    x: 2557
+    y: 775
     description: 'This is where new players start their journey into the magical world of Sklotopolis'
 ,
     name: 'Altar of Three'
@@ -278,4 +278,14 @@ poi = [
     x: 1546
     y: 1025
     description: ''
+,
+	name: 'Canal Abeto'
+	x: 3263
+	y: 1900
+	description: 'Constructed by Esroh'
+,
+	name: 'Colossus of Esroh'
+	x: 3211
+	y: 1792
+	description: ''
 ]
