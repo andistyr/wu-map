@@ -209,5 +209,26 @@ resources = [
     x: 3267,
     y: 3665,
     size: 'medium'
+  }, {
+    type: 'clay',
+    x: 408,
+    y: 477,
+    size: 'medium'
+  }, {
+    type: 'tar',
+    x: 3579,
+    y: 1373,
+    size: 'small'
+  }, {
+    type: 'clay',
+    x: 1620,
+    y: 2650,
+    size: 'large'
+  }, {
+    type: 'mine',
+    x: 3727,
+    y: 801,
+    ores: ['iron', 'copper', 'zinc', 'lead'],
+    features: ['forge', 'large anvil']
   }
 ];
