@@ -2445,62 +2445,62 @@ deeds = [
     features: ['']
     type: 'solo'
 ,
-	name: 'Justice'
-	tag: 'justice'
-	x: 3673
-	y: 810
-	mayor: 'Justice'
-	type: 'solo'
+    name: 'Justice'
+    tag: 'justice'
+    x: 3673
+    y: 810
+    mayor: 'Justice'
+    type: 'solo'
 ,
-	name: 'Fantasy Village'
-	tag: 'fantasy-village'
-	x: 3719
-	y: 755
-	mayor: 'Testje'
-	type: 'solo'
+    name: 'Fantasy Village'
+    tag: 'fantasy-village'
+    x: 3719
+    y: 755
+    mayor: 'Testje'
+    type: 'solo'
 ,
-	name: 'AlpenGlow'
-	tag: 'AlpenGlow'
-	x: 3663
-	y: 745
-	mayor: 'Emppu'
-	type: 'solo'
+    name: 'AlpenGlow'
+    tag: 'AlpenGlow'
+    x: 3663
+    y: 745
+    mayor: 'Emppu'
+    type: 'solo'
 ,
-	name: 'Golden Bay'
-	tag: 'Golden-Bay'
-	x: 3705
-	y: 910
-	mayor: 'Goldie'
-	type: 'solo'
+    name: 'Golden Bay'
+    tag: 'Golden-Bay'
+    x: 3705
+    y: 910
+    mayor: 'Goldie'
+    type: 'solo'
 ,
-	name: 'Wolf\'s Lair'
-	tag: 'Wolfs-Lair'
-	x: 3124
-	y: 2005
-	mayor: 'Winterwolf'
-	type: 'solo'
+    name: 'Wolf\'s Lair'
+    tag: 'Wolfs-Lair'
+    x: 3124
+    y: 2005
+    mayor: 'Winterwolf'
+    type: 'solo'
 ,
-	name: 'Casele Valley'
-	tag: 'Casele-Valley'
-	x: 638
-	y: 971
-	mayor: 'Michelangelo'
+    name: 'Casele Valley'
+    tag: 'Casele-Valley'
+    x: 638
+    y: 971
+    mayor: 'Michelangelo'
     features: ['harbour','recruiting']
-	type: 'solo'
+    type: 'solo'
 ,
-	name: 'Fairyland'
-	tag: 'Fairyland'
-	x: 3705
-	y: 817
-	mayor: 'Kellyvanille'
+    name: 'Fairyland'
+    tag: 'Fairyland'
+    x: 3705
+    y: 817
+    mayor: 'Kellyvanille'
     features: ['harbour']
-	type: 'small'
+    type: 'small'
 ,
-	name: 'Von Ravenstein'
-	tag: 'Von-Ravenstein'
-	x: 3675
-	y: 779
-	mayor: 'Pasje'
+    name: 'Von Ravenstein'
+    tag: 'Von-Ravenstein'
+    x: 3675
+    y: 779
+    mayor: 'Pasje'
     features: ['harbour']
-	type: 'small'
+    type: 'small'
 ]
