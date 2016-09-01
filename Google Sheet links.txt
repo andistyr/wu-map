@@ -1,3 +1,12 @@
-https://docs.google.com/spreadsheets/d/1RoCNiS2WbAm3hGWYuIlynOhMvteDNGC2CzwAOIdEeqc/
+Public
+Response Sheet		 https://docs.google.com/spreadsheets/d/1RoCNiS2WbAm3hGWYuIlynOhMvteDNGC2CzwAOIdEeqc/
 
-Replaced all the forms and moved these into one sheet. Phew. -Esroh
+Accessible to contributors only
+(Esroh, Dominikk)
+Deed Form			https://docs.google.com/forms/d/1BUPkv4FUhWZHimbeqE0VUN0QBcQe32q7Pnq_lcylxdE/edit?usp=sharing
+Guard Tower Form	https://docs.google.com/forms/d/18mhPg_DjJS8Y3tNMIyXWs8_Sm4EddwR_p8ZJLljoLok/edit?usp=sharing
+Resource Form		https://docs.google.com/forms/d/1EJo-c0ri8n9vWWgMtuo5CBONNMkmWP58gHtsN24pX7c/edit?usp=sharing
+Public Mine Form	https://docs.google.com/forms/d/1mh7lizsiy_9s-tKurk_CZu6PJ50CMLmNC1kDUJwDdUk/edit?usp=sharing
+Forest Form			https://docs.google.com/forms/d/1muzztjgU9lX-TYNo3nW4S7mhUhUWp9YZhhj-sXo2sDM/edit?usp=sharing
+POI Form			https://docs.google.com/forms/d/1K-gqwZMxosMNPzNMG88FT-QbJn_1TDspcL2SWyaKXZA/edit?usp=sharing
+Report Form			https://docs.google.com/forms/d/1szcZKf9NY1lrLQC2iTzPp-LmMexYwH5sR1pUEQqI_WQ/edit?usp=sharing
