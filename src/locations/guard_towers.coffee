@@ -1094,4 +1094,8 @@ guard_towers = [
     x: 3742
     y: 719
     creator: 'Devildognl'
+,
+	x: 3265
+	y: 1834
+	creator: 'Engineer'
 ]

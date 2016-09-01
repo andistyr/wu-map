@@ -1,7 +1,7 @@
 poi = [
     name: 'Spawn'
-    x: 2557
-    y: 775
+    x: 3790
+    y: 770
     description: 'This is where new players start their journey into the magical world of Sklotopolis'
 ,
     name: 'Altar of Three'
