@@ -848,14 +848,6 @@ deeds = [
     features: ['recruiting'],
     type: 'solo'
   }, {
-    name: 'Phrog On The Lake',
-    tag: 'phrog-on-the-lake',
-    x: 2009,
-    y: 1376,
-    mayor: 'Phrog',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Lost Pines',
     tag: 'lost-pines',
     x: 1006,
@@ -1742,7 +1734,7 @@ deeds = [
     y: 1837,
     mayor: 'Esroh',
     features: ['mailbox', 'harbour'],
-    type: 'solo'
+    type: 'large'
   }, {
     name: 'Sanctum',
     tag: 'Sanctum',
@@ -2253,8 +2245,8 @@ deeds = [
     x: 3314,
     y: 2064,
     mayor: 'Talaku',
-    features: ['harbour', 'inn'],
-    type: 'small'
+    features: ['harbour', 'inn', 'mailbox'],
+    type: 'solo'
   }, {
     name: 'Vale of the Fallen',
     tag: 'Vale-of-the-Fallen',
@@ -2490,5 +2482,29 @@ deeds = [
     y: 2005,
     mayor: 'Winterwolf',
     type: 'solo'
+  }, {
+    name: 'Casele Valley',
+    tag: 'Casele-Valley',
+    x: 638,
+    y: 971,
+    mayor: 'Michelangelo',
+    features: ['harbour', 'recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Fairyland',
+    tag: 'Fairyland',
+    x: 3705,
+    y: 817,
+    mayor: 'Kellyvanille',
+    features: ['harbour'],
+    type: 'small'
+  }, {
+    name: 'Von Ravenstein',
+    tag: 'Von-Ravenstein',
+    x: 3675,
+    y: 779,
+    mayor: 'Pasje',
+    features: ['harbour'],
+    type: 'small'
   }
 ];
