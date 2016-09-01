@@ -2479,4 +2479,28 @@ deeds = [
 	y: 2005
 	mayor: 'Winterwolf'
 	type: 'solo'
+,
+	name: 'Casele Valley'
+	tag: 'Casele-Valley'
+	x: 638
+	y: 971
+	mayor: 'Michelangelo'
+    features: ['harbour','recruiting']
+	type: 'solo'
+,
+	name: 'Fairyland'
+	tag: 'Fairyland'
+	x: 3705
+	y: 817
+	mayor: 'Kellyvanille'
+    features: ['harbour']
+	type: 'small'
+,
+	name: 'Von Ravenstein'
+	tag: 'Von-Ravenstein'
+	x: 3675
+	y: 779
+	mayor: 'Pasje'
+    features: ['harbour']
+	type: 'small'
 ]
