@@ -944,14 +944,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Clay Coast Harbor',
-    tag: 'clay-coast-harbor',
-    x: 629,
-    y: 2306,
-    mayor: 'Madjester',
-    features: ['harbour', 'mailbox'],
-    type: 'solo'
-  }, {
     name: 'Vale of the Silent',
     tag: 'vale-of-the-silent',
     x: 2795,
@@ -1253,14 +1245,6 @@ deeds = [
     x: 419,
     y: 2013,
     mayor: 'Huseyin',
-    features: [''],
-    type: 'solo'
-  }, {
-    name: 'Chestnut Lake',
-    tag: 'chestnut-lake',
-    x: 1504,
-    y: 1818,
-    mayor: 'Murph',
     features: [''],
     type: 'solo'
   }, {
@@ -2477,6 +2461,34 @@ deeds = [
     x: 3673,
     y: 810,
     mayor: 'Justice',
+    type: 'solo'
+  }, {
+    name: 'Fantasy Village',
+    tag: 'fantasy-village',
+    x: 3719,
+    y: 755,
+    mayor: 'Testje',
+    type: 'solo'
+  }, {
+    name: 'AlpenGlow',
+    tag: 'AlpenGlow',
+    x: 3663,
+    y: 745,
+    mayor: 'Emppu',
+    type: 'solo'
+  }, {
+    name: 'Golden Bay',
+    tag: 'Golden-Bay',
+    x: 3705,
+    y: 910,
+    mayor: 'Goldie',
+    type: 'solo'
+  }, {
+    name: 'Wolf\'s Lair',
+    tag: 'Wolfs-Lair',
+    x: 3124,
+    y: 2005,
+    mayor: 'Winterwolf',
     type: 'solo'
   }
 ];

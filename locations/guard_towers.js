@@ -1062,20 +1062,20 @@ guard_towers = [
     y: 1831,
     creator: 'Mcwidowmaker'
   }, {
-    x: 1333,
-    y: 1977,
+    x: 1334,
+    y: 1912,
     creator: 'Wreck'
   }, {
-    x: 1255,
-    y: 1966,
+    x: 1257,
+    y: 1880,
     creator: 'Karthannar'
   }, {
-    x: 1250,
-    y: 2039,
+    x: 1249,
+    y: 1938,
     creator: 'Bluebunny'
   }, {
-    x: 1421,
-    y: 1954,
+    x: 1419,
+    y: 1923,
     creator: 'Wreck'
   }, {
     x: 2427,

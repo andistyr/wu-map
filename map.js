@@ -851,19 +851,19 @@ show_add_form = function(which) {
   url = (function() {
     switch (which) {
       case 'deed':
-        return 'https://docs.google.com/forms/d/1-GW1P_ImiqjYxCFSQGw_kFRbmDRbbpkCFpRbO82jb8Q/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1BUPkv4FUhWZHimbeqE0VUN0QBcQe32q7Pnq_lcylxdE/viewform?embedded=true&hl=en';
       case 'tower':
-        return 'https://docs.google.com/forms/d/19Aa-F-2PwTmMEYZTKfbpnjDRvKvBw5ZVwhQSIDPDlQQ/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/18mhPg_DjJS8Y3tNMIyXWs8_Sm4EddwR_p8ZJLljoLok/viewform?embedded=true&hl=en';
       case 'mine':
-        return 'https://docs.google.com/forms/d/10tIQppH5tsWCvMBqsg22dGVS1ids36vcr3BlhnX6aI8/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1mh7lizsiy_9s-tKurk_CZu6PJ50CMLmNC1kDUJwDdUk/viewform?embedded=true&hl=en';
       case 'resource':
-        return 'https://docs.google.com/forms/d/1NVS_LMy0aTv8OCRnEbhnrS06QRzd40ShioUGi7jo6DU/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1EJo-c0ri8n9vWWgMtuo5CBONNMkmWP58gHtsN24pX7c/viewform?embedded=true&hl=en';
       case 'poi':
-        return 'https://docs.google.com/forms/d/1vUyH4gGvPyy1GfMRcPZ3ynX7IRh083sIoLyHo8eaeyA/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1K-gqwZMxosMNPzNMG88FT-QbJn_1TDspcL2SWyaKXZA/viewform?embedded=true&hl=en';
       case 'trees':
-        return 'https://docs.google.com/forms/d/1J8xMFQQZEGQ_5b1bsCX1wltGLz5SoV-MQQKE0ui4DrQ/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1muzztjgU9lX-TYNo3nW4S7mhUhUWp9YZhhj-sXo2sDM/viewform?embedded=true&hl=en';
       case 'report':
-        return 'https://docs.google.com/forms/d/1R3gbLKem9Hw4cM73pxdqT-LJRtZBxJr_TXTjNGYLcNE/viewform?embedded=true&hl=en';
+        return 'https://docs.google.com/forms/d/1szcZKf9NY1lrLQC2iTzPp-LmMexYwH5sR1pUEQqI_WQ/viewform?embedded=true&hl=en';
     }
   })();
   document.getElementById('addform').style.display = 'block';
