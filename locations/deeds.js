@@ -414,14 +414,6 @@ deeds = [
     mayor: 'Indalo',
     type: 'solo'
   }, {
-    name: 'Florida',
-    tag: 'florida',
-    x: 850,
-    y: 292,
-    mayor: 'Tedrick',
-    features: ['harbour', 'recruiting'],
-    type: 'solo'
-  }, {
     name: 'Port North',
     tag: 'port-north',
     x: 2278,
@@ -429,14 +421,6 @@ deeds = [
     mayor: 'Bluegreen',
     features: ['harbour'],
     type: 'small'
-  }, {
-    name: 'Catnip Cove',
-    tag: 'catnip-cove',
-    x: 3508,
-    y: 1421,
-    mayor: 'Mizova',
-    features: ['harbour', 'mailbox', 'market', 'inn'],
-    type: 'large'
   }, {
     name: 'Magnolia Mines',
     tag: 'magnolia-mines',
@@ -623,14 +607,6 @@ deeds = [
     mayor: 'Tranderas',
     type: 'solo'
   }, {
-    name: 'Castle Glittercrown',
-    tag: 'castle-glittercrown',
-    x: 348,
-    y: 312,
-    mayor: 'Capi',
-    features: ['harbour', 'recruiting'],
-    type: 'small'
-  }, {
     name: 'Tulum',
     tag: 'tulum',
     x: 330,
@@ -757,13 +733,6 @@ deeds = [
     mayor: 'Tjalfe',
     type: 'small'
   }, {
-    name: 'Cargonia',
-    tag: 'cargonia',
-    x: 641,
-    y: 2279,
-    mayor: 'Noll',
-    type: 'solo'
-  }, {
     name: 'Luxious Cloitus',
     tag: 'luxious-cloitus',
     x: 2283,
@@ -800,14 +769,6 @@ deeds = [
     features: [''],
     type: 'small'
   }, {
-    name: 'Frostfire',
-    tag: 'frostfire',
-    x: 2838,
-    y: 1666,
-    mayor: 'Rhianna',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Port Dirt Poor',
     tag: 'port-dirt-poor',
     x: 365,
@@ -839,14 +800,6 @@ deeds = [
     mayor: 'Kaasa',
     features: [''],
     type: 'small'
-  }, {
-    name: 'Crystalzcastel',
-    tag: 'crystalzcastel',
-    x: 3051,
-    y: 1843,
-    mayor: 'Solee',
-    features: ['recruiting'],
-    type: 'solo'
   }, {
     name: 'Lost Pines',
     tag: 'lost-pines',
@@ -968,14 +921,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Falkreath Farm',
-    tag: 'falkreath-farm',
-    x: 1686,
-    y: 784,
-    mayor: 'Ekatski',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Kelsey\'s Retreat',
     tag: 'kelseys-retreat',
     x: 1055,
@@ -1031,14 +976,6 @@ deeds = [
     mayor: 'Lumi',
     features: [''],
     type: 'large'
-  }, {
-    name: 'Blacksheep Island',
-    tag: 'blacksheep-island',
-    x: 888,
-    y: 942,
-    mayor: 'Mizova & Krazow',
-    features: ['harbour', 'mailbox', 'trader', 'market', 'recruiting'],
-    type: 'small'
   }, {
     name: 'Bay of Blades',
     tag: 'bay-of-blades',
@@ -1176,14 +1113,6 @@ deeds = [
     features: [''],
     type: 'small'
   }, {
-    name: 'Baldurs Gate',
-    tag: 'baldurs-gate',
-    x: 874,
-    y: 1774,
-    mayor: 'Ragnor',
-    features: ['recruiting'],
-    type: 'small'
-  }, {
     name: 'Shortys Retreat',
     tag: 'shortys-retreat',
     x: 1303,
@@ -1256,28 +1185,12 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Crimson Corporations',
-    tag: 'crimson-corporations',
-    x: 456,
-    y: 1940,
-    mayor: 'Sarkubocael',
-    features: ['trader', 'harbour', 'inn'],
-    type: 'solo'
-  }, {
     name: 'Barna',
     tag: 'Barna',
     x: 742,
     y: 276,
     mayor: 'Golluns',
     features: [''],
-    type: 'solo'
-  }, {
-    name: 'Aurora Village',
-    tag: 'aurora-village',
-    x: 564,
-    y: 1805,
-    mayor: 'Kilian',
-    features: ['harbour'],
     type: 'solo'
   }, {
     name: 'Everton',
@@ -1352,7 +1265,7 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Citadel dOraguille',
+    name: 'Citadel d\'Oraguille',
     tag: 'citadel-doraguille',
     x: 1246,
     y: 1844,
@@ -1496,14 +1409,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Claustrophobia Wisakurum',
-    tag: 'claustrophobia-wisakurum',
-    x: 1247,
-    y: 957,
-    mayor: 'Wisaku',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Drandor',
     tag: 'Drandor',
     x: 2398,
@@ -1511,14 +1416,6 @@ deeds = [
     mayor: 'Drackoroth',
     features: ['harbour', 'mailbox', 'recruiting'],
     type: 'small'
-  }, {
-    name: 'Laeglond',
-    tag: 'Laeglond',
-    x: 3230,
-    y: 1426,
-    mayor: 'Alageth',
-    features: [''],
-    type: 'solo'
   }, {
     name: 'Safeholm',
     tag: 'Safeholm',
@@ -1724,7 +1621,7 @@ deeds = [
     tag: 'antalya-beach',
     x: 944,
     y: 338,
-    mayor: 'mehmet',
+    mayor: 'Mehmet',
     features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'recruiting', 'inn'],
     type: 'large'
   }, {
@@ -1757,14 +1654,6 @@ deeds = [
     x: 1496,
     y: 1792,
     mayor: 'Svartaifal',
-    features: [''],
-    type: 'solo'
-  }, {
-    name: 'The Marish',
-    tag: 'the-marish',
-    x: 1246,
-    y: 425,
-    mayor: 'Burnet',
     features: [''],
     type: 'solo'
   }, {
@@ -1845,14 +1734,6 @@ deeds = [
     x: 1281,
     y: 3782,
     mayor: 'ShadowRanger',
-    features: [''],
-    type: 'solo'
-  }, {
-    name: 'Andistyr\'s Stables',
-    tag: 'Andistyrs-Stables',
-    x: 1017,
-    y: 712,
-    mayor: 'Borieck',
     features: [''],
     type: 'solo'
   }, {
@@ -2506,5 +2387,61 @@ deeds = [
     mayor: 'Pasje',
     features: ['harbour'],
     type: 'small'
+  }, {
+    name: 'Outpost d\'Oraguille',
+    tag: 'Outpost-dOraguille',
+    x: 3723,
+    y: 839,
+    mayor: 'Selphie',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Aged Fat Corpse Village',
+    tag: 'Aged-Fat-Corpse-Village',
+    x: 2686,
+    y: 2290,
+    mayor: 'Crowtrobot',
+    features: ['mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Sarmis',
+    tag: 'Sarmis',
+    x: 3150,
+    y: 3030,
+    mayor: 'Wyrx',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Teddybear\'s Land Full With Candy\'s',
+    tag: 'Teddybears-Land-Full-With-Candys',
+    x: 3722,
+    y: 708,
+    mayor: 'Teddybear',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Starport',
+    tag: 'Starport',
+    x: 3153,
+    y: 1546,
+    mayor: 'Django',
+    features: ['mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Mos Eisley',
+    tag: 'Mos-Eisley',
+    x: 2917,
+    y: 1576,
+    mayor: 'Astra',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Water Seven Hippodrome',
+    tag: 'Water-Seven-Hippodrome',
+    x: 3602,
+    y: 371,
+    mayor: 'Gunther',
+    features: [''],
+    type: 'solo'
   }
 ];

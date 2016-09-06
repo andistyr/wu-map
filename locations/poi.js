@@ -292,5 +292,9 @@ poi = [
     y: 1792,
     type: 'statue',
     description: ''
+  }, {
+    name: 'Path of Knowledge Tile',
+    x: 3508,
+    y: 368
   }
 ];
