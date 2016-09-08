@@ -47,14 +47,6 @@ deeds = [
     x: 730,
     y: 2348
   }, {
-    name: 'Highwater',
-    tag: 'highwater',
-    type: 'large',
-    mayor: 'Kezei',
-    x: 2641,
-    y: 3500,
-    features: ['trader', 'merchant', 'market', 'inn', 'harbour', 'mailbox', 'recruiting']
-  }, {
     name: 'Deathlands',
     tag: 'deathlands',
     type: 'solo',
@@ -161,13 +153,6 @@ deeds = [
     x: 1312,
     y: 1154,
     features: ['recruiting']
-  }, {
-    name: 'Lunaman\'s Shack',
-    tag: 'lunamans-shack',
-    mayor: 'Lunaman',
-    type: 'solo',
-    x: 875,
-    y: 2636
   }, {
     name: 'Bay-town',
     tag: 'bay-town',
@@ -328,26 +313,11 @@ deeds = [
     mayor: 'Reese',
     type: 'solo'
   }, {
-    name: 'Dragon\'s Lair',
-    tag: 'dragons-lair',
-    x: 2088,
-    y: 3134,
-    mayor: 'IQtheDragon',
-    type: 'small',
-    features: ['recruiting']
-  }, {
     name: 'Rise Of The Pink Ponys',
     tag: 'rise-of-the-pink-ponys',
     x: 721,
     y: 1047,
     mayor: 'Yogibearjew',
-    type: 'small'
-  }, {
-    name: 'Compton Beachamp',
-    tag: 'compton-beachamp',
-    x: 1061,
-    y: 348,
-    mayor: 'Akali',
     type: 'small'
   }, {
     name: 'Safe Haven',
@@ -356,20 +326,6 @@ deeds = [
     y: 834,
     mayor: 'PrincessZena',
     features: ['recruiting'],
-    type: 'solo'
-  }, {
-    name: 'Dark Leaf',
-    tag: 'dark-leaf',
-    x: 1152,
-    y: 784,
-    mayor: 'Kinnarts',
-    type: 'solo'
-  }, {
-    name: 'Machinatrium',
-    tag: 'machinatrium',
-    x: 3180,
-    y: 392,
-    mayor: 'DeuxExMachina',
     type: 'solo'
   }, {
     name: 'Dragon\'s Pool',
@@ -398,13 +354,6 @@ deeds = [
     x: 1356,
     y: 446,
     mayor: 'Isdur',
-    type: 'solo'
-  }, {
-    name: 'Griffin Mountain',
-    tag: 'griffin-mountain',
-    x: 3095,
-    y: 2737,
-    mayor: 'Guffil',
     type: 'solo'
   }, {
     name: 'Indalo Farm',
@@ -571,13 +520,6 @@ deeds = [
     features: ['harbour', 'market', 'mailbox'],
     type: 'solo'
   }, {
-    name: 'Dark Leaf Harbor',
-    tag: 'dark-leaf-harbor',
-    x: 1203,
-    y: 952,
-    mayor: 'Innik',
-    type: 'solo'
-  }, {
     name: 'Arvika',
     tag: 'arvika',
     x: 582,
@@ -697,13 +639,6 @@ deeds = [
     features: ['trader', 'recruiting'],
     type: 'small'
   }, {
-    name: 'Heimdal\'s Hut',
-    tag: 'heimdals-hut',
-    x: 857,
-    y: 1361,
-    mayor: 'Heimdal',
-    type: 'solo'
-  }, {
     name: 'Narnia',
     tag: 'narnia',
     x: 1099,
@@ -745,13 +680,6 @@ deeds = [
     x: 1052,
     y: 3843,
     mayor: 'Sassy',
-    type: 'solo'
-  }, {
-    name: 'Moriathun',
-    tag: 'moriathun',
-    x: 3158,
-    y: 2068,
-    mayor: 'Easy',
     type: 'solo'
   }, {
     name: 'Shadows Rest',
@@ -945,14 +873,6 @@ deeds = [
     features: [''],
     type: 'small'
   }, {
-    name: 'Maple Enclave',
-    tag: 'maple-enclave',
-    x: 2391,
-    y: 2008,
-    mayor: 'Yunga',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Pleasant Valley',
     tag: 'pleasant-valley',
     x: 960,
@@ -1025,14 +945,6 @@ deeds = [
     features: ['trader', 'mailbox', 'harbour', 'inn', 'market', 'recruiting'],
     type: 'solo'
   }, {
-    name: 'Pickering Lodge',
-    tag: 'pickering-lodge',
-    x: 2695,
-    y: 943,
-    mayor: 'Pickering',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Pirkadat',
     tag: 'Pirkadat',
     x: 2610,
@@ -1054,14 +966,6 @@ deeds = [
     x: 2100,
     y: 3343,
     mayor: 'Malic',
-    features: [''],
-    type: 'solo'
-  }, {
-    name: 'Smallville',
-    tag: 'Smallville',
-    x: 1328,
-    y: 567,
-    mayor: 'Bija',
     features: [''],
     type: 'solo'
   }, {
@@ -1096,14 +1000,6 @@ deeds = [
     mayor: 'Bennetto',
     features: ['recruiting'],
     type: 'small'
-  }, {
-    name: 'On Golden Pond',
-    tag: 'on-golden-pond',
-    x: 1624,
-    y: 800,
-    mayor: 'Fumble',
-    features: [''],
-    type: 'solo'
   }, {
     name: 'Viking Ridge',
     tag: 'viking-ridge',
@@ -1193,14 +1089,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Everton',
-    tag: 'Everton',
-    x: 3624,
-    y: 2948,
-    mayor: 'Sinmage',
-    features: [''],
-    type: 'small'
-  }, {
     name: 'Kangaroo isle',
     tag: 'Kangaroo-isle',
     x: 1432,
@@ -1281,14 +1169,6 @@ deeds = [
     features: ['recruiting'],
     type: 'solo'
   }, {
-    name: 'Summertyne Park',
-    tag: 'summertyne-park',
-    x: 2670,
-    y: 941,
-    mayor: 'Summertyne',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Fairbanks',
     tag: 'Fairbanks',
     x: 668,
@@ -1335,22 +1215,6 @@ deeds = [
     y: 1604,
     mayor: 'Valdora',
     features: ['inn', 'mailbox'],
-    type: 'solo'
-  }, {
-    name: 'Miner\'s Respite',
-    tag: 'miners-respite',
-    x: 3254,
-    y: 2270,
-    mayor: 'Kyllian',
-    features: ['recruiting'],
-    type: 'solo'
-  }, {
-    name: 'Fishing post',
-    tag: 'fishing-post',
-    x: 386,
-    y: 369,
-    mayor: 'Gladiatora',
-    features: ['recruiting'],
     type: 'solo'
   }, {
     name: 'Gravelton',
@@ -1425,14 +1289,6 @@ deeds = [
     features: [''],
     type: 'small'
   }, {
-    name: 'Minas Auratious',
-    tag: 'minas-auratious',
-    x: 377,
-    y: 1404,
-    mayor: 'Aratone',
-    features: ['harbour', 'recruiting'],
-    type: 'small'
-  }, {
     name: 'Finger Island',
     tag: 'Finger Island',
     x: 3026,
@@ -1464,14 +1320,6 @@ deeds = [
     mayor: 'Neofit',
     features: [''],
     type: 'solo'
-  }, {
-    name: 'Helheim',
-    tag: 'Helheim',
-    x: 2027,
-    y: 1039,
-    mayor: 'Maxella',
-    features: [''],
-    type: 'small'
   }, {
     name: 'Jellystone Park',
     tag: 'jellystone-park',
@@ -1760,14 +1608,6 @@ deeds = [
     mayor: 'UpToDate',
     features: ['inn', 'mailbox'],
     type: 'large'
-  }, {
-    name: 'Skooterville',
-    tag: 'Skooterville',
-    x: 3288,
-    y: 2508,
-    mayor: 'SkooterWicky',
-    features: [''],
-    type: 'solo'
   }, {
     name: 'Amaranthine',
     tag: 'Amaranthine',
@@ -2441,6 +2281,14 @@ deeds = [
     x: 3602,
     y: 371,
     mayor: 'Gunther',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Mountain Giant\'s Plateau',
+    tag: 'Mountain-Giants-Plateau',
+    x: 1379,
+    y: 1552,
+    mayor: 'Obsidian',
     features: [''],
     type: 'solo'
   }
