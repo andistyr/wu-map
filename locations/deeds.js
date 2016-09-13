@@ -7,7 +7,7 @@ deeds = [
     mayor: 'Engineer',
     x: 3796,
     y: 766,
-    features: ['trader', 'merchant', 'market', 'harbour', 'resources']
+    features: ['trader', 'merchant', 'market', 'harbour']
   }, {
     name: 'New Town',
     tag: 'new-town',
@@ -15,7 +15,7 @@ deeds = [
     type: 'large',
     x: 906,
     y: 760,
-    features: ['trader', 'merchant', 'market', 'harbour', 'resources']
+    features: ['trader', 'merchant', 'market', 'harbour']
   }, {
     name: 'Alexondrea',
     tag: 'alexondrea',
@@ -23,7 +23,7 @@ deeds = [
     mayor: 'Traveler',
     x: 1076,
     y: 786,
-    features: ['resources']
+    features: ['']
   }, {
     name: 'Longview',
     tag: 'longview',
