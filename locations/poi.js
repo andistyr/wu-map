@@ -303,8 +303,7 @@ poi = [
   }, {
     name: 'Path of Love Tile',
     x: 3698,
-    y: 1331
-  }, {
+    y: 1331,
     description: 'Xaviska'
   }
 ];

@@ -279,16 +279,16 @@ poi = [
     y: 1025
     description: ''
 ,
-	name: 'Canal Abeto'
-	x: 3263
-	y: 1900
-	description: 'Constructed by Esroh'
+    name: 'Canal Abeto'
+    x: 3263
+    y: 1900
+    description: 'Constructed by Esroh'
 ,
-	name: 'Colossus of Esroh'
-	x: 3211
-	y: 1792
-	type: 'statue'
-	description: ''
+    name: 'Colossus of Esroh'
+    x: 3211
+    y: 1792
+    type: 'statue'
+    description: ''
 ,
     name: 'Path of Knowledge Tile'
     x: 3508
@@ -301,5 +301,5 @@ poi = [
     name: 'Path of Love Tile'
     x: 3698
     y: 1331
-	description: 'Xaviska'
+    description: 'Xaviska'
 ]
