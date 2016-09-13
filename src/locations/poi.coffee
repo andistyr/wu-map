@@ -297,4 +297,9 @@ poi = [
     name: 'Path of Love Tile'
     x: 3746
     y: 902
+,
+    name: 'Path of Love Tile'
+    x: 3698
+    y: 1331
+	description: 'Xaviska'
 ]
