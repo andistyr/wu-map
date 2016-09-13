@@ -306,13 +306,6 @@ deeds = [
     mayor: 'Cadeef',
     type: 'solo'
   }, {
-    name: 'Zephyr',
-    tag: 'zephyr',
-    x: 2719,
-    y: 3674,
-    mayor: 'Reese',
-    type: 'solo'
-  }, {
     name: 'Rise Of The Pink Ponys',
     tag: 'rise-of-the-pink-ponys',
     x: 721,
@@ -579,13 +572,6 @@ deeds = [
     mayor: 'Orvig',
     type: 'solo'
   }, {
-    name: 'Memphis\' Mountain Home',
-    tag: 'memphis-mountain-home',
-    x: 1079,
-    y: 2113,
-    mayor: 'Memphis',
-    type: 'solo'
-  }, {
     name: 'End of The Line Trading Partners',
     tag: 'end-of-the-line-trading-partners',
     x: 2480,
@@ -639,14 +625,6 @@ deeds = [
     features: ['trader', 'recruiting'],
     type: 'small'
   }, {
-    name: 'Narnia',
-    tag: 'narnia',
-    x: 1099,
-    y: 897,
-    mayor: 'Artenn',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Spring\'s Reserve',
     tag: 'springs-reserve',
     x: 1071,
@@ -659,13 +637,6 @@ deeds = [
     x: 1010,
     y: 1777,
     mayor: 'Lasin',
-    type: 'small'
-  }, {
-    name: 'Viking Haven',
-    tag: 'viking-haven',
-    x: 1157,
-    y: 910,
-    mayor: 'Tjalfe',
     type: 'small'
   }, {
     name: 'Luxious Cloitus',
@@ -688,14 +659,6 @@ deeds = [
     y: 3772,
     mayor: 'Oriss',
     type: 'solo'
-  }, {
-    name: 'Port Phobic',
-    tag: 'port-phobic',
-    x: 449,
-    y: 2373,
-    mayor: 'Phobicice',
-    features: [''],
-    type: 'small'
   }, {
     name: 'Port Dirt Poor',
     tag: 'port-dirt-poor',
@@ -897,14 +860,6 @@ deeds = [
     features: [''],
     type: 'large'
   }, {
-    name: 'Bay of Blades',
-    tag: 'bay-of-blades',
-    x: 2911,
-    y: 353,
-    mayor: 'Backsnap',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Hunters Rest',
     tag: 'hunters-rest',
     x: 3515,
@@ -969,27 +924,11 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Blue Ribbon',
-    tag: 'blue-ribbon',
-    x: 1631,
-    y: 760,
-    mayor: 'Etna',
-    features: [''],
-    type: 'small'
-  }, {
     name: 'Mountainhome Conglomerate',
     tag: 'mountainhome-conglomerate',
     x: 2280,
     y: 1493,
     mayor: 'Reptile',
-    features: [''],
-    type: 'small'
-  }, {
-    name: 'Nouvelle France',
-    tag: 'nouvelle-france',
-    x: 1915,
-    y: 3434,
-    mayor: 'Xloff',
     features: [''],
     type: 'small'
   }, {
@@ -1009,14 +948,6 @@ deeds = [
     features: [''],
     type: 'small'
   }, {
-    name: 'Shortys Retreat',
-    tag: 'shortys-retreat',
-    x: 1303,
-    y: 684,
-    mayor: 'Shorty',
-    features: [''],
-    type: 'small'
-  }, {
     name: 'Szegvar',
     tag: 'Szegvar',
     x: 1126,
@@ -1033,28 +964,12 @@ deeds = [
     features: [''],
     type: 'small'
   }, {
-    name: 'White Deer Inn',
-    tag: 'white-deer-inn',
-    x: 2573,
-    y: 1356,
-    mayor: 'Sethus',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'The Grove',
     tag: 'the-grove',
     x: 1390,
     y: 752,
     mayor: 'Parsnips',
     features: ['recruiting'],
-    type: 'solo'
-  }, {
-    name: 'Ranch',
-    tag: 'Ranch',
-    x: 1688,
-    y: 1915,
-    mayor: 'Mariosso',
-    features: [''],
     type: 'solo'
   }, {
     name: 'Antalya',
@@ -1096,14 +1011,6 @@ deeds = [
     mayor: 'Risko',
     features: [''],
     type: 'small'
-  }, {
-    name: 'Wesmere',
-    tag: 'Wesmere',
-    x: 550,
-    y: 248,
-    mayor: 'Kalenz',
-    features: [''],
-    type: 'solo'
   }, {
     name: 'New Fulwic',
     tag: 'new-fulwic',
@@ -1233,14 +1140,6 @@ deeds = [
     features: [''],
     type: 'small'
   }, {
-    name: 'The Dark Ones',
-    tag: 'the-dark-ones',
-    x: 3422,
-    y: 304,
-    mayor: 'Hordefanatic',
-    features: [''],
-    type: 'small'
-  }, {
     name: 'Port Well',
     tag: 'port-well',
     x: 810,
@@ -1272,14 +1171,6 @@ deeds = [
     mayor: 'Bluebunny',
     features: [''],
     type: 'solo'
-  }, {
-    name: 'Drandor',
-    tag: 'Drandor',
-    x: 2398,
-    y: 3661,
-    mayor: 'Drackoroth',
-    features: ['harbour', 'mailbox', 'recruiting'],
-    type: 'small'
   }, {
     name: 'Safeholm',
     tag: 'Safeholm',
@@ -1357,7 +1248,7 @@ deeds = [
     tag: 'halls-of-magranon',
     x: 2381,
     y: 2355,
-    mayor: 'Samsonn',
+    mayor: 'Arduwin',
     features: ['trader', 'merchant', 'inn'],
     type: 'large'
   }, {
@@ -1369,18 +1260,10 @@ deeds = [
     features: ['trader', 'market', 'recruiting', 'mailbox'],
     type: 'small'
   }, {
-    name: 'Darkenstone',
-    tag: 'Darkenstone',
-    x: 2783,
-    y: 1433,
-    mayor: 'Maxx',
-    features: [''],
-    type: 'small'
-  }, {
     name: 'Birchvale',
     tag: 'Birchvale',
-    x: 2131,
-    y: 739,
+    x: 2132,
+    y: 797,
     mayor: 'Kinslock',
     features: [''],
     type: 'solo'
@@ -1400,14 +1283,6 @@ deeds = [
     mayor: 'Liability',
     features: [''],
     type: 'small'
-  }, {
-    name: 'Crystal Noctis',
-    tag: 'crystal-noctis',
-    x: 3399,
-    y: 1390,
-    mayor: 'Nightcross',
-    features: [''],
-    type: 'solo'
   }, {
     name: 'Malcolm\'s Durge',
     tag: 'malcolm\'s-durge',
@@ -1433,28 +1308,12 @@ deeds = [
     features: ['trader', 'market', 'inn', 'mailbox'],
     type: 'small'
   }, {
-    name: 'Algade',
-    tag: 'Algade',
-    x: 387,
-    y: 1559,
-    mayor: 'Tsustyle',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Halderat',
     tag: 'Halderat',
     x: 1571,
     y: 1788,
     mayor: 'Coady',
     features: ['harbour'],
-    type: 'solo'
-  }, {
-    name: 'Darujhistan',
-    tag: 'Darujhistan',
-    x: 1151,
-    y: 3830,
-    mayor: 'Whiskyjack',
-    features: [''],
     type: 'solo'
   }, {
     name: 'Hedon',
@@ -1487,14 +1346,6 @@ deeds = [
     y: 729,
     mayor: 'Cilerium',
     features: [''],
-    type: 'solo'
-  }, {
-    name: 'Black Templars',
-    tag: 'black-templars',
-    x: 1524,
-    y: 444,
-    mayor: 'Zeafaw',
-    features: ['recruiting'],
     type: 'solo'
   }, {
     name: 'Home',
@@ -1545,27 +1396,11 @@ deeds = [
     features: ['harbour', 'inn', 'recruiting'],
     type: 'small'
   }, {
-    name: 'Public docks north',
-    tag: 'public-docks-north',
-    x: 1164,
-    y: 385,
-    mayor: 'mjmalt',
-    features: ['harbour', 'mailbox'],
-    type: 'small'
-  }, {
     name: 'Lokin',
     tag: 'Lokin',
     x: 2095,
     y: 1540,
     mayor: 'Keran',
-    features: [''],
-    type: 'solo'
-  }, {
-    name: 'Coyote Bluff',
-    tag: 'coyote-bluff',
-    x: 1008,
-    y: 1886,
-    mayor: 'Herawyn',
     features: [''],
     type: 'solo'
   }, {
@@ -1929,14 +1764,6 @@ deeds = [
     features: [''],
     type: 'small'
   }, {
-    name: 'Tombstone',
-    tag: 'Tombstone',
-    x: 3162,
-    y: 940,
-    mayor: 'Django',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Villa Orchidea',
     tag: 'Villa-Orchidea',
     x: 1465,
@@ -2236,14 +2063,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Aged Fat Corpse Village',
-    tag: 'Aged-Fat-Corpse-Village',
-    x: 2686,
-    y: 2290,
-    mayor: 'Crowtrobot',
-    features: ['mailbox'],
-    type: 'solo'
-  }, {
     name: 'Sarmis',
     tag: 'Sarmis',
     x: 3150,
@@ -2289,6 +2108,38 @@ deeds = [
     x: 1379,
     y: 1552,
     mayor: 'Obsidian',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Flames of Eternity',
+    tag: 'Flames-of-Eternity',
+    x: 3554,
+    y: 836,
+    mayor: 'Fatmia',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Poxwind',
+    tag: 'Poxwind',
+    x: 1969,
+    y: 824,
+    mayor: 'Drtox',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Edge of the World',
+    tag: 'Edge-of-the-World',
+    x: 256,
+    y: 1705,
+    mayor: 'Densetsu',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Vinyamar',
+    tag: 'Vinyamar',
+    x: 3485,
+    y: 945,
+    mayor: 'Andariel',
     features: [''],
     type: 'solo'
   }
