@@ -5,6 +5,7 @@ deeds = [
     x: 3796
     y: 766
     features: ['trader','merchant','market','harbour']
+	type: 'large'
 ,
     name: 'New Town'
     tag: 'new-town'
