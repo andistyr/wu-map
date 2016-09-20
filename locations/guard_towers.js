@@ -327,8 +327,8 @@ guard_towers = [
     y: 2828,
     creator: 'DwemerManiac'
   }, {
-    x: 769,
-    y: 1581,
+    x: 798,
+    y: 1571,
     creator: 'Ratzo & Yelruh'
   }, {
     x: 1501,
@@ -1101,5 +1101,37 @@ guard_towers = [
     x: 3265,
     y: 1834,
     creator: 'Engineer'
+  }, {
+    x: 3867,
+    y: 1885,
+    creator: 'Montgo'
+  }, {
+    x: 3090,
+    y: 1575,
+    creator: 'Django'
+  }, {
+    x: 3132,
+    y: 3021,
+    creator: 'Vyrx'
+  }, {
+    x: 287,
+    y: 1699,
+    creator: 'Densetsu'
+  }, {
+    x: 1487,
+    y: 1629,
+    creator: 'Elfin'
+  }, {
+    x: 1502,
+    y: 1569,
+    creator: 'Elfin'
+  }, {
+    x: 1421,
+    y: 1694,
+    creator: 'Elfin'
+  }, {
+    x: 1398,
+    y: 1711,
+    creator: 'Elfin'
   }
 ];

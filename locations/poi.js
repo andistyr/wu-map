@@ -305,5 +305,9 @@ poi = [
     x: 3698,
     y: 1331,
     description: 'Xaviska'
+  }, {
+    name: 'Path of Knowledge Tile',
+    x: 3662,
+    y: 549
   }
 ];
