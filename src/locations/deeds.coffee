@@ -15,14 +15,6 @@ deeds = [
     y: 760
     features: ['trader','merchant','market','harbour']
 ,
-    name: 'Alexondrea'
-    tag: 'alexondrea'
-    type: 'large'
-    mayor: 'Traveler'
-    x: 1076
-    y: 786
-    features: ['']
-,
     name: 'Longview'
     tag: 'longview'
     x: 556
@@ -175,13 +167,6 @@ deeds = [
     y: 3303
     features: ['harbour']
 ,
-    name: 'Reagville'
-    tag: 'reagville'
-    mayor: 'Reagor'
-    type: 'solo'
-    x: 484
-    y: 541
-,
     name: 'Ashenfort'
     tag: 'ashenfort'
     mayor: 'Meado'
@@ -240,13 +225,6 @@ deeds = [
     y: 815
     features: ['recruiting']
 ,
-    name: 'Grendellvar'
-    tag: 'grendellvar'
-    x: 1764
-    y: 2025
-    mayor: 'Manbear'
-    type: 'solo'
-,
     name: 'Regional Customs'
     tag: 'regional-customs'
     x: 970
@@ -282,13 +260,6 @@ deeds = [
     y: 871
     mayor: 'Traveler'
     features: ['merchant','market','harbour']
-,
-    name: 'Silversky'
-    tag: 'silversky'
-    x: 3045
-    y: 1782
-    mayor: 'Katitude'
-    type: 'solo'
 ,
     name: 'Kentosani'
     tag: 'kentosani'
@@ -332,13 +303,6 @@ deeds = [
     y: 1304
     mayor: 'Kadore'
     type: 'solo'
-,
-    name: 'Loyal Ace'
-    tag: 'loyal-ace'
-    x: 1970
-    y: 3356
-    mayor: 'Yela'
-    type: 'small'
 ,
     name: 'Azure'
     tag: 'azure'
@@ -444,14 +408,6 @@ deeds = [
     mayor: 'ElofValantor'
     type: 'solo'
 ,
-    name: 'Pirate Bay'
-    tag: 'pirate-bay'
-    x: 2548
-    y: 778
-    mayor: 'CookieMuncher & Cryke'
-    features: ['trader','market','harbour','inn']
-    type: 'large'
-,
     name: 'SkyRift'
     tag: 'skyrift'
     x: 3620
@@ -501,14 +457,6 @@ deeds = [
     x: 849
     y: 598
     mayor: 'Syleth'
-    type: 'solo'
-,
-    name: 'LoveFear-Docks'
-    tag: 'lovefear-docks'
-    x: 524
-    y: 2331
-    mayor: 'Lovelace'
-    features: ['harbour','market','mailbox']
     type: 'solo'
 ,
     name: 'Arvika'
@@ -866,14 +814,6 @@ deeds = [
     features: ['recruiting']
     type: 'small'
 ,
-    name: 'Morrowind'
-    tag: 'Morrowind'
-    x: 1196
-    y: 403
-    mayor: 'BabbaGanush'
-    features: ['harbour','mailbox','recruiting']
-    type: 'solo'
-,
     name: 'Gallup'
     tag: 'Gallup'
     x: 797
@@ -888,14 +828,6 @@ deeds = [
     y: 803
     mayor: 'Cennydd'
     features: ['']
-    type: 'solo'
-,
-    name: 'Carpeshire'
-    tag: 'Carpeshire'
-    x: 990
-    y: 1647
-    mayor: 'Alex'
-    features: ['trader','mailbox','harbour','inn','market','recruiting']
     type: 'solo'
 ,
     name: 'Pirkadat'
@@ -1441,14 +1373,6 @@ deeds = [
     mayor: 'UpToDate'
     features: ['inn','mailbox']
     type: 'large'
-,
-    name: 'Amaranthine'
-    tag: 'Amaranthine'
-    x: 3387
-    y: 1439
-    mayor: 'Caelin'
-    features: ['']
-    type: 'solo'
 ,
     name: 'Flynn\'s Retreat'
     tag: 'Flynns-Retreat'
@@ -2088,7 +2012,7 @@ deeds = [
     name: 'Mos Eisley'
     tag: 'Mos-Eisley'
     x: 2917
-    y: 1576
+    y: 1516
     mayor: 'Astra'
     features: ['']
     type: 'solo'
@@ -2138,6 +2062,54 @@ deeds = [
     x: 3485
     y: 945
     mayor: 'Andariel'
+    features: ['']
+    type: 'solo'
+,
+    name: 'The Sanctuary'
+    tag: 'The-Sanctuary'
+    x: 1714
+    y: 3189
+    mayor: 'Fleur'
+    features: ['']
+    type: 'solo'
+,
+    name: 'New Horizon'
+    tag: 'New-Horizon'
+    x: 1131
+    y: 898
+    mayor: 'Yaga'
+    features: ['harbour','mailbox']
+    type: 'solo'
+,
+    name: 'Repentless'
+    tag: 'Repentless'
+    x: 3635
+    y: 844
+    mayor: 'Zakmyrr'
+    features: ['recruiting']
+    type: 'solo'
+,
+    name: 'Redmoon Harbor'
+    tag: 'Redmoon-Harbor'
+    x: 2751
+    y: 837
+    mayor: 'Megachill'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Hunters Heights'
+    tag: 'Hunters-Heights'
+    x: 1277
+    y: 1982
+    mayor: 'Senitor'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Comfy-forest-retreat'
+    tag: 'Comfy-forest-retreat'
+    x: 1430
+    y: 683
+    mayor: 'Lememeyfrog'
     features: ['']
     type: 'solo'
 ]
