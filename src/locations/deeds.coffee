@@ -318,14 +318,6 @@ deeds = [
     mayor: 'Indalo'
     type: 'solo'
 ,
-    name: 'Port North'
-    tag: 'port-north'
-    x: 2278
-    y: 592
-    mayor: 'Bluegreen'
-    features: ['harbour']
-    type: 'small'
-,
     name: 'Magnolia Mines'
     tag: 'magnolia-mines'
     x: 808
@@ -526,13 +518,6 @@ deeds = [
     features: ['recruiting']
     type: 'small'
 ,
-    name: 'Verdent Hill'
-    tag: 'verdent-hill'
-    x: 1316
-    y: 807
-    mayor: 'Emass'
-    type: 'solo'
-,
     name: 'Littlehub'
     tag: 'littlehub'
     x: 805
@@ -678,14 +663,6 @@ deeds = [
     features: ['']
     type: 'small'
 ,
-    name: 'DeValois Shipyard'
-    tag: 'devalois-shipyard'
-    x: 1730
-    y: 422
-    mayor: 'DeValois'
-    features: ['']
-    type: 'solo'
-,
     name: 'Merwede'
     tag: 'merwede'
     x: 3622
@@ -708,14 +685,6 @@ deeds = [
     y: 394
     mayor: 'Jekmar'
     features: ['harbour']
-    type: 'solo'
-,
-    name: 'Lakebridge'
-    tag: 'lakebridge'
-    x: 1682
-    y: 969
-    mayor: 'StraightSIX'
-    features: ['recruting']
     type: 'solo'
 ,
     name: 'Steelwall'
@@ -870,14 +839,6 @@ deeds = [
     features: ['recruiting']
     type: 'small'
 ,
-    name: 'Viking Ridge'
-    tag: 'viking-ridge'
-    x: 1467
-    y: 1266
-    mayor: 'Anders'
-    features: ['']
-    type: 'small'
-,
     name: 'Szegvar'
     tag: 'Szegvar'
     x: 1126
@@ -996,14 +957,6 @@ deeds = [
     y: 1844
     mayor: 'Karthannar'
     features: ['']
-    type: 'solo'
-,
-    name: 'Eletha'
-    tag: 'Eletha'
-    x: 812
-    y: 1471
-    mayor: 'Wolfey'
-    features: ['recruiting']
     type: 'solo'
 ,
     name: 'Fairbanks'
@@ -1126,27 +1079,11 @@ deeds = [
     features: ['']
     type: 'small'
 ,
-    name: 'Sin City'
-    tag: 'Sin City'
-    x: 1751
-    y: 735
-    mayor: 'Marcallus'
-    features: ['']
-    type: 'solo'
-,
     name: 'Serendipity'
     tag: 'Serendipity'
     x: 2758
     y: 3393
     mayor: 'Neofit'
-    features: ['']
-    type: 'solo'
-,
-    name: 'Jellystone Park'
-    tag: 'jellystone-park'
-    x: 1729
-    y: 1000
-    mayor: 'Grapape'
     features: ['']
     type: 'solo'
 ,
@@ -1205,14 +1142,6 @@ deeds = [
     mayor: 'Halfdan'
     features: ['harbour','viking land']
     type: 'solo'
-,
-    name: 'Tumunzahar'
-    tag: 'Tumunzahar'
-    x: 1265
-    y: 1125
-    mayor: 'Liability'
-    features: ['']
-    type: 'small'
 ,
     name: 'Malcolm\'s Durge'
     tag: 'malcolm\'s-durge'
@@ -1302,14 +1231,6 @@ deeds = [
     features: ['']
     type: 'solo'
 ,
-    name: 'Sehrimnir'
-    tag: 'Sehrimnir'
-    x: 586
-    y: 665
-    mayor: 'Fenrisulven'
-    features: ['']
-    type: 'solo'
-,
     name: 'Waters Edge'
     tag: 'waters-edge'
     x: 1459
@@ -1334,11 +1255,11 @@ deeds = [
     features: ['']
     type: 'solo'
 ,
-    name: 'Effulgent Grove'
-    tag: 'effulgent-grove'
+    name: 'Lamplight'
+    tag: 'Lamplight'
     x: 3227
     y: 448
-    mayor: 'Halcyon'
+    mayor: 'Ataraxia'
     features: ['']
     type: 'solo'
 ,
@@ -1405,14 +1326,6 @@ deeds = [
     mayor: 'Brandenburg'
     features: ['harbour','recruiting']
     type: 'solo'
-,
-    name: 'Paddle Pond Ranch'
-    tag: 'Paddle-Pond-Ranch'
-    x: 1782
-    y: 1065
-    mayor: 'Niinjaturtle'
-    features: ['']
-    type: 'small'
 ,
     name: 'The Mist'
     tag: 'The-Mist'
@@ -1507,14 +1420,6 @@ deeds = [
     x: 3780
     y: 2333
     mayor: 'Tebari'
-    features: ['']
-    type: 'solo'
-,
-    name: 'Green Plains Farms'
-    tag: 'Green-Plains-Farms'
-    x: 2229
-    y: 700
-    mayor: 'Kasildun'
     features: ['']
     type: 'solo'
 ,
@@ -2112,4 +2017,44 @@ deeds = [
     mayor: 'Lememeyfrog'
     features: ['']
     type: 'solo'
+,
+    name: 'Maiden Way'
+    tag: 'Maiden-Way'
+    x: 561
+    y: 242
+    mayor: 'Ladykat'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Cedar Lodge'
+    tag: 'Cedar-Lodge'
+    x: 1009
+    y: 2833
+    mayor: 'Myra'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Karakorum'
+    tag: 'Karakorum'
+    x: 1758
+    y: 2160
+    mayor: 'Grumpy'
+    features: ['recruiting']
+    type: 'small'
+,
+    name: 'Tyrian Steel Company'
+    tag: 'Tyrian-Steel-Company'
+    x: 1745
+    y: 2115
+    mayor: 'Feydrid'
+    features: ['recruiting']
+    type: 'solo'
+,
+    name: 'Kronan'
+    tag: 'Kronan'
+    x: 674
+    y: 1742
+    mayor: 'Danja'
+    features: ['']
+    type: 'small'
 ]

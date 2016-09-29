@@ -1130,4 +1130,12 @@ guard_towers = [
     x: 1398
     y: 1711
     creator: 'Elfin'
+,
+    x: 340
+    y: 1698
+    creator: 'Densetsu'
+,
+    x: 3686
+    y: 1033
+    creator: 'Mercury'
 ]
