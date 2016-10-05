@@ -306,4 +306,8 @@ poi = [
     name: 'Path of Knowledge Tile'
     x: 3662
     y: 549
+,
+    name: 'Path of Knowledge Tile'
+    x: 671
+    y: 976
 ]

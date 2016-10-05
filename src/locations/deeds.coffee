@@ -108,13 +108,6 @@ deeds = [
     x: 1548
     y: 2974
 ,
-    name: 'Mikes Point'
-    tag: 'mikes-point'
-    type: 'solo'
-    mayor: 'Mike'
-    x: 3602
-    y: 786
-,
     name: 'Midway Landing'
     tag: 'midway-landing'
     type: 'small'
@@ -246,13 +239,6 @@ deeds = [
     mayor: 'Metrix'
     type: 'small'
     features: ['recruiting']
-,
-    name: 'Unknown Xenon Sector'
-    tag: 'unknown-xenon-sector'
-    x: 3061
-    y: 1447
-    mayor: 'Xenon'
-    type: 'solo'
 ,
     name: 'Alexondrea Port'
     tag: 'alexondrea-port'
@@ -771,7 +757,7 @@ deeds = [
     tag: 'Avallone'
     x: 1390
     y: 1750
-    mayor: 'Lumi'
+    mayor: 'Elfin'
     features: ['']
     type: 'large'
 ,
@@ -815,14 +801,6 @@ deeds = [
     features: ['harbour','mailbox']
     type: 'small'
 ,
-    name: 'Hopes corner'
-    tag: 'hopes-corner'
-    x: 2100
-    y: 3343
-    mayor: 'Malic'
-    features: ['']
-    type: 'solo'
-,
     name: 'Mountainhome Conglomerate'
     tag: 'mountainhome-conglomerate'
     x: 2280
@@ -843,7 +821,7 @@ deeds = [
     tag: 'Szegvar'
     x: 1126
     y: 481
-    mayor: 'Venatus'
+    mayor: 'Heroic'
     features: ['']
     type: 'solo'
 ,
@@ -1163,8 +1141,8 @@ deeds = [
     tag: 'lake-market'
     x: 1410
     y: 1760
-    mayor: 'Lady Lake'
-    features: ['trader','market','inn','mailbox']
+    mayor: 'Guinevere'
+    features: ['trader','merchant','market','inn','mailbox']
     type: 'small'
 ,
     name: 'Halderat'
@@ -1211,7 +1189,7 @@ deeds = [
     tag: 'Home'
     x: 1496
     y: 1792
-    mayor: 'Svartaifal'
+    mayor: 'Justice'
     features: ['']
     type: 'solo'
 ,
@@ -1278,14 +1256,6 @@ deeds = [
     mayor: 'Maxium'
     features: ['trader','merchant','harbour','market','mailbox','recruiting','inn']
     type: 'large'
-,
-    name: 'Ubik\'s Keep'
-    tag: 'Ubiks-Keep'
-    x: 2642
-    y: 1473
-    mayor: 'Saturnal'
-    features: ['']
-    type: 'solo'
 ,
     name: 'Lasthope'
     tag: 'Lasthope'
@@ -1479,14 +1449,6 @@ deeds = [
     features: ['']
     type: 'small'
 ,
-    name: 'Northlet Camp'
-    tag: 'Northlet-Camp'
-    x: 1294
-    y: 442
-    mayor: 'Villiame'
-    features: ['']
-    type: 'solo'
-,
     name: 'Meadowview Stables'
     tag: 'Meadowview-Stables'
     x: 751
@@ -1526,14 +1488,6 @@ deeds = [
     mayor: 'Dezrodino'
     features: ['inn']
     type: 'small'
-,
-    name: 'Blackbeak Consortium'
-    tag: 'Blackbeak-Consortium'
-    x: 2906
-    y: 718
-    mayor: 'Dreadnought'
-    features: ['recruiting']
-    type: 'solo'
 ,
     name: 'Enlightenend'
     tag: 'Enlightenend'
@@ -1759,14 +1713,6 @@ deeds = [
     features: ['recruiting']
     type: 'small'
 ,
-    name: 'Love Patch'
-    tag: 'love-patch'
-    x: 3723
-    y: 704
-    mayor: 'Mariposa'
-    features: ['']
-    type: 'solo'
-,
     name: 'Dragons Rest'
     tag: 'dragons-rest'
     x: 1805
@@ -1821,13 +1767,6 @@ deeds = [
     y: 870
     mayor: 'Rambo'
     features: ['']
-    type: 'solo'
-,
-    name: 'Justice'
-    tag: 'justice'
-    x: 3673
-    y: 810
-    mayor: 'Justice'
     type: 'solo'
 ,
     name: 'Fantasy Village'
@@ -2055,6 +1994,54 @@ deeds = [
     x: 674
     y: 1742
     mayor: 'Danja'
+    features: ['']
+    type: 'small'
+,
+    name: 'Kirkwood'
+    tag: 'Kirkwood'
+    x: 3527
+    y: 980
+    mayor: 'Sklojohn'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Dearg Doom'
+    tag: 'Dearg-Doom'
+    x: 3182
+    y: 1379
+    mayor: 'Konor'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Tinastown'
+    tag: 'Tinastown'
+    x: 1147
+    y: 3813
+    mayor: 'Tinaskat'
+    features: ['mailbox','recruiting']
+    type: 'small'
+,
+    name: 'Dunkelwald Weingut'
+    tag: 'Dunkelwald-Weingut'
+    x: 3586
+    y: 3429
+    mayor: 'Ennofiliusdiaboli'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Shylren Ortheiad'
+    tag: 'Shylren-Ortheiad'
+    x: 3854
+    y: 1961
+    mayor: 'Elsa'
+    features: ['']
+    type: 'small'
+,
+    name: 'Almerswind'
+    tag: 'Almerswind'
+    x: 3269
+    y: 1055
+    mayor: 'Bourbon'
     features: ['']
     type: 'small'
 ]
