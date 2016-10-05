@@ -245,5 +245,20 @@ resources = [
     x: 3740,
     y: 858,
     size: 'medium'
+  }, {
+    type: 'tar',
+    x: 2142,
+    y: 1946,
+    size: 'large'
+  }, {
+    type: 'tar',
+    x: 1961,
+    y: 1740,
+    size: 'medium'
+  }, {
+    type: 'tar',
+    x: 1816,
+    y: 1882,
+    size: 'medium'
   }
 ];

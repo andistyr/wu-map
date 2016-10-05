@@ -313,5 +313,25 @@ trees = [
     type: 'lavender',
     x: 3041,
     y: 1811
+  }, {
+    type: 'grape',
+    x: 1972,
+    y: 2424
+  }, {
+    type: 'birch',
+    x: 1816,
+    y: 1816
+  }, {
+    type: 'birch',
+    x: 2171,
+    y: 1839
+  }, {
+    type: 'birch',
+    x: 1989,
+    y: 1550
+  }, {
+    type: 'birch',
+    x: 2185,
+    y: 1601
   }
 ];
