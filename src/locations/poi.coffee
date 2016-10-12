@@ -289,6 +289,7 @@ poi = [
     y: 1792
     type: 'statue'
     description: ''
+    mayor: 'Esroh'
 ,
     name: 'Path of Knowledge Tile'
     x: 3508
