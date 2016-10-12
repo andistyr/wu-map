@@ -291,7 +291,8 @@ poi = [
     x: 3211,
     y: 1792,
     type: 'statue',
-    description: ''
+    description: '',
+    mayor: 'Esroh'
   }, {
     name: 'Path of Knowledge Tile',
     x: 3508,

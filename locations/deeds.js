@@ -97,27 +97,6 @@ deeds = [
     x: 1070,
     y: 1164
   }, {
-    name: 'Rock Face',
-    tag: 'rock-face',
-    type: 'solo',
-    mayor: 'Zentil',
-    x: 935,
-    y: 1280
-  }, {
-    name: 'Silver Lake',
-    tag: 'silver-lake',
-    type: 'solo',
-    mayor: 'Alayena',
-    x: 1548,
-    y: 2974
-  }, {
-    name: 'Midway Landing',
-    tag: 'midway-landing',
-    type: 'small',
-    mayor: 'Linx',
-    x: 662,
-    y: 2170
-  }, {
     name: 'Gades',
     tag: 'gades',
     type: 'solo',
@@ -131,29 +110,6 @@ deeds = [
     mayor: 'Quip',
     x: 1100,
     y: 374
-  }, {
-    name: 'Bear Mountain',
-    tag: 'bear-mountain',
-    mayor: 'Inara',
-    type: 'small',
-    x: 1312,
-    y: 1154,
-    features: ['recruiting']
-  }, {
-    name: 'Bay-town',
-    tag: 'bay-town',
-    mayor: 'Hampe',
-    type: 'solo',
-    x: 1196,
-    y: 925
-  }, {
-    name: 'Astur',
-    tag: 'astur',
-    mayor: 'Charlypodo',
-    type: 'solo',
-    x: 1088,
-    y: 1120,
-    features: ['harbour']
   }, {
     name: 'Riverside',
     tag: 'riverside',
@@ -171,26 +127,12 @@ deeds = [
     y: 1820,
     features: ['recruiting']
   }, {
-    name: 'Valhalla',
-    tag: 'valhalla',
-    mayor: 'Thor',
-    type: 'solo',
-    x: 711,
-    y: 762
-  }, {
     name: 'Zhentil keep',
     tag: 'zhentil-keep',
     mayor: 'validate',
     type: 'solo',
     x: 2839,
     y: 508
-  }, {
-    name: 'The Pitstop',
-    tag: 'pitstop',
-    mayor: 'Azalia',
-    type: 'solo',
-    x: 1398,
-    y: 885
   }, {
     name: 'Bg Town',
     tag: 'bg-town',
@@ -199,34 +141,12 @@ deeds = [
     x: 1206,
     y: 1070
   }, {
-    name: 'Fallmead',
-    tag: 'fallmead',
-    x: 2933,
-    y: 390,
-    mayor: 'Yesirn',
-    type: 'small'
-  }, {
     name: 'Productivity',
     tag: 'productivity',
     x: 846,
     y: 642,
     mayor: 'Gatwick',
     type: 'solo'
-  }, {
-    name: 'Lonelywood',
-    tag: 'lonelywood',
-    mayor: 'Leiph',
-    type: 'solo',
-    x: 2260,
-    y: 815,
-    features: ['recruiting']
-  }, {
-    name: 'Regional Customs',
-    tag: 'regional-customs',
-    x: 970,
-    y: 734,
-    mayor: 'Arion',
-    type: 'small'
   }, {
     name: 'Arn\'s place',
     tag: 'arns-place',
@@ -242,49 +162,6 @@ deeds = [
     mayor: 'Metrix',
     type: 'small',
     features: ['recruiting']
-  }, {
-    name: 'Alexondrea Port',
-    tag: 'alexondrea-port',
-    x: 1105,
-    y: 871,
-    mayor: 'Traveler',
-    features: ['merchant', 'market', 'harbour']
-  }, {
-    name: 'Kentosani',
-    tag: 'kentosani',
-    x: 440,
-    y: 3080,
-    mayor: 'Liam',
-    type: 'solo'
-  }, {
-    name: 'Homewood',
-    tag: 'homewood',
-    x: 525,
-    y: 633,
-    mayor: 'Cadeef',
-    type: 'solo'
-  }, {
-    name: 'Rise Of The Pink Ponys',
-    tag: 'rise-of-the-pink-ponys',
-    x: 721,
-    y: 1047,
-    mayor: 'Yogibearjew',
-    type: 'small'
-  }, {
-    name: 'Safe Haven',
-    tag: 'safe-haven',
-    x: 1104,
-    y: 834,
-    mayor: 'PrincessZena',
-    features: ['recruiting'],
-    type: 'solo'
-  }, {
-    name: 'Dragon\'s Pool',
-    tag: 'dragons-pool',
-    x: 2088,
-    y: 3294,
-    mayor: 'Dragoniq',
-    type: 'small'
   }, {
     name: 'Bloodbath and Beyond',
     tag: 'bloodbath-and-beyond',
@@ -314,9 +191,9 @@ deeds = [
     mayor: 'Deltagirl',
     type: 'solo'
   }, {
-    name: 'Hell\'s Pass',
-    tag: 'fos-forest-trade-post',
-    x: 1118,
+    name: 'Hell\'s Pass Metal Works Co\'',
+    tag: 'hells-pass-metal-works-co',
+    x: 1116,
     y: 808,
     mayor: 'Manton',
     features: ['trader', 'market', 'mailbox', 'recruiting'],
@@ -344,34 +221,11 @@ deeds = [
     mayor: 'Yeva, Emili',
     type: 'solo'
   }, {
-    name: 'Pine Lake',
-    tag: 'pine-lake',
-    x: 2556,
-    y: 2280,
-    mayor: 'Harzim',
-    type: 'solo'
-  }, {
-    name: 'Littlehub',
-    tag: 'littlehub',
-    x: 805,
-    y: 1308,
-    mayor: 'Thalos',
-    features: ['harbour', 'recruiting'],
-    type: 'solo'
-  }, {
     name: 'Archimedes Hall',
     tag: 'archimedes-hall',
     x: 2496,
     y: 810,
     mayor: 'Archimedes',
-    type: 'solo'
-  }, {
-    name: 'Enigma',
-    tag: 'enigma',
-    x: 742,
-    y: 276,
-    mayor: 'Zortanis',
-    features: ['recruiting'],
     type: 'solo'
   }, {
     name: 'West Point',
@@ -382,14 +236,14 @@ deeds = [
     features: ['harbour', 'inn'],
     type: 'solo'
   }, {
-    name: 'The Anvil of Ice',
+    name: 'Anvil of Ice',
     tag: 'anvil-of-ice',
     x: 1472,
     y: 2293,
     mayor: 'ElofValantor',
     type: 'solo'
   }, {
-    name: 'SkyRift',
+    name: 'Skyrift',
     tag: 'skyrift',
     x: 3620,
     y: 1649,
@@ -404,27 +258,6 @@ deeds = [
     features: ['harbour'],
     type: 'solo'
   }, {
-    name: 'Inextremx',
-    tag: 'inextremx',
-    x: 1206,
-    y: 846,
-    mayor: 'Inextremx',
-    type: 'solo'
-  }, {
-    name: 'Farms of Dwemeria',
-    tag: 'farms-of-dwemeria',
-    x: 995,
-    y: 2509,
-    mayor: 'JustBob',
-    type: 'solo'
-  }, {
-    name: 'Samia Bay',
-    tag: 'samia-bay',
-    x: 528,
-    y: 609,
-    mayor: 'Tranderas',
-    type: 'solo'
-  }, {
     name: 'Port Hudson',
     tag: 'port-hudson',
     x: 442,
@@ -432,21 +265,6 @@ deeds = [
     mayor: 'Tyrannus',
     features: ['harbour', 'recruiting'],
     type: 'solo'
-  }, {
-    name: 'Silgus',
-    tag: 'silgus',
-    x: 849,
-    y: 598,
-    mayor: 'Syleth',
-    type: 'solo'
-  }, {
-    name: 'Arvika',
-    tag: 'arvika',
-    x: 582,
-    y: 514,
-    mayor: 'Zeafaw',
-    features: ['recruiting'],
-    type: 'small'
   }, {
     name: 'Point of No Return',
     tag: 'point-of-no-return',
@@ -467,14 +285,6 @@ deeds = [
     x: 818,
     y: 1188,
     mayor: 'Tranderas',
-    type: 'solo'
-  }, {
-    name: 'Tulum',
-    tag: 'tulum',
-    x: 330,
-    y: 1840,
-    mayor: 'Diablos',
-    features: ['harbour', 'mailbox'],
     type: 'solo'
   }, {
     name: 'Pine Grove',
@@ -523,54 +333,18 @@ deeds = [
     features: ['recruiting'],
     type: 'solo'
   }, {
-    name: 'Goiania',
-    tag: 'goiania',
-    x: 470,
-    y: 2017,
-    mayor: 'Trustvainer',
+    name: 'Spring\'s Preserve',
+    tag: 'springs-preserve',
+    x: 1065,
+    y: 684,
+    mayor: 'Shangxiq',
     type: 'solo'
-  }, {
-    name: 'New Banana Land',
-    tag: 'new-banana-land',
-    x: 1625,
-    y: 3737,
-    mayor: 'Nana',
-    type: 'solo'
-  }, {
-    name: 'Belgica',
-    tag: 'belgica',
-    x: 1164,
-    y: 385,
-    mayor: 'Djjorno54',
-    features: ['trader', 'recruiting'],
-    type: 'small'
-  }, {
-    name: 'Spring\'s Reserve',
-    tag: 'springs-reserve',
-    x: 1071,
-    y: 677,
-    mayor: 'ShangXIq',
-    type: 'solo'
-  }, {
-    name: 'New Moon Harbour',
-    tag: 'new-moon-harbour',
-    x: 1010,
-    y: 1777,
-    mayor: 'Lasin',
-    type: 'small'
   }, {
     name: 'Luxious Cloitus',
     tag: 'luxious-cloitus',
     x: 2283,
     y: 1403,
     mayor: 'Farmer',
-    type: 'solo'
-  }, {
-    name: 'Paradise',
-    tag: 'paradise',
-    x: 1052,
-    y: 3843,
-    mayor: 'Sassy',
     type: 'solo'
   }, {
     name: 'Shadows Rest',
@@ -580,28 +354,12 @@ deeds = [
     mayor: 'Oriss',
     type: 'solo'
   }, {
-    name: 'Port Dirt Poor',
-    tag: 'port-dirt-poor',
-    x: 365,
-    y: 3386,
-    mayor: 'Sorensen',
-    features: ['harbour'],
-    type: 'solo'
-  }, {
     name: 'Karthwasten',
     tag: 'karthwasten',
-    x: 1256,
-    y: 755,
+    x: 951,
+    y: 807,
     mayor: 'Golbez',
     features: ['mailbox'],
-    type: 'solo'
-  }, {
-    name: 'CzapleNowe',
-    tag: 'czaplenowe',
-    x: 735,
-    y: 1251,
-    mayor: 'Czemiel',
-    features: [''],
     type: 'solo'
   }, {
     name: 'Little Norway',
@@ -636,14 +394,6 @@ deeds = [
     features: ['recruiting'],
     type: 'small'
   }, {
-    name: 'Blackwatch Lake',
-    tag: 'blackwatch-lake',
-    x: 1814,
-    y: 1004,
-    mayor: 'Cadderly',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Smurfland',
     tag: 'smurfland',
     x: 1766,
@@ -651,22 +401,6 @@ deeds = [
     mayor: 'Tigar',
     features: [''],
     type: 'small'
-  }, {
-    name: 'Merwede',
-    tag: 'merwede',
-    x: 3622,
-    y: 1400,
-    mayor: 'Falco',
-    features: ['harbour'],
-    type: 'solo'
-  }, {
-    name: 'Wolfmere',
-    tag: 'wolfmere',
-    x: 2555,
-    y: 859,
-    mayor: 'Nxtreme',
-    features: [''],
-    type: 'solo'
   }, {
     name: 'Ravenedge',
     tag: 'Ravenedge',
@@ -689,14 +423,6 @@ deeds = [
     x: 2795,
     y: 553,
     mayor: 'Axinex',
-    features: [''],
-    type: 'solo'
-  }, {
-    name: 'Springton',
-    tag: 'springton',
-    x: 3674,
-    y: 1323,
-    mayor: 'GamerGuyJoe',
     features: [''],
     type: 'solo'
   }, {
@@ -732,14 +458,6 @@ deeds = [
     features: ['harbour'],
     type: 'solo'
   }, {
-    name: 'Emon',
-    tag: 'emon',
-    x: 1706,
-    y: 855,
-    mayor: 'Zamster',
-    features: [''],
-    type: 'small'
-  }, {
     name: 'Pleasant Valley',
     tag: 'pleasant-valley',
     x: 960,
@@ -768,9 +486,9 @@ deeds = [
     tag: 'hunters-rest',
     x: 3515,
     y: 1699,
-    mayor: 'Mallam',
-    features: ['recruiting'],
-    type: 'small'
+    mayor: 'Bobbarley',
+    features: [''],
+    type: 'solo'
   }, {
     name: 'Gallup',
     tag: 'Gallup',
@@ -800,7 +518,7 @@ deeds = [
     tag: 'the-black-tower',
     x: 3742,
     y: 2763,
-    mayor: 'TomServo',
+    mayor: 'Tomservo',
     features: ['harbour', 'mailbox'],
     type: 'small'
   }, {
@@ -860,7 +578,7 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Tinkerbells resort',
+    name: 'Tinkerbell\'s Resort',
     tag: 'tinkerbells-resort',
     x: 1770,
     y: 949,
@@ -876,7 +594,7 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Kangaroo isle',
+    name: 'Kangaroo Isle',
     tag: 'Kangaroo-isle',
     x: 1432,
     y: 3823,
@@ -908,14 +626,6 @@ deeds = [
     features: ['recruiting', 'harbour', 'merchant'],
     type: 'solo'
   }, {
-    name: 'Flintwood',
-    tag: 'Flintwood',
-    x: 348,
-    y: 1512,
-    mayor: 'Flint',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Waterdeep',
     tag: 'Waterdeep',
     x: 582,
@@ -923,14 +633,6 @@ deeds = [
     mayor: 'Hammie',
     features: [''],
     type: 'small'
-  }, {
-    name: 'Hope',
-    tag: 'Hope',
-    x: 689,
-    y: 643,
-    mayor: 'Sabastion',
-    features: [''],
-    type: 'solo'
   }, {
     name: 'Citadel d\'Oraguille',
     tag: 'citadel-doraguille',
@@ -952,7 +654,7 @@ deeds = [
     tag: 'Cedar-point',
     x: 3517,
     y: 1723,
-    mayor: 'Collada',
+    mayor: 'Pinacollada',
     features: ['mailbox'],
     type: 'solo'
   }, {
@@ -1084,14 +786,6 @@ deeds = [
     features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'inn'],
     type: 'small'
   }, {
-    name: 'Grand Lakes',
-    tag: 'grand-lakes',
-    x: 383,
-    y: 565,
-    mayor: 'Tipsy',
-    features: ['trader', 'market'],
-    type: 'small'
-  }, {
     name: 'Halls of Magranon',
     tag: 'halls-of-magranon',
     x: 2381,
@@ -1114,14 +808,6 @@ deeds = [
     y: 797,
     mayor: 'Kinslock',
     features: [''],
-    type: 'solo'
-  }, {
-    name: 'Danelaw',
-    tag: 'Danelaw',
-    x: 806,
-    y: 270,
-    mayor: 'Halfdan',
-    features: ['harbour', 'viking land'],
     type: 'solo'
   }, {
     name: 'Malcolm\'s Durge',
@@ -1148,19 +834,11 @@ deeds = [
     features: ['trader', 'merchant', 'market', 'inn', 'mailbox'],
     type: 'small'
   }, {
-    name: 'Halderat',
-    tag: 'Halderat',
-    x: 1571,
-    y: 1788,
-    mayor: 'Coady',
-    features: ['harbour'],
-    type: 'solo'
-  }, {
     name: 'Hedon',
     tag: 'Hedon',
     x: 713,
     y: 2782,
-    mayor: 'OLloyd',
+    mayor: 'Olloyd',
     features: [''],
     type: 'solo'
   }, {
@@ -1220,14 +898,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Crimson Point',
-    tag: 'crimson-point',
-    x: 2024,
-    y: 1236,
-    mayor: 'JacobCrimson',
-    features: ['harbour', 'inn', 'recruiting'],
-    type: 'small'
-  }, {
     name: 'Lokin',
     tag: 'Lokin',
     x: 2095,
@@ -1244,11 +914,11 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'ShadowTown',
+    name: 'Shadowtown',
     tag: 'ShadowTown',
     x: 1281,
     y: 3782,
-    mayor: 'ShadowRanger',
+    mayor: 'Shadowranger',
     features: [''],
     type: 'solo'
   }, {
@@ -1264,7 +934,7 @@ deeds = [
     tag: 'Lasthope',
     x: 2983,
     y: 843,
-    mayor: 'UpToDate',
+    mayor: 'Uptodate',
     features: ['inn', 'mailbox'],
     type: 'large'
   }, {
@@ -1288,7 +958,7 @@ deeds = [
     tag: 'The-Iron-Hills',
     x: 1103,
     y: 1733,
-    mayor: 'GZgaming',
+    mayor: 'Nikodemus',
     features: ['recruiting'],
     type: 'small'
   }, {
@@ -1324,14 +994,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Trinity',
-    tag: 'Trinity',
-    x: 2350,
-    y: 630,
-    mayor: 'Trin',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Sweetwater',
     tag: 'Sweetwater',
     x: 3600,
@@ -1345,14 +1007,6 @@ deeds = [
     x: 1789,
     y: 2571,
     mayor: 'Darkraven',
-    features: [''],
-    type: 'solo'
-  }, {
-    name: 'Tisaldor',
-    tag: 'Tisaldor',
-    x: 2347,
-    y: 650,
-    mayor: 'Insomnia',
     features: [''],
     type: 'solo'
   }, {
@@ -1376,7 +1030,7 @@ deeds = [
     tag: 'Cerys-Corner',
     x: 523,
     y: 1209,
-    mayor: '',
+    mayor: 'Cerys',
     features: [''],
     type: 'solo'
   }, {
@@ -1460,14 +1114,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'The Jaded Docks',
-    tag: 'The-Jaded-Docks',
-    x: 2717,
-    y: 607,
-    mayor: 'Senitor',
-    features: ['Harbour'],
-    type: 'solo'
-  }, {
     name: 'Eastwood Ranch',
     tag: 'Eastwood-Ranch',
     x: 3854,
@@ -1508,7 +1154,7 @@ deeds = [
     features: ['recruiting'],
     type: 'small'
   }, {
-    name: 'GreenSide',
+    name: 'Greenside',
     tag: 'GreenSide',
     x: 3428,
     y: 364,
@@ -1528,7 +1174,7 @@ deeds = [
     tag: 'Erehwon',
     x: 524,
     y: 1156,
-    mayor: '',
+    mayor: 'Ranxerox',
     features: [''],
     type: 'small'
   }, {
@@ -1569,7 +1215,7 @@ deeds = [
     x: 852,
     y: 549,
     mayor: 'Tipsy',
-    features: [''],
+    features: ['trader', 'market'],
     type: 'small'
   }, {
     name: 'LWW Harbour',
@@ -1604,7 +1250,7 @@ deeds = [
     features: ['harbour'],
     type: 'solo'
   }, {
-    name: 'Keepers Peak',
+    name: 'Keeper\'s Peak',
     tag: 'Keepers-Peak',
     x: 3010,
     y: 2820,
@@ -1656,7 +1302,7 @@ deeds = [
     tag: 'ravens-bluff',
     x: 3705,
     y: 1321,
-    mayor: 'Xaviiska',
+    mayor: 'Xaviska',
     features: ['mailbox'],
     type: 'solo'
   }, {
@@ -1756,14 +1402,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Lakeview',
-    tag: 'lakeview',
-    x: 3272,
-    y: 3145,
-    mayor: 'Mysterie',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Concrete Jungle',
     tag: 'concrete-jungle',
     x: 3705,
@@ -1779,7 +1417,7 @@ deeds = [
     mayor: 'Testje',
     type: 'solo'
   }, {
-    name: 'AlpenGlow',
+    name: 'Alpenglow',
     tag: 'AlpenGlow',
     x: 3663,
     y: 745,
@@ -1901,8 +1539,8 @@ deeds = [
     x: 256,
     y: 1705,
     mayor: 'Densetsu',
-    features: ['recruiting'],
-    type: 'solo'
+    features: ['recruiting', 'harbour', 'mailbox', 'inn'],
+    type: 'large'
   }, {
     name: 'Vinyamar',
     tag: 'Vinyamar',
@@ -2040,12 +1678,92 @@ deeds = [
     features: [''],
     type: 'small'
   }, {
-    name: 'Almerswind',
-    tag: 'Almerswind',
-    x: 3269,
-    y: 1055,
-    mayor: 'Bourbon',
+    name: 'Sovngarde',
+    tag: 'Sovngarde',
+    x: 2857,
+    y: 1755,
+    mayor: 'Dovahkiin',
     features: [''],
     type: 'small'
+  }, {
+    name: 'Wynn',
+    tag: 'Wynn',
+    x: 2562,
+    y: 1406,
+    mayor: 'Ozgod',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Ironhold',
+    tag: 'Ironhold',
+    x: 1460,
+    y: 3154,
+    mayor: 'Izukana',
+    features: ['recruiting', 'mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Matryoshkas Brewery',
+    tag: 'Matryoshkas Brewery',
+    x: 1764,
+    y: 467,
+    mayor: 'Matryoshka',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Worldsend',
+    tag: 'Worldsend',
+    x: 1595,
+    y: 3120,
+    mayor: 'Badgirl',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Aggrothor\'s Town',
+    tag: 'Aggrothors-Town',
+    x: 3225,
+    y: 1063,
+    mayor: 'Aggrothor',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Wanderers Retreat',
+    tag: 'Wanderers-Retreat',
+    x: 2443,
+    y: 3759,
+    mayor: 'Annopedia',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Dreamland',
+    tag: 'Dreamland',
+    x: 1548,
+    y: 2974,
+    mayor: 'Iamyourfather',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Death\'s Cove',
+    tag: 'Deaths-Cove',
+    x: 3843,
+    y: 2281,
+    mayor: 'Deathpraiser',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Silverhart',
+    tag: 'Silverhart',
+    x: 794,
+    y: 451,
+    mayor: 'Fallard',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'The Village Idiots',
+    tag: 'The-Village-Idiots',
+    x: 1991,
+    y: 3041,
+    mayor: 'Tommy',
+    features: [''],
+    type: 'solo'
   }
 ];

@@ -1098,10 +1098,6 @@ guard_towers = [
     y: 719,
     creator: 'Devildognl'
   }, {
-    x: 3265,
-    y: 1834,
-    creator: 'Engineer'
-  }, {
     x: 3867,
     y: 1885,
     creator: 'Montgo'
@@ -1141,5 +1137,25 @@ guard_towers = [
     x: 3686,
     y: 1033,
     creator: 'Mercury'
+  }, {
+    x: 3736,
+    y: 848,
+    creator: 'Engineer'
+  }, {
+    x: 1600,
+    y: 3120,
+    creator: 'Bravyn'
+  }, {
+    x: 1597,
+    y: 3311,
+    creator: 'Klarseth'
+  }, {
+    x: 3444,
+    y: 1074,
+    creator: 'Sklojohntoo'
+  }, {
+    x: 3444,
+    y: 1125,
+    creator: 'Sklojohn'
   }
 ];
