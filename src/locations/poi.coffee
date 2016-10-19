@@ -289,7 +289,6 @@ poi = [
     y: 1792
     type: 'statue'
     description: ''
-    mayor: 'Esroh'
 ,
     name: 'Path of Knowledge Tile'
     x: 3508
@@ -311,4 +310,9 @@ poi = [
     name: 'Path of Knowledge Tile'
     x: 671
     y: 976
+,
+    name: 'Path of Power Tile'
+    x: 1317
+    y: 1835
+    description: 'Arbanka'
 ]

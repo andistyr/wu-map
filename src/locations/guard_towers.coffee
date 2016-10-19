@@ -48,7 +48,7 @@ guard_towers = [
 ,
     x: 1540
     y: 340
-    creator: 'zigackly'
+    creator: 'Zigackly'
 ,
     x: 1059
     y: 685
@@ -60,7 +60,7 @@ guard_towers = [
 ,
     x: 539
     y: 1384
-    creator: 'jackoritos'
+    creator: 'Jackoritos'
 ,
     x: 1130
     y: 1110
@@ -884,7 +884,7 @@ guard_towers = [
     creator: 'Emass'
 ,
     x: 3565
-    y: 1830
+    y: 1825
     creator: 'Esroh'
 ,
     x: 3515
@@ -992,11 +992,11 @@ guard_towers = [
     creator: 'Esroh'
 ,
     x: 3129
-    y: 1850
+    y: 1840
     creator: 'Esroh'
 ,
     x: 3079
-    y: 1850
+    y: 1840
     creator: 'Esroh'
 ,
     x: 3615
@@ -1154,4 +1154,68 @@ guard_towers = [
     x: 3444
     y: 1125
     creator: 'Sklojohn'
+,
+    x: 804
+    y: 438
+    creator: 'Sabastion'
+,
+    x: 616
+    y: 3237
+    creator: 'Olloyd'
+,
+    x: 616
+    y: 3288
+    creator: 'Olloyd'
+,
+    x: 616
+    y: 3339
+    creator: 'Olloyd'
+,
+    x: 616
+    y: 3391
+    creator: 'Olloyd'
+,
+    x: 616
+    y: 3444
+    creator: 'Olloyd'
+,
+    x: 616
+    y: 3514
+    creator: 'Olloyd'
+,
+    x: 757
+    y: 3671
+    creator: 'Olloyd'
+,
+    x: 668
+    y: 3514
+    creator: 'Olloyd'
+,
+    x: 757
+    y: 3618
+    creator: 'Olloyd'
+,
+    x: 757
+    y: 3515
+    creator: 'Olloyd'
+,
+    x: 1338
+    y: 1831
+    creator: 'Bigpanter'
+,
+    x: 3062
+    y: 1161
+    creator: 'Sklojohn'
+,
+    x: 3057
+    y: 1212
+    creator: 'Xenon'
+,
+    x: 1306
+    y: 2980
+    creator: 'Sprong'
+,
+    x: 1113
+    y: 2802
+    creator: 'Olloyd'
 ]

@@ -204,13 +204,6 @@ deeds = [
     features: ['harbour']
     type: 'solo'
 ,
-    name: 'Seal Cove'
-    tag: 'seal-cove'
-    x: 1474
-    y: 1603
-    mayor: 'Wulfsige'
-    type: 'solo'
-,
     name: 'Lost Woods'
     tag: 'lost-woods'
     x: 892
@@ -423,14 +416,6 @@ deeds = [
     features: ['']
     type: 'solo'
 ,
-    name: 'Piotroszkowo'
-    tag: 'piotroszkowo'
-    x: 3856
-    y: 2018
-    mayor: 'Petronus'
-    features: ['recruiting']
-    type: 'solo'
-,
     name: 'Fort Tiffany'
     tag: 'fort-tiffany'
     x: 1230
@@ -559,14 +544,6 @@ deeds = [
     features: ['recruiting']
     type: 'solo'
 ,
-    name: 'Antalya'
-    tag: 'Antalya'
-    x: 419
-    y: 2013
-    mayor: 'Huseyin'
-    features: ['']
-    type: 'solo'
-,
     name: 'Friedheim'
     tag: 'Friedheim'
     x: 1868
@@ -598,14 +575,6 @@ deeds = [
     mayor: 'Risko'
     features: ['']
     type: 'small'
-,
-    name: 'New Fulwic'
-    tag: 'new-fulwic'
-    x: 424
-    y: 2011
-    mayor: 'Hoxard'
-    features: ['']
-    type: 'solo'
 ,
     name: 'Corvid Isle'
     tag: 'corvid-isle'
@@ -1007,14 +976,6 @@ deeds = [
     features: ['']
     type: 'solo'
 ,
-    name: 'Meadowview'
-    tag: 'Meadowview'
-    x: 709
-    y: 1148
-    mayor: 'Viktor'
-    features: ['mailbox']
-    type: 'small'
-,
     name: 'Cedar Livings'
     tag: 'Cedar-Livings'
     x: 3327
@@ -1141,14 +1102,6 @@ deeds = [
     y: 1675
     mayor: 'Shalwind'
     features: ['']
-    type: 'small'
-,
-    name: 'The Roost'
-    tag: 'The-Roost'
-    x: 704
-    y: 506
-    mayor: 'Dragonskin'
-    features: ['recruiting']
     type: 'small'
 ,
     name: 'Greenside'
@@ -1762,4 +1715,44 @@ deeds = [
     mayor: 'Tommy'
     features: ['']
     type: 'solo'
+,
+    name: 'Ausrek\'s Place'
+    tag: 'Ausreks-Place'
+    x: 3238
+    y: 3180
+    mayor: 'Ausrek'
+    features: ['']
+    type: 'solo'
+,
+    name: 'RazorBees'
+    tag: 'RazorBees'
+    x: 2981
+    y: 394
+    mayor: 'Stimpy'
+    features: ['recruiting']
+    type: 'small'
+,
+    name: 'Hempville'
+    tag: 'Hempville'
+    x: 2988
+    y: 1935
+    mayor: 'Inkefer'
+    features: ['']
+    type: 'small'
+,
+    name: 'Camellia Valley Inn'
+    tag: 'Camellia-Valley-Inn'
+    x: 3077
+    y: 1030
+    mayor: 'Mokum'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Voloh'
+    tag: 'Voloh'
+    x: 3408
+    y: 1826
+    mayor: 'Anydrimes'
+    features: ['recruiting']
+    type: 'small'
 ]
