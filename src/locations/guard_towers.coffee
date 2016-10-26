@@ -1218,4 +1218,32 @@ guard_towers = [
     x: 1113
     y: 2802
     creator: 'Olloyd'
+,
+    x: 3027
+    y: 3792
+    creator: 'Thryx'
+,
+    x: 254
+    y: 1623
+    creator: 'Densetsu'
+,
+    x: 255
+    y: 1749
+    creator: 'Densetsu'
+,
+    x: 2448
+    y: 402
+    creator: 'Sklojohn'
+,
+    x: 2449
+    y: 452
+    creator: 'Sklojohn'
+,
+    x: 2347
+    y: 467
+    creator: 'Sklojohn'
+,
+    x: 2398
+    y: 467
+    creator: 'Sklojohn'
 ]

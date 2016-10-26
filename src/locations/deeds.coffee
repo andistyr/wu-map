@@ -448,14 +448,6 @@ deeds = [
     features: ['']
     type: 'solo'
 ,
-    name: 'Ravenhome'
-    tag: 'Ravenhome'
-    x: 381
-    y: 1902
-    mayor: 'Ravenloft'
-    features: ['harbour']
-    type: 'small'
-,
     name: 'Avallone'
     tag: 'Avallone'
     x: 1390
@@ -1144,14 +1136,6 @@ deeds = [
     features: ['']
     type: 'small'
 ,
-    name: 'Villa Orchidea'
-    tag: 'Villa-Orchidea'
-    x: 1465
-    y: 3231
-    mayor: 'Ixolan'
-    features: ['recruiting']
-    type: 'small'
-,
     name: 'Sinthoras'
     tag: 'Sinthoras'
     x: 1863
@@ -1424,7 +1408,7 @@ deeds = [
     tag: 'Sarmis'
     x: 3150
     y: 3030
-    mayor: 'Wyrx'
+    mayor: 'Vyrx'
     features: ['']
     type: 'solo'
 ,
@@ -1752,7 +1736,31 @@ deeds = [
     tag: 'Voloh'
     x: 3408
     y: 1826
-    mayor: 'Anydrimes'
+    mayor: 'Andyrimes'
     features: ['recruiting']
     type: 'small'
+,
+    name: 'The Edge Mining Outpost'
+    tag: 'The-Edge-Mining-Outpost'
+    x: 634
+    y: 1683
+    mayor: 'Lenstus'
+    features: ['recruiting']
+    type: 'solo'
+,
+    name: 'Vandevert Ranch'
+    tag: 'Vandevert Ranch'
+    x: 586
+    y: 976
+    mayor: 'Sabriel'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Radzyn Keep'
+    tag: 'Radzyn Keep'
+    x: 2715
+    y: 681
+    mayor: 'Buffetslayer'
+    features: ['']
+    type: 'solo'
 ]
