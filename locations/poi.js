@@ -318,5 +318,10 @@ poi = [
     x: 1317,
     y: 1835,
     description: 'Arbanka'
+  }, {
+    name: 'Path of Knowledge Tile',
+    x: 3133,
+    y: 1974,
+    description: 'Inkefer'
   }
 ];
