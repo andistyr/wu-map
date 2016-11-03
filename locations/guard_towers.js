@@ -1249,5 +1249,25 @@ guard_towers = [
     x: 2398,
     y: 467,
     creator: 'Sklojohn'
+  }, {
+    x: 3026,
+    y: 1952,
+    creator: 'Inkefer'
+  }, {
+    x: 1030,
+    y: 3200,
+    creator: 'Hughesy'
+  }, {
+    x: 939,
+    y: 3137,
+    creator: 'Sorensen'
+  }, {
+    x: 887,
+    y: 3172,
+    creator: 'Deltagirl'
+  }, {
+    x: 2738,
+    y: 931,
+    creator: 'Aine'
   }
 ];

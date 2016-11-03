@@ -371,14 +371,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Providence',
-    tag: 'providence',
-    x: 2744,
-    y: 758,
-    mayor: 'Ridgeback',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Silverlake',
     tag: 'silverlake',
     x: 433,
@@ -555,14 +547,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Barna',
-    tag: 'Barna',
-    x: 742,
-    y: 276,
-    mayor: 'Golluns',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Kangaroo Isle',
     tag: 'Kangaroo-isle',
     x: 1432,
@@ -570,14 +554,6 @@ deeds = [
     mayor: 'Risko',
     features: [''],
     type: 'small'
-  }, {
-    name: 'Corvid Isle',
-    tag: 'corvid-isle',
-    x: 3259,
-    y: 1716,
-    mayor: 'Komodo',
-    features: [''],
-    type: 'solo'
   }, {
     name: 'Maritimus',
     tag: 'Maritimus',
@@ -979,14 +955,6 @@ deeds = [
     features: ['harbour', 'recruiting'],
     type: 'solo'
   }, {
-    name: 'Cerys Corner',
-    tag: 'Cerys-Corner',
-    x: 523,
-    y: 1209,
-    mayor: 'Cerys',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Aeswythe',
     tag: 'Aeswythe',
     x: 1940,
@@ -1050,22 +1018,6 @@ deeds = [
     mayor: 'Dinor',
     features: [''],
     type: 'small'
-  }, {
-    name: 'Yoda\'s Jaded Settlement',
-    tag: 'Yodas-Jaded-Settlement',
-    x: 2872,
-    y: 555,
-    mayor: 'Yoda',
-    features: [''],
-    type: 'small'
-  }, {
-    name: 'Meadowview Stables',
-    tag: 'Meadowview-Stables',
-    x: 751,
-    y: 1126,
-    mayor: 'Neville',
-    features: [''],
-    type: 'solo'
   }, {
     name: 'Eastwood Ranch',
     tag: 'Eastwood-Ranch',
@@ -1146,14 +1098,6 @@ deeds = [
     mayor: 'Vraccas',
     features: [''],
     type: 'solo'
-  }, {
-    name: 'Grand Lakes',
-    tag: 'Grand-Lakes',
-    x: 852,
-    y: 549,
-    mayor: 'Tipsy',
-    features: ['trader', 'market'],
-    type: 'small'
   }, {
     name: 'LWW Harbour',
     tag: 'LWW-Harbour',
@@ -1499,7 +1443,7 @@ deeds = [
     tag: 'New-Horizon',
     x: 1131,
     y: 898,
-    mayor: 'Yaga',
+    mayor: 'Roulan',
     features: ['harbour', 'mailbox'],
     type: 'solo'
   }, {
@@ -1752,7 +1696,7 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Vandevert Ranch',
-    tag: 'Vandevert Ranch',
+    tag: 'Vandevert-Ranch',
     x: 586,
     y: 976,
     mayor: 'Sabriel',
@@ -1760,10 +1704,58 @@ deeds = [
     type: 'solo'
   }, {
     name: 'Radzyn Keep',
-    tag: 'Radzyn Keep',
+    tag: 'Radzyn-Keep',
     x: 2715,
     y: 681,
     mayor: 'Buffetslayer',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Twilight\'s Creek',
+    tag: 'Twilights-Creek',
+    x: 2715,
+    y: 681,
+    mayor: 'Twilight',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Summerholt',
+    tag: 'Summerholt',
+    x: 1416,
+    y: 1836,
+    mayor: 'Andrealynn',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Light Farm',
+    tag: 'Light-Farm',
+    x: 2297,
+    y: 589,
+    mayor: 'Artero',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Bay of Dawn',
+    tag: 'Bay-of-Dawn',
+    x: 1071,
+    y: 1693,
+    mayor: 'Yaga',
+    features: ['harbour', 'mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Drachenfels',
+    tag: 'Drachenfels',
+    x: 3189,
+    y: 394,
+    mayor: 'Dragun',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Eternal Nightfall',
+    tag: 'Eternal-Nightfall',
+    x: 878,
+    y: 1772,
+    mayor: 'Senna',
     features: [''],
     type: 'solo'
   }
