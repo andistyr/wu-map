@@ -334,4 +334,8 @@ trees = [
     type: 'cedar'
     x: 2501
     y: 1389
+,
+    type: 'oleander'
+    x: 1858
+    y: 2632
 ]
