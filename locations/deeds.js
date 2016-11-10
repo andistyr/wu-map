@@ -1620,7 +1620,7 @@ deeds = [
     x: 1548,
     y: 2974,
     mayor: 'Iamyourfather',
-    features: [''],
+    features: ['trader'],
     type: 'solo'
   }, {
     name: 'Death\'s Cove',
@@ -1713,8 +1713,8 @@ deeds = [
   }, {
     name: 'Twilight\'s Creek',
     tag: 'Twilights-Creek',
-    x: 2715,
-    y: 681,
+    x: 3678,
+    y: 676,
     mayor: 'Twilight',
     features: [''],
     type: 'small'
@@ -1757,6 +1757,78 @@ deeds = [
     y: 1772,
     mayor: 'Senna',
     features: [''],
+    type: 'solo'
+  }, {
+    name: 'Northern Edge Harbour',
+    tag: 'Northern-Edge-Harbour',
+    x: 1205,
+    y: 953,
+    mayor: 'Chhaya',
+    features: ['mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Arkney',
+    tag: 'Arkney',
+    x: 3484,
+    y: 1726,
+    mayor: 'Roofdefender',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Fort Drakken',
+    tag: 'Fort-Drakken',
+    x: 2645,
+    y: 1738,
+    mayor: 'Liolaeus',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Shores Of Avalon',
+    tag: 'Shores-Of-Avalon',
+    x: 3169,
+    y: 1318,
+    mayor: 'Aviendha',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Apulon',
+    tag: 'Apulon',
+    x: 3227,
+    y: 2800,
+    mayor: 'Morphius',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Forest Fallback',
+    tag: 'Forest-Fallback',
+    x: 1170,
+    y: 1739,
+    mayor: 'Leeroy',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Ambervale',
+    tag: 'Ambervale',
+    x: 3845,
+    y: 2149,
+    mayor: 'Killmore',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Bellevue Manor',
+    tag: 'Bellevue-Manor',
+    x: 586,
+    y: 1002,
+    mayor: 'Breezy',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Vendonia',
+    tag: 'Vendonia',
+    x: 822,
+    y: 1666,
+    mayor: 'Reconix',
+    features: ['harbour'],
     type: 'solo'
   }
 ];
