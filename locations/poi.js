@@ -323,5 +323,10 @@ poi = [
     x: 3133,
     y: 1974,
     description: 'Inkefer'
+  }, {
+    name: 'Silverlake Bridge',
+    x: 470,
+    y: 2550,
+    description: 'Built by Snidor, Opene, et al'
   }
 ];
