@@ -1516,14 +1516,6 @@ deeds = [
     features: ['']
     type: 'small'
 ,
-    name: 'Kirkwood'
-    tag: 'Kirkwood'
-    x: 3527
-    y: 980
-    mayor: 'Sklojohn'
-    features: ['']
-    type: 'solo'
-,
     name: 'Dearg Doom'
     tag: 'Dearg-Doom'
     x: 3182
@@ -1827,4 +1819,76 @@ deeds = [
     mayor: 'Reconix'
     features: ['harbour']
     type: 'solo'
+,
+    name: 'Whispering Waters'
+    tag: 'Whispering-Waters'
+    x: 2546
+    y: 778
+    mayor: 'Riah'
+    features: ['harbour']
+    type: 'solo'
+,
+    name: 'Delanas Aussicht'
+    tag: 'Delanas-Aussicht'
+    x: 2583
+    y: 1885
+    mayor: 'Delana'
+    features: ['mailbox']
+    type: 'solo'
+,
+    name: 'Ramsdean'
+    tag: 'Ramsdean'
+    x: 1572
+    y: 3183
+    mayor: 'Droc'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Avatar'
+    tag: 'Avatar'
+    x: 3776
+    y: 2605
+    mayor: 'Rosco'
+    features: ['']
+    type: 'small'
+,
+    name: 'Northshire'
+    tag: 'Northshire'
+    x: 3569
+    y: 587
+    mayor: 'Azetech'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Bag End'
+    tag: 'Bag-End'
+    x: 3730
+    y: 2666
+    mayor: 'Bilbobaggins'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Blackwater Trading Company'
+    tag: 'Blackwater-Trading-Company'
+    x: 3406
+    y: 3798
+    mayor: 'Kalohe'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Mistfall'
+    tag: 'Mistfall'
+    x: 1415
+    y: 3070
+    mayor: 'Taka'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Fohuville'
+    tag: 'Fohuville'
+    x: 3651
+    y: 908
+    mayor: 'Tigres'
+    features: ['merchant','inn']
+    type: 'small'
 ]
