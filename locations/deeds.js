@@ -90,13 +90,6 @@ deeds = [
     x: 414,
     y: 430
   }, {
-    name: 'Oak Shores',
-    tag: 'oak-shores',
-    type: 'small',
-    mayor: 'Macros',
-    x: 1070,
-    y: 1164
-  }, {
     name: 'Gades',
     tag: 'gades',
     type: 'solo',
@@ -531,14 +524,6 @@ deeds = [
     features: ['recruiting'],
     type: 'solo'
   }, {
-    name: 'Friedheim',
-    tag: 'Friedheim',
-    x: 1868,
-    y: 3239,
-    mayor: 'Friedbert',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Tinkerbell\'s Resort',
     tag: 'tinkerbells-resort',
     x: 1770,
@@ -563,27 +548,11 @@ deeds = [
     features: ['recruiting', 'harbour', 'merchant'],
     type: 'solo'
   }, {
-    name: 'Waterdeep',
-    tag: 'Waterdeep',
-    x: 582,
-    y: 514,
-    mayor: 'Hammie',
-    features: [''],
-    type: 'small'
-  }, {
     name: 'Citadel d\'Oraguille',
     tag: 'citadel-doraguille',
     x: 1246,
     y: 1844,
     mayor: 'Karthannar',
-    features: [''],
-    type: 'solo'
-  }, {
-    name: 'Fairbanks',
-    tag: 'Fairbanks',
-    x: 668,
-    y: 257,
-    mayor: 'Wadena',
     features: [''],
     type: 'solo'
   }, {
@@ -875,14 +844,6 @@ deeds = [
     features: ['inn', 'mailbox'],
     type: 'large'
   }, {
-    name: 'Flynn\'s Retreat',
-    tag: 'Flynns-Retreat',
-    x: 962,
-    y: 845,
-    mayor: 'Flynn',
-    features: [''],
-    type: 'solo'
-  }, {
     name: 'Halderat',
     tag: 'Halderat',
     x: 1571,
@@ -1027,14 +988,6 @@ deeds = [
     features: ['recruiting'],
     type: 'small'
   }, {
-    name: 'Waterside Village',
-    tag: 'Waterside-Village',
-    x: 571,
-    y: 1209,
-    mayor: 'Natt',
-    features: [''],
-    type: 'small'
-  }, {
     name: 'Pikov',
     tag: 'Pikov',
     x: 1048,
@@ -1067,27 +1020,11 @@ deeds = [
     features: [''],
     type: 'small'
   }, {
-    name: 'Erehwon',
-    tag: 'Erehwon',
-    x: 524,
-    y: 1156,
-    mayor: 'Ranxerox',
-    features: [''],
-    type: 'small'
-  }, {
     name: 'Midian',
     tag: 'Midian',
     x: 1058,
     y: 1739,
     mayor: 'Hylsy',
-    features: [''],
-    type: 'small'
-  }, {
-    name: 'Redemption',
-    tag: 'Redemption',
-    x: 1154,
-    y: 3024,
-    mayor: 'Revvenant',
     features: [''],
     type: 'small'
   }, {
@@ -1129,14 +1066,6 @@ deeds = [
     y: 1445,
     mayor: 'Queeniemaz',
     features: ['harbour'],
-    type: 'solo'
-  }, {
-    name: 'Keeper\'s Peak',
-    tag: 'Keepers-Peak',
-    x: 3010,
-    y: 2820,
-    mayor: 'Lemarkhan',
-    features: [''],
     type: 'solo'
   }, {
     name: 'Grangus\'s Keep',
@@ -1683,7 +1612,7 @@ deeds = [
     tag: 'The-Edge-Mining-Outpost',
     x: 634,
     y: 1683,
-    mayor: 'Lenstus',
+    mayor: 'Mrcoffee',
     features: ['recruiting'],
     type: 'solo'
   }, {
@@ -1823,14 +1752,6 @@ deeds = [
     features: ['harbour'],
     type: 'solo'
   }, {
-    name: 'Whispering Waters',
-    tag: 'Whispering-Waters',
-    x: 2546,
-    y: 778,
-    mayor: 'Riah',
-    features: ['harbour'],
-    type: 'solo'
-  }, {
     name: 'Delanas Aussicht',
     tag: 'Delanas-Aussicht',
     x: 2583,
@@ -1841,10 +1762,10 @@ deeds = [
   }, {
     name: 'Ramsdean',
     tag: 'Ramsdean',
-    x: 1572,
-    y: 3183,
+    x: 1535,
+    y: 3202,
     mayor: 'Droc',
-    features: [''],
+    features: ['harbour'],
     type: 'solo'
   }, {
     name: 'Avatar',
@@ -1854,14 +1775,6 @@ deeds = [
     mayor: 'Rosco',
     features: [''],
     type: 'small'
-  }, {
-    name: 'Northshire',
-    tag: 'Northshire',
-    x: 3569,
-    y: 587,
-    mayor: 'Azetech',
-    features: [''],
-    type: 'solo'
   }, {
     name: 'Bag End',
     tag: 'Bag-End',
@@ -1893,6 +1806,110 @@ deeds = [
     y: 908,
     mayor: 'Tigres',
     features: ['merchant', 'inn'],
+    type: 'small'
+  }, {
+    name: 'Monahven',
+    tag: 'Monahven',
+    x: 1462,
+    y: 1376,
+    mayor: 'Tesinato',
+    features: ['mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Hacienda Heights',
+    tag: 'Hacienda-Heights',
+    x: 1491,
+    y: 3194,
+    mayor: 'Riah',
+    features: ['harbour'],
+    type: 'solo'
+  }, {
+    name: 'Crimson Coast',
+    tag: 'Crimson-Coast',
+    x: 3483,
+    y: 3787,
+    mayor: 'Aetherium',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Lakes Edge',
+    tag: 'Lakes-Edge',
+    x: 577,
+    y: 1169,
+    mayor: 'Ming',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Fallen Darkness',
+    tag: 'Fallen-Darkness',
+    x: 3118,
+    y: 2816,
+    mayor: 'Brokin',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Faisan-ville',
+    tag: 'Faisan-ville',
+    x: 3757,
+    y: 1706,
+    mayor: 'Dhagmar',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Dragon\'s Lair',
+    tag: 'Dragons-Lair',
+    x: 2090,
+    y: 3132,
+    mayor: 'Iqthedragon',
+    features: ['recruiting'],
+    type: 'small'
+  }, {
+    name: 'Freedom',
+    tag: 'Freedom',
+    x: 3439,
+    y: 289,
+    mayor: 'Ortu',
+    features: ['harbour', 'mailbox'],
+    type: 'small'
+  }, {
+    name: 'Techno Chiplan',
+    tag: 'Techno-Chiplan',
+    x: 3711,
+    y: 2911,
+    mayor: 'Azetechtu',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'WulfDen',
+    tag: 'WulfDen',
+    x: 3508,
+    y: 639,
+    mayor: 'Ironwulf',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Tomis',
+    tag: 'Tomis',
+    x: 3070,
+    y: 3037,
+    mayor: 'Arandon',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Azetechnology Dept',
+    tag: 'Azetechnology-Dept',
+    x: 3668,
+    y: 2904,
+    mayor: 'Azetech',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Green Leaf',
+    tag: 'Green-Leaf',
+    x: 3583,
+    y: 680,
+    mayor: 'Rebecka',
+    features: [''],
     type: 'small'
   }
 ];
