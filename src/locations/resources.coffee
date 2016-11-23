@@ -282,4 +282,9 @@ resources = [
     x: 1234
     y: 3521
     size: 'medium'
+,
+    type: 'tar'
+    x: 3746
+    y: 793
+    size: 'small'
 ]

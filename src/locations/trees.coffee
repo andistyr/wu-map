@@ -111,7 +111,7 @@ trees = [
     x: 1174
     y: 1715
 ,
-    type: 'oleander bush'
+    type: 'oleander'
     x: 1141
     y: 1755
 ,
@@ -123,7 +123,7 @@ trees = [
     x: 636
     y: 2851
 ,
-    type: 'oleander bush'
+    type: 'oleander'
     x: 627
     y: 3062
 ,
@@ -147,7 +147,7 @@ trees = [
     x: 652
     y: 3180
 ,
-    type: 'rose bush'
+    type: 'rose'
     x: 732
     y: 3159
 ,
@@ -187,7 +187,7 @@ trees = [
     x: 1365
     y: 3313
 ,
-    type: 'oleander bush'
+    type: 'oleander'
     x: 1443
     y: 3278
 ,
@@ -203,7 +203,7 @@ trees = [
     x: 1279
     y: 3734
 ,
-    type: 'rose bush'
+    type: 'rose'
     x: 1397
     y: 3783
 ,
@@ -215,7 +215,7 @@ trees = [
     x: 1478
     y: 3689
 ,
-    type: 'oleander bush'
+    type: 'oleander'
     x: 1454
     y: 3647
 ,
@@ -243,7 +243,7 @@ trees = [
     x: 1479
     y: 873
 ,
-    type: 'lavender bush'
+    type: 'lavender'
     x: 2388
     y: 740
 ,
@@ -338,4 +338,12 @@ trees = [
     type: 'oleander'
     x: 1858
     y: 2632
+,
+    type: 'camellia'
+    x: 3441
+    y: 3133
+,
+    type: 'pine'
+    x: 3139
+    y: 2821
 ]

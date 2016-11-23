@@ -1294,4 +1294,60 @@ guard_towers = [
     x: 2737
     y: 671
     creator: 'Buffetslayer'
+,
+    x: 3537
+    y: 930
+    creator: 'Andariel'
+,
+    x: 3736
+    y: 2679
+    creator: 'Bilbobaggins'
+,
+    x: 3135
+    y: 3644
+    creator: 'Aagje'
+,
+    x: 3264
+    y: 3643
+    creator: 'Aagje'
+,
+    x: 3324
+    y: 3643
+    creator: 'Aagje'
+,
+    x: 3329
+    y: 3593
+    creator: 'Aagje'
+,
+    x: 3329
+    y: 3543
+    creator: 'Aagje'
+,
+    x: 3329
+    y: 3493
+    creator: 'Aagje'
+,
+    x: 3329
+    y: 3443
+    creator: 'Aagje'
+,
+    x: 3329
+    y: 3393
+    creator: 'Aagje'
+,
+    x: 3329
+    y: 3343
+    creator: 'Aagje'
+,
+    x: 3329
+    y: 3266
+    creator: 'Aagje'
+,
+    x: 3864
+    y: 1978
+    creator: 'Elsa'
+,
+    x: 3611
+    y: 2715
+    creator: 'Bilbobaggins'
 ]

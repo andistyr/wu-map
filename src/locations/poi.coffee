@@ -325,4 +325,8 @@ poi = [
     x: 470
     y: 2550
     description: 'Built by Snidor, Opene, et al'
+,
+    name: 'Path of Love Tile'
+    x: 3069
+    y: 3858
 ]
