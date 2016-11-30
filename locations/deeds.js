@@ -684,22 +684,6 @@ deeds = [
     features: [''],
     type: 'solo'
   }, {
-    name: 'Shadowkeep',
-    tag: 'Shadowkeep',
-    x: 646,
-    y: 760,
-    mayor: 'Noskull',
-    features: ['trader', 'merchant', 'harbour', 'market', 'mailbox', 'inn'],
-    type: 'small'
-  }, {
-    name: 'Halls of Magranon',
-    tag: 'halls-of-magranon',
-    x: 2381,
-    y: 2355,
-    mayor: 'Arduwin',
-    features: ['trader', 'merchant', 'inn'],
-    type: 'large'
-  }, {
     name: 'Direthorn',
     tag: 'Direthorn',
     x: 1826,
@@ -1494,7 +1478,7 @@ deeds = [
     y: 1406,
     mayor: 'Ozgod',
     features: ['recruiting'],
-    type: 'solo'
+    type: 'small'
   }, {
     name: 'Ironhold',
     tag: 'Ironhold',
@@ -1597,7 +1581,7 @@ deeds = [
     x: 3077,
     y: 1030,
     mayor: 'Mokum',
-    features: [''],
+    features: ['mailbox', 'inn'],
     type: 'solo'
   }, {
     name: 'Voloh',
@@ -1608,13 +1592,13 @@ deeds = [
     features: ['recruiting'],
     type: 'small'
   }, {
-    name: 'The Edge Mining Outpost',
-    tag: 'The-Edge-Mining-Outpost',
+    name: 'Vikings Valhalla',
+    tag: 'Vikings-Valhalla',
     x: 634,
     y: 1683,
     mayor: 'Mrcoffee',
-    features: ['recruiting'],
-    type: 'solo'
+    features: ['inn', 'recruiting'],
+    type: 'small'
   }, {
     name: 'Vandevert Ranch',
     tag: 'Vandevert-Ranch',
@@ -1810,8 +1794,8 @@ deeds = [
   }, {
     name: 'Monahven',
     tag: 'Monahven',
-    x: 1462,
-    y: 1376,
+    x: 1463,
+    y: 1261,
     mayor: 'Tesinato',
     features: ['mailbox'],
     type: 'solo'
@@ -1911,5 +1895,61 @@ deeds = [
     mayor: 'Rebecka',
     features: [''],
     type: 'small'
+  }, {
+    name: 'Lothlorien Meadows',
+    tag: 'Lothlorien-Meadows',
+    x: 1424,
+    y: 3102,
+    mayor: 'Joneya',
+    features: ['mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Arboria',
+    tag: 'Arboria',
+    x: 3627,
+    y: 1390,
+    mayor: 'Greg',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'The Bridge House',
+    tag: 'The-Bridge-House',
+    x: 3593,
+    y: 1435,
+    mayor: 'Kharlotta',
+    features: ['inn'],
+    type: 'small'
+  }, {
+    name: 'Starseed Valley',
+    tag: 'Starseed-Valley',
+    x: 2225,
+    y: 591,
+    mayor: 'Captain',
+    features: ['harbour', 'recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Lakeshire',
+    tag: 'Lakeshire',
+    x: 985,
+    y: 1641,
+    mayor: 'Kassarianna',
+    features: ['harbour'],
+    type: 'solo'
+  }, {
+    name: 'Knyazhbor',
+    tag: 'Knyazhbor',
+    x: 590,
+    y: 550,
+    mayor: 'Norril',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Hyperion',
+    tag: 'Hyperion',
+    x: 3499,
+    y: 821,
+    mayor: 'Hyperion',
+    features: [''],
+    type: 'solo'
   }
 ];
