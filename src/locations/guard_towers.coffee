@@ -1350,4 +1350,24 @@ guard_towers = [
     x: 3611
     y: 2715
     creator: 'Bilbobaggins'
+,
+    x: 3439
+    y: 958
+    creator: 'Andariel'
+,
+    x: 3611
+    y: 2665
+    creator: 'Bilbobaggins'
+,
+    x: 3073
+    y: 1049
+    creator: 'Mokum'
+,
+    x: 3175
+    y: 427
+    creator: 'Dragun'
+,
+    x: 691
+    y: 1692
+    creator: 'Mrcoffee'
 ]

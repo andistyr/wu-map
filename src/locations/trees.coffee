@@ -346,4 +346,16 @@ trees = [
     type: 'pine'
     x: 3139
     y: 2821
+,
+    type: 'cedar'
+    x: 1119
+    y: 3064
+,
+    type: 'birch'
+    x: 3542
+    y: 2660
+,
+    type: 'grape'
+    x: 3603
+    y: 3268
 ]

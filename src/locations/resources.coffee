@@ -287,4 +287,14 @@ resources = [
     x: 3746
     y: 793
     size: 'small'
+,
+    type: 'clay'
+    x: 3175
+    y: 1531
+    size: 'small'
+,
+    type: 'clay'
+    x: 3384
+    y: 1470
+    size: 'large'
 ]
