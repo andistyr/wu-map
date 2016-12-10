@@ -51,11 +51,6 @@ poi = [
     description: 'Climb this tower to the vista on the top floor. You can see New Town, North Lake and a rich collection of deeds along the eastern bound highway.'
   }, {
     name: 'Path of Love Tile',
-    x: 3133,
-    y: 3543,
-    unique: false
-  }, {
-    name: 'Path of Love Tile',
     x: 831,
     y: 728,
     unique: false
@@ -327,10 +322,25 @@ poi = [
     name: 'Silverlake Bridge',
     x: 470,
     y: 2550,
-    description: 'Built by Snidor, Opene, et al'
+    description: 'Built by Snidor, Opene, et al',
+    type: 'bridge'
   }, {
     name: 'Path of Love Tile',
     x: 3069,
     y: 3858
+  }, {
+    name: 'Seal Lake Boat Tunnel',
+    x: 1561,
+    y: 3188,
+    description: 'Badgirl, Grumpyoldman'
+  }, {
+    name: 'Seal Lake Boat Tunnel',
+    x: 1561,
+    y: 3703,
+    description: 'Badgirl, Grumpyoldman'
+  }, {
+    name: 'Seal Lake Market',
+    x: 1454,
+    y: 3070
   }
 ];

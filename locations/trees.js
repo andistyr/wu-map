@@ -361,5 +361,9 @@ trees = [
     type: 'grape',
     x: 3603,
     y: 3268
+  }, {
+    type: 'rose',
+    x: 2614,
+    y: 2336
   }
 ];

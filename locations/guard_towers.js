@@ -1373,5 +1373,53 @@ guard_towers = [
     x: 691,
     y: 1692,
     creator: 'Mrcoffee'
+  }, {
+    x: 2970,
+    y: 300,
+    creator: 'Havelock'
+  }, {
+    x: 3348,
+    y: 3164,
+    creator: 'Ausrek'
+  }, {
+    x: 1411,
+    y: 3073,
+    creator: 'Taka'
+  }, {
+    x: 1118,
+    y: 2208,
+    creator: 'Chris'
+  }, {
+    x: 1171,
+    y: 2208,
+    creator: 'Chris'
+  }, {
+    x: 422,
+    y: 1690,
+    creator: 'Densetsu'
+  }, {
+    x: 2798,
+    y: 1241,
+    creator: 'Isoki'
+  }, {
+    x: 2797,
+    y: 1293,
+    creator: 'Isoki'
+  }, {
+    x: 2807,
+    y: 1344,
+    creator: 'Isoki'
+  }, {
+    x: 2757,
+    y: 1369,
+    creator: 'Farmer'
+  }, {
+    x: 1504,
+    y: 1956,
+    creator: 'Dragonx'
+  }, {
+    x: 1670,
+    y: 2968,
+    creator: 'Iamyourfather'
   }
 ];
