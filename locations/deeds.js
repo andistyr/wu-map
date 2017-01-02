@@ -2043,5 +2043,53 @@ deeds = [
     mayor: 'Nynaeve',
     features: [''],
     type: 'solo'
+  }, {
+    name: 'Jangrim GmbH',
+    tag: 'Jangrim-GmbH',
+    x: 3728,
+    y: 978,
+    mayor: 'Jangrim',
+    features: ['recruiting', 'merchant'],
+    type: 'solo'
+  }, {
+    name: 'thelsa',
+    tag: 'thelsa',
+    x: 524,
+    y: 1371,
+    mayor: 'svenne',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Aurcel House',
+    tag: 'Aurcel-House',
+    x: 1160,
+    y: 700,
+    mayor: 'Aurcel',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Lunarfall',
+    tag: 'Lunarfall',
+    x: 670,
+    y: 263,
+    mayor: 'Seton',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Radikal Technologies',
+    tag: 'Radikal-Technologies',
+    x: 3624,
+    y: 505,
+    mayor: 'Radikal',
+    features: ['harbour'],
+    type: 'small'
+  }, {
+    name: 'Lost Harbour',
+    tag: 'Lost Harbour',
+    x: 363,
+    y: 3388,
+    mayor: 'Shopgirl',
+    features: ['harbour', 'inn', 'mailbox'],
+    type: 'small'
   }
 ];

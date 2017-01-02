@@ -1905,138 +1905,187 @@ deeds = [
     features: ['']
     type: 'solo'
 ,	
-    name: 'Thraben',
-    tag: 'Thraben',
-    x: 1200,
-    y: 698,
-    mayor: 'Devlan',
-    features: [''],
+    name: 'Thraben'
+    tag: 'Thraben'
+    x: 1200
+    y: 698
+    mayor: 'Devlan'
+    features: ['']
     type: 'small'
 ,
-    name: 'Robot Lands',
-    tag: 'Robot-Lands',
-    x: 3580,
-    y: 929,
-    mayor: 'Robotolio',
-    features: ['recruiting'],
+    name: 'Robot Lands'
+    tag: 'Robot-Lands'
+    x: 3580
+    y: 929
+    mayor: 'Robotolio'
+    features: ['recruiting']
     type: 'solo'
 ,
-    name: 'Lost Harbour',
-    tag: 'Lost-Harbour',
-    x: 365,
-    y: 3388,
-    mayor: 'Shopgirl',
-    features: ['mailbox', 'inn', 'harbour'],
+    name: 'Lost Harbour'
+    tag: 'Lost-Harbour'
+    x: 365
+    y: 3388
+    mayor: 'Shopgirl'
+    features: ['mailbox', 'inn', 'harbour']
     type: 'solo'
 ,
-    name: 'Casele Valley\'s Vineyard and arena',
-    tag: 'Casele-Valleys-Vineyard-and-arena',
-    x: 681,
-    y: 1082,
-    mayor: 'Marietje',
-    features: ['mailbox', 'inn', 'market'],
+    name: 'Casele Valley\'s Vineyard and arena'
+    tag: 'Casele-Valleys-Vineyard-and-arena'
+    x: 681
+    y: 1082
+    mayor: 'Marietje'
+    features: ['mailbox', 'inn', 'market']
     type: 'small'
 ,
-    name: 'Pine Valley Ranch',
-    tag: 'Pine-Valley-Ranch',
-    x: 1446,
-    y: 1050,
-    mayor: 'Stillmoon',
-    features: ['mailbox'],
+    name: 'Pine Valley Ranch'
+    tag: 'Pine-Valley-Ranch'
+    x: 1446
+    y: 1050
+    mayor: 'Stillmoon'
+    features: ['mailbox']
     type: 'solo'
 ,
-    name: 'Broken Shore',
-    tag: 'Broken-Shore',
-    x: 484,
-    y: 534,
-    mayor: 'Noskull',
-    features: ['recruiting', 'harbour', 'merchant'],
+    name: 'Broken Shore'
+    tag: 'Broken-Shore'
+    x: 484
+    y: 534
+    mayor: 'Noskull'
+    features: ['recruiting', 'harbour', 'merchant']
     type: 'small'
 ,
-    name: 'Serrisa',
-    tag: 'Serrisa',
-    x: 3060,
-    y: 3839,
+    name: 'Serrisa'
+    tag: 'Serrisa'
+    x: 3060
+    y: 3839
     mayor: 'Thryx',
-    features: ['mailbox', 'inn'],
+    features: ['mailbox', 'inn']
     type: 'small'
 ,
-    name: 'Eastside Pier',
-    tag: 'Eastside-Pier',
-    x: 2970,
-    y: 3799,
-    mayor: 'Aagje',
-    features: ['harbour', 'inn'],
+    name: 'Eastside Pier'
+    tag: 'Eastside-Pier'
+    x: 2970
+    y: 3799
+    mayor: 'Aagje'
+    features: ['harbour', 'inn']
     type: 'small'
 ,
-    name: 'Westside Pier',
-    tag: 'Westside-Pier',
-    x: 2677,
-    y: 3799,
-    mayor: 'Aagje',
-    features: ['harbour'],
+    name: 'Westside Pier'
+    tag: 'Westside-Pier'
+    x: 2677
+    y: 3799
+    mayor: 'Aagje'
+    features: ['harbour']
     type: 'small'
 ,
-    name: 'Trollville',
-    tag: 'Trollville',
-    x: 3393,
-    y: 1425,
-    mayor: 'Resapocalypse',
-    features: [''],
+    name: 'Trollville'
+    tag: 'Trollville'
+    x: 3393
+    y: 1425
+    mayor: 'Resapocalypse'
+    features: ['']
     type: 'solo'
 ,
-    name: 'Skadi Peak',
-    tag: 'Skadi-Peak',
-    x: 2270,
-    y: 2571,
-    mayor: 'Oxbjorn',
-    features: [''],
+    name: 'Skadi Peak'
+    tag: 'Skadi-Peak'
+    x: 2270
+    y: 2571
+    mayor: 'Oxbjorn'
+    features: ['']
     type: 'solo'
 ,
-    name: 'Daedolas',
-    tag: 'Daedolas',
-    x: 2446,
-    y: 712,
-    mayor: 'Meatpopsickle',
-    features: [''],
+    name: 'Daedolas'
+    tag: 'Daedolas'
+    x: 2446
+    y: 712
+    mayor: 'Meatpopsickle'
+    features: ['']
     type: 'solo'
 ,
-    name: 'Breccia',
-    tag: 'Breccia',
-    x: 2065,
-    y: 1315,
-    mayor: 'Stormlord',
-    features: [''],
+    name: 'Breccia'
+    tag: 'Breccia'
+    x: 2065
+    y: 1315
+    mayor: 'Stormlord'
+    features: ['']
     type: 'solo'
 ,
-    name: 'Brotherhood Watch',
-    tag: 'Brotherhood-Watch',
-    x: 2691,
-    y: 2983,
-    mayor: 'Miathan',
-    features: [''],
+    name: 'Brotherhood Watch'
+    tag: 'Brotherhood-Watch'
+    x: 2691
+    y: 2983
+    mayor: 'Miathan'
+    features: ['']
     type: 'small'
 ,
-    name: 'Norsca',
-    tag: 'Norsca',
-    x: 979,
-    y: 2517,
-    mayor: 'Deinvar',
-    features: ['inn'],
+    name: 'Norsca'
+    tag: 'Norsca'
+    x: 979
+    y: 2517
+    mayor: 'Deinvar'
+    features: ['inn']
     type: 'small'
 ,
-    name: 'Port Durendale',
-    tag: 'Port Durendale',
-    x: 3359,
-    y: 1379,
-    mayor: 'Dordain',
-    features: ['harbour'],
+    name: 'Port Durendale'
+    tag: 'Port Durendale'
+    x: 3359
+    y: 1379
+    mayor: 'Dordain'
+    features: ['harbour']
     type: 'small'
 ,
-    name: 'Elysium Stables',
-    tag: 'Elysium Stables',
-    x: 3183,
-    y: 1347,
-    mayor: 'Nynaeve',
-    features: [''],
+    name: 'Elysium Stables'
+    tag: 'Elysium Stables'
+    x: 3183
+    y: 1347
+    mayor: 'Nynaeve'
+    features: ['']
     type: 'solo'
+,
+    name: 'Jangrim GmbH'
+    tag: 'Jangrim-GmbH'
+    x: 3728
+    y: 978
+    mayor: 'Jangrim'
+    features: ['recruiting', 'merchant']
+    type: 'solo'
+,
+    name: 'thelsa'
+    tag: 'thelsa'
+    x: 524
+    y: 1371
+    mayor: 'svenne'
+    features: ['']
+    type: 'small'
+,
+    name: 'Aurcel House'
+    tag: 'Aurcel-House'
+    x: 1160
+    y: 700
+    mayor: 'Aurcel'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Lunarfall'
+    tag: 'Lunarfall'
+    x: 670
+    y: 263
+    mayor: 'Seton'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Radikal Technologies'
+    tag: 'Radikal-Technologies'
+    x: 3624
+    y: 505
+    mayor: 'Radikal'
+    features: ['harbour']
+    type: 'small'
+,
+    name: 'Lost Harbour'
+    tag: 'Lost Harbour'
+    x: 363
+    y: 3388
+    mayor: 'Shopgirl'
+    features: ['harbour', 'inn', 'mailbox']
+    type: 'small'
+	]
