@@ -1481,7 +1481,7 @@ deeds = [
     x: 3077,
     y: 1030,
     mayor: 'Mokum',
-    features: ['mailbox', 'inn'],
+    features: ['mailbox', 'inn', 'merchant'],
     type: 'solo'
   }, {
     name: 'Voloh',
@@ -1907,5 +1907,77 @@ deeds = [
     mayor: 'Donavanpax',
     features: [''],
     type: 'solo'
+  }, {
+    name: 'Thraben',
+    tag: 'Thraben',
+    x: 1200,
+    y: 698,
+    mayor: 'Devlan',
+    features: [''],
+    type: 'small'
+	 }, {
+    name: 'Robot Lands',
+    tag: 'Robot-Lands',
+    x: 3580,
+    y: 929,
+    mayor: 'Robotolio',
+    features: ['recruiting'],
+    type: 'solo'
+  }, {
+    name: 'Lost Harbour',
+    tag: 'Lost-Harbour',
+    x: 365,
+    y: 3388,
+    mayor: 'Shopgirl',
+    features: ['mailbox', 'inn', 'harbour'],
+    type: 'solo'
+  }, {
+    name: 'Casele Valley\'s Vineyard and arena',
+    tag: 'Casele-Valleys-Vineyard-and-arena',
+    x: 681,
+    y: 1082,
+    mayor: 'Marietje',
+    features: ['mailbox', 'inn', 'market'],
+    type: 'small'
+  }, {
+    name: 'Pine Valley Ranch',
+    tag: 'Pine-Valley-Ranch',
+    x: 1446,
+    y: 1050,
+    mayor: 'Stillmoon',
+    features: ['mailbox'],
+    type: 'solo'
+  }, {
+    name: 'Broken Shore',
+    tag: 'Broken-Shore',
+    x: 484,
+    y: 534,
+    mayor: 'Noskull',
+    features: ['recruiting', 'harbour', 'merchant'],
+    type: 'small'
+  }, {
+    name: 'Serrisa',
+    tag: 'Serrisa',
+    x: 3060,
+    y: 3839,
+    mayor: 'Thryx',
+    features: ['mailbox', 'inn'],
+    type: 'small'
+  }, {
+    name: 'Eastside Pier',
+    tag: 'Eastside-Pier',
+    x: 2970,
+    y: 3799,
+    mayor: 'Aagje',
+    features: ['harbour', 'inn'],
+    type: 'small'
+  }, {
+    name: 'Westside Pier',
+    tag: 'Westside-Pier',
+    x: 2677,
+    y: 3799,
+    mayor: 'Aagje',
+    features: ['harbour'],
+    type: 'small'
   }
 ];
