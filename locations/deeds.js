@@ -1979,5 +1979,37 @@ deeds = [
     mayor: 'Aagje',
     features: ['harbour'],
     type: 'small'
+  }, {
+    name: 'Trollville',
+    tag: 'Trollville',
+    x: 3393,
+    y: 1425,
+    mayor: 'Resapocalypse',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Skadi Peak',
+    tag: 'Skadi-Peak',
+    x: 2270,
+    y: 2571,
+    mayor: 'Oxbjorn',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Daedolas',
+    tag: 'Daedolas',
+    x: 2446,
+    y: 712,
+    mayor: 'Meatpopsickle',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Breccia',
+    tag: 'Breccia',
+    x: 2065,
+    y: 1315,
+    mayor: 'Stormlord',
+    features: [''],
+    type: 'solo'
   }
 ];
