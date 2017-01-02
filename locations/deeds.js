@@ -1614,8 +1614,8 @@ deeds = [
   }, {
     name: 'Bellevue Manor',
     tag: 'Bellevue-Manor',
-    x: 586,
-    y: 1002,
+    x: 705,
+    y: 1148,
     mayor: 'Breezy',
     features: [''],
     type: 'solo'
@@ -2009,6 +2009,38 @@ deeds = [
     x: 2065,
     y: 1315,
     mayor: 'Stormlord',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Brotherhood Watch',
+    tag: 'Brotherhood-Watch',
+    x: 2691,
+    y: 2983,
+    mayor: 'Miathan',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Norsca',
+    tag: 'Norsca',
+    x: 979,
+    y: 2517,
+    mayor: 'Deinvar',
+    features: ['inn'],
+    type: 'small'
+  }, {
+    name: 'Port Durendale',
+    tag: 'Port Durendale',
+    x: 3359,
+    y: 1379,
+    mayor: 'Dordain',
+    features: ['harbour'],
+    type: 'small'
+  }, {
+    name: 'Elysium Stables',
+    tag: 'Elysium Stables',
+    x: 3183,
+    y: 1347,
+    mayor: 'Nynaeve',
     features: [''],
     type: 'solo'
   }
