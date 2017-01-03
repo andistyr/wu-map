@@ -1473,17 +1473,65 @@ guard_towers = [
 ,
     x: 2799
     y: 1127
-    creator: 'sklojohn'
+    creator: 'Sklojohn'
 ,
     x: 2799
     y: 1073
-    creator: 'sklojohntoo'
+    creator: 'Sklojohntoo'
 ,
     x: 2799
     y: 1021
-    creator: 'sklojohn'
+    creator: 'Sklojohn'
 ,
     x: 3023
     y: 1051
     creator: 'Mokum'
+,
+    x: 363
+    y: 3388
+    creator: 'Sorensen'
+,
+    x: 3127
+    y: 1051
+    creator: 'Mokum'
+,
+    x: 3560
+    y: 2069
+    creator: 'Amberly'
+,
+    x: 3510
+    y: 2069
+    creator: 'Amberly'
+,
+    x: 3460
+    y: 2069
+    creator: 'Amberly'
+,
+    x: 3410
+    y: 2069
+    creator: 'Amberly'
+,
+    x: 3360
+    y: 2069
+    creator: 'Amberly'
+,
+    x: 3278
+    y: 2150
+    creator: 'Amberly'
+,
+    x: 3278
+    y: 2200
+    creator: 'Amberly'
+,
+    x: 3060
+    y: 999
+    creator: 'Mokum'
+,
+    x: 3009
+    y: 949
+    creator: 'Mokum'
+,
+    x: 2551
+    y: 1177
+    creator: 'Baltexdustin'
 ]

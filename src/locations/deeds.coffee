@@ -1921,14 +1921,6 @@ deeds = [
     features: ['recruiting']
     type: 'solo'
 ,
-    name: 'Lost Harbour'
-    tag: 'Lost-Harbour'
-    x: 365
-    y: 3388
-    mayor: 'Shopgirl'
-    features: ['mailbox', 'inn', 'harbour']
-    type: 'solo'
-,
     name: 'Casele Valley\'s Vineyard and arena'
     tag: 'Casele-Valleys-Vineyard-and-arena'
     x: 681
@@ -2088,4 +2080,100 @@ deeds = [
     mayor: 'Shopgirl'
     features: ['harbour', 'inn', 'mailbox']
     type: 'small'
-	]
+,
+    name: 'Slumber'
+    tag: 'Slumber'
+    x: 2080
+    y: 1373
+    mayor: 'Sadie'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Bird Is The Word'
+    tag: 'Bird-Is-The-Word'
+    x: 3455
+    y: 1310
+    mayor: 'Birdwatcher'
+    features: ['']
+    type: 'small'
+,
+    name: 'Legyon'
+    tag: 'Legyon'
+    x: 3458
+    y: 785
+    mayor: 'Dradant'
+    features: ['']
+    type: 'small'
+,
+    name: 'Mikes Place'
+    tag: 'Mikes-Place'
+    x: 1710
+    y: 3666
+    mayor: 'Mike'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Jas Town'
+    tag: 'Jas-Town'
+    x: 2474
+    y: 1508
+    mayor: 'Doppelien'
+    features: ['']
+    type: 'small'
+,
+    name: 'Bucovina'
+    tag: 'Bucovina'
+    x: 3265
+    y: 1422
+    mayor: 'Athemonium'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Mednato And Khajiit\'s Home'
+    tag: 'Mednato-And-Khajiits-Home'
+    x: 3562
+    y: 1805
+    mayor: 'Khajiit'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Dannitown'
+    tag: 'Dannitown'
+    x: 3588
+    y: 528
+    mayor: 'Dannia'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Knife\'s Edge'
+    tag: 'Knifes-Edge'
+    x: 425
+    y: 1499
+    mayor: 'Atlos'
+    features: ['recruiting']
+    type: 'solo'
+,
+    name: 'Dante Twilight'
+    tag: 'Dante-Twilight'
+    x: 2554
+    y: 777
+    mayor: 'Senna'
+    features: ['']
+    type: 'solo'
+,
+    name: 'Woodvale'
+    tag: 'Woodvale'
+    x: 3405
+    y: 1034
+    mayor: 'Evarion'
+    features: ['recruiting']
+    type: 'small'
+,
+    name: 'Marye\'s Paradise'
+    tag: 'Maryes-Paradise'
+    x: 397
+    y: 1874
+    mayor: 'Hanleeruby'
+    features: ['harbour']
+    type: 'small'
+]

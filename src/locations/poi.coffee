@@ -212,16 +212,6 @@ poi = [
     y: 913
     unique: false
 ,
-    name: 'Path of Love Tile'
-    x: 2982
-    y: 3565
-    unique: false
-,
-    name: 'Path of Love Tile'
-    x: 1491
-    y: 1817
-    unique: false
-,
     name: 'Path of Knowledge Tile'
     x: 1437
     y: 1817
@@ -339,4 +329,14 @@ poi = [
     name: 'Seal Lake Market'
     x: 1454
     y: 3070
+,
+    name: 'Firth Ness Bridge'
+    x: 2829
+    y: 3795
+    description: 'Built by Thryx, Lizardtamer, Aagje'
+    type: 'bridge'
+,
+    name: 'Path of Love Tile'
+    x: 2175
+    y: 514
 ]
