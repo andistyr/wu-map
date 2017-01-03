@@ -57,7 +57,7 @@ init = ->
   Sklotopolis = new google.maps.ImageMapType
     getTileUrl: (coord, zoom) ->
       if coord.x is 0 and coord.y is 0
-        return 'http://5.45.109.131/unlimited/mapdump.png'
+        return 'http://78.46.194.97/unlimited/mapdump.png'
     tileSize: new google.maps.Size(4096, 4096)
     maxZoom: 2
     minZoom: 2
@@ -89,7 +89,7 @@ init = ->
         when 2 then 4096
         when 3 then 8192
         when 4 then 16384
-      return 'http://5.45.109.131/unlimited/tiler01/maps/tile_' + zoom + '_' + coord.x + '_' + coord.y + '.png'
+      return 'http://78.46.194.97/unlimited/tiler01/maps/tile_' + zoom + '_' + coord.x + '_' + coord.y + '.png'
     tileSize: new google.maps.Size(256, 256)
     maxZoom: 3
     minZoom: 0
@@ -232,7 +232,7 @@ init = ->
   # Update info every minute
   setInterval ->
     console.log 'Updating stats.json' if console?
-    pegasus('http://5.45.109.131/unlimited/tiler01/stats.json').then update_stats, (err, xhr) ->
+    pegasus('http://78.46.194.97/unlimited/tiler01/stats.json').then update_stats, (err, xhr) ->
       console.log err if console?
   , 61000
 
