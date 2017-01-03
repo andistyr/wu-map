@@ -226,11 +226,6 @@ poi = [
     type: 'statue',
     description: 'Maxium'
   }, {
-    name: 'Path of Knowledge Tile',
-    x: 3265,
-    y: 1422,
-    unique: false
-  }, {
     name: 'Colossus of Fo',
     x: 958,
     y: 279,
