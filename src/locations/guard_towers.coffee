@@ -1,4 +1,7 @@
 guard_towers = [
+#    x:
+#    y:
+#    creator: ''
     x: 1225
     y: 953
     creator: 'Rikko'
@@ -1534,4 +1537,68 @@ guard_towers = [
     x: 2551
     y: 1177
     creator: 'Baltexdustin'
+,
+    x: 3310
+    y: 2076
+    creator: 'Amberly'
+,
+    x: 3266
+    y: 2250
+    creator: 'Amberly'
+,
+    x: 3266
+    y: 2300
+    creator: 'Amberly'
+,
+    x: 3336
+    y: 2364
+    creator: 'Amberly'
+,
+    x: 3336
+    y: 2414
+    creator: 'Amberly'
+,
+    x: 3336
+    y: 2465
+    creator: 'Amberly'
+,
+    x: 3410
+    y: 2450
+    creator: 'Amberly'
+,
+    x: 3460
+    y: 2449
+    creator: 'Amberly'
+,
+    x: 3510
+    y: 2449
+    creator: 'Amberly'
+,
+    x: 3560
+    y: 2449
+    creator: 'Amberly'
+,
+    x: 3610
+    y: 2500
+    creator: 'Amberly'
+,
+    x: 2959
+    y: 936
+    creator: 'Mokum'
+,
+    x: 2466
+    y: 1608
+    creator: 'Doppelien'
+,
+    x: 2399
+    y: 3683
+    creator: 'Dominikk'
+,
+    x: 370
+    y: 1855
+    creator: 'Marciamarye'
+,
+    x: 1673
+    y: 3694
+    creator: 'Mike'
 ]

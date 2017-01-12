@@ -7,7 +7,7 @@ deeds = [
     mayor: 'Engineer',
     x: 3796,
     y: 766,
-    features: ['trader', 'merchant', 'market', 'harbour'],
+    features: ['trader', 'merchant', 'market', 'harbour', 'mailbox'],
     type: 'large'
   }, {
     name: 'New Town',
@@ -16,7 +16,7 @@ deeds = [
     type: 'large',
     x: 906,
     y: 760,
-    features: ['trader', 'merchant', 'market', 'harbour']
+    features: ['trader', 'merchant', 'market', 'harbour', 'mailbox']
   }, {
     name: 'Longview',
     tag: 'longview',
@@ -2070,8 +2070,8 @@ deeds = [
   }, {
     name: 'Radikal Technologies',
     tag: 'Radikal-Technologies',
-    x: 3624,
-    y: 505,
+    x: 3639,
+    y: 535,
     mayor: 'Radikal',
     features: ['harbour'],
     type: 'small'
@@ -2174,10 +2174,130 @@ deeds = [
   }, {
     name: 'Marye\'s Paradise',
     tag: 'Maryes-Paradise',
-    x: 397,
-    y: 1874,
+    x: 399,
+    y: 1896,
     mayor: 'Hanleeruby',
     features: ['harbour'],
+    type: 'small'
+  }, {
+    name: 'Plutarh',
+    tag: 'Plutarh',
+    x: 3424,
+    y: 694,
+    mayor: 'Bananovec',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Black Eagles',
+    tag: 'Black-Eagles',
+    x: 3317,
+    y: 2035,
+    mayor: 'Charlik',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Brotopia',
+    tag: 'Brotopia',
+    x: 3367,
+    y: 458,
+    mayor: 'Thrax',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Adventurer\'s Rest',
+    tag: 'Adventurers-Rest',
+    x: 3363,
+    y: 2840,
+    mayor: 'Bilbotbaggins',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Lakeside',
+    tag: 'Lakeside',
+    x: 2400,
+    y: 3655,
+    mayor: 'Angel',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Bleusee',
+    tag: 'Bleusee',
+    x: 2308,
+    y: 2153,
+    mayor: 'Greenman',
+    features: ['mailbox'],
+    type: 'small'
+  }, {
+    name: 'Republic',
+    tag: 'Republic',
+    x: 460,
+    y: 1915,
+    mayor: 'Kumajaro',
+    features: ['harbour'],
+    type: 'small'
+  }, {
+    name: 'Southwind',
+    tag: 'Southwind',
+    x: 3346,
+    y: 3811,
+    mayor: 'Lucas',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Forest Top',
+    tag: 'Forest-Top',
+    x: 699,
+    y: 641,
+    mayor: 'Dexcius',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Brunnr\'s Burrow',
+    tag: 'Brunnrs-Burrow',
+    x: 784,
+    y: 614,
+    mayor: 'Brunnr',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Jamtlandia',
+    tag: 'Jamtlandia',
+    x: 3288,
+    y: 464,
+    mayor: 'Bearclaw',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Dramatic Theme Music',
+    tag: 'Dramatic-Theme-Music',
+    x: 2350,
+    y: 3327,
+    mayor: 'Prom',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Birches',
+    tag: 'Birches',
+    x: 939,
+    y: 1284,
+    mayor: 'Silvan',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Lost Acres',
+    tag: 'Lost-Acres',
+    x: 3571,
+    y: 581,
+    mayor: 'Looost',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'King\'s Boys',
+    tag: 'Kings-Boys',
+    x: 3425,
+    y: 581,
+    mayor: 'Teriside',
+    features: [''],
     type: 'small'
   }
 ];

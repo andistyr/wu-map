@@ -1,4 +1,9 @@
 resources = [
+# "There is a [size] [type] deposit here."
+#    type: ''
+#    size: ''
+#    x:
+#    y:
     type: 'clay'
     x: 3104
     y: 3437
@@ -301,5 +306,15 @@ resources = [
     type: 'tar'
     x: 3118
     y: 1010
+    size: 'medium'
+,
+    type: 'clay'
+    x: 3760
+    y: 3800
+    size: 'large'
+,
+    type: 'tar'
+    x: 2354
+    y: 1496
     size: 'medium'
 ]

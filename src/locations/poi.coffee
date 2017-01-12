@@ -1,4 +1,13 @@
 poi = [
+#   REQUIRED
+# name: ''
+# x: 
+# y: 
+#   OPTIONAL
+# type: ''          If missing, defaults to the star. 'statue' 'fountain' 'bridge'
+# description: ''   If missing, has no description.
+# unique: ''        I don't think this even does anything. Relic of old work in progress code, probably.
+
     name: 'Spawn'
     x: 3790
     y: 770
@@ -334,4 +343,19 @@ poi = [
     name: 'Path of Love Tile'
     x: 2175
     y: 514
+,
+    name: 'Colossus of Magranon'
+    x: 1730
+    y: 3695
+    type: 'statue'
+    description: 'Built by Mike'
+,
+    name: 'Silent Lake'
+    x: 2659
+    y: 1290
+,
+    name: 'Path of Love Tile'
+    x: 2584
+    y: 1269
+    description: 'Tekada'
 ]

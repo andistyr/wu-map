@@ -10,10 +10,6 @@ trees = [
     x: 436,
     y: 1820
   }, {
-    type: 'linden',
-    x: 336,
-    y: 1821
-  }, {
     type: 'pine',
     x: 1108,
     y: 721

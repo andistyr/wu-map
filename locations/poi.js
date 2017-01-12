@@ -337,5 +337,20 @@ poi = [
     name: 'Path of Love Tile',
     x: 2175,
     y: 514
+  }, {
+    name: 'Colossus of Magranon',
+    x: 1730,
+    y: 3695,
+    type: 'statue',
+    description: 'Built by Mike'
+  }, {
+    name: 'Silent Lake',
+    x: 2659,
+    y: 1290
+  }, {
+    name: 'Path of Love Tile',
+    x: 2584,
+    y: 1269,
+    description: 'Tekada'
   }
 ];

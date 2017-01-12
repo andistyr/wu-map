@@ -1,4 +1,8 @@
 trees = [
+# "The forest in this area is mostly [type] trees."
+#    type: ''
+#    x:
+#    y:
     type: 'maple'
     x: 452
     y: 1542
@@ -6,10 +10,6 @@ trees = [
     type: 'cherry'
     x: 436
     y: 1820
-,
-    type: 'linden'
-    x: 336
-    y: 1821
 ,
     type: 'pine'
     x: 1108
