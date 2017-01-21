@@ -1601,5 +1601,33 @@ guard_towers = [
     x: 1673,
     y: 3694,
     creator: 'Mike'
+  }, {
+    x: 1612,
+    y: 3698,
+    creator: 'Mike'
+  }, {
+    x: 3097,
+    y: 2857,
+    creator: 'Vyrx'
+  }, {
+    x: 2974,
+    y: 3008,
+    creator: 'Turgvaali'
+  }, {
+    x: 2826,
+    y: 3007,
+    creator: 'Vyrx'
+  }, {
+    x: 2622,
+    y: 2260,
+    creator: 'Abra'
+  }, {
+    x: 2677,
+    y: 2258,
+    creator: 'Abra'
+  }, {
+    x: 1617,
+    y: 3695,
+    creator: 'Mike'
   }
 ];

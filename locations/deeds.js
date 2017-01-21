@@ -2294,10 +2294,90 @@ deeds = [
   }, {
     name: 'King\'s Boys',
     tag: 'Kings-Boys',
-    x: 3425,
-    y: 581,
+    x: 3429,
+    y: 623,
     mayor: 'Teriside',
     features: [''],
     type: 'small'
+  }, {
+    name: 'Wack Wack Redemption',
+    tag: 'Wack-Wack-Redemption',
+    x: 3609,
+    y: 574,
+    mayor: 'Wacky',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Villa Tere',
+    tag: 'Villa-Tere',
+    x: 3521,
+    y: 699,
+    mayor: 'Paquirrin',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Vinland',
+    tag: 'Vinland',
+    x: 3444,
+    y: 1161,
+    mayor: 'Tanner',
+    features: [''],
+    type: 'small'
+  }, {
+    name: 'Freihafen',
+    tag: 'Freihafen',
+    x: 1196,
+    y: 413,
+    mayor: 'Chronnos',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Outpost',
+    tag: 'Outpost',
+    x: 3652,
+    y: 1721,
+    mayor: 'Syrius',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Durnaboe',
+    tag: 'Durnaboe',
+    x: 1002,
+    y: 1910,
+    mayor: 'Wesley',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Teoxihuitl',
+    tag: 'Teoxihuitl',
+    x: 1992,
+    y: 2350,
+    mayor: 'Brvtvs',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Wheathold',
+    tag: 'Wheathold',
+    x: 3588,
+    y: 903,
+    mayor: 'Wheatfat',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Fhaerondari Estate',
+    tag: 'Fhaerondari-Estate',
+    x: 596,
+    y: 3031,
+    mayor: 'Zekseidu',
+    features: [''],
+    type: 'solo'
+  }, {
+    name: 'Dewhurst Downs',
+    tag: 'Dewhurst-Downs',
+    x: 2719,
+    y: 3671,
+    mayor: 'Saudade',
+    features: ['merchant', 'market', 'harbour', 'mailbox', 'inn'],
+    type: 'large'
   }
 ];

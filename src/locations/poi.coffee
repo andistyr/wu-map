@@ -358,4 +358,14 @@ poi = [
     x: 2584
     y: 1269
     description: 'Tekada'
+,
+    name: 'Path of Knowledge Tile'
+    x: 2595
+    y: 2278
+    description: 'Abra'
+,
+    name: 'Love/Knowledge Tiles'
+    x: 2703
+    y: 3755
+    description: 'Saudade'
 ]

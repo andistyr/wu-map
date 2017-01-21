@@ -315,5 +315,11 @@ resources = [
     x: 2354,
     y: 1496,
     size: 'medium'
+  }, {
+    type: 'mine',
+    x: 2000,
+    y: 2000,
+    ores: ['iron', 'copper', 'zinc', 'tin', 'lead', 'silver', 'gold'],
+    features: ['']
   }
 ];

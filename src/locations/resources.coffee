@@ -4,6 +4,12 @@ resources = [
 #    size: ''
 #    x:
 #    y:
+#
+#    type: 'mine'
+#    x: 
+#    y: 
+#    ores: ['comma','separated'] I think it just lists whatever you put in here, so go hog wild.
+#    features: ['forge', 'large anvil'] Likewise I -think- this is similar.
     type: 'clay'
     x: 3104
     y: 3437
@@ -317,4 +323,10 @@ resources = [
     x: 2354
     y: 1496
     size: 'medium'
+,
+    type: 'mine'
+    x: 2000
+    y: 2000
+    ores: ['iron','copper','zinc','tin','lead','silver','gold']
+    features: ['']
 ]
