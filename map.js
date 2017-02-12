@@ -1,5 +1,5 @@
 var change_map, clear_home, close_infowin, deed_tags, distance, filter, find_nearby_locations, hide_add_form, hide_search, infowin, init, map, marker, projection, search, set_home, share_coords, share_deed, show_add_form, show_coords_info, show_coords_on_map, show_deed_info, show_deed_on_map, toggle_markers, toggle_serverinfo_size, toggle_sidebar, update_markers, update_stats, vote_reminder_close, vote_reminder_open,
-  indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
+  indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] == item) return i; } return -1; };
 
 map = '';
 
@@ -20,7 +20,7 @@ projection = {
     l = latLng.lat();
     x = (function() {
       switch (false) {
-        case l === 0:
+        case l == 0:
           return projection.mid + (l / projection.max_lat * projection.mid);
         default:
           return projection.mid;
@@ -29,7 +29,7 @@ projection = {
     l = latLng.lng();
     y = (function() {
       switch (false) {
-        case l === 0:
+        case l == 0:
           return projection.mid + (l / projection.max_long * projection.mid);
         default:
           return projection.mid;
@@ -92,7 +92,7 @@ init = function() {
   init_moved = false;
   map = new google.maps.Map(document.getElementById('map'), {
     center: {
-      lat: -80.035400390625,
+      lat: -49.035400390625,
       lng: -163.30078125
     },
     zoom: 2,
@@ -102,7 +102,7 @@ init = function() {
   });
   Sklotopolis = new google.maps.ImageMapType({
     getTileUrl: function(coord, zoom) {
-      if (coord.x === 0 && coord.y === 0) {
+      if (coord.x == 0 && coord.y == 0) {
         return 'http://78.46.194.97/unlimited/mapdump.png';
       }
     },
@@ -156,10 +156,10 @@ init = function() {
     var a_name, b_name;
     a_name = a.name.toLowerCase();
     b_name = b.name.toLowerCase();
-    if (a_name.substr(0, 3) === 'the') {
+    if (a_name.substr(0, 3) == 'the') {
       a_name = a_name.substr(4);
     }
-    if (b_name.substr(0, 3) === 'the') {
+    if (b_name.substr(0, 3) == 'the') {
       b_name = b_name.substr(4);
     }
     switch (false) {
@@ -192,7 +192,7 @@ init = function() {
       }
     });
     i.marker.addListener('click', show_deed_info.bind(null, i.tag));
-    if (window.location.hash.substr(1) === i.tag) {
+    if (window.location.hash.substr(1) == i.tag) {
       show_deed_on_map(i.tag);
       init_moved = true;
     }
@@ -226,7 +226,7 @@ init = function() {
       })),
       map: map,
       icon: {
-        url: i.type === 'mine' ? 'images/mine.png' : 'images/resource.png',
+        url: i.type == 'mine' ? 'images/mine.png' : 'images/resource.png',
         size: new google.maps.Size(32, 37),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(16, 37)
@@ -280,7 +280,7 @@ init = function() {
   hash = window.location.hash.substr(1);
   if (hash.indexOf('_') !== -1) {
     hash = hash.split('_');
-    if (hash.length === 2) {
+    if (hash.length == 2) {
       coords = {
         x: parseInt(hash[0]),
         y: parseInt(hash[1])
@@ -360,20 +360,20 @@ update_stats = function(data, xhr) {
   starfallNames = ['Diamond', 'Saw', 'Digging', 'Leaf', 'Bear\'s', 'Snake', 'White Shark', 'Fire', 'Raven', 'Dancer', 'Omen', 'Silence'];
   check = function(starfall, week, plant, type) {
     var nextStarfall, ref, starfallNum;
-    if (week === 1) {
+    if (week == 1) {
       if (data.starfall !== starfall) {
         return;
       }
     } else {
       starfallNum = starfallNames.indexOf(starfall);
-      nextStarfall = starfallNames[starfallNum + 1 === starfallNames.length ? 0 : starfallNum + 1];
+      nextStarfall = starfallNames[starfallNum + 1 == starfallNames.length ? 0 : starfallNum + 1];
       if ((ref = data.starfall) !== starfall && ref !== nextStarfall) {
         return;
       }
-      if (data.starfall === starfall && data.week < week) {
+      if (data.starfall == starfall && data.week < week) {
         return;
       }
-      if (data.starfall === nextStarfall && data.week >= week) {
+      if (data.starfall == nextStarfall && data.week >= week) {
         return;
       }
     }
@@ -430,7 +430,7 @@ close_infowin = function() {
 };
 
 toggle_sidebar = function() {
-  if (document.body.className === 'no_sidebar') {
+  if (document.body.className == 'no_sidebar') {
     document.body.className = 'sidebar';
   } else {
     document.body.className = 'no_sidebar';
@@ -443,7 +443,7 @@ toggle_sidebar = function() {
 toggle_serverinfo_size = function() {
   var el, size;
   el = document.getElementById('serverinfo');
-  size = el.className === '' ? 'small' : '';
+  size = el.className == '' ? 'small' : '';
   el.className = size;
   return localStorage.setItem('wu_map_serverinfo_size', size);
 };
@@ -556,7 +556,7 @@ show_deed_info = function(tag) {
     props.push(nearby);
   }
   home_img = '<img id="home_deed" src="images/home_off.png" style="float:right;padding:0 0 5px 5px;cursor:pointer;" onmouseenter="this.src=\'images/home_hover.png\';" onmouseleave="this.src=\'images/home_off.png\';" onclick="set_home(\'' + deed.tag + '\', this)" title="Set as home" />';
-  if (localStorage.getItem('wu_map_home_deed') === deed.tag) {
+  if (localStorage.getItem('wu_map_home_deed') == deed.tag) {
     home_img = '<img id="home_deed" src="images/home_on.png" style="float:right;padding:0 0 5px 5px;cursor:pointer;" onclick="clear_home(this)" title="Clear home location" />';
   }
   infowin = new google.maps.InfoWindow({
@@ -593,14 +593,20 @@ show_coords_info = function(coords) {
   props = [];
   found = false;
   coords_marker = '';
-  if (coords.x === 2625 && coords.y === 1748) {
+  if (coords.x == 2625 && coords.y == 1748) {
     props.push('<p><img src="images/not_the_coords.png" style="margin-top:10px" /></p>');
     found = true;
-  } else {
+  } 
+  else {
+	 
     for (k = 0, len = poi.length; k < len; k++) {
       i = poi[k];
-      if (i.x === coords.x && i.y === coords.y) {
+
+	  
+      if (i.x == coords.x && i.y == coords.y) {
+		 
         found = true;
+		
         if (!filter.poi) {
           filter.poi = true;
           update_markers('poi');
@@ -616,7 +622,7 @@ show_coords_info = function(coords) {
     if (!found) {
       for (m = 0, len1 = guard_towers.length; m < len1; m++) {
         i = guard_towers[m];
-        if (i.x === coords.x && i.y === coords.y) {
+        if (i.x == coords.x && i.y == coords.y) {
           found = true;
           if (!filter.guard_towers) {
             filter.guard_towers = true;
@@ -630,14 +636,14 @@ show_coords_info = function(coords) {
     if (!found) {
       for (p = 0, len2 = resources.length; p < len2; p++) {
         i = resources[p];
-        if (i.x === coords.x && i.y === coords.y) {
+        if (i.x == coords.x && i.y == coords.y) {
           found = true;
           if (!filter.resources) {
             filter.resources = true;
             update_markers('resources');
           }
           coords_marker = i.marker;
-          if (i.type === 'mine') {
+          if (i.type == 'mine') {
             props.push('<p>There is a <strong style="font-weight:500">mine</strong> here</p>');
             html = '<p>It contains ';
             if (i.ores == null) {
@@ -646,7 +652,7 @@ show_coords_info = function(coords) {
               ref = i.ores;
               for (n = q = 0, len3 = ref.length; q < len3; n = ++q) {
                 o = ref[n];
-                if (i.ores.length === 1) {
+                if (i.ores.length == 1) {
                   html += (function() {
                     switch (o) {
                       case 'iron':
@@ -668,7 +674,7 @@ show_coords_info = function(coords) {
                 })();
                 html += o;
               }
-              html += (i.ores.length === 1 ? ' vein' : ' veins') + '</p>';
+              html += (i.ores.length == 1 ? ' vein' : ' veins') + '</p>';
             }
             if (i.features != null) {
               html += '<p>It is equipped with ';
@@ -699,7 +705,7 @@ show_coords_info = function(coords) {
     if (!found) {
       for (s = 0, len5 = trees.length; s < len5; s++) {
         i = trees[s];
-        if (i.x === coords.x && i.y === coords.y) {
+        if (i.x == coords.x && i.y == coords.y) {
           found = true;
           coords_marker = i.marker;
           if (i.bushes) {
@@ -760,25 +766,26 @@ show_coords_on_map = function(x, y) {
 };
 
 find_nearby_locations = function(coords) {
+	/*
   var check, dist, found, k, m, max_dist, nearby, p, q, r, ref, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, x, y;
   check = function(x, y) {
     var i, k, len, len1, len2, len3, len4, m, p, q, r;
     for (k = 0, len = deeds.length; k < len; k++) {
       i = deeds[k];
-      if (i.x === x && i.y === y) {
+      if (i.x == x && i.y == y) {
         return '<p style="margin-bottom:2px;color:#777;font-size:12px;"> The settlement of <a style="color:#2196F3" href="#' + i.tag + '" onclick="show_deed_on_map(\'' + i.tag + '\')">' + i.name + '</a> is nearby</p>';
       }
     }
     for (m = 0, len1 = guard_towers.length; m < len1; m++) {
       i = guard_towers[m];
-      if (i.x === x && i.y === y) {
+      if (i.x == x && i.y == y) {
         return '<p style="margin-bottom:2px;color:#777;font-size:12px;">There is a <a style="color:#2196F3" href="#' + i.x + '_' + i.y + '" onclick="show_coords_on_map(' + i.x + ',' + i.y + ')">guard tower</a> nearby</p>';
       }
     }
     for (p = 0, len2 = resources.length; p < len2; p++) {
       i = resources[p];
-      if (i.x === x && i.y === y) {
-        if (i.type === 'mine') {
+      if (i.x == x && i.y == y) {
+        if (i.type == 'mine') {
           return '<p style="margin-bottom:2px;color:#777;font-size:12px;">There is a <a style="color:#2196F3" href="#' + i.x + '_' + i.y + '" onclick="show_coords_on_map(' + i.x + ',' + i.y + ')">mine</a> nearby</p>';
         } else {
           return '<p style="margin-bottom:2px;color:#777;font-size:12px;">There is a <a style="color:#2196F3" href="#' + i.x + '_' + i.y + '" onclick="show_coords_on_map(' + i.x + ',' + i.y + ')">' + i.size + ' ' + i.type + ' deposit</a> nearby';
@@ -786,7 +793,7 @@ find_nearby_locations = function(coords) {
       }
       for (q = 0, len3 = poi.length; q < len3; q++) {
         i = poi[q];
-        if (i.x === x && i.y === y) {
+        if (i.x == x && i.y == y) {
           if (i.unique == null) {
             i.unique = true;
           }
@@ -801,7 +808,7 @@ find_nearby_locations = function(coords) {
     if (filter.trees) {
       for (r = 0, len4 = trees.length; r < len4; r++) {
         i = trees[r];
-        if (i.x === x && i.y === y) {
+        if (i.x == x && i.y == y) {
           return '<p style="margin-bottom:2px;color:#777;font-size:12px;">There are a lot of <a style="color:#2196F3" href="#' + i.x + '_' + i.y + '" onclick="show_coords_on_map(' + i.x + ',' + i.y + ')">' + i.type + ' trees</a> in the area</p>';
         }
       }
@@ -840,10 +847,11 @@ find_nearby_locations = function(coords) {
       }
     }
   }
-  if (nearby.length === 0) {
+  if (nearby.length == 0) {
     return false;
   }
-  return '<br>' + nearby.join('');
+  return '<br>' + nearby.join(''); */
+  return false;
 };
 
 show_add_form = function(which) {
@@ -894,9 +902,9 @@ search = function() {
         location = location[1];
         if (location !== '') {
           home_deed = localStorage.getItem('wu_map_home_deed');
-          if ((location === 'm' || location === 'me') && (home_deed != null)) {
+          if ((location == 'm' || location == 'me') && (home_deed != null)) {
             deed = deeds[deed_tags[home_deed]];
-          } else if (location === 'n' || location === 'nt') {
+          } else if (location == 'n' || location == 'nt') {
             deed = deeds[deed_tags['new-town']];
           } else {
             for (k = 0, len = deeds.length; k < len; k++) {
@@ -930,7 +938,7 @@ search = function() {
         };
         for (m = 0, len1 = resources.length; m < len1; m++) {
           i = resources[m];
-          if (i.type === 'mine') {
+          if (i.type == 'mine') {
 
           } else {
             if ((i.size + ' ' + i.type).toLowerCase().indexOf(searchtext) !== -1) {
@@ -1060,7 +1068,7 @@ search = function() {
         if (results.length > 8) {
           break;
         }
-        if (i.type === 'mine') {
+        if (i.type == 'mine') {
           continue;
         }
         if ((i.size + ' ' + i.type).toLowerCase().indexOf(searchtext) !== -1) {
@@ -1130,7 +1138,7 @@ search = function() {
     name: {
       html: function() {
         i = this.name.toLowerCase().indexOf(searchtext);
-        if (i === -1) {
+        if (i == -1) {
           return this.name;
         } else {
           return this.name.slice(0, i) + '<strong>' + this.name.slice(i, i + searchtext.length) + '</strong>' + this.name.slice(i + searchtext.length);
@@ -1150,7 +1158,7 @@ search = function() {
             return 'No mayor on record';
           default:
             i = this.mayor.toLowerCase().indexOf(searchtext);
-            if (i === -1) {
+            if (i == -1) {
               return this.mayor;
             } else {
               return this.mayor.slice(0, i) + '<strong>' + this.mayor.slice(i, i + searchtext.length) + '</strong>' + this.mayor.slice(i + searchtext.length);
@@ -1206,7 +1214,7 @@ update_markers = function(which) {
     case 'deeds_solo':
       for (m = 0, len1 = deeds.length; m < len1; m++) {
         i = deeds[m];
-        if (i.type === 'solo' || (i.type == null)) {
+        if (i.type == 'solo' || (i.type == null)) {
           i.marker.setMap(filter.deeds && filter.deeds_solo ? map : null);
         }
       }
@@ -1214,7 +1222,7 @@ update_markers = function(which) {
     case 'deeds_small':
       for (p = 0, len2 = deeds.length; p < len2; p++) {
         i = deeds[p];
-        if (i.type === 'small') {
+        if (i.type == 'small') {
           i.marker.setMap(filter.deeds && filter.deeds_small ? map : null);
         }
       }
@@ -1222,7 +1230,7 @@ update_markers = function(which) {
     case 'deeds_large':
       for (q = 0, len3 = deeds.length; q < len3; q++) {
         i = deeds[q];
-        if (i.type === 'large') {
+        if (i.type == 'large') {
           i.marker.setMap(filter.deeds && filter.deeds_large ? map : null);
         }
       }
@@ -1275,7 +1283,7 @@ change_map = function(type) {
 
 distance = function(coord_a, coord_b) {
   var x, y;
-  if (arguments.length === 4) {
+  if (arguments.length == 4) {
     coord_a = {
       x: arguments[0],
       y: arguments[1]
