@@ -142,7 +142,7 @@ init = function() {
             return 16384;
         }
       })();
-      return 'http://144.76.174.226/unlimited/3/tiles/maps/tile_' + zoom + '_' + coord.x + '_' + coord.y + '.png';
+      return 'http://144.76.174.226/unlimited/3/tiles/tile_' + zoom + '_' + coord.x + '_' + coord.y + '.png';
     },
     tileSize: new google.maps.Size(256, 256),
     maxZoom: 3,
@@ -572,7 +572,7 @@ show_deed_info = function(tag) {
 share_deed = function(tag, el) {
   el.style.backgroundColor = 'white';
   el.style.padding = 0;
-  el.innerHTML = '<input type="text" value="http://andistyr.github.io/wu-map/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
+  el.innerHTML = '<input type="text" value="http://andistyr.github.io/wu-map/14818/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
   el.childNodes[0].select();
   return false;
 };
@@ -748,7 +748,7 @@ show_coords_info = function(coords) {
 share_coords = function(x, y, el) {
   el.style.backgroundColor = 'white';
   el.style.padding = 0;
-  el.innerHTML = '<input type="text" value="http://andistyr.github.io/wu-map/#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
+  el.innerHTML = '<input type="text" value="http://andistyr.github.io/wu-map/14818#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
   el.childNodes[0].select();
   return false;
 };
