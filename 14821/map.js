@@ -1,7 +1,12 @@
-var change_map, clear_home, close_infowin, deed_tags, distance, filter, find_nearby_locations, hide_add_form, hide_search, infowin, init, map, marker, projection, search, set_home, share_coords, share_deed, show_add_form, show_coords_info, show_coords_on_map, show_deed_info, show_deed_on_map, toggle_markers, toggle_serverinfo_size, toggle_sidebar, update_markers, update_stats, vote_reminder_close, vote_reminder_open,
+var change_map, clear_home, close_infowin, deed_tags, distance, filter, find_nearby_locations, hide_add_form, hide_search, infowin, init, marker, projection, search, set_home, share_coords, share_deed, show_add_form, show_coords_info, show_coords_on_map, show_deed_info, show_deed_on_map, toggle_markers, toggle_serverinfo_size, toggle_sidebar, update_markers, update_stats, vote_reminder_close, vote_reminder_open,
   indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] == item) return i; } return -1; };
 
-map = '';
+    var TILE_URL = 'http://144.76.174.226/unlimited/3/tiles/tile_{z}_{x}_{y}.png';
+
+    var map;
+    var mapEl;
+    var layer;
+    var layerID = 'tiled';
 
 marker = '';
 
@@ -12,30 +17,29 @@ deed_tags = {};
 projection = {
   size: 4096,
   mid: 2048,
-  coord_multiplier: 4,
-  max_lat: 90,
+  coord_multiplier: 1,
+  max_lat: 85,
   max_long: 180,
   fromLatLngToPoint: function(latLng) {
-    var l, x, y;
-    l = latLng.lat();
-    x = (function() {
-      switch (false) {
-        case l == 0:
-          return projection.mid + (l / projection.max_lat * projection.mid);
-        default:
-          return projection.mid;
-      }
-    })();
-    l = latLng.lng();
-    y = (function() {
-      switch (false) {
-        case l == 0:
-          return projection.mid + (l / projection.max_long * projection.mid);
-        default:
-          return projection.mid;
-      }
-    })();
-    return new google.maps.Point(x, y);
+   
+	if(latLng.lng()!=0)
+	{
+		var x = (latLng.lng() + 180) / 360 * projection.size;
+	}
+	else
+	{	
+		var x = projection.mid;
+	}
+	
+	if(latLng.lat() != 0)
+	{
+		var y = ((1 - Math.log(Math.tan(latLng.lat() * Math.PI / 180) + 1 / Math.cos(latLng.lat() * Math.PI / 180)) / Math.PI) / 2 * Math.pow(2, 0)) * projection.size;
+    }
+	else
+	{
+		var y = projection.mid;
+	}
+	return new google.maps.Point(x, y);
   },
   fromPointToLatLng: function(point, noWrap) {
     var lat, long;
@@ -51,27 +55,11 @@ projection = {
     if (point.y < 0) {
       point.y = 0;
     }
-    lat = (function() {
-      switch (false) {
-        case !(point.x < projection.mid):
-          return 0 - (projection.max_lat - (point.x / projection.mid * projection.max_lat));
-        case !(point.x > projection.mid):
-          return (point.x - projection.mid) / projection.mid * projection.max_lat;
-        default:
-          return 0;
-      }
-    })();
-    long = (function() {
-      switch (false) {
-        case !(point.y < projection.mid):
-          return 0 - (projection.max_long - (point.y / projection.mid * projection.max_long));
-        case !(point.y > projection.mid):
-          return (point.y - projection.mid) / projection.mid * projection.max_long;
-        default:
-          return 0;
-      }
-    })();
-    return new google.maps.LatLng(lat, long);
+	
+	var lng = point.x / projection.size * 360 - 180;
+    var n = Math.PI - 2 * Math.PI * point.y / projection.size;
+    var lat = (180 / Math.PI * Math.atan(0.5 * (Math.exp(n) - Math.exp(-n))));
+    return new google.maps.LatLng(lat, lng);
   },
   toCoords: function(point) {
     return {
@@ -91,11 +79,8 @@ init = function() {
   var Sklotopolis, Tiled, coords, coordsDiv, d, hash, home_deed, i, init_moved, j, k, last_reminder, len, len1, len2, len3, len4, m, p, q, r, serverinfo_size, timestr;
   init_moved = false;
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {
-      lat: -49.035400390625,
-      lng: -163.30078125
-    },
-    zoom: 2,
+	center: new google.maps.LatLng(0.0, 0.0),
+    zoom: 3,
     zoomControl: true,
     streetViewControl: false,
     mapTypeControl: false
@@ -126,32 +111,40 @@ init = function() {
     }
     return show_coords_info(projection.toCoords(projection.fromLatLngToPoint(e.latLng)));
   });
-  Tiled = new google.maps.ImageMapType({
-    getTileUrl: function(coord, zoom) {
-      zoom = (function() {
+  
+  
+		// Create a tile layer, configured to fetch tiles from TILE_URL.
+      layer = new google.maps.ImageMapType({
+        name: layerID,
+        getTileUrl: function(coord, zoom) {
+		  zoom = (function() {
         switch (zoom) {
-          case 0:
-            return 1024;
-          case 1:
-            return 2048;
           case 2:
-            return 4096;
+            return 1024;
           case 3:
-            return 8192;
+            return 2048;
           case 4:
-            return 16384;
+            return 4096;
+          default:
+            return 8192;
         }
       })();
-      return 'http://144.76.174.226/unlimited/3/tiles/tile_' + zoom + '_' + coord.x + '_' + coord.y + '.png';
-    },
-    tileSize: new google.maps.Size(256, 256),
-    maxZoom: 3,
-    minZoom: 0,
-    name: 'Tiled map (updates approx. every 4 hrs)'
-  });
-  Tiled.projection = projection;
-  map.mapTypes.set('tiled', Tiled);
-  map.setMapTypeId('tiled');
+	  
+          var url = TILE_URL
+            .replace('{x}', coord.x)
+            .replace('{y}', coord.y)
+            .replace('{z}', zoom);
+          return url;
+        },
+        tileSize: new google.maps.Size(256, 256),
+        minZoom: 2,
+        maxZoom: 5
+      });
+      
+      // Apply the new tile layer to the map.
+      map.mapTypes.set(layerID, layer);
+      map.setMapTypeId(layerID);
+
   deeds.sort(function(a, b) {
     var a_name, b_name;
     a_name = a.name.toLowerCase();
@@ -327,7 +320,7 @@ init = function() {
     if (typeof console !== "undefined" && console !== null) {
       console.log('Updating stats.json');
     }
-    return pegasus('http://144.76.174.226/unlimited/3/stats.json').then(update_stats, function(err, xhr) {
+    return pegasus('http://144.76.174.226/unlimited/1/stats.json').then(update_stats, function(err, xhr) {
       if (typeof console !== "undefined" && console !== null) {
         return console.log(err);
       }
@@ -572,7 +565,7 @@ show_deed_info = function(tag) {
 share_deed = function(tag, el) {
   el.style.backgroundColor = 'white';
   el.style.padding = 0;
-  el.innerHTML = '<input type="text" value="http://andistyr.github.io/wu-map/14821/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
+  el.innerHTML = '<input type="text" value="http://andistyr.github.io/wu-map/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
   el.childNodes[0].select();
   return false;
 };
@@ -748,7 +741,7 @@ show_coords_info = function(coords) {
 share_coords = function(x, y, el) {
   el.style.backgroundColor = 'white';
   el.style.padding = 0;
-  el.innerHTML = '<input type="text" value="http://andistyr.github.io/wu-map/14821#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
+  el.innerHTML = '<input type="text" value="http://andistyr.github.io/wu-map/#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
   el.childNodes[0].select();
   return false;
 };
