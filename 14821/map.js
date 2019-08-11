@@ -1,7 +1,7 @@
 var change_map, clear_home, close_infowin, deed_tags, distance, filter, find_nearby_locations, hide_add_form, hide_search, infowin, init, marker, projection, search, set_home, share_coords, share_deed, show_add_form, show_coords_info, show_coords_on_map, show_deed_info, show_deed_on_map, toggle_markers, toggle_serverinfo_size, toggle_sidebar, update_markers, update_stats, vote_reminder_close, vote_reminder_open,
   indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] == item) return i; } return -1; };
 
-    var TILE_URL = 'http://144.76.174.226/unlimited/3/tiles/tile_{z}_{x}_{y}.png';
+    var TILE_URL = 'https://sklotopolis.ddns.net/unlimited/3/tiles/tile_{z}_{x}_{y}.png';
 
     var map;
     var mapEl;
@@ -88,7 +88,7 @@ init = function() {
   Sklotopolis = new google.maps.ImageMapType({
     getTileUrl: function(coord, zoom) {
       if (coord.x == 0 && coord.y == 0) {
-        return 'http://144.76.174.226/unlimited/3/mapdump.png';
+        return 'https://sklotopolis.ddns.net/unlimited/3/mapdump.png';
       }
     },
     tileSize: new google.maps.Size(4096, 4096),
@@ -320,7 +320,7 @@ init = function() {
     if (typeof console !== "undefined" && console !== null) {
       console.log('Updating stats.json');
     }
-    return pegasus('http://144.76.174.226/unlimited/1/stats.json').then(update_stats, function(err, xhr) {
+    return pegasus('https://sklotopolis.ddns.net/unlimited/1/stats.json').then(update_stats, function(err, xhr) {
       if (typeof console !== "undefined" && console !== null) {
         return console.log(err);
       }
