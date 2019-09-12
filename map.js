@@ -1,7 +1,7 @@
 var change_map, clear_home, close_infowin, deed_tags, distance, filter, find_nearby_locations, hide_add_form, hide_search, infowin, init, marker, projection, search, set_home, share_coords, share_deed, show_add_form, show_coords_info, show_coords_on_map, show_deed_info, show_deed_on_map, toggle_markers, toggle_serverinfo_size, toggle_sidebar, update_markers, update_stats, vote_reminder_close, vote_reminder_open,
   indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] == item) return i; } return -1; };
 
-    var TILE_URL = 'https://sklotopolis.ddns.net/unlimited/2/tiles/tile_{z}_{x}_{y}.png';
+    var TILE_URL = 'https://sklotopolis.ddns.net/unlimited/2/tiles-flat/tile_{z}_{x}_{y}.png';
 
     var map;
     var mapEl;
@@ -88,7 +88,7 @@ init = function() {
   Sklotopolis = new google.maps.ImageMapType({
     getTileUrl: function(coord, zoom) {
       if (coord.x == 0 && coord.y == 0) {
-        return 'https://sklotopolis.ddns.net/unlimited/2/mapdump.png';
+        return 'https://sklotopolis.ddns.net/unlimited/2/mapdump-flat.png';
       }
     },
     tileSize: new google.maps.Size(4096, 4096),
@@ -184,12 +184,105 @@ init = function() {
         anchor: new google.maps.Point(16, 37)
       }
     });
+	
+	var tmpPosNorthEast = projection.fromPointToLatLng(projection.fromCoords({
+        x: i.x - (-i.tilesEast), //deedtiles east
+        y: i.y-i.tilesNorth //deedtiles north
+      }));
+	  
+	var tmpPosSouthWest = projection.fromPointToLatLng(projection.fromCoords({
+        x: i.x-i.tilesWest, //deedtiles west
+        y: i.y - (-i.tilesSouth) //deedtiles south
+      }));
+	  
+	var tmpPosNorthEastPerimeter = projection.fromPointToLatLng(projection.fromCoords({
+        x: i.x - (-i.tilesEast) - (-i.tilesPerimeter), //deedtiles east
+        y: i.y-i.tilesNorth-i.tilesPerimeter //deedtiles north
+      }));
+	  
+	var tmpPosSouthWestPerimeter = projection.fromPointToLatLng(projection.fromCoords({
+        x: i.x-i.tilesWest-i.tilesPerimeter, //deedtiles west
+        y: i.y - (-i.tilesSouth)- (-i.tilesPerimeter) //deedtiles south
+      }));
+	
+	if(i.isSpawnPoint)
+	{
+		var color = '#FFD700';
+		var strokeWeight = 5;
+	}
+	else {
+		var color = '#00FF00';
+		var strokeWeight = 3;
+	}
+	
+	i.border = new google.maps.Rectangle({
+          strokeColor: color,
+          strokeOpacity: 0.8,
+          strokeWeight: strokeWeight,
+          fillColor: '#FFFFFF',
+          fillOpacity: 0.2,
+          map: map,
+          bounds: {
+            north: tmpPosNorthEast.lat(),
+            south: tmpPosSouthWest.lat(),
+            east: tmpPosNorthEast.lng(),
+            west: tmpPosSouthWest.lng()
+          }
+        });
+		
+	i.borderPerimeter = new google.maps.Rectangle({
+          strokeColor: '#FF0000',
+          strokeOpacity: 0.4,
+          strokeWeight: 2,
+		  fillColor: '#FFFFFF',
+          fillOpacity: 0,
+          map: map,
+          bounds: {
+            north: tmpPosNorthEastPerimeter.lat(),
+            south: tmpPosSouthWestPerimeter.lat(),
+            east: tmpPosNorthEastPerimeter.lng(),
+            west: tmpPosSouthWestPerimeter.lng()
+          }
+        });
+		
     i.marker.addListener('click', show_deed_info.bind(null, i.tag));
+    i.borderPerimeter.addListener('click', show_deed_info.bind(null, i.tag));
+    i.border.addListener('click', show_deed_info.bind(null, i.tag));
+	
     if (window.location.hash.substr(1) == i.tag) {
       show_deed_on_map(i.tag);
       init_moved = true;
     }
   }
+  
+  for (highwayCount = 0, lenHighways = highways.length; highwayCount < lenHighways; highwayCount++) {
+	  i = highways[highwayCount];
+	  
+	  var startCoordinates = projection.fromPointToLatLng(projection.fromCoords({
+        x: i.startX, 
+        y: i.startY
+      }));
+	  var endCoordinates = projection.fromPointToLatLng(projection.fromCoords({
+        x: i.endX,
+        y: i.endY 
+      }));
+	  
+	 var highwayCoordinates = [
+          {lat: startCoordinates.lat(), lng: startCoordinates.lng()},
+          {lat: endCoordinates.lat(), lng: endCoordinates.lng()}
+        ];
+		
+	var highwayPath = new google.maps.Polyline({
+	  path: highwayCoordinates,
+	  geodesic: false,
+	  strokeColor: '#CCCCCC',
+	  strokeOpacity: 0.8,
+	  strokeWeight: 4
+	});
+
+	highwayPath.setMap(map);
+  }
+  
   for (m = 0, len1 = guard_towers.length; m < len1; m++) {
     i = guard_towers[m];
     i.marker = new google.maps.Marker({
@@ -537,7 +630,22 @@ show_deed_info = function(tag) {
   if (deed.mayor != null) {
     props.push('<p style="margin-bottom:6px">Mayor: ' + deed.mayor + (deed.supporter ? ' <img src="images/star.png">' : '') + '</p>');
   }
-  props.push('<p>Coordinates: X' + deed.x + ', Y' + deed.y + '</p>');
+  props.push('<p style="margin-bottom:6px">Coordinates: X' + deed.x + ', Y' + deed.y + '</p>');
+
+	  
+  if (deed.lastActive != null && deed.lastActive != "") {
+	props.push('<p style="margin-bottom:6px">' + deed.lastActive + '</p>');
+  }
+  
+  if(deed.guards == 1)
+  {
+	props.push('<p>' + deed.guards + ' guard</p>');
+  }
+  else
+  {
+	props.push('<p>' + deed.guards + ' guards</p>');
+  }
+  
   if (deed.note != null) {
     props.push('<p style="font-style:italic">' + deed.note + '</p>');
   }
@@ -565,7 +673,7 @@ show_deed_info = function(tag) {
 share_deed = function(tag, el) {
   el.style.backgroundColor = 'white';
   el.style.padding = 0;
-  el.innerHTML = '<input type="text" value="http://andistyr.github.io/wu-map/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
+  el.innerHTML = '<input type="text" value="https://andistyr.github.io/wu-map/14821/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
   el.childNodes[0].select();
   return false;
 };
@@ -622,7 +730,7 @@ show_coords_info = function(coords) {
             update_markers('guard_towers');
           }
           coords_marker = i.marker;
-          props.push('<p>There is a <strong style="font-weight:500">guard tower</strong> here' + (i.creator != null ? ', built by ' + i.creator : '') + '</p>');
+          props.push('<p>Guard Tower <strong style="font-weight:500">'+i.towerName+'</strong>' + (i.creatorName != null ? ', built by ' + i.creatorName : '') + ' with '+i.maxGuards +(i.maxGuards == 1 ? ' guard' : ' guards') + '</p>');
         }
       }
     }
@@ -741,7 +849,7 @@ show_coords_info = function(coords) {
 share_coords = function(x, y, el) {
   el.style.backgroundColor = 'white';
   el.style.padding = 0;
-  el.innerHTML = '<input type="text" value="http://andistyr.github.io/wu-map/#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
+  el.innerHTML = '<input type="text" value="https://andistyr.github.io/wu-map/14821/#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
   el.childNodes[0].select();
   return false;
 };
@@ -1195,12 +1303,18 @@ update_markers = function(which) {
         switch (i.type) {
           case 'large':
             i.marker.setMap(filter.deeds && filter.deeds_large ? map : null);
+			i.border.setMap(filter.deeds && filter.deeds_large ? map : null);
+			i.borderPerimeter.setMap(filter.deeds && filter.deeds_large ? map : null);
             break;
           case 'small':
             i.marker.setMap(filter.deeds && filter.deeds_small ? map : null);
+			i.border.setMap(filter.deeds && filter.deeds_small ? map : null);
+			i.borderPerimeter.setMap(filter.deeds && filter.deeds_small ? map : null);
             break;
           default:
             i.marker.setMap(filter.deeds && filter.deeds_solo ? map : null);
+			i.border.setMap(filter.deeds && filter.deeds_solo ? map : null);
+			i.borderPerimeter.setMap(filter.deeds && filter.deeds_solo ? map : null);
         }
       }
       break;
@@ -1209,6 +1323,8 @@ update_markers = function(which) {
         i = deeds[m];
         if (i.type == 'solo' || (i.type == null)) {
           i.marker.setMap(filter.deeds && filter.deeds_solo ? map : null);
+		  i.border.setMap(filter.deeds && filter.deeds_solo ? map : null);
+			i.borderPerimeter.setMap(filter.deeds && filter.deeds_solo ? map : null);
         }
       }
       break;
@@ -1217,6 +1333,8 @@ update_markers = function(which) {
         i = deeds[p];
         if (i.type == 'small') {
           i.marker.setMap(filter.deeds && filter.deeds_small ? map : null);
+		  i.border.setMap(filter.deeds && filter.deeds_small ? map : null);
+			i.borderPerimeter.setMap(filter.deeds && filter.deeds_small ? map : null);
         }
       }
       break;
@@ -1225,6 +1343,8 @@ update_markers = function(which) {
         i = deeds[q];
         if (i.type == 'large') {
           i.marker.setMap(filter.deeds && filter.deeds_large ? map : null);
+		  i.border.setMap(filter.deeds && filter.deeds_large ? map : null);
+		  i.borderPerimeter.setMap(filter.deeds && filter.deeds_large ? map : null);
         }
       }
       break;
