@@ -1106,6 +1106,11 @@ search = function() {
         if (results.length > 8) {
           break;
         }
+		
+		if (typeof i.name === 'undefined') {
+			continue;
+		}
+		
         if (i.name.toLowerCase().indexOf(searchtext) !== -1) {
           results.push({
             name: i.name,
