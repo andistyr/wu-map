@@ -272,10 +272,32 @@ init = function() {
           {lat: endCoordinates.lat(), lng: endCoordinates.lng()}
         ];
 		
+	if(i.type != null)
+	{	
+		if(i.type == 1)
+		{
+			//cave
+			var color = '#EE0000';
+		}
+		else if(i.type == 0)
+		{
+			//Bridge
+			var color = '#AAAAAA';
+		}
+		else {
+			//normal road
+			var color = '#CCCCCC';
+		}
+	}
+	else {
+		//unknown type = normal road
+		var color = '#CCCCCC';
+	}
+	
 	var highwayPath = new google.maps.Polyline({
 	  path: highwayCoordinates,
 	  geodesic: false,
-	  strokeColor: '#CCCCCC',
+	  strokeColor: color,
 	  strokeOpacity: 0.8,
 	  strokeWeight: 4
 	});
