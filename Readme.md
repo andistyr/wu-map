@@ -12,7 +12,7 @@ _Skip these first steps if you've already done them in the past._
 
 Install [Node.JS](https://nodejs.org/)
 
-Once Node is installed, install [Gulp](http://gulpjs.com/) globally using the npm package manager.
+Once Node is installed, install [Gulp](https://gulpjs.com/) globally using the npm package manager.
 
     $ npm i gulp -g
 
