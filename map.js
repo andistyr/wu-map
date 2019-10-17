@@ -282,7 +282,7 @@ init = function() {
 		else if(i.type == 0)
 		{
 			//Bridge
-			var color = '#AAAAAA';
+			var color = '#222222';
 		}
 		else {
 			//normal road
@@ -354,7 +354,7 @@ init = function() {
       })),
       map: map,
       icon: {
-        url: 'images/' + (i.type == null ? 'poi' : 'poi_' + i.type) + '.png',
+        url: 'images/' + ((i.type == null || i.type == 'star') ? 'poi' : 'poi_' + i.type) + '.png',
         size: new google.maps.Size(32, 37),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(16, 37)
@@ -1137,7 +1137,7 @@ search = function() {
             name: i.name,
             x: i.x,
             y: i.y,
-            "class": i.type == null ? 'poi' : 'poi_' + i.type,
+            "class": (i.type == null || i.type == 'star') ? 'poi' : 'poi_' + i.type,
             tag: i.x + '_' + i.y,
             onclick: 'show_coords_on_map(' + i.x + ',' + i.y + ')'
           });
