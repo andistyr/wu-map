@@ -284,6 +284,11 @@ init = function() {
 			//Bridge
 			var color = '#222222';
 		}
+		else if(i.type == 3)
+		{
+			//Canal
+			var color = '#3888ff';
+		}
 		else {
 			//normal road
 			var color = '#CCCCCC';
