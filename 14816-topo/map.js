@@ -283,7 +283,7 @@ init = function() {
       init_moved = true;
     }
   } else if (!init_moved) {
-    home_deed = localStorage.getItem('wu_map_home_deed');
+    home_deed = localStorage.getItem('wu_map_home_deed_14816_topo');
     if (home_deed != null) {
       if (home_deed !== '') {
         show_deed_on_map(home_deed, false);
@@ -442,12 +442,12 @@ toggle_serverinfo_size = function() {
 };
 
 set_home = function(tag, img) {
-  localStorage.setItem('wu_map_home_deed', tag);
+  localStorage.setItem('wu_map_home_deed_14816_topo', tag);
   return show_deed_info(tag);
 };
 
 clear_home = function() {
-  return localStorage.setItem('wu_map_home_deed', '');
+  return localStorage.setItem('wu_map_home_deed_14816_topo', '');
 };
 
 show_deed_on_map = function(tag, showInfo) {
@@ -549,7 +549,7 @@ show_deed_info = function(tag) {
     props.push(nearby);
   }
   home_img = '<img id="home_deed" src="images/home_off.png" style="float:right;padding:0 0 5px 5px;cursor:pointer;" onmouseenter="this.src=\'images/home_hover.png\';" onmouseleave="this.src=\'images/home_off.png\';" onclick="set_home(\'' + deed.tag + '\', this)" title="Set as home" />';
-  if (localStorage.getItem('wu_map_home_deed') == deed.tag) {
+  if (localStorage.getItem('wu_map_home_deed_14816_topo') == deed.tag) {
     home_img = '<img id="home_deed" src="images/home_on.png" style="float:right;padding:0 0 5px 5px;cursor:pointer;" onclick="clear_home(this)" title="Clear home location" />';
   }
   infowin = new google.maps.InfoWindow({
@@ -894,7 +894,7 @@ search = function() {
         searchtext = location[0];
         location = location[1];
         if (location !== '') {
-          home_deed = localStorage.getItem('wu_map_home_deed');
+          home_deed = localStorage.getItem('wu_map_home_deed_14816_topo');
           if ((location == 'm' || location == 'me') && (home_deed != null)) {
             deed = deeds[deed_tags[home_deed]];
           } else if (location == 'n' || location == 'nt') {
@@ -912,7 +912,7 @@ search = function() {
       } else {
         searchtext = searchtext.replace('nearby ', '');
         if (searchtext !== '') {
-          home_deed = localStorage.getItem('wu_map_home_deed');
+          home_deed = localStorage.getItem('wu_map_home_deed_14816_topo');
           if (home_deed != null) {
             deed = deeds[deed_tags[home_deed]];
           }
