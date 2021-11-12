@@ -1313,9 +1313,7 @@ filter = {
   deeds_small: true,
   deeds_large: true,
   guard_towers: true,
-  resources: true,
-  poi: true,
-  trees: true
+  poi: true
 };
 
 toggle_markers = function(which) {
