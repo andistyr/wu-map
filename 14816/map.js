@@ -331,6 +331,7 @@ init = function() {
       y: i.y
     }));
   }
+  toggle_markers('guard_towers');
   for (p = 0, len2 = resources.length; p < len2; p++) {
     i = resources[p];
     i.marker = new google.maps.Marker({
