@@ -168,6 +168,7 @@ init = function() {
         return 0;
     }
   });
+    var deedToShow = null;
   for (j = k = 0, len = deeds.length; k < len; j = ++k) {
     i = deeds[j];
     deed_tags[i.tag] = j;
@@ -250,7 +251,7 @@ init = function() {
     i.border.addListener('click', show_deed_info.bind(null, i.tag));
 	
     if (window.location.hash.substr(1) == i.tag) {
-      show_deed_on_map(i.tag);
+	  deedToShow = i;
       init_moved = true;
     }
   }
@@ -391,6 +392,11 @@ init = function() {
       y: i.y
     }));
   }
+  
+  if(deedToShow != null) {
+	show_deed_on_map(deedToShow.tag);
+  }
+  
   hash = window.location.hash.substr(1);
   if (hash.indexOf('_') !== -1) {
     hash = hash.split('_');
@@ -1233,11 +1239,6 @@ search = function() {
     if (results.length > max_length) {
       results = results.slice(0, max_length);
     }
-    results.push({
-      tag: '',
-      add_deed: true,
-      name: 'Can\'t find your deed?'
-    });
   }
   Transparency.render(document.getElementById('searchresults'), results, {
     location: {
