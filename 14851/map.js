@@ -672,18 +672,27 @@ show_deed_info = function(tag) {
 	props.push('<p style="margin-bottom:6px">' + deed.lastActive + '</p>');
   }
   
+   if(deed.allianceName != null && deed.allianceName != "")
+  {
+	props.push('<p style="margin-bottom:6px">Alliance: ' + deed.allianceName + '</p>');
+  }
+  
   if(deed.guards == 1)
   {
-	props.push('<p>' + deed.guards + ' guard</p>');
+	props.push('<p>Guard: ' + deed.guards + '</p>');
   }
   else
   {
-	props.push('<p>' + deed.guards + ' guards</p>');
+	props.push('<p>Guards: ' + deed.guards + '</p>');
   }
   
-  if (deed.note != null) {
-    props.push('<p style="font-style:italic">' + deed.note + '</p>');
+  props.push('<p>Citiziens: ' + deed.amountOfCitizens + '</p>');
+  props.push('<p>Founder: ' + deed.founderName + '</p>');
+  
+  if (deed.motto != null) {
+    props.push('<p style="font-style:italic">' + deed.motto + '</p>');
   }
+  
   nearby = find_nearby_locations({
     x: deed.x,
     y: deed.y
