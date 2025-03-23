@@ -682,7 +682,7 @@ show_deed_info = function(tag) {
 	props.push('<p>Guards: ' + deed.guards + '</p>');
   }
   
-  props.push('<p>Citiziens: ' + deed.amountOfCitizens + '</p>');
+  props.push('<p>Citizens: ' + deed.amountOfCitizens + '</p>');
   props.push('<p>Founder: ' + deed.founderName + '</p>');
   
   if (deed.motto != null) {
