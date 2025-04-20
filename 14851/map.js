@@ -1172,10 +1172,12 @@ search = function() {
         }
         if (i.name.toLowerCase().indexOf(searchtext) !== -1) {
           results.push(i);
-        } else if (i.mayor != null) {
-          if (i.mayor.toLowerCase().indexOf(searchtext) !== -1) {
+        } else if (i.mayor != null && i.mayor.toLowerCase().indexOf(searchtext) !== -1) {
             results.push(i);
-          }
+        } else if (i.allianceName != null && i.allianceName.toLowerCase().indexOf(searchtext) !== -1) {
+			results.push(i);
+        } else if (i.founderName != null && i.founderName.toLowerCase().indexOf(searchtext) !== -1) {
+            results.push(i);
         }
       }
       for (t = 0, len6 = guard_towers.length; t < len6; t++) {
@@ -1301,11 +1303,20 @@ search = function() {
           case !(this.mayor == null):
             return 'No mayor on record';
           default:
-            i = this.mayor.toLowerCase().indexOf(searchtext);
+			var ally = '';
+			if(this.allianceName !== null && this.allianceName !== '') {
+				ally = " - "+this.allianceName;
+			}
+			var subtext = this.mayor+ally;
+			if(this.mayor !== this.founderName)
+			{
+				subtext = this.mayor+"/"+this.founderName+ally;
+			}
+            i = subtext.toLowerCase().indexOf(searchtext);
             if (i == -1) {
-              return this.mayor;
+              return subtext;
             } else {
-              return this.mayor.slice(0, i) + '<strong>' + this.mayor.slice(i, i + searchtext.length) + '</strong>' + this.mayor.slice(i + searchtext.length);
+              return subtext.slice(0, i) + '<strong>' + subtext.slice(i, i + searchtext.length) + '</strong>' + subtext.slice(i + searchtext.length);
             }
         }
       }
