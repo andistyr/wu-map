@@ -411,7 +411,7 @@ init = function() {
       init_moved = true;
     }
   } else if (!init_moved) {
-    home_deed = localStorage.getItem('wu_map_home_deed_14901');
+    home_deed = localStorage.getItem('wu_map_home_deed_14902');
     if (home_deed != null) {
       if (home_deed !== '') {
         show_deed_on_map(home_deed, false);
@@ -570,12 +570,12 @@ toggle_serverinfo_size = function() {
 };
 
 set_home = function(tag, img) {
-  localStorage.setItem('wu_map_home_deed_14901', tag);
+  localStorage.setItem('wu_map_home_deed_14902', tag);
   return show_deed_info(tag);
 };
 
 clear_home = function() {
-  return localStorage.setItem('wu_map_home_deed_14901', '');
+  return localStorage.setItem('wu_map_home_deed_14902', '');
 };
 
 show_deed_on_map = function(tag, showInfo) {
@@ -700,7 +700,7 @@ show_deed_info = function(tag) {
     props.push(nearby);
   }
   home_img = '<img id="home_deed" src="images/home_off.png" style="float:right;padding:0 0 5px 5px;cursor:pointer;" onmouseenter="this.src=\'images/home_hover.png\';" onmouseleave="this.src=\'images/home_off.png\';" onclick="set_home(\'' + deed.tag + '\', this)" title="Set as home" />';
-  if (localStorage.getItem('wu_map_home_deed_14901') == deed.tag) {
+  if (localStorage.getItem('wu_map_home_deed_14902') == deed.tag) {
     home_img = '<img id="home_deed" src="images/home_on.png" style="float:right;padding:0 0 5px 5px;cursor:pointer;" onclick="clear_home(this)" title="Clear home location" />';
   }
   infowin = new google.maps.InfoWindow({
@@ -716,7 +716,7 @@ show_deed_info = function(tag) {
 share_deed = function(tag, el) {
   el.style.backgroundColor = 'white';
   el.style.padding = 0;
-  el.innerHTML = '<input type="text" value="https://andistyr.github.io/wu-map/14901/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
+  el.innerHTML = '<input type="text" value="https://andistyr.github.io/wu-map/14902/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
   el.childNodes[0].select();
   return false;
 };
@@ -892,7 +892,7 @@ show_coords_info = function(coords) {
 share_coords = function(x, y, el) {
   el.style.backgroundColor = 'white';
   el.style.padding = 0;
-  el.innerHTML = '<input type="text" value="https://andistyr.github.io/wu-map/14901/#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
+  el.innerHTML = '<input type="text" value="https://andistyr.github.io/wu-map/14902/#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
   el.childNodes[0].select();
   return false;
 };
@@ -1045,7 +1045,7 @@ search = function() {
         searchtext = location[0];
         location = location[1];
         if (location !== '') {
-          home_deed = localStorage.getItem('wu_map_home_deed_14901');
+          home_deed = localStorage.getItem('wu_map_home_deed_14902');
           if ((location == 'm' || location == 'me') && (home_deed != null)) {
             deed = deeds[deed_tags[home_deed]];
           } else if (location == 'n' || location == 'nt') {
@@ -1063,7 +1063,7 @@ search = function() {
       } else {
         searchtext = searchtext.replace('nearby ', '');
         if (searchtext !== '') {
-          home_deed = localStorage.getItem('wu_map_home_deed_14901');
+          home_deed = localStorage.getItem('wu_map_home_deed_14902');
           if (home_deed != null) {
             deed = deeds[deed_tags[home_deed]];
           }
