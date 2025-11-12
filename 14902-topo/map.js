@@ -15,8 +15,8 @@ infowin = '';
 deed_tags = {};
 
 projection = {
-  size: 4096,
-  mid: 2048,
+  size: 2048,
+  mid: 1024,
   coord_multiplier: 1,
   max_lat: 85,
   max_long: 180,
@@ -91,7 +91,7 @@ init = function() {
         return 'https://web.game.sklotopolis.com/unlimited/6/mapdump.png';
       }
     },
-    tileSize: new google.maps.Size(4096, 4096),
+    tileSize: new google.maps.Size(2048, 2048),
     maxZoom: 2,
     minZoom: 2,
     name: 'Official map dump'
