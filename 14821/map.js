@@ -687,6 +687,7 @@ show_deed_info = function(tag) {
   
   props.push('<p>Citizens: ' + deed.amountOfCitizens + '</p>');
   props.push('<p>Founder: ' + deed.founderName + '</p>');
+  props.push(`<p>Founded: ${new Date(deed.creationDate).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}</p>`);
   
   if (deed.motto != null) {
     props.push('<p style="font-style:italic">' + deed.motto + '</p>');
