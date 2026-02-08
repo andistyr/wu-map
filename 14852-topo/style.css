@@ -16,12 +16,13 @@
   --bg-primary: linear-gradient(135deg, #E0E7FF 0%, #FFFFFF 100%);
   --bg-secondary: #EDF2F7;
   --text-primary: #2D3748;
-  --text-secondary: #718096;
+  --text-secondary: #292e37;
   --glass-bg-light: rgba(255, 255, 255, 0.7); /* Reduced opacity for more transparency in light mode */ /* Reduced opacity for more transparency in light mode */
   --glass-bg-dark: rgba(255, 255, 255, 0.6); /* Adjusted opacity for light theme background */ /* Adjusted opacity for light theme background */
   --glass-border: rgba(0, 0, 0, 0.1); /* Slightly more visible border for light theme */
   --glass-shadow: rgba(0, 0, 0, 0.15); /* Adjusted shadow for light theme */
-  --accent-color: #dfac35;
+  --accent-color: #c58a00;
+
   --border-color: #CBD5E0; /* Lighter border for light mode */
   --text-color-invert-amount: 0; /* For light mode, keep black */
 }
