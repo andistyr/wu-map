@@ -1,3 +1,42 @@
+:root {
+  --bg-primary: linear-gradient(135deg, #1A202C 0%, #171923 100%);
+  --bg-secondary: #2D3748; /* For elements like addform background */
+  --text-primary: #E2E8F0;
+  --text-secondary: #A0AEC0;
+  --glass-bg-light: rgba(0, 0, 0, 0.5); /* Darker, more opaque background for better readability in dark mode */
+  --glass-bg-dark: rgba(255, 255, 255, 0.03); /* Further reduced opacity for dark theme background */
+  --glass-border: rgba(255, 255, 255, 0.2); /* Slightly more visible border for definition */
+  --glass-shadow: rgba(0, 0, 0, 0.25); /* Adjusted shadow for depth */
+  --accent-color: #dfac35; /* Darker golden/bronze accent color */
+  --border-color: #4A5568; /* Darker border for dark mode */
+  --text-color-invert-amount: 1; /* For dark mode, invert to white */
+}
+
+[data-theme="light"] {
+  --bg-primary: linear-gradient(135deg, #E0E7FF 0%, #FFFFFF 100%);
+  --bg-secondary: #EDF2F7;
+  --text-primary: #2D3748;
+  --text-secondary: #718096;
+  --glass-bg-light: rgba(255, 255, 255, 0.7); /* Reduced opacity for more transparency in light mode */ /* Reduced opacity for more transparency in light mode */
+  --glass-bg-dark: rgba(255, 255, 255, 0.6); /* Adjusted opacity for light theme background */ /* Adjusted opacity for light theme background */
+  --glass-border: rgba(0, 0, 0, 0.1); /* Slightly more visible border for light theme */
+  --glass-shadow: rgba(0, 0, 0, 0.15); /* Adjusted shadow for light theme */
+  --accent-color: #dfac35;
+  --border-color: #CBD5E0; /* Lighter border for light mode */
+  --text-color-invert-amount: 0; /* For light mode, keep black */
+}
+
+.glass-effect {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  background-color: var(--glass-bg-light);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px; /* More rounded corners for glass aesthetic */
+  box-shadow: 0 4px 6px -1px var(--glass-shadow), 0 2px 4px -1px var(--glass-shadow);
+  transition: all 0.3s ease; /* Smooth transitions for hover/active states */
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +45,15 @@
   text-decoration: none;
   box-sizing: border-box; }
 
-html, body, #map {
+html, body {
   height: 100%;
   font-family: "Roboto", arial, sans-serif;
-  overflow-x: hidden; }
+  color: var(--text-primary); /* Use text variable */
+}
+
+body {
+  background: var(--bg-primary); /* Apply gradient background */
+}
 
 #map {
   position: absolute;
@@ -18,32 +62,41 @@ html, body, #map {
   bottom: 0;
   left: 0px;
   width: 100%;
-  z-index: 0;
+  z-index: 10;
   -webkit-transition: all 80ms ease-in-out;
   -moz-transition: all 80ms ease-in-out;
   -ms-transition: all 80ms ease-in-out;
   -o-transition: all 80ms ease-in-out;
-  transition: all 80ms ease-in-out; }
+  transition: all 0.3s ease-in-out; /* Increase transition time for smoother feel */
+}
 
 a#sidebartoggle {
   display: block;
   position: absolute;
   top: 15px;
   left: 0;
-  -webkit-transition: all 80ms ease-in-out;
-  -moz-transition: all 80ms ease-in-out;
-  -ms-transition: all 80ms ease-in-out;
-  -o-transition: all 80ms ease-in-out;
-  transition: all 80ms ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   width: 46px;
   height: 46px;
   line-height: 46px;
-  border-radius: 0 3px 3px 0;
-  background: white;
-  color: black;
-  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+  border-radius: 0 12px 12px 0; /* More rounded corner for glass aesthetic */
+  background: var(--glass-bg-light); /* Use glass background variable */
+  color: var(--text-primary); /* Use text color variable */
+  box-shadow: 0 4px 6px -1px var(--glass-shadow), 0 2px 4px -1px var(--glass-shadow); /* Use glass shadow variable */
   text-align: center;
-  font-size: 26px; }
+  font-size: 26px;
+  z-index: 11;
+  border-left: none; /* Remove left border */
+  border-top: 1px solid var(--glass-border);
+  border-right: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+
 
 #sidebar {
   position: absolute;
@@ -52,34 +105,64 @@ a#sidebartoggle {
   bottom: 0;
   height: 100%;
   width: 0px;
+  z-index: 10;
   overflow-y: auto;
-  -webkit-transition: all 80ms ease-in-out;
-  -moz-transition: all 80ms ease-in-out;
-  -ms-transition: all 80ms ease-in-out;
-  -o-transition: all 80ms ease-in-out;
-  transition: all 80ms ease-in-out;
-  background: white;
-  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; }
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: var(--glass-bg-light); /* Use glass background variable */
+  box-shadow: 0 4px 6px -1px var(--glass-shadow), 0 2px 4px -1px var(--glass-shadow); /* Use glass shadow variable */
+  border-right: 1px solid var(--glass-border); /* Add border to the right */
+}
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px 10px 20px; /* Adjust padding for visual balance, reduced bottom padding */
+  margin-bottom: 0; /* Remove margin-bottom as the h2 margin will handle spacing */
+}
+
+.sidebar-logo {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  margin-right: 10px;
+  line-height: 1; /* Ensure vertical alignment */
+}
+
+.sidebar-title {
+  color: var(--accent-color); /* Use accent color for headline */
+  font-size: 24px; /* Larger font for prominence */
+  font-weight: 700;
+  margin: 0; /* Reset default margin */
+  line-height: 1; /* Ensure vertical alignment */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+  letter-spacing: 0.05em; /* A bit more space between letters */
+  text-transform: none !important; /* Prevent capitalization */
+}
+
   #sidebar h2 {
-    margin-top: 25px;
-    margin-bottom: 5px;
+    margin-top: 15px; /* Reduced margin to account for new header */
+    margin-bottom: 10px;
     padding: 0 20px;
-    color: #444;
-    font-size: 14px;
-    font-weight: 500; }
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
   #sidebar a {
-    display: block;
-    padding: 10px 20px;
+    display: flex; /* Use flexbox for better alignment of span and text */
+    align-items: center; /* Vertically align content */
+    padding: 12px 20px; /* Increased vertical padding */
     background-position: bottom left;
     background-repeat: no-repeat;
-    color: #444;
-    -webkit-transition: all 50ms ease-in-out;
-    -moz-transition: all 50ms ease-in-out;
-    -ms-transition: all 50ms ease-in-out;
-    -o-transition: all 50ms ease-in-out;
-    transition: all 50ms ease-in-out;
-    font-size: 14px;
-    font-weight: 400; }
+    color: var(--text-primary);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Smoother transitions */
+    font-size: 15px; /* Slightly larger font size */
+    font-weight: 500; /* Medium font weight */
+    border-radius: 8px; /* Slightly rounded corners for buttons/filters */
+    margin: 4px 10px; /* Add some margin for better spacing */
+  }
     #sidebar a.small {
       padding: 8px 20px; }
     #sidebar a.report {
@@ -88,67 +171,267 @@ a#sidebartoggle {
       padding: 2px 20px; }
     #sidebar a small {
       display: block;
-      color: #888;
+      color: var(--text-secondary); /* Use text variable */
       font-size: 12px; }
-    #sidebar a span {
-      display: block;
-      float: left;
-      width: 16px;
-      height: 16px;
-      margin: 1px 8px 1px 2px;
-      border-radius: 8px;
-      border: 2px solid #ddd;
-      background: white;
-      -webkit-transition: all 80ms ease-in-out;
-      -moz-transition: all 80ms ease-in-out;
-      -ms-transition: all 80ms ease-in-out;
-      -o-transition: all 80ms ease-in-out;
-      transition: all 80ms ease-in-out; }
-      #sidebar a span::after {
-        display: block;
-        content: ' ';
-        width: 4px;
-        height: 4px;
-        border-radius: 2px;
-        margin: 4px;
-        background: white; }
+    #sidebar a[id^="marker_"] span { /* Specific selector for filter markers */
+      display: inline-flex; /* Use inline-flex to center content */
+      justify-content: center;
+      align-items: center;
+      width: 20px; /* Slightly larger size */
+      height: 20px; /* Slightly larger size */
+      min-width: 20px; /* Ensure it doesn't shrink */
+      margin: 0 10px 0 0; /* Adjust margin for spacing */
+      border-radius: 6px; /* Slightly less rounded corners for a modern square-ish look */
+      border: 2px solid var(--glass-border);
+      background: var(--glass-bg-dark); /* Use darker glass background for contrast */
+      transition: all 0.3s ease-in-out;
+      position: relative; /* Needed for absolute positioning of ::after */
+    }
+
     #sidebar a:hover {
-      color: #2196F3; }
+      background-color: var(--glass-bg-dark); /* Subtle background change on hover */
+      color: var(--accent-color);
+    }
       #sidebar a:hover span {
-        border-color: #2196F3; }
+        border-color: var(--accent-color);
+        background: var(--glass-bg-dark);
+      }
+    #sidebar a.selected {
+      background-color: var(--glass-bg-dark); /* Keep background for selected item */
+      color: var(--accent-color);
+    }
     #sidebar a.selected span {
-      border-color: #2196F3;
-      background: #2196F3; }
+      border-color: var(--accent-color);
+      background: var(--accent-color);
+    }
+    #sidebar a.selected span::after {
+      opacity: 1;
+      transform: scale(1); /* Scale up when selected */
+    }
   #sidebar .div {
-    margin-top: 20px;
-    border-top: 1px solid #ddd; }
+    margin: 20px 10px; /* Adjust margin for consistency */
+    border-top: 1px solid var(--border-color);
+  }
   #sidebar .sub {
-    margin-left: 20px;
-    margin-bottom: 10px; }
+    margin-left: 10px; /* Adjust margin for consistency */
+    margin-bottom: 5px; /* Reduce bottom margin */
+  }
     #sidebar .sub a {
-      padding: 5px 20px;
-      color: #888;
-      font-size: 13px; }
+      padding: 8px 20px; /* Adjust padding for sub-items */
+      color: var(--text-secondary);
+      font-size: 13px;
+    }
       #sidebar .sub a:hover {
-        color: #2196F3; }
+        color: var(--accent-color);
+        background-color: var(--glass-bg-dark); /* Add hover background for sub-items */
+        border-radius: 8px; /* Consistent rounded corners */
+      }
       #sidebar .sub a span {
-        width: 12px;
-        height: 12px;
-        border-radius: 6px; }
+        width: 16px; /* Slightly smaller for sub-items */
+        height: 16px;
+        border-radius: 4px; /* More square for sub-items */
+        margin: 0 8px 0 0; /* Adjusted margin for sub-item spans */
+      }
         #sidebar .sub a span::after {
-          display: none; }
+          display: none;
+        }
   #sidebar p.disclaimer {
     padding: 15px;
-    color: #888;
+    color: var(--text-secondary); /* Use text variable */
     font-size: 10px; }
     #sidebar p.disclaimer a {
       display: inline;
       padding: 0;
-      color: #2196F3;
+      color: var(--accent-color); /* Use accent color */
       font-size: 10px; }
-      #sidebar p.disclaimer a:hover {
-        text-decoration: underline; }
+          #sidebar p.disclaimer a:hover {
+            text-decoration: underline; }
+      
+      #theme-toggle {
+        color: var(--text-primary);
+        position: absolute; /* Position absolutely within sidebar */
+        top: 10px; /* Distance from top */
+        right: 10px; /* Distance from right */
+        padding: 8px; /* Square padding for icon */
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center content */
+        width: 40px; /* Make it a square button */
+        height: 40px; /* Make it a square button */
+        font-weight: 500;
+        transition: all 0.2s ease-in-out;
+        background: var(--glass-bg-light);
+        border: 1px solid var(--glass-border);
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px var(--glass-shadow), 0 2px 4px -1px var(--glass-shadow);
+        cursor: pointer;
+        z-index: 10; /* Ensure it's above other sidebar elements */
+      }
+      
 
+      
+      /* Bootstrap Icons Styling */
+      #theme-toggle i {
+        font-size: 1.5em; /* Explicitly set icon size */
+        line-height: 1; /* Ensure proper vertical alignment */
+        color: var(--text-primary); /* Inherit color from parent */
+      }
+      
+      /* Hide both icons by default */
+      #sun-icon, #moon-icon {
+        display: none;
+      }
+      
+      /* Show sun icon in light mode */
+      [data-theme="light"] #sun-icon {
+        display: block;
+      }
+      
+      /* Show moon icon in dark mode */
+      [data-theme="dark"] #moon-icon {
+        display: block;
+      }
+      
+
+      
+
+      
+
+      
+      #theme-toggle:hover {
+        color: var(--accent-color);
+      }
+      
+      /* General typography within glass elements */
+      .gm-style .gm-style-iw-c h1,
+      .gm-style .gm-style-iw-c h2,
+      .gm-style .gm-style-iw-c h3 {
+        color: var(--text-primary);
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      
+      .gm-style .gm-style-iw-c p {
+        color: var(--text-secondary);
+        line-height: 1.5;
+        margin-bottom: 5px;
+      }
+      
+      .gm-style .gm-style-iw-c a {
+        color: var(--accent-color);
+        text-decoration: none;
+        transition: color 0.2s ease-in-out;
+      }
+      
+      .gm-style .gm-style-iw-c a:hover {
+        text-decoration: underline;
+      }
+      
+      /* Ensure map controls (like zoom buttons) look good too */
+      .gm-ui-hover-effect {
+        background-color: var(--glass-bg-light) !important;
+        border: 1px solid var(--glass-border) !important;
+        box-shadow: 0 2px 4px var(--glass-shadow) !important;
+        border-radius: 8px !important;
+      }
+      
+      .gm-ui-hover-effect:hover {
+        background-color: var(--glass-bg-dark) !important;
+      }
+      
+/* Hide the specific close button container reported by the user */
+.gm-style-iw-chr {
+    display: none !important;
+}
+
+/* Forcefully hide ALL default Google Maps InfoWindow close buttons */
+.gm-style-iw > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > button[aria-label="Close"], /* specific path for some versions */
+.gm-style-iw > button[aria-label="Close"], /* Direct child button with aria-label */
+.gm-style-iw > div[role="button"][tabindex="0"], /* Generic button-like div */
+.gm-ui-hover-effect[title="Close"], /* Button with title 'Close' */
+.gm-ui-hover-effect > img[src*="close"] /* Close image inside hover effect */ {
+    display: none !important;
+}
+
+/* Hide additional default Google Maps InfoWindow close button elements */
+.gm-style-iw > button[aria-label="Close"],
+.gm-style-iw > div[role="button"][tabindex="0"] {
+    display: none !important;
+}
+
+/* Hide default Google Maps InfoWindow close button */
+button.gm-ui-hover-effect[title="Close"] {
+  display: none !important;
+}
+
+.custom-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--glass-bg-light);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px; /* Slightly rounded for modern look */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10; /* Ensure it's above other content */
+  color: var(--text-primary);
+  font-size: 1.2em; /* Size of the 'X' icon */
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.custom-close-button:hover {
+  background-color: var(--glass-bg-dark);
+  color: var(--accent-color);
+  transform: translateY(-1px);
+}
+
+.custom-close-button i {
+  color: var(--text-primary); /* Allow color to be controlled by theme variable */
+  margin: 0; /* Remove default icon margin */
+  padding: 0; /* Remove default icon padding */
+  position: absolute; /* Absolute positioning for precise centering */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Use transform to center based on its own size */
+  line-height: 1; /* Keep line height consistent */
+}
+
+/* Ensure the Google Maps InfoWindow's arrow is not visible if it causes issues */
+.gm-style-iw-t {
+    z-index: -1 !important; /* Send the arrow behind our custom content */
+}
+
+/* Adjust Google Maps Info Window Styling for Glass Effect */
+.gm-style-iw .gm-style-iw-c, /* Main content wrapper */
+.gm-style-iw .gm-style-iw-t { /* Info window tail container */
+  background-color: transparent !important;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  overflow: visible !important;
+}
+
+/* Ensure the InfoWindow background is completely transparent */
+.gm-style-iw,
+.gm-style-iw-d { /* Outer div that may have default background */
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+      /* Adjust the Google Maps info window close button */
+      .gm-style-iw-t::after {
+        background: none !important; /* Remove tail background */
+        border: none !important;
+        box-shadow: none !important;
+      }      
 #coords {
   width: 100px;
   margin-left: -50px;
@@ -156,10 +439,14 @@ a#sidebartoggle {
   #coords span {
     display: inline-block;
     padding: 5px 10px;
-    color: #444;
-    background: white;
-    border-radius: 3px 3px 0 0;
-    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; }
+    color: var(--text-primary); /* Use text color variable */
+    background: var(--glass-bg-light); /* Use glass background variable */
+    border-radius: 12px 12px 0 0; /* More rounded corners */
+    box-shadow: 0 4px 6px -1px var(--glass-shadow), 0 2px 4px -1px var(--glass-shadow); /* Use glass shadow variable */
+    border-top: 1px solid var(--glass-border);
+    border-left: 1px solid var(--glass-border);
+    border-right: 1px solid var(--glass-border);
+  }
 
 #serverinfo {
   display: none;
@@ -168,15 +455,17 @@ a#sidebartoggle {
   right: 15px;
   width: 180px;
   z-index: 12;
-  background: white;
-  border-radius: 3px;
+  background: var(--glass-bg-light); /* Use glass background variable */
+  border-radius: 12px; /* More rounded corners */
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
-  -webkit-transition: all 80ms ease-in-out;
-  -moz-transition: all 80ms ease-in-out;
-  -ms-transition: all 80ms ease-in-out;
-  -o-transition: all 80ms ease-in-out;
-  transition: all 80ms ease-in-out; }
+  box-shadow: 0 4px 6px -1px var(--glass-shadow), 0 2px 4px -1px var(--glass-shadow); /* Use glass shadow variable */
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--glass-border);
+}
   @media all and (max-width: 599px) {
     #serverinfo {
       display: none !important; } }
@@ -184,7 +473,7 @@ a#sidebartoggle {
     padding: 10px;
     font-size: 13px;
     line-height: 16px;
-    color: #444;
+    color: var(--text-primary); /* Use text color variable */
     font-weight: 500; }
     #serverinfo p span#serverinfo_status {
       display: block;
@@ -197,11 +486,11 @@ a#sidebartoggle {
       #serverinfo p span#serverinfo_status.online {
         background: #3EC550; }
   #serverinfo #serverinfo_harvest {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--border-color); /* Use border color variable */
     padding-bottom: 4px;
     display: none; }
     #serverinfo #serverinfo_harvest h2 {
-      color: #777;
+      color: var(--text-secondary); /* Use text color variable */
       font-weight: 500;
       font-size: 12px;
       padding: 8px 10px 2px 10px; }
@@ -221,13 +510,18 @@ a#sidebartoggle {
   z-index: 12;
   height: 46px;
   overflow: hidden;
-  border-radius: 3px;
-  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
-  -webkit-transition: all 80ms ease-in-out;
-  -moz-transition: all 80ms ease-in-out;
-  -ms-transition: all 80ms ease-in-out;
-  -o-transition: all 80ms ease-in-out;
-  transition: all 80ms ease-in-out; }
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 6px -1px var(--glass-shadow), 0 2px 4px -1px var(--glass-shadow); /* Use glass shadow variable */
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
   @media all and (max-width: 399px) {
     #searchbox {
       width: 245px; } }
@@ -239,23 +533,34 @@ a#sidebartoggle {
     height: 46px;
     line-height: 46px;
     padding: 0 15px;
-    border-radius: 3px; }
+    border-radius: 12px; /* More rounded corners */
+    background: var(--glass-bg-light); /* Use glass background variable for input */
+    color: var(--text-primary); /* Use text color variable */
+  }
+  #searchbox input::placeholder { /* Style placeholder text */
+    color: var(--text-secondary);
+    opacity: 0.7;
+  }
   #searchbox.open {
-    height: auto; }
+    height: auto;
+    border-radius: 12px; /* Keep rounded corners when open */
+  }
     #searchbox.open input {
-      border-radius: 3px 3px 0 0; }
+      border-radius: 12px 12px 0 0; /* Adjust for results below */
+    }
   #searchbox #searchresults {
     width: 320px;
-    background: white;
-    border-top: 1px solid #ddd;
-    border-radius: 0 0 3px 3px; }
+    background: var(--glass-bg-light); /* Use glass background variable */
+    border-top: 1px solid var(--border-color); /* Use border color variable */
+    border-radius: 0 0 12px 12px; /* Rounded bottom corners */
+  }
     #searchbox #searchresults a.location {
       display: block;
       height: 50px;
       padding-left: 50px;
       background-position: 12px 8px;
       background-repeat: no-repeat;
-      color: #444;
+      color: var(--text-primary); /* Use text color variable */
       font-size: 14px; }
       #searchbox #searchresults a.location.mine {
         background-image: url("images/mine_icon.png"); }
@@ -288,21 +593,24 @@ a#sidebartoggle {
         height: 50px;
         padding-top: 10px;
         padding-left: 4px;
-        border-bottom: 1px solid #ddd; }
+        border-bottom: 1px solid var(--border-color); /* Use border color variable */
+      }
         #searchbox #searchresults a.location span em {
           display: block;
           font-style: normal; }
           #searchbox #searchresults a.location span em.mayor {
-            color: #888;
+            color: var(--text-secondary); /* Use text color variable */
             font-size: 11px; }
       #searchbox #searchresults a.location.single span {
         padding-top: 0;
         line-height: 50px; }
       #searchbox #searchresults a.location.last span {
         border: none;
-        border-radius: 0 0 3px 3px; }
+        border-radius: 0 0 12px 12px; /* Rounded bottom corners */
+      }
       #searchbox #searchresults a.location:hover {
-        background-color: #f7f7f7; }
+        background-color: var(--glass-bg-dark); /* Slightly darker glass background on hover */
+      }
 
 #vote_reminder {
   display: none;
@@ -313,43 +621,52 @@ a#sidebartoggle {
   height: 46px;
   line-height: 46px;
   z-index: 20;
-  background: white;
-  border-radius: 3px;
+  background: var(--glass-bg-light); /* Use glass background variable */
+  border-radius: 12px; /* More rounded corners */
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
-  -webkit-transition: all 80ms ease-in-out;
-  -moz-transition: all 80ms ease-in-out;
-  -ms-transition: all 80ms ease-in-out;
-  -o-transition: all 80ms ease-in-out;
-  transition: all 80ms ease-in-out; }
+  box-shadow: 0 4px 6px -1px var(--glass-shadow), 0 2px 4px -1px var(--glass-shadow); /* Use glass shadow variable */
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px); /* Add blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
   #vote_reminder p {
     font-size: 14px;
-    display: block; }
+    display: block;
+    color: var(--text-primary); /* Use text color variable */
+  }
     #vote_reminder p a {
-      color: #2196F3; }
+      color: var(--accent-color); /* Use accent color variable */
+    }
   #vote_reminder span {
     font-weight: 500;
     font-size: 12px;
-    color: #aaa;
+    color: var(--text-secondary); /* Use text color variable */
     line-height: 32px;
     cursor: pointer;
-    -webkit-transition: all 80ms ease-in-out;
-    -moz-transition: all 80ms ease-in-out;
-    -ms-transition: all 80ms ease-in-out;
-    -o-transition: all 80ms ease-in-out;
-    transition: all 80ms ease-in-out; }
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
     #vote_reminder span:hover {
-      background: #eee; }
+      background: var(--glass-bg-dark); /* Slightly darker glass background on hover */
+    }
     #vote_reminder span.close_full {
       display: none; }
     #vote_reminder span.close {
       float: right;
-      border-left: 1px solid #ddd;
+      border-left: 1px solid var(--border-color); /* Use border color variable */
       width: 46px;
       height: 46px;
       line-height: 46px;
       font-size: 16px;
-      border-radius: 0 3px 3px 0; }
+      border-radius: 0 12px 12px 0; /* More rounded corners */
+    }
 
 @media all and (max-width: 999px) {
   body.no_sidebar #vote_reminder {
@@ -402,12 +719,9 @@ body.sidebar #searchbox {
     display: none !important; } }
 
 body.sidebar #map {
-  left: 300px;
-  width: calc(100% - 300px); }
-  @media all and (max-width: 399px) {
-    body.sidebar #map {
-      left: 260px;
-      width: calc(100% - 260px); } }
+  left: 0;
+  width: 100%;
+}
 
 body.sidebar #vote_reminder {
   left: 695px; }
@@ -452,8 +766,8 @@ body.sidebar #vote_reminder {
   width: 100%;
   height: 100%;
   z-index: 15;
-  background: black;
-  background: rgba(0, 0, 0, 0.4); }
+  background: var(--bg-secondary); /* Use secondary background for overlay */
+}
   #addform iframe {
     display: block;
     width: 100%;
@@ -462,9 +776,189 @@ body.sidebar #vote_reminder {
     height: calc(100% - 50px);
     margin: auto;
     margin-top: 25px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; }
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 10px 15px -3px var(--glass-shadow), 0 4px 6px -2px var(--glass-shadow); /* Stronger shadow for modal */
+    border: 1px solid var(--glass-border);
+  }
 	
-div[style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;"] {
+	div[style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;"] {
 	display: none;
+}
+
+/* Styling for the info window content */
+.info-window-content {
+  padding: 20px; /* Increased top padding to avoid overlap with close button */
+  padding-right: 45px; /* Added right padding for the close button */
+  background-color: var(--glass-bg-light); /* Apply glass background */
+  backdrop-filter: blur(15px); /* Stronger blur for glass effect */
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 12px; /* Consistent rounded corners */
+  box-shadow: 0 8px 16px -4px var(--glass-shadow), 0 4px 8px -2px var(--glass-shadow); /* Stronger shadow for depth */
+  color: var(--text-primary); /* Use primary text color */
+  font-family: "Roboto", sans-serif;
+  max-width: 300px; /* Reduced width to make the info window smaller */
+  border: 1px solid var(--glass-border);
+  position: relative; /* Needed for potential absolute positioning of elements inside */
+  display: flex; /* Use flexbox for main content flow */
+  flex-direction: column; /* Stack content vertically */
+}
+
+.info-window-content h2 {
+  font-size: 1.6em; /* Larger heading for prominence */
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 0; /* Reset top margin as custom close button is separate */
+  margin-bottom: 5px; /* Consistent bottom margin */
+  line-height: 1.2;
+}
+
+.info-window-content h3 { /* For subheadings within info window */
+  font-size: 1.2em; /* Slightly larger subheading */
+  font-weight: 600; /* Bolder subheading */
+  color: var(--text-primary);
+  margin-top: 18px; /* More space above subheadings */
+  margin-bottom: 8px; /* More space below subheadings */
+}
+
+.info-window-content p {
+  font-size: 1em; /* Standard paragraph size */
+  color: var(--text-secondary);
+  margin-bottom: 8px; /* Increased bottom margin for paragraphs */
+  line-height: 1.5;
+  display: flex; /* Enable flexbox for icons */
+  align-items: flex-start; /* Align items to the start for multi-line content */
+}
+
+.info-window-content p strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.info-window-content i {
+  font-size: 1.1em; /* Adjust icon size */
+  margin-right: 8px; /* Space between icon and text */
+  color: var(--accent-color); /* Use accent color for icons */
+}
+
+.info-window-content p strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.info-window-content .modern-button {
+  display: inline-flex; /* Use inline-flex for content alignment */
+  align-items: center; /* Center items vertically */
+  padding: 8px 12px; /* Consistent padding */
+  margin-top: 0px; /* Reset top margin as it's now in its own div */
+  background: var(--accent-color);
+  color: white;
+  border-radius: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.info-window-content .modern-button i {
+  color: white !important; /* Ensure icons in modern buttons are always white */
+}
+
+.info-window-content .modern-button:hover {
+  background-color: color-mix(in srgb, var(--accent-color) 80%, black); /* Darken on hover */
+  transform: translateY(-1px);
+}
+
+.info-window-content .modern-button:active {
+  transform: translateY(0);
+}
+
+.info-window-content .share-input {
+  display: none; /* Hide the old share-input style as it's being replaced by glass-input */
+}
+
+/* New styling for the input-group and its elements */
+.input-group {
+  display: flex;
+  width: 100%;
+  border-radius: 8px; /* Apply border-radius to the group */
+  overflow: hidden; /* Ensures children respect the border-radius */
+  border: 1px solid var(--border-color); /* Apply common border */
+}
+
+.input-group > .form-control.glass-input {
+  flex: 1 1 auto; /* Allow input to grow and shrink */
+  padding: 8px;
+  background-color: var(--glass-bg-dark); /* Use darker glass background for input */
+  color: var(--text-primary);
+  font-size: 0.9em;
+  border: none; /* Remove individual border as it's on the group */
+  border-radius: 0; /* Remove individual border-radius */
+  outline: none;
+}
+
+.input-group > .form-control.glass-input:focus {
+  border-color: var(--accent-color); /* Accent color on focus */
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--accent-color); /* Subtle glow on focus */
+}
+
+.input-group > .btn.btn-glass {
+  padding: 8px 12px;
+  background-color: var(--accent-color); /* Match modern-button background */
+  color: white; /* Match modern-button text color */
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group > .btn.btn-glass:hover {
+  background-color: color-mix(in srgb, var(--accent-color) 80%, black); /* Match modern-button hover effect */
+  color: white; /* Ensure text/icon remains white on hover */
+}
+
+.input-group > .btn.btn-glass i {
+  color: white !important; /* Ensure icon color matches text */
+}
+
+.input-group > .btn.btn-glass:hover i {
+  color: white !important; /* Ensure icon color matches text on hover */
+}
+
+/* Toast Notification Styles */
+.toast-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toast-notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast-notification i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.toast-notification.toast-success {
+  background-color: rgba(40, 167, 69, 0.9); /* Green for success */
+}
+
+.toast-notification.toast-error {
+  background-color: rgba(220, 53, 69, 0.9); /* Red for error */
 }

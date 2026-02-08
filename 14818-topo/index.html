@@ -1,24 +1,44 @@
-<!DOCTYPE html><html><head><title>Sklotopolis Map</title><meta name="viewport" content="width=device-width, initial-scale=1"><script>function pegasus(a,b){return b=new XMLHttpRequest,b.open("GET",a),a=[],b.onreadystatechange=b.then=function(c,d,e,f){if(c&&c.call&&(a=[,c,d]),4==b.readyState&&(e=a[0|b.status/200])){try{f=JSON.parse(b.responseText)}catch(g){f=null}e(f,b)}},b.send(),b}</script><script>var statsRequest = pegasus('https://web.game.sklotopolis.com/unlimited/1/stats.json');</script><link rel="stylesheet" href="css/roboto.css"><link rel="stylesheet" href="style.css"><script src="../scripts/transparency.min.js"></script><script src="../scripts/cookies.min.js"></script></head><body>
+<!DOCTYPE html><html><head><title>Sklotopolis Map</title><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script>
+  // Initial theme setting to prevent FOUC (Flash Of Unstyled Content)
+  (function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark'); // Default to dark mode
+    }
+  })();
+</script><script>function pegasus(a,b){return b=new XMLHttpRequest,b.open("GET",a),a=[],b.onreadystatechange=b.then=function(c,d,e,f){if(c&&c.call&&(a=[,c,d]),4==b.readyState&&(e=a[0|b.status/200])){try{f=JSON.parse(b.responseText)}catch(g){f=null}e(f,b)}},b.send(),b}</script><script>var statsRequest = pegasus('https://web.game.sklotopolis.com/unlimited/1/stats.json');</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/roboto.css"><link rel="stylesheet" href="style.css"><script src="scripts/transparency.min.js"></script><script src="scripts/cookies.min.js"></script></head><body>
 <div id="map"></div><div id="coords"><span id="coordsc">Mouse cursor at X0, Y0</span></div>
-<a id="sidebartoggle" href="#" onclick="toggle_sidebar(); return false">&#x2261;</a><div id="sidebar">
-<!--<h2>Markers</h2><a id="marker_deeds" href="#" onclick="toggle_markers('deeds'); return false" class="selected">
-<!--
+<a id="sidebartoggle" href="#" onclick="toggle_sidebar(); return false">&#x2261;</a><div id="sidebar" class="glass-effect">
+  <div class="sidebar-header">
+    <img src="https://dashboard.game.sklotopolis.com/assets/tools/logo.png" alt="Sklotopolis Logo" class="sidebar-logo">
+    <h2 class="sidebar-title">Caza Map</h2>
+  </div>
+  <a href="#" id="theme-toggle" onclick="toggleTheme(); return false;">
+    <i class="bi bi-sun-fill" id="sun-icon"></i>
+    <i class="bi bi-moon-stars-fill" id="moon-icon"></i>
+  </a>
+  <!--
+<h2>Markers</h2><a id="marker_deeds" href="#" onclick="toggle_markers('deeds'); return false" class="selected">
 <span></span> Deeds</a><div class="sub"><a id="marker_deeds_solo" href="#" onclick="toggle_markers('deeds_solo'); return false" class="selected">
 <span></span> Solo players</a><a id="marker_deeds_small" href="#" onclick="toggle_markers('deeds_small'); return false" class="selected">
 <span></span> Small settlements</a><a id="marker_deeds_large" href="#" onclick="toggle_markers('deeds_large'); return false" class="selected">
 <span></span> Large settlements</a></div><a id="marker_guard_towers" href="#" onclick="toggle_markers('guard_towers'); return false" class="selected">
 <span></span> Guard towers</a>
+<a id="marker_poi" href="#" onclick="toggle_markers('poi'); return false" class="selected"><span></span> Points of interest</a>
 
 <a id="marker_resources" href="#" onclick="toggle_markers('resources'); return false" class="selected"><span></span> Resources</a>
-
-
 <a id="marker_poi" href="#" onclick="toggle_markers('poi'); return false" class="selected"><span></span> Points of interest</a>
 <a id="marker_trees" href="#" onclick="toggle_markers('trees'); return false" class="selected"><span></span> Forests</a>
 
+
 <div class="div"></div><h2>Submit new locations</h2>
 <a target="_blank" href="https://web.game.sklotopolis.com/wu-map-admin/submit_deed.php" class="small">Click to submit a Marker</a>
--->
-<!--
+
 <a href="#" onclick="show_add_form('deed'); return false" class="small">Deed</a>
 <a href="#" onclick="show_add_form('tower'); return false" class="small">Guard tower</a>
 <a href="#" onclick="show_add_form('resource'); return false" class="small">Resource</a>
@@ -28,7 +48,11 @@
 <a href="#" onclick="show_add_form('report'); return false" class="small report">Report wrong location data</a>
 -->
 
-<div class="div"></div><h2>Links</h2><a href="https://andistyr.github.io/wu-map/14818/" target="_blank" class="small">New Automated Livemap</a><a href="https://sklotopolis.com" target="_blank" class="small">Sklotopolis website</a><a href="https://sklotopolis.com/maps" target="_blank" class="small">All Maps of all Servers</a><a href="https://web.game.sklotopolis.com/unlimited/4/mapdump.png" target="_blank" class="small">Original mapdump</a><div class="div"></div><p class="disclaimer">This interactive map is community-made. It is not associated with Wurm Unlimited. <br> <a href="https://github.com/woubuc" target="_blank">Programmed by woubuc</a> - Updated by <a href="https://github.com/andistyr" target="_blank">Andistyr</a> and <a href="https://github.com/esroh4759" target="_blank">Esroh</a> <br></p></div><div id="serverinfo" onclick="toggle_serverinfo_size()"><p><span id="serverinfo_status" class="online"></span><span id="serverinfo_players">0</span><span class="label"> players online</span></p><div id="serverinfo_harvest"><h2>In season<span> right now</span></h2><div id="serverinfo_harvest_items"><p><span class="plant"></span><span class="type"></span></p></div></div></div><div id="searchbox"><input id="search" type="text" placeholder="Search Sklotopolis map" onkeyup="search()" onfocus="search()" onblur="hide_search()" autocomplete="off"><div id="searchresults"><a href="#" onclick="" class="location"><span><em class="name"></em><em class="mayor"></em></span></a></div></div><div id="vote_reminder"><span onclick="vote_reminder_close();" class="close">x</span><p>Don't forget you can <a href="https://wurm-unlimited.com/server/28/" onclick="vote_reminder_close();" target="_blank">vote for our server</a> daily</p><span onclick="vote_reminder_close();" class="close_full">close</span></div>
+<div class="div"></div><h2>Links</h2><a href="https://sklotopolis.com" target="_blank" class="small">Sklotopolis website</a>
+<a href="https://sklotopolis.com/maps" target="_blank" class="small">All Maps of all Servers</a>
+<a href="https://andistyr.github.io/wu-map/14818/" target="_blank" class="small">New Livemap</a><a href="https://web.game.sklotopolis.com/unlimited/4/mapdump.png" target="_blank" class="small">Original mapdump</a><div class="div"></div><p class="disclaimer">This interactive map is community-made and updated by the Sklotopolis staff team. It is not associated with Wurm Unlimited. <br> <a href="https://github.com/woubuc" target="_blank">Programmed by woubuc</a> <br></p>
+
+</div><div id="serverinfo" onclick="toggle_serverinfo_size()"><p><span id="serverinfo_status" class="online"></span><span id="serverinfo_players">0</span><span class="label"> players online</span></p><div id="serverinfo_harvest"><h2>In season<span> right now</span></h2><div id="serverinfo_harvest_items"><p><span class="plant"></span><span class="type"></span></p></div></div></div></div><div id="vote_reminder"><span onclick="vote_reminder_close();" class="close">x</span><p>Players respawn <a href="https://andistyr.github.io/wu-map/14818/#spawn-point" target="_blank">here</a>.</p><span onclick="vote_reminder_close();" class="close_full">close</span></div>
 
 
 
@@ -40,8 +64,45 @@
 <script src="https://web.game.sklotopolis.com/wu-map-admin/get_poi.php?server=99"></script>
 <script src="https://web.game.sklotopolis.com/wu-map-admin/get_forests.php?server=99"></script>
 
+
 <script src="map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?callback=init" async defer></script>
-<script src="../scripts/jquery.min.js"></script>
+<script src="scripts/jquery.min.js"></script>
 <script src="removegoogle.js"></script>
+<script>
+  // Theme switching logic
+  const htmlElement = document.documentElement; // This is the <html> tag
+
+  function applyTheme(theme) {
+    htmlElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    const themeToggleBtn = document.getElementById('theme-toggle'); // Get it inside applyTheme
+    if (themeToggleBtn) { // Only update if button exists
+      if (theme === 'dark') {
+        themeToggleBtn.querySelector('span').textContent = '';
+      } else {
+        themeToggleBtn.querySelector('span').textContent = '';
+      }
+    }
+  }
+
+  function toggleTheme() {
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    applyTheme(newTheme);
+  }
+
+  // Set the correct button text on load if the button exists
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme') || 'dark'; // Get actual current theme
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (themeToggleBtn) {
+      if (savedTheme === 'dark') {
+        themeToggleBtn.querySelector('span').textContent = '';
+      } else {
+        themeToggleBtn.querySelector('span').textContent = '';
+      }
+    }
+  });
+</script>
 </body></html>

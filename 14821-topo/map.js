@@ -1,5 +1,73 @@
-var change_map, clear_home, close_infowin, deed_tags, distance, filter, find_nearby_locations, hide_add_form, hide_search, infowin, init, marker, projection, search, set_home, share_coords, share_deed, show_add_form, show_coords_info, show_coords_on_map, show_deed_info, show_deed_on_map, toggle_markers, toggle_serverinfo_size, toggle_sidebar, update_markers, update_stats, vote_reminder_close, vote_reminder_open,
+var change_map, clear_home, close_infowin, copyToClipboard, calculateDaysAgo, deed_tags, distance, filter, find_nearby_locations, hide_add_form, hide_search, infowin, init, marker, projection, search, set_home, share_coords, share_deed, show_add_form, show_coords_info, show_coords_on_map, show_deed_info, show_deed_on_map, showToast, toggle_serverinfo_size, toggle_sidebar, update_markers, update_stats, vote_reminder_close, vote_reminder_open,
   indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] == item) return i; } return -1; };
+
+copyToClipboard = async function(buttonElement) { // Mark as async
+  const parentDiv = buttonElement.parentNode;
+  const inputElement = parentDiv.querySelector('.glass-input'); // Use .glass-input now
+
+  if (inputElement) {
+    const textToCopy = inputElement.value;
+
+    try {
+      await navigator.clipboard.writeText(textToCopy); // Use Clipboard API
+      const originalIcon = buttonElement.innerHTML;
+      const originalTitle = buttonElement.title;
+      buttonElement.innerHTML = '<i class="bi bi-check-lg"></i>';
+      buttonElement.title = 'Copied!';
+
+      showToast("Copied to clipboard!"); // Call the new toast function
+
+      setTimeout(() => {
+        buttonElement.innerHTML = originalIcon;
+        buttonElement.title = originalTitle;
+      }, 2000);
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+      // Optional: show an error toast
+      showToast("Failed to copy!", true);
+    }
+  }
+};
+
+showToast = function(message, isError = false) { // Added isError parameter
+  const toast = document.createElement('div');
+  toast.className = 'toast-notification';
+  if (isError) {
+    toast.classList.add('toast-error');
+    toast.innerHTML = `<i class="bi bi-x-circle-fill"></i> ${message}`;
+  } else {
+    toast.classList.add('toast-success');
+    toast.innerHTML = `<i class="bi bi-check-circle-fill"></i> ${message}`; // Added checkmark icon
+  }
+  document.body.appendChild(toast);
+
+  // Trigger reflow to ensure CSS transition works
+  void toast.offsetWidth;
+
+  toast.classList.add('show');
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+    toast.addEventListener('transitionend', () => toast.remove());
+  }, 3000); // Hide after 3 seconds
+};
+
+calculateDaysAgo = function(dateStringOrTimestamp) {
+  const now = new Date();
+  const pastDate = new Date(dateStringOrTimestamp);
+  const diffTime = Math.abs(now - pastDate);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+  if (isNaN(pastDate.getTime())) {
+    return 'Unknown';
+  } else if (diffDays === 0) {
+    return 'Today';
+  } else if (diffDays === 1) {
+    return 'Yesterday';
+  } else {
+    return `${diffDays} days ago`;
+  }
+};
 
     var TILE_URL = 'https://web.game.sklotopolis.com/unlimited/3/tiles/tile_{z}_{x}_{y}.png';
 
@@ -78,12 +146,28 @@ projection = {
 init = function() {
   var Sklotopolis, Tiled, coords, coordsDiv, d, hash, home_deed, i, init_moved, j, k, last_reminder, len, len1, len2, len3, len4, m, p, q, r, serverinfo_size, timestr;
   init_moved = false;
+
+  var swBound = projection.fromPointToLatLng(projection.fromCoords({ x: 0, y: 4096 }));
+  var neBound = projection.fromPointToLatLng(projection.fromCoords({ x: 4096, y: 0 }));
+  var new_north_lat = 89.65; // User specified northern limit
+
   map = new google.maps.Map(document.getElementById('map'), {
 	center: new google.maps.LatLng(0.0, 0.0),
     zoom: 3,
     zoomControl: true,
     streetViewControl: false,
-    mapTypeControl: false
+    mapTypeControl: false,
+    restriction: {
+      latLngBounds: new google.maps.LatLngBounds(
+        swBound, // SW Corner (minX, maxY)
+        new google.maps.LatLng(new_north_lat, neBound.lng())  // NE Corner (maxX, minY)
+      ),
+      strictBounds: true,
+    },
+    maxBounds: new google.maps.LatLngBounds(
+        swBound, // SW Corner (minX, maxY)
+        new google.maps.LatLng(new_north_lat, neBound.lng())  // NE Corner (maxX, minY)
+    )
   });
   Sklotopolis = new google.maps.ImageMapType({
     getTileUrl: function(coord, zoom) {
@@ -168,6 +252,8 @@ init = function() {
         return 0;
     }
   });
+  
+  var deedToShow = null;
   for (j = k = 0, len = deeds.length; k < len; j = ++k) {
     i = deeds[j];
     deed_tags[i.tag] = j;
@@ -184,12 +270,79 @@ init = function() {
         anchor: new google.maps.Point(16, 37)
       }
     });
+	
+	var tmpPosNorthEast = projection.fromPointToLatLng(projection.fromCoords({
+        x: i.x - (-i.tilesEast), //deedtiles east
+        y: i.y-i.tilesNorth //deedtiles north
+      }));
+	  
+	var tmpPosSouthWest = projection.fromPointToLatLng(projection.fromCoords({
+        x: i.x-i.tilesWest, //deedtiles west
+        y: i.y - (-i.tilesSouth) //deedtiles south
+      }));
+	  
+	var tmpPosNorthEastPerimeter = projection.fromPointToLatLng(projection.fromCoords({
+        x: i.x - (-i.tilesEast) - (-i.tilesPerimeter), //deedtiles east
+        y: i.y-i.tilesNorth-i.tilesPerimeter //deedtiles north
+      }));
+	  
+	var tmpPosSouthWestPerimeter = projection.fromPointToLatLng(projection.fromCoords({
+        x: i.x-i.tilesWest-i.tilesPerimeter, //deedtiles west
+        y: i.y - (-i.tilesSouth)- (-i.tilesPerimeter) //deedtiles south
+      }));
+	
+	if(i.isSpawnPoint)
+	{
+		var color = '#FFD700';
+		var strokeWeight = 5;
+	}
+	else {
+		var color = '#00FF00';
+		var strokeWeight = 3;
+	}
+	
+	i.border = new google.maps.Rectangle({
+          strokeColor: color,
+          strokeOpacity: 0.8,
+          strokeWeight: strokeWeight,
+          fillColor: '#FFFFFF',
+          fillOpacity: 0.2,
+          map: map,
+          bounds: {
+            north: tmpPosNorthEast.lat(),
+            south: tmpPosSouthWest.lat(),
+            east: tmpPosNorthEast.lng(),
+            west: tmpPosSouthWest.lng()
+          }
+        });
+		
+	i.borderPerimeter = new google.maps.Rectangle({
+          strokeColor: '#FF0000',
+          strokeOpacity: 0.4,
+          strokeWeight: 2,
+		  fillColor: '#FFFFFF',
+          fillOpacity: 0,
+          map: map,
+          bounds: {
+            north: tmpPosNorthEastPerimeter.lat(),
+            south: tmpPosSouthWestPerimeter.lat(),
+            east: tmpPosNorthEastPerimeter.lng(),
+            west: tmpPosSouthWestPerimeter.lng()
+          }
+        });
+		
     i.marker.addListener('click', show_deed_info.bind(null, i.tag));
+    i.borderPerimeter.addListener('click', show_deed_info.bind(null, i.tag));
+    i.border.addListener('click', show_deed_info.bind(null, i.tag));
+	
     if (window.location.hash.substr(1) == i.tag) {
-      show_deed_on_map(i.tag);
+	  deedToShow = i;
       init_moved = true;
     }
   }
+  
+  
+  
   for (m = 0, len1 = guard_towers.length; m < len1; m++) {
     i = guard_towers[m];
     i.marker = new google.maps.Marker({
@@ -239,7 +392,7 @@ init = function() {
       })),
       map: map,
       icon: {
-        url: 'images/' + (i.type == null ? 'poi' : 'poi_' + i.type) + '.png',
+        url: 'images/' + ((i.type == null || i.type == 'star') ? 'poi' : 'poi_' + i.type) + '.png',
         size: new google.maps.Size(32, 37),
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(16, 37)
@@ -270,6 +423,11 @@ init = function() {
       y: i.y
     }));
   }
+  
+  if(deedToShow != null) {
+	show_deed_on_map(deedToShow.tag);
+  }
+  
   hash = window.location.hash.substr(1);
   if (hash.indexOf('_') !== -1) {
     hash = hash.split('_');
@@ -283,7 +441,7 @@ init = function() {
       init_moved = true;
     }
   } else if (!init_moved) {
-    home_deed = localStorage.getItem('wu_map_home_deed_14821_topo');
+    home_deed = localStorage.getItem('wu_map_home_deed_14821');
     if (home_deed != null) {
       if (home_deed !== '') {
         show_deed_on_map(home_deed, false);
@@ -345,8 +503,6 @@ update_stats = function(data, xhr) {
   document.getElementById('serverinfo_status').className = data.online ? 'online' : 'offline';
   if (document.getElementById('serverinfo_players').textContent != null) {
     document.getElementById('serverinfo_players').textContent = data.players;
-  } else {
-    document.getElementById('serverinfo_players').innerText = data.players;
   }
   document.getElementById('serverinfo').style.display = 'block';
   harvest = [];
@@ -436,18 +592,19 @@ toggle_sidebar = function() {
 toggle_serverinfo_size = function() {
   var el, size;
   el = document.getElementById('serverinfo');
-  size = el.className == '' ? 'small' : '';
-  el.className = size;
+  size = el.className.includes('small') ? '' : 'small'; // Check for 'small' class
+  el.className = "glass-effect " + size; // Add glass-effect class
   return localStorage.setItem('wu_map_serverinfo_size', size);
 };
 
 set_home = function(tag, img) {
-  localStorage.setItem('wu_map_home_deed_14821_topo', tag);
+  localStorage.setItem('wu_map_home_deed_14821', tag);
   return show_deed_info(tag);
 };
 
-clear_home = function() {
-  return localStorage.setItem('wu_map_home_deed_14821_topo', '');
+clear_home = function(tag) {
+  localStorage.setItem('wu_map_home_deed_14821', '');
+  return show_deed_info(tag);
 };
 
 show_deed_on_map = function(tag, showInfo) {
@@ -471,11 +628,11 @@ show_deed_info = function(tag) {
   deed = deeds[deed_tags[tag]];
   if (!filter.deeds) {
     filter.deeds = true;
-    update_markers('deeds');
+    //update_markers('deeds');
   }
   if (!filter['deeds_' + deed.type]) {
     filter['deeds_' + deed.type] = true;
-    update_markers('deeds_' + deed.type);
+    //update_markers('deeds_' + deed.type);
   }
   if (typeof console !== "undefined" && console !== null) {
     latLng = projection.fromPointToLatLng(projection.fromCoords({
@@ -489,84 +646,117 @@ show_deed_info = function(tag) {
     infowin = '';
   }
   props = [];
-  if (deed.type != null) {
-    html = '<p style="font-style:italic;' + (deed.features == null ? 'margin-bottom:6px;' : '') + '">';
-    html += (function() {
-      switch (deed.type) {
-        case 'solo':
-          return 'Solo player';
-        case 'small':
-          return 'Small settlement';
-        case 'large':
-          return 'Large town';
-      }
-    })();
-    if (deed.features != null) {
-      if (indexOf.call(deed.features, 'recruiting') >= 0) {
-        html += ' (recruiting)';
-      }
-    }
-    html += '</p>';
-    props.push(html);
-  } else if (deed.features != null) {
-    props.push('<p style="font-style:italic">Recruiting</p>');
+
+  // Home deed button
+  home_img = `<button class="modern-button small" onclick="set_home('${deed.tag}', this)" title="Set as home"><i class="bi bi-house-door-fill"></i> Set Home</button>`;
+  if (localStorage.getItem('wu_map_home_deed_14821') == deed.tag) {
+    home_img = `<button class="modern-button small" onclick="clear_home('${deed.tag}')" title="Clear home location"><i class="bi bi-house-fill"></i> Clear Home</button>`;
   }
+
+  html = `<div class="info-window-content">
+            <button class="custom-close-button" onclick="close_infowin(); return false;"><i class="bi bi-x-lg"></i></button>
+            <h2 style="margin-bottom: 5px;">${deed.name}</h2>
+            <div style="margin-bottom: 10px;">${home_img}</div>`;
+
+  if (deed.type != null) {
+    let deedType = '';
+    switch (deed.type) {
+      case 'solo':
+        deedType = 'Solo player';
+        break;
+      case 'small':
+        deedType = 'Small settlement';
+        break;
+      case 'large':
+        deedType = 'Large town';
+        break;
+    }
+    html += `<p style="font-style:italic;">${deedType}${deed.features && indexOf.call(deed.features, 'recruiting') >= 0 ? ' (recruiting)' : ''}</p>`;
+  } else if (deed.features && indexOf.call(deed.features, 'recruiting') >= 0) {
+    html += '<p style="font-style:italic;">Recruiting</p>';
+  }
+
   if (deed.features != null) {
-    html = '<p style="margin-bottom: 6px">';
+    html += '<p>';
     if (indexOf.call(deed.features, 'market') >= 0) {
-      html += '<img src="images/feature_market.png" title="Marketplace on deed" /> ';
+      html += '<i class="bi bi-shop" title="Marketplace on deed"></i> ';
     }
     if (indexOf.call(deed.features, 'trader') >= 0) {
-      html += '<img src="images/feature_trader.png" title="Trader on deed" /> ';
+      html += '<i class="bi bi-person-badge" title="Trader on deed"></i> ';
     }
     if (indexOf.call(deed.features, 'merchant') >= 0) {
-      html += '<img src="images/feature_merchant.png" title="Personal Merchant on deed" /> ';
+      html += '<i class="bi bi-cash-coin" title="Personal Merchant on deed"></i> ';
     }
     if (indexOf.call(deed.features, 'harbour') >= 0) {
-      html += '<img src="images/feature_harbour.png" title="Harbour area on deed" /> ';
+      html += '<i class="bi bi-flag" title="Harbour area on deed"></i> ';
     }
     if (indexOf.call(deed.features, 'inn') >= 0) {
-      html += '<img src="images/feature_inn.png" title="Inn on deed" /> ';
+      html += '<i class="bi bi-cup-hot" title="Inn on deed"></i> ';
     }
     if (indexOf.call(deed.features, 'mailbox') >= 0) {
-      html += '<img src="images/feature_mailbox.png" title="Mailbox on deed" /> ';
+      html += '<i class="bi bi-envelope" title="Mailbox on deed"></i> ';
     }
     html += '</p>';
-    props.push(html);
   }
+  
   if (deed.mayor != null) {
-    props.push('<p style="margin-bottom:6px">Mayor: ' + deed.mayor + (deed.supporter ? ' <img src="images/star.png">' : '') + '</p>');
+    html += `<p><i class="bi bi-person-circle"></i> <strong>Mayor:&nbsp;</strong> ${deed.mayor}${deed.supporter ? ' <i class="bi bi-star-fill" title="Supporter"></i>' : ''}</p>`;
   }
-  props.push('<p>Coordinates: X' + deed.x + ', Y' + deed.y + '</p>');
-  if (deed.note != null) {
-    props.push('<p style="font-style:italic">' + deed.note + '</p>');
+  html += `<p><i class="bi bi-geo-alt-fill"></i> <strong>Coordinates:&nbsp;</strong> X${deed.x}, Y${deed.y}</p>`;
+
+  if(deed.allianceName != null && deed.allianceName != "") {
+    html += `<p><i class="bi bi-people-fill"></i> <strong>Alliance:&nbsp;</strong> ${deed.allianceName}</p>`;
+  }
+  
+  html += `<p><i class="bi bi-shield-fill"></i> <strong>Guards:&nbsp;</strong> ${deed.guards}</p>`;
+  html += `<p><i class="bi bi-person-fill"></i> <strong>Citizens:&nbsp;</strong> ${deed.amountOfCitizens}</p>`;
+  html += `<p><i class="bi bi-person-vcard"></i> <strong>Founder:&nbsp;</strong> ${deed.founderName}</p>`;
+  html += `<p><i class="bi bi-calendar"></i> <strong>Founded:&nbsp;</strong> ${new Date(deed.creationDate).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}</p>`;
+  if (deed.lastActive != null && typeof deed.lastActive === 'string') {
+    const lastActiveText = deed.lastActive.replace('Last active: ', '').trim();
+    if (lastActiveText !== '') { // Only display if there's actual text after trimming
+      html += `<p><i class="bi bi-clock-history"></i> <strong>Active:&nbsp;</strong> ${lastActiveText}</p>`;
+    }
+  }
+  
+  if (deed.motto != null && deed.motto.trim() !== "") {
+    html += `<p style="font-style:italic;"><i class="bi bi-chat-quote"></i> "${deed.motto}"</p>`;
   }
   nearby = find_nearby_locations({
     x: deed.x,
     y: deed.y
   });
   if (nearby) {
-    props.push(nearby);
+    html += nearby; // This part is commented out in map.js currently
   }
-  home_img = '<img id="home_deed" src="images/home_off.png" style="float:right;padding:0 0 5px 5px;cursor:pointer;" onmouseenter="this.src=\'images/home_hover.png\';" onmouseleave="this.src=\'images/home_off.png\';" onclick="set_home(\'' + deed.tag + '\', this)" title="Set as home" />';
-  if (localStorage.getItem('wu_map_home_deed_14821_topo') == deed.tag) {
-    home_img = '<img id="home_deed" src="images/home_on.png" style="float:right;padding:0 0 5px 5px;cursor:pointer;" onclick="clear_home(this)" title="Clear home location" />';
-  }
+  
+  html += `<p style="padding-top:10px;"><button class="modern-button" onclick="share_deed('${deed.tag}', this)"><i class="bi bi-share-fill"></i> Share this location</button></p>`;
+  html += `</div>`; // Close info-window-content
+  
   infowin = new google.maps.InfoWindow({
-    content: '<div id="content" style="min-width:200px"> <span>' + home_img + '</span> <h2>' + deed.name + '</h2> <div id="bodyContent">' + props.join('') + '<p style="padding-top:10px"><a href="#' + deed.tag + '" style="display:inline-block;color:white;padding:3px 6px;border-radius:3px;font-size:13px;background:#2196F3;cursor:pointer;" onclick="share_deed(\'' + deed.tag + '\', this)">Share this location</a></p> </div> </div>'
+    content: html
   });
   deed.marker.setMap(map);
-  infowin.open(map, deed.marker);
   infowin.open(map, deed.marker);
   window.location.hash = deed.tag;
   return false;
 };
 
 share_deed = function(tag, el) {
-  el.style.backgroundColor = 'white';
-  el.style.padding = 0;
-  el.innerHTML = '<input type="text" value="https://andistyr.github.io/wu-map/14821-topo/#' + tag + '" style="width:280px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
-  el.childNodes[0].select();
+  const url = `https://andistyr.github.io/wu-map/14821-topo/#${tag}`;
+  const inputId = `share-deed-input-${tag}`;
+  el.outerHTML = `
+    <div class="input-group" style="margin-top: 10px;">
+      <input type="text" class="form-control glass-input" id="${inputId}" value="${url}" readonly onclick="this.select()">
+      <button class="btn btn-glass" type="button" id="copy-url-btn-${tag}" title="Copy URL" onclick="copyToClipboard(this)">
+        <i class="bi bi-clipboard"></i>
+      </button>
+    </div>
+  `;
+  const newEl = document.getElementById(inputId);
+  if (newEl) {
+    newEl.select();
+  }
   return false;
 };
 
@@ -586,30 +776,31 @@ show_coords_info = function(coords) {
   props = [];
   found = false;
   coords_marker = '';
+
+  let infoHtml = `<div class="info-window-content">
+                    <button class="custom-close-button" onclick="close_infowin(); return false;"><i class="bi bi-x-lg"></i></button>
+                    <h2>${title}</h2>`;
+
   if (coords.x == 2625 && coords.y == 1748) {
-    props.push('<p><img src="images/not_the_coords.png" style="margin-top:10px" /></p>');
+    infoHtml += '<p style="margin-top:10px;"><i class="bi bi-exclamation-triangle-fill"></i> Not the coords you are looking for.</p>';
     found = true;
-  } 
-  else {
-	 
+  } else {
     for (k = 0, len = poi.length; k < len; k++) {
       i = poi[k];
-
-	  
       if (i.x == coords.x && i.y == coords.y) {
-		 
         found = true;
-		
         if (!filter.poi) {
           filter.poi = true;
-          update_markers('poi');
+          //update_markers('poi');
         }
         coords_marker = i.marker;
-        title = i.name;
-        props.push('<p>Coordinates: X' + i.x + ', Y' + i.y + '</p>');
+        infoHtml = `<div class="info-window-content">
+                      <h2><i class="bi bi-geo-alt-fill"></i> ${i.name}</h2>`; // Override title if it's a POI
+        infoHtml += `<p><i class="bi bi-pin-map"></i> <strong>Coordinates:</strong> X${i.x}, Y${i.y}</p>`;
         if (i.description != null) {
-          props.push('<p style="margin:10px 0;max-width:400px;padding:8px;background:#eee;font-style:italic">' + i.description + '</p>');
+          infoHtml += `<p style="font-style:italic;"><i class="bi bi-info-circle"></i> ${i.description}</p>`;
         }
+        break;
       }
     }
     if (!found) {
@@ -619,10 +810,16 @@ show_coords_info = function(coords) {
           found = true;
           if (!filter.guard_towers) {
             filter.guard_towers = true;
-            update_markers('guard_towers');
+            //update_markers('guard_towers');
           }
           coords_marker = i.marker;
-          props.push('<p>There is a <strong style="font-weight:500">guard tower</strong> here' + (i.creator != null ? ', built by ' + i.creator : '') + '</p>');
+          infoHtml = `<div class="info-window-content">
+                        <h2><i class="bi bi-patch-check-fill"></i> Guard Tower</h2>
+                        <p><i class="bi bi-person-fill"></i> <strong>Name:&nbsp;</strong> ${i.towerName}</p>
+                        <p><i class="bi bi-person"></i> <strong>Creator:&nbsp;</strong> ${i.creatorName != null ? i.creatorName : 'Unknown'}</p>
+                        <p><i class="bi bi-shield-fill"></i> <strong>Guards:&nbsp;</strong> ${i.maxGuards}</p>
+                        <p><i class="bi bi-geo-alt"></i> <strong>Coordinates:&nbsp;</strong> X${i.x}, Y${i.y}</p>`;
+          break;
         }
       }
     }
@@ -633,65 +830,26 @@ show_coords_info = function(coords) {
           found = true;
           if (!filter.resources) {
             filter.resources = true;
-            update_markers('resources');
+            //update_markers('resources');
           }
           coords_marker = i.marker;
+          infoHtml = `<div class="info-window-content">
+                        <h2><i class="bi bi-gem"></i> ${i.type === 'mine' ? 'Mine' : 'Resource Deposit'}</h2>
+                        <p><i class="bi bi-geo-alt"></i> <strong>Coordinates:</strong> X${i.x}, Y${i.y}</p>`;
           if (i.type == 'mine') {
-            props.push('<p>There is a <strong style="font-weight:500">mine</strong> here</p>');
-            html = '<p>It contains ';
-            if (i.ores == null) {
-              html += 'no';
+            infoHtml += '<p><i class="bi bi-tools"></i> It contains ';
+            if (i.ores == null || i.ores.length === 0) {
+              infoHtml += 'no ores.</p>';
             } else {
-              ref = i.ores;
-              for (n = q = 0, len3 = ref.length; q < len3; n = ++q) {
-                o = ref[n];
-                if (i.ores.length == 1) {
-                  html += (function() {
-                    switch (o) {
-                      case 'iron':
-                        return 'an ';
-                      default:
-                        return 'a ';
-                    }
-                  })();
-                }
-                html += (function() {
-                  switch (n) {
-                    case 0:
-                      return '';
-                    case i.ores.length - 1:
-                      return ' and ';
-                    default:
-                      return ', ';
-                  }
-                })();
-                html += o;
-              }
-              html += (i.ores.length == 1 ? ' vein' : ' veins') + '</p>';
+              infoHtml += `<strong>${i.ores.join(', ')}</strong> ${i.ores.length === 1 ? 'vein' : 'veins'}.</p>`;
             }
-            if (i.features != null) {
-              html += '<p>It is equipped with ';
-              ref1 = i.features;
-              for (n = r = 0, len4 = ref1.length; r < len4; n = ++r) {
-                o = ref1[n];
-                html += (function() {
-                  switch (n) {
-                    case 0:
-                      return '';
-                    case i.features.length - 1:
-                      return ' and ';
-                    default:
-                      return ', ';
-                  }
-                })();
-                html += 'a ' + o;
-              }
-              html += '</p>';
+            if (i.features != null && i.features.length > 0) {
+              infoHtml += `<p><i class="bi bi-gear"></i> Equipped with: <strong>${i.features.join(', ')}</strong></p>`;
             }
-            props.push(html);
           } else {
-            props.push('<p>There is a <strong style="font-weight:500">' + i.size + ' ' + i.type + ' deposit</strong> here</p>');
+            infoHtml += `<p><i class="bi bi-box"></i> There is a <strong>${i.size} ${i.type} deposit</strong> here.</p>`;
           }
+          break;
         }
       }
     }
@@ -701,37 +859,45 @@ show_coords_info = function(coords) {
         if (i.x == coords.x && i.y == coords.y) {
           found = true;
           coords_marker = i.marker;
+          infoHtml = `<div class="info-window-content">
+                        <h2><i class="bi bi-tree-fill"></i> Forest Area</h2>
+                        <p><i class="bi bi-geo-alt"></i> <strong>Coordinates:</strong> X${i.x}, Y${i.y}</p>`;
           if (i.bushes) {
-            props.push('<p>There are a lot of <strong style="font-weight:500">' + i.type + ' bushes</strong> around here.</p>');
+            infoHtml += `<p><i class="bi bi-flower1"></i> Contains mostly <strong>${i.type} bushes</strong>.</p>`;
             if (i.harvest) {
-              props.push('<p>These bushes can be harvested right now.</p>');
+              infoHtml += '<p><i class="bi bi-basket"></i> These bushes can be harvested right now.</p>';
             }
           } else {
-            props.push('<p>The forest in this area is mostly <strong style="font-weight:500">' + i.type + ' trees</strong>.</p>');
+            infoHtml += `<p><i class="bi bi-tree"></i> Mostly <strong>${i.type} trees</strong> in this area.</p>`;
             if (i.harvest) {
-              props.push('<p>These trees can be harvested right now.</p>');
+              infoHtml += '<p><i class="bi bi-basket"></i> These trees can be harvested right now.</p>';
             }
           }
+          break;
         }
       }
     }
   }
+
   if (!found) {
-    props.push('<p>There seems to be nothing special here</p>');
+    infoHtml += '<p><i class="bi bi-info-circle"></i> There seems to be nothing special here.</p>';
   }
+  
   nearby = find_nearby_locations(coords);
   if (nearby) {
-    props.push(nearby);
+    infoHtml += nearby;
   }
+  
+  infoHtml += `<p style="padding-top:10px;"><button class="modern-button" onclick="share_coords('${coords.x}', '${coords.y}', this)"><i class="bi bi-share-fill"></i> Share this location</button></p>`;
+  infoHtml += `</div>`; // Close info-window-content
+
   infowin = new google.maps.InfoWindow({
-    content: '<div id="content"> <h3>' + title + '</h3> <div id="bodyContent">' + props.join('') + '<p style="padding-top:10px"><a href="#' + coords.x + '_' + coords.y + '" style="display:inline-block;color:white;padding:3px 6px;border-radius:3px;font-size:13px;background:#2196F3;cursor:pointer;" onclick="share_coords(\'' + coords.x + '\', \'' + coords.y + '\', this)">Share this location</a></p> </div> </div>',
+    content: infoHtml,
     position: projection.fromPointToLatLng(projection.fromCoords(coords))
   });
   if (coords_marker !== '') {
     infowin.open(map, coords_marker);
-    infowin.open(map, coords_marker);
   } else {
-    infowin.open(map);
     infowin.open(map);
   }
   window.location.hash = coords.x + '_' + coords.y;
@@ -739,10 +905,20 @@ show_coords_info = function(coords) {
 };
 
 share_coords = function(x, y, el) {
-  el.style.backgroundColor = 'white';
-  el.style.padding = 0;
-  el.innerHTML = '<input type="text" value="https://andistyr.github.io/wu-map/14821-topo/#' + x + '_' + y + '" style="width:255px;padding:2px;border-radius:3px;border:1px solid #dedede;font-size:12px" onclick="this.select()" />';
-  el.childNodes[0].select();
+  const url = `https://andistyr.github.io/wu-map/14821-topo/#${x}_${y}`;
+  const inputId = `share-coords-input-${x}-${y}`;
+  el.outerHTML = `
+    <div class="input-group" style="margin-top: 10px;">
+      <input type="text" class="form-control glass-input" id="${inputId}" value="${url}" readonly onclick="this.select()">
+      <button class="btn btn-glass" type="button" id="copy-url-btn-${x}-${y}" title="Copy URL" onclick="copyToClipboard(this)">
+        <i class="bi bi-clipboard"></i>
+      </button>
+    </div>
+  `;
+  const newEl = document.getElementById(inputId);
+  if (newEl) {
+    newEl.select();
+  }
   return false;
 };
 
@@ -894,7 +1070,7 @@ search = function() {
         searchtext = location[0];
         location = location[1];
         if (location !== '') {
-          home_deed = localStorage.getItem('wu_map_home_deed_14821_topo');
+          home_deed = localStorage.getItem('wu_map_home_deed_14821');
           if ((location == 'm' || location == 'me') && (home_deed != null)) {
             deed = deeds[deed_tags[home_deed]];
           } else if (location == 'n' || location == 'nt') {
@@ -912,7 +1088,7 @@ search = function() {
       } else {
         searchtext = searchtext.replace('nearby ', '');
         if (searchtext !== '') {
-          home_deed = localStorage.getItem('wu_map_home_deed_14821_topo');
+          home_deed = localStorage.getItem('wu_map_home_deed_14821');
           if (home_deed != null) {
             deed = deeds[deed_tags[home_deed]];
           }
@@ -998,12 +1174,16 @@ search = function() {
         if (results.length > 8) {
           break;
         }
+		if (typeof i.name === 'undefined') {
+			continue;
+		}
+		
         if (i.name.toLowerCase().indexOf(searchtext) !== -1) {
           results.push({
             name: i.name,
             x: i.x,
             y: i.y,
-            "class": i.type == null ? 'poi' : 'poi_' + i.type,
+            "class": (i.type == null || i.type == 'star') ? 'poi' : 'poi_' + i.type,
             tag: i.x + '_' + i.y,
             onclick: 'show_coords_on_map(' + i.x + ',' + i.y + ')'
           });
@@ -1016,10 +1196,12 @@ search = function() {
         }
         if (i.name.toLowerCase().indexOf(searchtext) !== -1) {
           results.push(i);
-        } else if (i.mayor != null) {
-          if (i.mayor.toLowerCase().indexOf(searchtext) !== -1) {
+        } else if (i.mayor != null && i.mayor.toLowerCase().indexOf(searchtext) !== -1) {
             results.push(i);
-          }
+        } else if (i.allianceName != null && i.allianceName.toLowerCase().indexOf(searchtext) !== -1) {
+			results.push(i);
+        } else if (i.founderName != null && i.founderName.toLowerCase().indexOf(searchtext) !== -1) {
+            results.push(i);
         }
       }
       for (t = 0, len6 = guard_towers.length; t < len6; t++) {
@@ -1092,11 +1274,6 @@ search = function() {
     if (results.length > max_length) {
       results = results.slice(0, max_length);
     }
-    results.push({
-      tag: '',
-      add_deed: true,
-      name: 'Can\'t find your deed?'
-    });
   }
   Transparency.render(document.getElementById('searchresults'), results, {
     location: {
@@ -1148,13 +1325,22 @@ search = function() {
           case this["class"] !== 'poi':
             return this.x + ', ' + this.y;
           case !(this.mayor == null):
-            return 'No mayor on record';
+            return '';
           default:
-            i = this.mayor.toLowerCase().indexOf(searchtext);
+			var ally = '';
+			if(this.allianceName !== null && this.allianceName !== '') {
+				ally = " - "+this.allianceName;
+			}
+			var subtext = this.mayor+ally;
+			if(this.mayor !== this.founderName)
+			{
+				subtext = this.mayor+"/"+this.founderName+ally;
+			}
+            i = subtext.toLowerCase().indexOf(searchtext);
             if (i == -1) {
-              return this.mayor;
+              return subtext;
             } else {
-              return this.mayor.slice(0, i) + '<strong>' + this.mayor.slice(i, i + searchtext.length) + '</strong>' + this.mayor.slice(i + searchtext.length);
+              return subtext.slice(0, i) + '<strong>' + subtext.slice(i, i + searchtext.length) + '</strong>' + subtext.slice(i + searchtext.length);
             }
         }
       }
@@ -1174,87 +1360,6 @@ filter = {
   deeds_large: true,
   guard_towers: true,
   poi: true
-};
-
-toggle_markers = function(which) {
-  if (filter[which] != null) {
-    filter[which] = !filter[which];
-    return update_markers(which);
-  }
-};
-
-update_markers = function(which) {
-  var i, j, k, len, len1, len2, len3, len4, len5, len6, len7, m, p, q, r, s, t, u;
-  close_infowin();
-  switch (which) {
-    case 'deeds':
-      for (k = 0, len = deeds.length; k < len; k++) {
-        i = deeds[k];
-        switch (i.type) {
-          case 'large':
-            i.marker.setMap(filter.deeds && filter.deeds_large ? map : null);
-            break;
-          case 'small':
-            i.marker.setMap(filter.deeds && filter.deeds_small ? map : null);
-            break;
-          default:
-            i.marker.setMap(filter.deeds && filter.deeds_solo ? map : null);
-        }
-      }
-      break;
-    case 'deeds_solo':
-      for (m = 0, len1 = deeds.length; m < len1; m++) {
-        i = deeds[m];
-        if (i.type == 'solo' || (i.type == null)) {
-          i.marker.setMap(filter.deeds && filter.deeds_solo ? map : null);
-        }
-      }
-      break;
-    case 'deeds_small':
-      for (p = 0, len2 = deeds.length; p < len2; p++) {
-        i = deeds[p];
-        if (i.type == 'small') {
-          i.marker.setMap(filter.deeds && filter.deeds_small ? map : null);
-        }
-      }
-      break;
-    case 'deeds_large':
-      for (q = 0, len3 = deeds.length; q < len3; q++) {
-        i = deeds[q];
-        if (i.type == 'large') {
-          i.marker.setMap(filter.deeds && filter.deeds_large ? map : null);
-        }
-      }
-      break;
-    case 'guard_towers':
-      for (r = 0, len4 = guard_towers.length; r < len4; r++) {
-        i = guard_towers[r];
-        i.marker.setMap(filter.guard_towers ? map : null);
-      }
-      break;
-    case 'resources':
-      for (s = 0, len5 = resources.length; s < len5; s++) {
-        i = resources[s];
-        i.marker.setMap(filter.resources ? map : null);
-      }
-      break;
-    case 'poi':
-      for (t = 0, len6 = poi.length; t < len6; t++) {
-        i = poi[t];
-        i.marker.setMap(filter.poi ? map : null);
-      }
-      break;
-    case 'trees':
-      for (u = 0, len7 = trees.length; u < len7; u++) {
-        i = trees[u];
-        i.marker.setMap(filter.trees ? map : null);
-      }
-  }
-  for (i in filter) {
-    j = filter[i];
-    document.getElementById('marker_' + i).className = j ? 'selected' : '';
-  }
-  return false;
 };
 
 change_map = function(type) {
