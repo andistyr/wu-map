@@ -849,6 +849,7 @@ show_coords_info = function(coords) {
         }
         coords_marker = i.marker;
         infoHtml = `<div class="info-window-content">
+		<button class="custom-close-button" onclick="close_infowin(); return false;"><i class="bi bi-x-lg"></i></button>
                       <h2><i class="bi bi-geo-alt-fill"></i> ${i.name}</h2>`; // Override title if it's a POI
         infoHtml += `<p><i class="bi bi-pin-map"></i> <strong>Coordinates:</strong> X${i.x}, Y${i.y}</p>`;
         if (i.description != null) {
@@ -868,6 +869,7 @@ show_coords_info = function(coords) {
           }
           coords_marker = i.marker;
           infoHtml = `<div class="info-window-content">
+		  <button class="custom-close-button" onclick="close_infowin(); return false;"><i class="bi bi-x-lg"></i></button>
                         <h2><i class="bi bi-patch-check-fill"></i> Guard Tower</h2>
                         <p><i class="bi bi-person-fill"></i> <strong>Name:&nbsp;</strong> ${i.towerName}</p>
                         <p><i class="bi bi-person"></i> <strong>Creator:&nbsp;</strong> ${i.creatorName != null ? i.creatorName : 'Unknown'}</p>
@@ -888,6 +890,7 @@ show_coords_info = function(coords) {
           }
           coords_marker = i.marker;
           infoHtml = `<div class="info-window-content">
+		  <button class="custom-close-button" onclick="close_infowin(); return false;"><i class="bi bi-x-lg"></i></button>
                         <h2><i class="bi bi-gem"></i> ${i.type === 'mine' ? 'Mine' : 'Resource Deposit'}</h2>
                         <p><i class="bi bi-geo-alt"></i> <strong>Coordinates:</strong> X${i.x}, Y${i.y}</p>`;
           if (i.type == 'mine') {
@@ -914,6 +917,7 @@ show_coords_info = function(coords) {
           found = true;
           coords_marker = i.marker;
           infoHtml = `<div class="info-window-content">
+		  <button class="custom-close-button" onclick="close_infowin(); return false;"><i class="bi bi-x-lg"></i></button>
                         <h2><i class="bi bi-tree-fill"></i> Forest Area</h2>
                         <p><i class="bi bi-geo-alt"></i> <strong>Coordinates:</strong> X${i.x}, Y${i.y}</p>`;
           if (i.bushes) {
