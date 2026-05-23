@@ -495,7 +495,7 @@ init = function() {
       init_moved = true;
     }
   } else if (!init_moved) {
-    home_deed = localStorage.getItem('wu_map_home_deed_14852');
+    home_deed = localStorage.getItem('wu_map_home_deed_14853');
     if (home_deed != null) {
       if (home_deed !== '') {
         show_deed_on_map(home_deed, false);
@@ -652,12 +652,12 @@ toggle_serverinfo_size = function() {
 };
 
 set_home = function(tag, img) {
-  localStorage.setItem('wu_map_home_deed_14852', tag);
+  localStorage.setItem('wu_map_home_deed_14853', tag);
   return show_deed_info(tag);
 };
 
 clear_home = function(tag) {
-  localStorage.setItem('wu_map_home_deed_14852', '');
+  localStorage.setItem('wu_map_home_deed_14853', '');
   return show_deed_info(tag);
 };
 
@@ -703,7 +703,7 @@ show_deed_info = function(tag) {
 
   // Home deed button
   home_img = `<button class="modern-button small" onclick="set_home('${deed.tag}', this)" title="Set as home"><i class="bi bi-house-door-fill"></i> Set Home</button>`;
-  if (localStorage.getItem('wu_map_home_deed_14852') == deed.tag) {
+  if (localStorage.getItem('wu_map_home_deed_14853') == deed.tag) {
     home_img = `<button class="modern-button small" onclick="clear_home('${deed.tag}')" title="Clear home location"><i class="bi bi-house-fill"></i> Clear Home</button>`;
   }
 
@@ -797,7 +797,7 @@ show_deed_info = function(tag) {
 };
 
 share_deed = function(tag, el) {
-  const url = `https://andistyr.github.io/wu-map/14852/#${tag}`;
+  const url = `https://andistyr.github.io/wu-map/14853/#${tag}`;
   const inputId = `share-deed-input-${tag}`;
   el.outerHTML = `
     <div class="input-group" style="margin-top: 10px;">
@@ -963,7 +963,7 @@ show_coords_info = function(coords) {
 };
 
 share_coords = function(x, y, el) {
-  const url = `https://andistyr.github.io/wu-map/14852/#${x}_${y}`;
+  const url = `https://andistyr.github.io/wu-map/14853/#${x}_${y}`;
   const inputId = `share-coords-input-${x}-${y}`;
   el.outerHTML = `
     <div class="input-group" style="margin-top: 10px;">
@@ -1128,7 +1128,7 @@ search = function() {
         searchtext = location[0];
         location = location[1];
         if (location !== '') {
-          home_deed = localStorage.getItem('wu_map_home_deed_14852');
+          home_deed = localStorage.getItem('wu_map_home_deed_14853');
           if ((location == 'm' || location == 'me') && (home_deed != null)) {
             deed = deeds[deed_tags[home_deed]];
           } else if (location == 'n' || location == 'nt') {
@@ -1146,7 +1146,7 @@ search = function() {
       } else {
         searchtext = searchtext.replace('nearby ', '');
         if (searchtext !== '') {
-          home_deed = localStorage.getItem('wu_map_home_deed_14852');
+          home_deed = localStorage.getItem('wu_map_home_deed_14853');
           if (home_deed != null) {
             deed = deeds[deed_tags[home_deed]];
           }
