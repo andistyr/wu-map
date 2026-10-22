@@ -36,7 +36,6 @@
 
 
 <div class="div"></div><h2>Submit new locations</h2>
-<a target="_blank" href="https://web.game.sklotopolis.com/wu-map-admin/submit_deed.php" class="small">Click to submit a Marker</a>
 
 <a href="#" onclick="show_add_form('deed'); return false" class="small">Deed</a>
 <a href="#" onclick="show_add_form('tower'); return false" class="small">Guard tower</a>
@@ -60,9 +59,8 @@
 <script src="https://web.game.sklotopolis.com/unlimited/4/deeds.json"></script>
 <script src="https://web.game.sklotopolis.com/unlimited/4/towers.json"></script>
 <script src="https://web.game.sklotopolis.com/unlimited/4/highways.json"></script>
-<script src="https://web.game.sklotopolis.com/wu-map-admin/get_resources.php?server=99"></script>
+<script>var resources = [], trees = [];</script>
 <script src="https://web.game.sklotopolis.com/unlimited/4/poi.json"></script> 
-<script src="https://web.game.sklotopolis.com/wu-map-admin/get_forests.php?server=99"></script>
 
 <script src="map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?callback=init" async defer></script>
@@ -75,14 +73,6 @@
   function applyTheme(theme) {
     htmlElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
-    const themeToggleBtn = document.getElementById('theme-toggle'); // Get it inside applyTheme
-    if (themeToggleBtn) { // Only update if button exists
-      if (theme === 'dark') {
-        themeToggleBtn.querySelector('span').textContent = '';
-      } else {
-        themeToggleBtn.querySelector('span').textContent = '';
-      }
-    }
   }
 
   function toggleTheme() {
@@ -91,17 +81,5 @@
     applyTheme(newTheme);
   }
 
-  // Set the correct button text on load if the button exists
-  document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme') || 'dark'; // Get actual current theme
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    if (themeToggleBtn) {
-      if (savedTheme === 'dark') {
-        themeToggleBtn.querySelector('span').textContent = '';
-      } else {
-        themeToggleBtn.querySelector('span').textContent = '';
-      }
-    }
-  });
 </script>
 </body></html>
